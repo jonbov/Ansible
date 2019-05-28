@@ -1,0 +1,48 @@
+# Note: examples below use the following provider dict to handle
+#       transport and authentication to the node.
+
+
+
+
+- name: CloudEngine command test
+  hosts: vrp
+  connection: local
+  gather_facts: no
+  become: system-view
+  vars_files:
+   - /etc/ansible/secure/vrp_passwords
+  vars:
+    cli:
+      host: "{{ inventory_hostname }}"
+      port: "{{ ansible_ssh_port }}"
+      username: "{{ vrp_username }}"
+      password: "{{ vrp_password }}"
+      transport: cli
+
+
+
+  tasks:
+  - name: "Run display version on remote devices"
+    ce_command:
+      commands: 
+      - display version
+      - display lldp nei brief
+#      - display logbuffer
+      provider: "{{ cli }}"
+    register: variable
+ 
+  - name: debug LLDP
+    debug: 
+     var: variable.stdout_lines[1]
+
+  - name: debug version
+    debug:
+     var: variable.stdout_lines[0]
+
+
+#  - name: debug logbuffer
+ #   debug:
+  #   var: variable.stdout_lines[2]
+
+
+

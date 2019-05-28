@@ -1,0 +1,26 @@
+---
+
+- name: Create directory
+  hosts: vrp
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name:
+    file: 
+      path: configs 
+      state: directory
+#      state: absent
+    run_once: true
+    delegate_to: localhost
+
+  - name:
+    file: 
+     path: configs/version_report.txt
+     state: absent
+  
+  - name:
+    file: 
+     path: configs/version_report.txt 
+     state: touch
+

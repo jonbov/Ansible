@@ -1,0 +1,34 @@
+# Note: examples below use the following provider dict to handle
+#       transport and authentication to the node.
+
+- name: CloudEngine command test
+  hosts: vrp
+  connection: local
+  gather_facts: no
+  vars_files:
+   - /etc/ansible/secure/vrp_passwords
+  vars:
+    cli:
+      host: "{{ inventory_hostname }}"
+      port: "{{ ansible_ssh_port }}"
+      username: "{{ vrp_username }}"
+      password: "{{ vrp_password }}"
+      transport: cli
+    interface: "Gigabitethernet 0/0/17"
+
+  tasks:
+  - name: "Run config interface {{ interface }}"
+    ce_command:
+      commands: 
+      - system-view
+      - interface {{ interface }}
+      - undo shutdown
+      - description conf from ANSIBLE
+      - display this
+      - return
+      provider: "{{ cli }}"
+    register: version
+
+  - debug: var=version.stdout_lines
+
+
