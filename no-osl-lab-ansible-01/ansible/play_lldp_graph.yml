@@ -1,0 +1,49 @@
+
+---
+- name: CloudEngine command test
+  hosts: all
+  connection: local
+  gather_facts: no
+  vars_files:
+   - /etc/ansible/secure/vrp_passwords
+  vars:
+    cli:
+      host: "{{ inventory_hostname }}"
+      port: "{{ ansible_ssh_port }}"
+      username: "{{ vrp_username }}"
+      password: "{{ vrp_password }}"
+      transport: cli
+#    dir: results
+#    file: route_report.txt
+
+
+
+  tasks:
+
+  - name: ensure empty file exists
+    run_once: true
+    copy:
+      content: ""
+      dest: /home/netnordic/lldp/lldp-vrp-graph.json
+      force: yes
+#      group: jonbov
+      owner: netnordic
+      mode: 0555
+
+
+
+  - name: get LLDP info
+    ce_command:
+      commands:
+        - display current | in sysname
+#        - display lldp neighbor brief | exclude Intf
+        - display lldp neighbor | include Port ID|System|neighbor
+      provider: "{{ cli }}"
+    register: lldpvar
+
+  - debug:        msg="{{lldpvar | to_nice_json}}"
+
+
+  - local_action: lineinfile line='{{lldpvar | to_nice_json }}' insertafter=EOF dest="/home/netnordic/lldp/lldp-vrp-graph.json"
+
+

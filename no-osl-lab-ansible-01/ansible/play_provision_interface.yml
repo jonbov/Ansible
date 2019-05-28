@@ -1,0 +1,114 @@
+
+
+
+# Note: examples below use the following provider dict to handle
+#       transport and authentication to the node.
+
+
+
+---
+- name: CloudEngine command test
+  hosts: access
+  connection: local
+  gather_facts: no
+  vars_files:
+   - /etc/ansible/secure/vrp_passwords
+  vars:
+    cli:
+      host: "{{ inventory_hostname }}"
+      port: "{{ ansible_ssh_port }}"
+      username: "{{ vrp_username }}"
+      password: "{{ vrp_password }}"
+      transport: cli
+#    dir: results
+#    file: route_report.txt
+    template_dir: templates_ftth_port
+
+  tasks:
+
+
+  - name: "Run display current interface x"
+    ce_command:
+      commands: disp current-configuration interface GigabitEthernet 0/0/{{ ftthport }}
+      provider: "{{ cli }}"
+    register: current_config
+
+
+  - debug:
+      var=current_config.stdout_lines  
+
+  - name: "Run clear config on interface"
+    ce_command:
+      commands:  
+        - return
+        - system-view
+        - interface GigabitEthernet 0/0/{{ ftthport }}
+        - description test
+#        - clear configuration this
+#        - clear configuration this
+#        - Y
+#      wait_for:  result[4] contains Y/N
+      provider: "{{ cli }}"
+    register: ccinterface
+
+  - name: "Run clear config on interface test IOS-COMMAND"
+    cli_command:
+      commands:
+        - return
+        - system-view
+        - interface GigabitEthernet 0/0/{{ ftthport }}
+        - description test
+        - command: clear configuration this
+          prompt: Y/N
+          answer: Y
+      provider: "{{ cli }}"
+    register: ccinterface
+
+
+
+  - name: "create ftth-interface configuration for VRP device"
+    template:
+       src={{ template_dir }}/ftth_port_config.j2
+       dest={{ template_dir }}/ftth_interface_config_{{ inventory_hostname }}_{{ ftthport }}.cfg
+#    run_once: true
+    delegate_to: localhost
+
+
+  - name: "Provision config on interface"
+    ce_command:
+      commands:  
+        - return
+        - system-view
+#        - src={{ template_dir }}/ftth_interface_config.cfg
+        - display this
+      wait_for:
+        - result[0] contains >
+      provider: "{{ cli }}"
+    register: ccinterface
+
+#fatal: [nn-access-sw81.nnsol.no]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (ce_command) module: answer, prompt Supported parameters include: 
+#commands, host, interval, match, password, port, provider, 
+#retries, ssh_keyfile, timeout, transport, use_ssl, username, validate_certs, wait_for"}
+
+
+#  - name: "Run display c2"
+#    ce_command:
+#      commands: disp current-configuration interface GigabitEthernet 0/0/8
+#      provider: "{{ cli }}"
+#    register: current_config2
+
+
+  - debug: 
+      var=ccinterface.stdout_lines
+#      var=current_config2.stdout_lines
+
+
+
+
+
+
+
+
+
+
+

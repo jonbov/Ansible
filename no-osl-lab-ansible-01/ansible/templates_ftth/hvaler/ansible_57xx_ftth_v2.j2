@@ -1,0 +1,187 @@
+
+sysname {{ sysname|upper }}
+#
+vlan batch 100 300 310 to 311 350 {{mvlan|default("699")}} 800 2000 to 2050
+#
+igmp-snooping enable
+#
+set flow-stat interval 10
+#
+set save-configuration
+#
+telnet server enable
+#
+lldp enable
+#
+clock timezone UTC add 00:00:00
+#
+transceiver phony-alarm-disable
+#
+dhcp enable
+#
+dhcp snooping enable
+#
+acl number 2070                           
+ description Nextgentel Multicast
+ rule 10 permit source 233.8.61.0 0.0.0.255
+ rule 20 permit source 233.33.78.0 0.0.0.255
+ rule 30 permit source 233.61.43.0 0.0.0.255
+#
+vlan 300
+ description FEAS-NORGESNETT
+ name FEAS-NORGESNETT
+ dhcp snooping trusted interface XGigabitEthernet0/0/1
+ dhcp snooping trusted interface XGigabitEthernet0/0/2
+ dhcp snooping trusted interface XGigabitEthernet0/0/3
+ dhcp snooping trusted interface XGigabitEthernet0/0/4
+vlan 310
+ name "SCADA Fibertwist management"
+ dhcp snooping trusted interface XGigabitEthernet0/0/1
+ dhcp snooping trusted interface XGigabitEthernet0/0/2
+ dhcp snooping trusted interface XGigabitEthernet0/0/3
+ dhcp snooping trusted interface XGigabitEthernet0/0/4
+vlan 311
+ name "Hvaler Kommune Vann Avlop"
+ dhcp snooping trusted interface XGigabitEthernet0/0/1
+ dhcp snooping trusted interface XGigabitEthernet0/0/2
+ dhcp snooping trusted interface XGigabitEthernet0/0/3
+ dhcp snooping trusted interface XGigabitEthernet0/0/4
+vlan 350
+ name switch-management
+vlan {{mvlan|default("699")}}
+ name IPTV-Dist
+ igmp-snooping enable
+ multicast-vlan enable
+ multicast-vlan user-vlan {{ pvlan }}
+vlan 800
+ name WiFi-AP
+ dhcp snooping trusted interface XGigabitEthernet0/0/1
+ dhcp snooping trusted interface XGigabitEthernet0/0/2
+ dhcp snooping trusted interface XGigabitEthernet0/0/3
+ dhcp snooping trusted interface XGigabitEthernet0/0/4
+vlan {{ pvlan }}
+ igmp-snooping enable
+ dhcp snooping trusted interface XGigabitEthernet0/0/1
+ dhcp snooping trusted interface XGigabitEthernet0/0/2
+ dhcp snooping trusted interface XGigabitEthernet0/0/3
+ dhcp snooping trusted interface XGigabitEthernet0/0/4
+#
+ip pool test
+#
+aaa
+ authentication-scheme default
+ authentication-scheme radius
+  authentication-mode radius
+ authorization-scheme default
+ accounting-scheme default                
+ domain default
+ domain default_admin
+ local-user admin password irreversible-cipher %#%#;1'{I*dWnFS/.":$9[[(h4Iu@T|}%+l'7=#_=!Q+371A7p.bpPR#M(3%$K@L%#%#
+ local-user admin privilege level 15
+ local-user admin ftp-directory flash:/
+ local-user admin service-type telnet ssh ftp
+ local-user netnordic password irreversible-cipher %#%#}=af!Nx>"&6PmJ21R~#Ja&6p18#"C>@(@n@g\0o@k/jrY\D6q=a-A>H^/[%G%#%#
+ local-user netnordic privilege level 15
+ local-user netnordic service-type telnet terminal ssh ftp http
+local-user hband password cipher Hval1term!
+ local-user hband privilege level 15
+ local-user hband service-type telnet terminal ssh ftp http
+#
+ntp-service server disable
+ntp-service ipv6 server disable
+ntp-service unicast-server 10.192.2.2
+
+#
+interface Vlanif1
+#
+interface Vlanif350
+ description "management av 5700 switcher"
+ ip address {{ sys_ip }} {{ sys_netmask|default("255.255.255.0") }}
+#
+error-down auto-recovery cause bpdu-protection interval 300
+error-down auto-recovery cause port-security interval 300
+error-down auto-recovery cause link-flap interval 300
+error-down auto-recovery cause transceiver-power-low interval 300
+error-down auto-recovery cause storm-control interval 300
+error-down auto-recovery cause auto-defend interval 300
+#
+{% for port in GE %}
+
+interface GigabitEthernet0/0/{{ port }}
+ description customer
+ port link-type hybrid
+ qinq vlan-translation enable
+ port hybrid untagged vlan {{mvlan|default("699")}} {{ pvlan }}
+{% if port < 10 %} 
+ port vlan-stacking untagged stack-vlan {{ pvlan }} stack-inner-vlan 110{{ port }}
+{% else %}
+ port vlan-stacking untagged stack-vlan {{ pvlan }} stack-inner-vlan 11{{ port }}
+{% endif %}
+ igmp-snooping group-policy 2070 version 2 vlan {{mvlan|default("699")}}
+ l2-multicast-bind vlan {{ pvlan }} mvlan {{mvlan|default("699")}}
+ undo lldp enable
+ dhcp snooping enable
+ dhcp snooping max-user-number 3
+ dhcp option82 insert enable
+ dhcp option82 circuit-id format user-defined "GigabitEthernet0/0/{{ port }}"
+ dhcp option82 remote-id format user-defined "{{ sysname|upper }}"
+ stp disable
+ stp bpdu-filter enable
+ undo lldp enable
+ port-security enable
+ port-security max-mac-num 5
+#
+{% endfor %}
+#
+{% for port in XGE %}
+interface XGigabitEthernet0/0/{{ port }}
+ description "SW1-Dist-xxx  uplink trunk"
+ port link-type trunk
+ port trunk allow-pass vlan all
+ trust dscp
+#
+{% endfor %}
+
+#
+interface NULL0
+#
+ip route-static 0.0.0.0 0.0.0.0 {{ sys_gw }}
+#
+stelnet server enable
+ssh user admin
+ssh user admin authentication-type password
+ssh user admin service-type stelnet
+ssh user netnordic
+ssh user netnordic authentication-type password
+ssh user netnordic service-type all
+ssh user hband
+ssh user hband authentication-type password
+ssh user hband service-type all
+#
+user-interface con 0
+ authentication-mode password
+ set authentication password cipher Hval1cons!
+user-interface vty 0 4
+ authentication-mode aaa
+ idle-timeout 30 0
+ protocol inbound all
+                   
+
+
+acl number 2900 
+ rule 10 permit source 10.192.18.0 0.0.0.255
+rule 15 permit source 10.192.0.224 0.0.0.31
+rule 20 permit source 10.196.4.32 0.0.0.31
+rule 100 deny logging
+
+
+snmp-agent sys-info version v2c
+snmp-agent community read rHband_2017 acl 2900
+snmp-agent community write wrHband_2017 acl 2900
+snmp-agent sys-info contact "Hvaler Bredband"
+snmp-agent sys-info location "Hvaler Bredband"
+
+set save-configuration delay 10
+set save-configuration backup-to-server server 185.34.4.98 transport-type ftp user hvaler password a4068becs
+
+       

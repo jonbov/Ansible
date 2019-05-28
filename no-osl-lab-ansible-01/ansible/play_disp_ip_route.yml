@@ -1,0 +1,99 @@
+
+
+# Note: examples below use the following provider dict to handle
+#       transport and authentication to the node.
+
+
+
+---
+- name: CloudEngine command test
+  hosts: all
+  connection: local
+  gather_facts: no
+  vars_files:
+   - /etc/ansible/secure/vrp_passwords
+  vars:
+    cli:
+      host: "{{ inventory_hostname }}"
+      port: "{{ ansible_ssh_port }}"
+      username: "{{ vrp_username }}"
+      password: "{{ vrp_password }}"
+      transport: cli
+    dir: results
+    file: route_report.txt
+
+  tasks:
+
+  - name: "Create directory"
+    file:
+      path: "{{ dir }}"
+      state: directory
+#      state: absent
+    run_once: true
+    delegate_to: localhost
+
+  - name: "delete old file"
+    file:
+     path: "{{ dir }}/{{ file }}"
+     state: absent
+    run_once: true
+    delegate_to: localhost
+
+  - name: "create new file"
+    file:
+     path: "{{ dir }}/{{ file }}"
+     state: touch
+    run_once: true
+    delegate_to: localhost
+
+
+  - name: "Run display ip route on remote devices"
+    ce_command:
+      commands: display ip routing
+      provider: "{{ cli }}"
+    register: ip_route
+
+
+  - name: "create new host file"
+    file:
+     path: "{{ dir }}/{{ inventory_hostname }}.txt"
+     state: touch
+    delegate_to: localhost
+
+  - blockinfile:
+     dest: "{{ dir }}/{{ inventory_hostname }}.txt"
+     marker: "### {mark} {{inventory_hostname}}"
+     block: "{{ ip_route.stdout[0] }}"
+
+
+
+
+  - lineinfile:
+     dest:    "{{ dir }}/{{ file }}"
+     regexp:  "{{inventory_hostname}}"
+     line:    "{{inventory_hostname}} was checked"
+
+  - lineinfile:
+     dest:    "{{ dir }}/{{ file }}"
+#     line:
+     line:    "----------DETAILS----------"
+#     line:
+
+
+  - blockinfile:
+     dest: "{{ dir }}/{{ file }}"
+     marker: "### {mark} {{inventory_hostname}}"
+     block: "{{ ip_route.stdout[0] }}"
+
+  - debug: var=ip_route.stdout_lines
+
+
+
+
+
+
+
+
+
+
+

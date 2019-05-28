@@ -1,0 +1,222 @@
+{
+    "changed": false,
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information",
+            "version": 2.9
+        }
+    ],
+    "failed": false,
+    "stdout": [
+        "sysname NN-DIST-SW83",
+        "XGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :NN-DIST-SW84\nSystem description  :Huawei Switch S6720-30C-EI-24S-DC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :NN-ACCESS-SW81\nSystem description  :S5720-36C-EI-28S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/23 has 1 neighbor(s):\nPort ID type   :Locally assigned\nPort ID        :1043"
+    ],
+    "stdout_lines": [
+        [
+            "sysname NN-DIST-SW83"
+        ],
+        [
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):",
+            "Port ID type   :Interface name",
+            "Port ID        :XGigabitEthernet0/0/2",
+            "System name         :NN-DIST-SW84",
+            "System description  :Huawei Switch S6720-30C-EI-24S-DC",
+            "System capabilities supported   :bridge router",
+            "System capabilities enabled     :bridge router",
+            "XGigabitEthernet0/0/3 has 1 neighbor(s):",
+            "Port ID type   :Interface name",
+            "Port ID        :XGigabitEthernet0/0/1",
+            "System name         :NN-ACCESS-SW81",
+            "System description  :S5720-36C-EI-28S-AC",
+            "System capabilities supported   :bridge router",
+            "System capabilities enabled     :bridge router",
+            "XGigabitEthernet0/0/23 has 1 neighbor(s):",
+            "Port ID type   :Locally assigned",
+            "Port ID        :1043"
+        ]
+    ]
+}
+{
+    "changed": false,
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information",
+            "version": 2.9
+        }
+    ],
+    "failed": false,
+    "stdout": [
+        "sysname NN-DIST-SW84",
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet0/1/0\nSystem name         :NN-BNG-R1\nSystem description  :Huawei Versatile Routing Platform Software\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :NN-DIST-SW83\nSystem description  :Huawei Switch S6720S-26Q-EI-24S-DC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :NN-ACCESS-SW82\nSystem description  :S5720-36C-EI-28S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/4 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet0/1/2\nSystem name         :NN-BNG-R1\nSystem description  :Huawei Versatile Routing Platform Software\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/23 has 1 neighbor(s):\nPort ID type   :Locally assigned\nPort ID        :1044"
+    ],
+    "stdout_lines": [
+        [
+            "sysname NN-DIST-SW84"
+        ],
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):",
+            "Port ID type   :Interface name",
+            "Port ID        :GigabitEthernet0/1/0",
+            "System name         :NN-BNG-R1",
+            "System description  :Huawei Versatile Routing Platform Software",
+            "System capabilities supported   :bridge router",
+            "System capabilities enabled     :bridge router",
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):",
+            "Port ID type   :Interface name",
+            "Port ID        :XGigabitEthernet0/0/2",
+            "System name         :NN-DIST-SW83",
+            "System description  :Huawei Switch S6720S-26Q-EI-24S-DC",
+            "System capabilities supported   :bridge router",
+            "System capabilities enabled     :bridge router",
+            "XGigabitEthernet0/0/3 has 1 neighbor(s):",
+            "Port ID type   :Interface name",
+            "Port ID        :XGigabitEthernet0/0/1",
+            "System name         :NN-ACCESS-SW82",
+            "System description  :S5720-36C-EI-28S-AC",
+            "System capabilities supported   :bridge router",
+            "System capabilities enabled     :bridge router",
+            "XGigabitEthernet0/0/4 has 1 neighbor(s):",
+            "Port ID type   :Interface name",
+            "Port ID        :GigabitEthernet0/1/2",
+            "System name         :NN-BNG-R1",
+            "System description  :Huawei Versatile Routing Platform Software",
+            "System capabilities supported   :bridge router",
+            "System capabilities enabled     :bridge router",
+            "XGigabitEthernet0/0/23 has 1 neighbor(s):",
+            "Port ID type   :Locally assigned",
+            "Port ID        :1044"
+        ]
+    ]
+}
+{
+    "changed": false,
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information",
+            "version": 2.9
+        }
+    ],
+    "failed": false,
+    "stdout": [
+        "sysname NN-ACCESS-SW81",
+        "GigabitEthernet0/0/25 has 1 neighbor(s):\nPort ID type   :Locally assigned\nPort ID        :1041\nGigabitEthernet0/0/28 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet0/0/28\nSystem name         :NN-ACCESS-SW82\nSystem description  :S5720-36C-EI-28S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/3\nSystem name         :NN-DIST-SW83\nSystem description  :Huawei Switch S6720S-26Q-EI-24S-DC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :NN-ACCESS-SW82\nSystem description  :S5720-36C-EI-28S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ],
+    "stdout_lines": [
+        [
+            "sysname NN-ACCESS-SW81"
+        ],
+        [
+            "GigabitEthernet0/0/25 has 1 neighbor(s):",
+            "Port ID type   :Locally assigned",
+            "Port ID        :1041",
+            "GigabitEthernet0/0/28 has 1 neighbor(s):",
+            "Port ID type   :Interface name",
+            "Port ID        :GigabitEthernet0/0/28",
+            "System name         :NN-ACCESS-SW82",
+            "System description  :S5720-36C-EI-28S-AC",
+            "System capabilities supported   :bridge router",
+            "System capabilities enabled     :bridge router",
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):",
+            "Port ID type   :Interface name",
+            "Port ID        :XGigabitEthernet0/0/3",
+            "System name         :NN-DIST-SW83",
+            "System description  :Huawei Switch S6720S-26Q-EI-24S-DC",
+            "System capabilities supported   :bridge router",
+            "System capabilities enabled     :bridge router",
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):",
+            "Port ID type   :Interface name",
+            "Port ID        :XGigabitEthernet0/0/2",
+            "System name         :NN-ACCESS-SW82",
+            "System description  :S5720-36C-EI-28S-AC",
+            "System capabilities supported   :bridge router",
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "changed": false,
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information",
+            "version": 2.9
+        }
+    ],
+    "failed": false,
+    "stdout": [
+        "sysname NN-ACCESS-SW82",
+        "GigabitEthernet0/0/25 has 1 neighbor(s):\nPort ID type   :Locally assigned\nPort ID        :1042\nGigabitEthernet0/0/28 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet0/0/28\nSystem name         :NN-ACCESS-SW81\nSystem description  :S5720-36C-EI-28S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/3\nSystem name         :NN-DIST-SW84\nSystem description  :Huawei Switch S6720-30C-EI-24S-DC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :NN-ACCESS-SW81\nSystem description  :S5720-36C-EI-28S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ],
+    "stdout_lines": [
+        [
+            "sysname NN-ACCESS-SW82"
+        ],
+        [
+            "GigabitEthernet0/0/25 has 1 neighbor(s):",
+            "Port ID type   :Locally assigned",
+            "Port ID        :1042",
+            "GigabitEthernet0/0/28 has 1 neighbor(s):",
+            "Port ID type   :Interface name",
+            "Port ID        :GigabitEthernet0/0/28",
+            "System name         :NN-ACCESS-SW81",
+            "System description  :S5720-36C-EI-28S-AC",
+            "System capabilities supported   :bridge router",
+            "System capabilities enabled     :bridge router",
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):",
+            "Port ID type   :Interface name",
+            "Port ID        :XGigabitEthernet0/0/3",
+            "System name         :NN-DIST-SW84",
+            "System description  :Huawei Switch S6720-30C-EI-24S-DC",
+            "System capabilities supported   :bridge router",
+            "System capabilities enabled     :bridge router",
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):",
+            "Port ID type   :Interface name",
+            "Port ID        :XGigabitEthernet0/0/2",
+            "System name         :NN-ACCESS-SW81",
+            "System description  :S5720-36C-EI-28S-AC",
+            "System capabilities supported   :bridge router",
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "changed": false,
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information",
+            "version": 2.9
+        }
+    ],
+    "failed": false,
+    "stdout": [
+        "Info: It will take a long time if the content you search is too much or the string you input is too long, you can press CTRL_C to break.\nsysname NN-BNG-R1",
+        "Info: It will take a long time if the content you search is too much or the string you input is too long, you can press CTRL_C to break.\nGigabitEthernet0/1/0 has 1 neighbor(s):\nPort ID type                       :interfaceName\nPort ID                            :XGigabitEthernet0/0/1\nSystem name                        :NN-DIST-SW84                  \nSystem description                 :Huawei Switch S6720-30C-EI-24S-DC\nSystem capabilities supported      :bridge router\nSystem capabilities enabled        :bridge router\nGigabitEthernet0/1/1 has 0 neighbor(s)\nGigabitEthernet0/1/2 has 1 neighbor(s):\nPort ID type                       :interfaceName\nPort ID                            :XGigabitEthernet0/0/4\nSystem name                        :NN-DIST-SW84                  \nSystem description                 :Huawei Switch S6720-30C-EI-24S-DC\nSystem capabilities supported      :bridge router\nSystem capabilities enabled        :bridge router\nGigabitEthernet0/1/3 has 0 neighbor(s)\nGigabitEthernet0/1/4 has 0 neighbor(s)\nGigabitEthernet0/1/5 has 0 neighbor(s)\nGigabitEthernet0/1/6 has 0 neighbor(s)"
+    ],
+    "stdout_lines": [
+        [
+            "Info: It will take a long time if the content you search is too much or the string you input is too long, you can press CTRL_C to break.",
+            "sysname NN-BNG-R1"
+        ],
+        [
+            "Info: It will take a long time if the content you search is too much or the string you input is too long, you can press CTRL_C to break.",
+            "GigabitEthernet0/1/0 has 1 neighbor(s):",
+            "Port ID type                       :interfaceName",
+            "Port ID                            :XGigabitEthernet0/0/1",
+            "System name                        :NN-DIST-SW84                  ",
+            "System description                 :Huawei Switch S6720-30C-EI-24S-DC",
+            "System capabilities supported      :bridge router",
+            "System capabilities enabled        :bridge router",
+            "GigabitEthernet0/1/1 has 0 neighbor(s)",
+            "GigabitEthernet0/1/2 has 1 neighbor(s):",
+            "Port ID type                       :interfaceName",
+            "Port ID                            :XGigabitEthernet0/0/4",
+            "System name                        :NN-DIST-SW84                  ",
+            "System description                 :Huawei Switch S6720-30C-EI-24S-DC",
+            "System capabilities supported      :bridge router",
+            "System capabilities enabled        :bridge router",
+            "GigabitEthernet0/1/3 has 0 neighbor(s)",
+            "GigabitEthernet0/1/4 has 0 neighbor(s)",
+            "GigabitEthernet0/1/5 has 0 neighbor(s)",
+            "GigabitEthernet0/1/6 has 0 neighbor(s)"
+        ]
+    ]
+}

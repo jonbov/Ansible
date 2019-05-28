@@ -1,0 +1,23 @@
+### BEGIN nn-dist-sw83.nnsol.no
+Route Flags: R - relay, D - download to fib
+------------------------------------------------------------------------------
+Routing Tables: Public
+         Destinations : 14       Routes : 14       
+
+Destination/Mask    Proto   Pre  Cost      Flags NextHop         Interface
+
+      127.0.0.0/8   Direct  0    0           D   127.0.0.1       InLoopBack0
+      127.0.0.1/32  Direct  0    0           D   127.0.0.1       InLoopBack0
+     172.16.2.0/24  Direct  0    0           D   172.16.2.1      Vlanif600
+     172.16.2.1/32  Direct  0    0           D   127.0.0.1       Vlanif600
+     172.20.1.1/32  OSPF    10   2           D   172.21.1.5      XGigabitEthernet0/0/2
+     172.20.1.2/32  OSPF    10   1           D   172.21.1.5      XGigabitEthernet0/0/2
+     172.20.1.3/32  Direct  0    0           D   127.0.0.1       LoopBack0
+    172.20.1.10/32  OSPF    10   3           D   172.21.1.5      XGigabitEthernet0/0/2
+     172.21.1.4/30  Direct  0    0           D   172.21.1.6      XGigabitEthernet0/0/2
+     172.21.1.6/32  Direct  0    0           D   127.0.0.1       XGigabitEthernet0/0/2
+    172.21.1.32/30  OSPF    10   2           D   172.21.1.5      XGigabitEthernet0/0/2
+   192.168.10.0/30  OSPF    10   3           D   172.21.1.5      XGigabitEthernet0/0/2
+   192.168.99.0/24  Direct  0    0           D   192.168.99.1    Vlanif699
+   192.168.99.1/32  Direct  0    0           D   127.0.0.1       Vlanif699
+### END nn-dist-sw83.nnsol.no

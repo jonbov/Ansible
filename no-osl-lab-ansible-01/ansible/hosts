@@ -1,0 +1,27 @@
+[bng]
+nn-bng-r1.nnsol.no
+
+[dist]
+nn-dist-sw83.nnsol.no
+
+[dist-netconf]
+nn-dist-sw84.nnsol.no
+
+
+[access]
+nn-access-sw82.nnsol.no
+
+[access-temp]
+nn-access-sw81.nnsol.no
+
+[dist-netconf:vars]
+ansible_connection = netconf
+
+[all:vars]
+ansible_ssh_port=22
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+host_key_checking=false
+ansible_connection = network_cli
+ansible_network_os = ios
+ansible_ssh_user = "{{ vrp_username }}"
+ansible_ssh_pass = "{{ vrp_password }}"

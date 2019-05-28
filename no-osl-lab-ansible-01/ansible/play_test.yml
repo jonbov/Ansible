@@ -1,0 +1,61 @@
+
+
+
+# Note: examples below use the following provider dict to handle
+#       transport and authentication to the node.
+
+
+
+---
+- name: CLI command test
+  hosts: access
+  connection: local
+  gather_facts: no
+  vars_files:
+   - /etc/ansible/secure/vrp_passwords
+  vars:
+    cli:
+      host: "{{ inventory_hostname }}"
+      port: "{{ ansible_ssh_port }}"
+      username: "{{ vrp_username }}"
+      password: "{{ vrp_password }}"
+      transport: cli
+#    dir: results
+#    file: route_report.txt
+#    template_dir: templates_ftth_port
+
+  tasks:
+
+
+  - name: "Run display current interface x"
+    cli_command:
+      command: disp current-configuration interface GigabitEthernet 0/0/{{ ftthport }}
+      provider: "{{ cli }}"
+    register: current_config
+#    delegate_to: localhost
+
+  - debug:
+      var=current_config.stdout_lines  
+
+
+#  - name: "Run clear config on interface test CLI-COMMAND"
+#    cli_command:
+#      commands:
+#        - return
+#        - system-view
+#        - interface GigabitEthernet 0/0/{{ ftthport }}
+#        - description test
+#        - command: clear configuration this
+#          prompt: "Continue? [Y/N] :"
+#          answer: Y
+#      provider: "{{ cli }}"
+#    delegate_to: localhost
+
+
+
+
+
+
+
+
+

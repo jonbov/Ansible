@@ -1,0 +1,40 @@
+
+
+# Note: examples below use the following provider dict to handle
+#       transport and authentication to the node.
+
+
+
+---
+- name: Huawei VRP command test
+  hosts: all
+  connection: local
+  gather_facts: no
+  vars_files:
+   - /etc/ansible/secure/vrp_passwords
+  vars:
+    cli:
+      host: "{{ inventory_hostname }}"
+      port: "{{ ansible_ssh_port }}"
+      username: "{{ vrp_username }}"
+      password: "{{ vrp_password }}"
+      transport: cli
+    dir: configs
+#    file: all_configs.cfg
+
+  tasks:
+
+  - name: "Create directory"
+    file:
+      path: "{{ dir }}"
+      state: directory
+    run_once: true
+    delegate_to: localhost
+
+
+
+  - name: "create SNMP configuration for VRP device"
+    template: 
+       src=vrp_templates/template_snmp.j2 
+       dest={{ dir }}/{{ inventory_hostname }}_SNMP.cfg
+

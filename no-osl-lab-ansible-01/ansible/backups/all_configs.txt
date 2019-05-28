@@ -1,0 +1,1435 @@
+nn-access-sw81.nnsol.no was checked
+nn-access-sw82.nnsol.no was checked
+nn-dist-sw84.nnsol.no was checked
+nn-bng-r1.nnsol.no was checked
+----------DETAILS----------
+### BEGIN nn-access-sw82.nnsol.no
+!Software Version V200R009C00SPC200
+#
+sysname NN-ACCESS-SW82
+#
+FTP server enable
+#
+vcmp role transparent
+#
+vlan batch 10 600 699 2112
+#
+lnp disable
+#
+loopback-detect auto disable
+#
+multicast routing-enable
+#
+authentication-profile name default_authen_profile
+authentication-profile name dot1x_authen_profile
+authentication-profile name mac_authen_profile
+authentication-profile name portal_authen_profile
+authentication-profile name dot1xmac_authen_profile
+authentication-profile name multi_authen_profile
+#
+telnet server enable
+#
+lldp enable
+#
+clock timezone Europe/Oslo add 01:00:00
+#
+clock daylight-saving-time Europe/Oslo repeating 02:00 last Sun Mar 03:00 last Sun Oct 01:00 2000 2099
+#
+dhcp enable
+#
+diffserv domain default
+#
+ip vpn-instance _management_
+ ipv4-family
+  route-distinguisher 666:666
+#
+ip vpn-instance dhcp_client
+ ipv4-family
+  route-distinguisher 10:10
+#
+radius-server template default
+#
+mpls lsr-id 172.20.1.12
+mpls
+#
+mpls l2vpn
+#
+vsi NN-NO-NE20 static
+ pwsignal ldp
+  vsi-id 20101
+  peer 172.20.1.1
+#
+vsi vl2000 static
+ pwsignal ldp
+  vsi-id 20001
+  peer 172.20.1.1
+#
+mpls ldp
+#
+#
+mpls ldp remote-peer nn-no-ne20
+ remote-ip 172.20.1.1
+#
+free-rule-template name default_free_rule
+#
+portal-access-profile name portal_access_profile
+#
+drop-profile default
+#
+aaa
+ authentication-scheme default
+ authentication-scheme radius
+  authentication-mode radius
+ authorization-scheme default
+ accounting-scheme default
+ domain default
+  authentication-scheme default
+ domain default_admin
+  authentication-scheme default
+ local-user admin password irreversible-cipher %^%#J~E"#ngi,@;)`k+LzEPB89n5)|&U)D7oadIY|7VO9a<(-f=9IM+Q0E,AGZ3O%^%#
+ local-user admin service-type http
+ local-user ansible password irreversible-cipher %^%#eD%`CZeon7!39ZSP{Es>.qUuKsMd-2K$BL6<cLARAv8o$n)Z+~b~%w+^t%;~%^%#
+ local-user ansible privilege level 15
+ local-user ansible service-type ssh
+ local-user adminadmin password irreversible-cipher %^%#EyHWGaC3u/N'GvHabCR<[DgP#$o-64(=,NP8jGbY~RD800`C}!-4sD6V5z:<%^%#
+ local-user adminadmin privilege level 15
+ local-user adminadmin ftp-directory flash:
+ local-user adminadmin service-type telnet terminal ssh ftp
+#
+ntp-service ipv6 server disable
+ntp-service unicast-peer 10.14.10.1 vpn-instance _management_ source-interface GigabitEthernet0/0/25
+#
+interface Vlanif1
+#
+interface Vlanif10
+ ip binding vpn-instance dhcp_client
+ ip address dhcp-alloc
+#
+interface Vlanif600
+ ip address 172.20.20.1 255.255.255.0
+ ospf enable 1 area 0.0.0.0
+#
+interface Vlanif699
+ ip address 192.168.99.1 255.255.255.0
+ igmp enable
+#
+interface MEth0/0/1
+ ip address 10.14.10.82 255.255.255.0
+#
+interface GigabitEthernet0/0/1
+ description loop to g0/0/27 - this is access-port side
+ port link-type hybrid
+ qinq vlan-translation enable
+ port hybrid untagged vlan 2112
+ port vlan-stacking untagged stack-vlan 2112 stack-inner-vlan 1101
+ loopback-detect recovery-time 120
+ loopback-detect enable
+ stp disable
+ undo lldp enable
+ port-isolate enable group 1
+ dhcp option82 insert enable
+ dhcp option82 circuit-id format user-defined "Gig0/0/1"
+ dhcp option82 remote-id format user-defined "S5720-EI-2"
+#
+interface GigabitEthernet0/0/2
+ description loop to g0/0/27 - this is access-port side
+ port link-type hybrid
+ qinq vlan-translation enable
+ port hybrid untagged vlan 2112
+ port vlan-stacking untagged stack-vlan 2112 stack-inner-vlan 1102
+ loopback-detect recovery-time 120
+ loopback-detect enable
+ stp disable
+ undo lldp enable
+ port-isolate enable group 1
+ dhcp option82 insert enable
+ dhcp option82 circuit-id format user-defined "Gig0/0/2"
+ dhcp option82 remote-id format user-defined "S5720-EI-2"
+#
+interface GigabitEthernet0/0/3
+ description loop to g0/0/27 - this is access-port side
+ port link-type hybrid
+ qinq vlan-translation enable
+ port hybrid untagged vlan 2112
+ port vlan-stacking untagged stack-vlan 2112 stack-inner-vlan 1103
+ loopback-detect recovery-time 120
+ loopback-detect enable
+ stp disable
+ undo lldp enable
+ port-isolate enable group 1
+ dhcp option82 insert enable
+ dhcp option82 circuit-id format user-defined "Gig0/0/3"
+ dhcp option82 remote-id format user-defined "S5720-EI-2"
+#
+interface GigabitEthernet0/0/4
+ description loop to g0/0/27 - this is access-port side
+ port link-type hybrid
+ qinq vlan-translation enable
+ port hybrid untagged vlan 2112
+ port vlan-stacking untagged stack-vlan 2112 stack-inner-vlan 1104
+ loopback-detect recovery-time 120
+ loopback-detect enable
+ stp disable
+ undo lldp enable
+ port-isolate enable group 1
+ dhcp option82 insert enable
+ dhcp option82 circuit-id format user-defined "Gig0/0/4"
+ dhcp option82 remote-id format user-defined "S5720-EI-2"
+#
+interface GigabitEthernet0/0/5
+ port link-type hybrid
+#
+interface GigabitEthernet0/0/6
+ port link-type hybrid
+#
+interface GigabitEthernet0/0/7
+ shutdown
+#
+interface GigabitEthernet0/0/8
+ port link-type hybrid
+#
+interface GigabitEthernet0/0/9
+ port link-type hybrid
+#
+interface GigabitEthernet0/0/10
+ port link-type hybrid
+#
+interface GigabitEthernet0/0/11
+#
+interface GigabitEthernet0/0/12
+#
+interface GigabitEthernet0/0/13
+#
+interface GigabitEthernet0/0/14
+#
+interface GigabitEthernet0/0/15
+#
+interface GigabitEthernet0/0/16
+#
+interface GigabitEthernet0/0/17
+#
+interface GigabitEthernet0/0/18
+#
+interface GigabitEthernet0/0/19
+#
+interface GigabitEthernet0/0/20
+#
+interface GigabitEthernet0/0/21
+#
+interface GigabitEthernet0/0/22
+#
+interface GigabitEthernet0/0/23
+#
+interface GigabitEthernet0/0/24
+#
+interface GigabitEthernet0/0/25
+ undo portswitch
+ description no-osl-lab-sw-54; 1/42; Management
+ ip binding vpn-instance _management_
+ ip address 10.14.10.82 255.255.255.0
+#
+interface GigabitEthernet0/0/26
+ description loop to g0/0/27 - this is access-port side
+ port link-type hybrid
+ qinq vlan-translation enable
+ port hybrid untagged vlan 2112
+ port vlan-stacking untagged stack-vlan 2112 stack-inner-vlan 1126
+ loopback-detect recovery-time 120
+ loopback-detect enable
+ stp disable
+ undo lldp enable
+ port-isolate enable group 1
+ dhcp option82 insert enable
+ dhcp option82 circuit-id format user-defined "Gig0/0/26"
+ dhcp option82 remote-id format user-defined "S5720-EI-2"
+#
+interface GigabitEthernet0/0/27
+ description loop to g0/0/26 - this is DHCP Client side
+ port link-type access
+ port default vlan 10
+#
+interface GigabitEthernet0/0/28
+ undo portswitch
+ description NN-NO-S5720-EI-1; Gig 0/0/28
+ mtu 9216
+ ip address 172.21.1.6 255.255.255.252
+ pim sm
+ ospf network-type p2p
+ ospf enable 1 area 0.0.0.0
+ mpls
+ mpls ldp
+#
+interface XGigabitEthernet0/0/1
+ port link-type hybrid
+ port hybrid pvid vlan 600
+ port hybrid tagged vlan 699 2112
+ port hybrid untagged vlan 600
+#
+interface XGigabitEthernet0/0/2
+#
+interface XGigabitEthernet0/0/3
+#
+interface XGigabitEthernet0/0/4
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 172.20.1.12 255.255.255.255
+#
+ospf 1
+ silent-interface Vlanif600
+ area 0.0.0.0
+  network 172.20.1.12 0.0.0.0
+#
+pim
+ static-rp 172.20.1.1
+#
+ip route-static 0.0.0.0 0.0.0.0 10.14.10.1
+ip route-static vpn-instance _management_ 0.0.0.0 0.0.0.0 10.14.10.1
+#
+stelnet server enable
+ssh user adminadmin
+ssh user adminadmin authentication-type all
+ssh user adminadmin service-type all
+ssh user ansible
+ssh user ansible authentication-type all
+ssh user ansible service-type all
+#
+user-interface con 0
+ idle-timeout 60 0
+user-interface vty 0 4
+ authentication-mode aaa
+ idle-timeout 60 0
+ protocol inbound all
+user-interface vty 16 20
+#
+dot1x-access-profile name dot1x_access_profile
+#
+mac-access-profile name mac_access_profile
+#
+return
+### END nn-access-sw82.nnsol.no
+### BEGIN nn-access-sw81.nnsol.no
+!Software Version V200R009C00SPC200
+#
+sysname NN-ACCESS-SW81
+#
+FTP server enable
+#
+vcmp role transparent
+#
+vlan batch 10 600 699 2111
+#
+loopback-detect auto disable
+#
+multicast routing-enable
+#
+authentication-profile name default_authen_profile
+authentication-profile name dot1x_authen_profile
+authentication-profile name mac_authen_profile
+authentication-profile name portal_authen_profile
+authentication-profile name dot1xmac_authen_profile
+authentication-profile name multi_authen_profile
+#
+igmp-snooping enable
+#
+telnet server enable
+#
+lldp enable
+#
+clock timezone Europe/Oslo add 01:00:00
+#
+clock daylight-saving-time Europe/Oslo repeating 02:00 last Sun Mar 03:00 last Sun Oct 01:00 2000 2099
+#
+dhcp enable
+#
+dhcp snooping enable
+#
+diffserv domain default
+#
+ip vpn-instance _management_
+ ipv4-family
+  route-distinguisher 666:666
+#
+ip vpn-instance dhcp_client
+ ipv4-family
+  route-distinguisher 10:10
+#
+radius-server template default
+#
+acl number 2000  
+ rule 10 permit source 1.1.1.1 0 
+ rule 20 permit source 2.2.2.2 0 
+ rule 30 permit source 3.3.3.3 0 
+ rule 40 permit source 4.4.4.4 0 
+ rule 50 permit source 5.5.5.5 0 
+acl number 2001  
+ rule 10 permit source 1.1.1.1 0 
+ rule 20 permit source 2.2.2.2 0 
+ rule 30 permit source 3.3.3.3 0 
+ rule 40 permit source 4.4.4.4 0 
+#
+free-rule-template name default_free_rule
+#
+portal-access-profile name portal_access_profile
+#
+drop-profile default
+#
+vlan 699
+ igmp-snooping enable
+#
+aaa
+ authentication-scheme default
+ authentication-scheme radius
+  authentication-mode radius
+ authorization-scheme default
+ accounting-scheme default
+ domain default
+  authentication-scheme default
+ domain default_admin
+  authentication-scheme default
+ local-user admin password irreversible-cipher %^%#K"::'KgF;':3mp>a5njI,PbHX}MIg~a~{.1!H/)F7plqY"JLW/\9us=RSdJ1%^%#
+ local-user admin service-type http
+ local-user ansible password irreversible-cipher %^%#eD%`CZeon7!39ZSP{Es>.qUuKsMd-2K$BL6<cLARAv8o$n)Z+~b~%w+^t%;~%^%#
+ local-user ansible privilege level 15
+ local-user ansible service-type ssh
+ local-user adminadmin password irreversible-cipher %^%#EyHWGaC3u/N'GvHabCR<[DgP#$o-64(=,NP8jGbY~RD800`C}!-4sD6V5z:<%^%#
+ local-user adminadmin privilege level 15
+ local-user adminadmin ftp-directory flash:
+ local-user adminadmin service-type telnet terminal ssh ftp
+#
+ntp-service ipv6 server disable
+ntp-service unicast-peer 10.14.10.1 vpn-instance _management_ source-interface GigabitEthernet0/0/25
+#
+interface Vlanif1
+#
+interface Vlanif10
+ ip binding vpn-instance dhcp_client
+ ip address dhcp-alloc
+#
+interface Vlanif600
+ description access management
+ ip address 172.16.2.11 255.255.255.0
+#
+interface MEth0/0/1
+ ip address 10.14.10.81 255.255.255.0
+#
+interface GigabitEthernet0/0/1
+ description loop to g0/0/27 - this is access-port side
+ port link-type hybrid
+ qinq vlan-translation enable
+ port hybrid untagged vlan 2111
+ port vlan-stacking untagged stack-vlan 2111 stack-inner-vlan 1101
+ loopback-detect recovery-time 120
+ loopback-detect enable
+ stp disable
+ undo lldp enable
+ port-isolate enable group 1
+ dhcp option82 insert enable
+ dhcp option82 circuit-id format user-defined "Gig0/0/1"
+ dhcp option82 remote-id format user-defined "S5720-EI-1"
+#
+interface GigabitEthernet0/0/2
+ description loop to g0/0/27 - this is access-port side
+ port link-type hybrid
+ qinq vlan-translation enable
+ port hybrid untagged vlan 2111
+ port vlan-stacking untagged stack-vlan 2111 stack-inner-vlan 1102
+ loopback-detect recovery-time 120
+ loopback-detect enable
+ stp disable
+ undo lldp enable
+ port-isolate enable group 1
+ dhcp option82 insert enable
+ dhcp option82 circuit-id format user-defined "Gig0/0/2"
+ dhcp option82 remote-id format user-defined "S5720-EI-1"
+#
+interface GigabitEthernet0/0/3
+ description loop to g0/0/27 - this is access-port side
+ port link-type hybrid
+ qinq vlan-translation enable
+ port hybrid untagged vlan 2111
+ port vlan-stacking untagged stack-vlan 2111 stack-inner-vlan 1103
+ loopback-detect recovery-time 120
+ loopback-detect enable
+ stp disable
+ undo lldp enable
+ port-isolate enable group 1
+ dhcp option82 insert enable
+ dhcp option82 circuit-id format user-defined "Gig0/0/3"
+ dhcp option82 remote-id format user-defined "S5720-EI-1"
+#
+interface GigabitEthernet0/0/4
+ description loop to g0/0/27 - this is access-port side
+ port link-type hybrid
+ qinq vlan-translation enable
+ port hybrid untagged vlan 2111
+ port vlan-stacking untagged stack-vlan 2111 stack-inner-vlan 1104
+ loopback-detect recovery-time 120
+ loopback-detect enable
+ stp disable
+ undo lldp enable
+ port-isolate enable group 1
+ dhcp option82 insert enable
+ dhcp option82 circuit-id format user-defined "Gig0/0/4"
+ dhcp option82 remote-id format user-defined "S5720-EI-1"
+#
+interface GigabitEthernet0/0/5
+ undo portswitch
+#
+interface GigabitEthernet0/0/5.10
+#
+interface GigabitEthernet0/0/6
+#
+interface GigabitEthernet0/0/7
+#
+interface GigabitEthernet0/0/8
+#
+interface GigabitEthernet0/0/9
+#
+interface GigabitEthernet0/0/10
+#
+interface GigabitEthernet0/0/11
+#
+interface GigabitEthernet0/0/12
+#
+interface GigabitEthernet0/0/13
+#
+interface GigabitEthernet0/0/14
+#
+interface GigabitEthernet0/0/15
+#
+interface GigabitEthernet0/0/16
+#
+interface GigabitEthernet0/0/17
+#
+interface GigabitEthernet0/0/18
+#
+interface GigabitEthernet0/0/19
+#
+interface GigabitEthernet0/0/20
+#
+interface GigabitEthernet0/0/21
+ description loop to g0/0/27 - this is access-port side
+ port link-type hybrid
+ qinq vlan-translation enable
+ port hybrid untagged vlan 2111
+ port vlan-stacking untagged stack-vlan 2111 stack-inner-vlan 1101
+ loopback-detect recovery-time 120
+ loopback-detect enable
+ stp disable
+ undo lldp enable
+ port-isolate enable group 1
+ dhcp option82 insert enable
+ dhcp option82 circuit-id format user-defined "Gig0/0/1"
+ dhcp option82 remote-id format user-defined "S5720-EI-1"
+#
+interface GigabitEthernet0/0/22
+#
+interface GigabitEthernet0/0/23
+#
+interface GigabitEthernet0/0/24
+#
+interface GigabitEthernet0/0/25
+ undo portswitch
+ description no-osl-lab-sw-54; 1/41; Management
+ ip binding vpn-instance _management_
+ ip address 10.14.10.81 255.255.255.0
+#
+interface GigabitEthernet0/0/26
+ description loop to g0/0/27 - this is access-port side
+ port link-type hybrid
+ qinq vlan-translation enable
+ port hybrid untagged vlan 2111
+ port vlan-stacking untagged stack-vlan 2111 stack-inner-vlan 1126
+ loopback-detect recovery-time 120
+ loopback-detect enable
+ stp disable
+ undo lldp enable
+ port-isolate enable group 1
+ dhcp option82 insert enable
+ dhcp option82 circuit-id format user-defined "Gig0/0/26"
+ dhcp option82 remote-id format user-defined "S5720-EI-1"
+#
+interface GigabitEthernet0/0/27
+ description loop to g0/0/26 - this is DHCP Client side
+ port link-type access
+ port default vlan 10
+#
+interface GigabitEthernet0/0/28
+#
+interface XGigabitEthernet0/0/1
+ description S6720-26Q-EI; Xg0/0/3
+ port link-type trunk
+ port trunk pvid vlan 600
+ port trunk allow-pass vlan 699 2111
+#
+interface XGigabitEthernet0/0/2
+#
+interface XGigabitEthernet0/0/3
+#
+interface XGigabitEthernet0/0/4
+#
+interface NULL0
+#
+ip route-static 0.0.0.0 0.0.0.0 172.16.2.1 description management
+ip route-static vpn-instance _management_ 0.0.0.0 0.0.0.0 10.14.10.1
+#
+snmp-agent
+snmp-agent local-engineid 800007DB03C0BFC0A9E350
+snmp-agent community read cipher %^%#.x_#@otnm1gRiQ<BKYXHn"f5SC=Jv6|z(e&kj8o&52o9SH{RT9F:yy(&]*}L;|XW6L+j@1Ud$DFKedB0%^%#
+snmp-agent community complexity-check disable
+snmp-agent sys-info contact admin@netnordic.com
+snmp-agent sys-info location LAB_VV2B
+snmp-agent sys-info version v2c
+undo snmp-agent sys-info version v3
+#
+stelnet server enable
+scp server enable
+ssh user adminadmin
+ssh user adminadmin authentication-type all
+ssh user adminadmin service-type all
+ssh user ansible
+ssh user ansible authentication-type all
+ssh user ansible service-type all
+ssh client first-time enable
+#
+user-interface con 0
+ idle-timeout 60 0
+user-interface vty 0 4
+ authentication-mode aaa
+ idle-timeout 60 0
+ protocol inbound all
+user-interface vty 16 20
+#
+dot1x-access-profile name dot1x_access_profile
+#
+mac-access-profile name mac_access_profile
+#
+return
+### END nn-access-sw81.nnsol.no
+### BEGIN nn-dist-sw83.nnsol.no
+!Software Version V200R012C00SPC500
+#
+sysname NN-DIST-SW83
+#
+vcmp role silent
+#
+vlan batch 600 699 2111
+#
+lnp disable
+#
+multicast routing-enable
+#
+authentication-profile name default_authen_profile
+authentication-profile name dot1x_authen_profile
+authentication-profile name mac_authen_profile
+authentication-profile name portal_authen_profile
+authentication-profile name dot1xmac_authen_profile
+authentication-profile name multi_authen_profile
+#
+telnet server enable
+#
+clock timezone Europe/Oslo add 01:00:00
+#
+clock daylight-saving-time Europe/Oslo repeating 02:00 last Sun Mar 03:00 last Sun Oct 01:00 2000 2099
+#
+diffserv domain default
+#
+ip vpn-instance _management_
+ ipv4-family
+  route-distinguisher 666:666
+#
+evpn vpn-instance EVPN bd-mode
+ route-distinguisher 1:1
+ vpn-target 1:1 export-extcommunity
+ vpn-target 1:1 import-extcommunity
+#
+radius-server template default
+#
+mpls lsr-id 172.20.1.3
+mpls
+#
+mpls l2vpn
+#
+vsi cust2001
+ pwsignal ldp
+  vsi-id 20010001
+  peer 172.20.1.2
+#
+vsi cust2002
+ pwsignal ldp
+  vsi-id 20020001
+  peer 172.20.1.2
+#
+vsi cust2003
+ pwsignal ldp
+  vsi-id 2003
+  peer 172.20.1.2
+#
+vsi cust2111
+ pwsignal ldp
+  vsi-id 21110001
+  peer 172.20.1.1
+#
+pw-template control-word
+ control-word
+#
+mpls ldp
+#
+#
+mpls ldp remote-peer dist1
+ remote-ip 172.20.1.2
+#
+mpls ldp remote-peer ne20
+ remote-ip 172.20.1.1
+#
+pki realm default
+#
+free-rule-template name default_free_rule
+#
+portal-access-profile name portal_access_profile
+#
+drop-profile default
+#
+vlan 600
+ name access-mgmt
+#
+aaa
+ authentication-scheme default
+ authentication-scheme radius
+  authentication-mode radius
+ authorization-scheme default
+ accounting-scheme default
+ domain default
+  authentication-scheme radius
+  radius-server default
+ domain default_admin
+  authentication-scheme default
+ local-user www password irreversible-cipher $1a$+}DvMcoh^K$qqWw->$#~;ggH{8#ORA-lgGA)b+c9!$C3LFy(E@J$
+ local-user www privilege level 15
+ local-user www service-type telnet terminal ssh ftp http
+ local-user admin password irreversible-cipher $1a$kYk'U'*jsD$ii:J8p_aM(MZyO7nQ>e3u_(\FU`^;MVex<%z;%D)$
+ local-user admin privilege level 15
+ local-user admin ftp-directory flash:/
+ local-user admin service-type telnet terminal ssh ftp
+ local-user ansible password irreversible-cipher %^%#eD%`CZeon7!39ZSP{Es>.qUuKsMd-2K$BL6<cLARAv8o$n)Z+~b~%w+^t%;~%^%#
+ local-user ansible privilege level 15
+ local-user ansible service-type ssh
+ local-user adminadmin password irreversible-cipher %^%#";G-T+k''WClUK!)h_=T~7;jNs~z+5mp45DWwPJ$Kcc<%%q($=#u-zId<Z~0%^%#
+ local-user adminadmin privilege level 15
+ local-user adminadmin service-type telnet terminal ssh ftp
+#
+ntp-service ipv6 server disable
+ntp-service unicast-peer 10.14.10.1 vpn-instance _management_ source-interface XGigabitEthernet0/0/23
+#
+bridge-domain 10
+ vxlan vni 2010
+bridge-domain 16777215
+ vxlan vni 16777215
+#
+interface Vlanif1
+#
+interface Vlanif600
+ description "Access management - ring 2"
+ ip address 172.16.2.1 255.255.255.0
+#
+interface Vlanif699
+ description IGMP interface
+ ip address 192.168.99.1 255.255.255.0
+ igmp enable
+#
+interface Vlanif2001
+ l2 binding vsi cust2001
+#
+interface Vlanif2002
+ l2 binding vsi cust2002
+#
+interface Vlanif2003
+ l2 binding vsi cust2003
+#
+interface Vlanif2111
+ l2 binding vsi cust2111
+#
+interface MEth0/0/1
+#
+interface XGigabitEthernet0/0/1
+ description NE20; 0/1/1
+#
+interface XGigabitEthernet0/0/2
+ undo portswitch
+ description S6720-30C-EI; Xg0/0/2
+ ip address 172.21.1.6 255.255.255.252
+ pim sm
+ ospf network-type p2p
+ ospf enable 1 area 0.0.0.0
+ mpls
+ mpls ldp
+#
+interface XGigabitEthernet0/0/3
+ description NN-NO-S5720-EI-1; Xg0/0/1
+ port link-type hybrid
+ port hybrid pvid vlan 600
+ port hybrid tagged vlan 699 2111
+ port hybrid untagged vlan 600
+#
+interface XGigabitEthernet0/0/4
+#
+interface XGigabitEthernet0/0/5
+#
+interface XGigabitEthernet0/0/6
+#
+interface XGigabitEthernet0/0/7
+#
+interface XGigabitEthernet0/0/8
+#
+interface XGigabitEthernet0/0/9
+#
+interface XGigabitEthernet0/0/10
+#
+interface XGigabitEthernet0/0/11
+#
+interface XGigabitEthernet0/0/12
+#
+interface XGigabitEthernet0/0/13
+#
+interface XGigabitEthernet0/0/14
+#
+interface XGigabitEthernet0/0/15
+#
+interface XGigabitEthernet0/0/16
+#
+interface XGigabitEthernet0/0/17
+#
+interface XGigabitEthernet0/0/18
+#
+interface XGigabitEthernet0/0/19
+#
+interface XGigabitEthernet0/0/20
+#
+interface XGigabitEthernet0/0/21
+#
+interface XGigabitEthernet0/0/22
+#
+interface XGigabitEthernet0/0/23
+ undo portswitch
+ description no-osl-lab-sw-54; 1/43; Management
+ ip binding vpn-instance _management_
+ ip address 10.14.10.83 255.255.255.0
+#
+interface XGigabitEthernet0/0/24
+#
+interface 40GE0/0/1
+#
+interface 40GE0/0/2
+#
+interface NULL0
+#
+interface LoopBack0
+ ip address 172.20.1.3 255.255.255.255
+#
+interface Nve1
+ source 172.20.1.3
+ vni 2010 head-end peer-list 172.20.1.2
+ vni 16777215 head-end peer-list 172.20.2.2
+#
+bgp 65333
+ peer 172.20.1.2 as-number 65333
+ peer 172.20.1.2 connect-interface LoopBack0
+ #
+ ipv4-family unicast
+  undo synchronization
+  peer 172.20.1.2 enable
+ #
+ l2vpn-family evpn
+  policy vpn-target
+  peer 172.20.1.2 enable
+#
+ospf 1
+ area 0.0.0.0
+  network 172.20.1.3 0.0.0.0
+#
+pim
+ static-rp 172.20.1.1
+#
+ip route-static vpn-instance _management_ 0.0.0.0 0.0.0.0 10.14.10.1
+#
+stelnet server enable
+ssh user admin
+ssh user admin authentication-type all
+ssh user admin service-type all
+ssh user adminadmin
+ssh user adminadmin authentication-type all
+ssh user adminadmin service-type all
+ssh user ansible
+ssh user ansible authentication-type all
+ssh user ansible service-type all
+#
+user-interface con 0
+ authentication-mode none
+ idle-timeout 60 0
+user-interface vty 0 4
+ authentication-mode aaa
+ idle-timeout 60 0
+ protocol inbound all
+user-interface vty 16 20
+ authentication-mode aaa
+ protocol inbound all
+#
+dot1x-access-profile name dot1x_access_profile
+#
+mac-access-profile name mac_access_profile
+#
+ops
+#
+return
+### END nn-dist-sw83.nnsol.no
+### BEGIN nn-bng-r1.nnsol.no
+!Software Version V800R009C10SPC200
+!Last configuration was updated at 2019-03-20 15:51:29+01:00 by adminadmin
+!Last configuration was saved at 2019-03-06 08:54:50+01:00 by adminadmin
+#
+clock timezone Europe/Oslo add 01:00:00
+clock daylight-saving-time Europe/Oslo repeating 02:00 last Sun Mar 03:00 last Sun Oct 01:00 
+#
+sysname NN-BNG-R1
+#
+set neid 53e4ee
+#
+FTP server enable
+#
+fan speed auto
+#
+undo user-security-policy enable
+#
+service-template template-default0
+#
+service-template template-default1
+#
+service-template template-default2
+#
+service-template template-default3
+#
+service-template template-default4
+#
+snmp-agent trap type base-trap
+#
+ntp-service ipv6 server disable
+ntp-service unicast-peer 10.14.10.1 vpn-instance __LOCAL_OAM_VPN__ source-interface GigabitEthernet0/0/0
+#
+slot 5 
+ mirror to observe-index 1
+#
+vlan batch 1111 2000 to 2001
+#
+ip pool-group inet_bas_pools bas
+ ip-pool local_pool_2
+#
+dot1x-template 1
+#
+multicast routing-enable
+#
+undo telnet ipv6 server enable
+#
+diffserv domain default
+#
+diffserv domain 5p3d
+#
+flow-queue 15M
+ queue be wfq weight 10 shaping 16128 
+ queue af4 pq 
+ queue ef pq shaping 2048 
+#
+qos-profile BAS_default_profile
+ user-queue cir 10240 pir 1024000 
+#
+qos-profile 15M
+ user-queue cir 2048 pir 16128 flow-queue 15M 
+#
+soc
+#
+evpn vpn-instance EVPN
+ route-distinguisher 65333:1
+ vpn-target 65333:1 export-extcommunity
+ vpn-target 65333:1 import-extcommunity
+#
+ip vpn-instance TEST-EVPN
+ ipv4-family
+  route-distinguisher 44:44
+#
+ip vpn-instance TESTVPN
+ ipv4-family
+  route-distinguisher 123:123
+#
+ip vpn-instance __LOCAL_OAM_VPN__
+ ipv4-family
+#
+ip vpn-instance cust2001
+ ipv4-family
+  route-distinguisher 2001:2001
+#
+service-location 1
+ location slot 5
+#
+service-instance-group group1
+ service-location 1
+#
+nat instance nat1 id 1
+ service-instance-group group1
+#
+bfd
+#
+mpls lsr-id 172.20.1.1
+#
+mpls
+#
+mpls l2vpn
+#
+vsi 601_MC
+ pwsignal ldp
+  vsi-id 601
+  peer 172.20.1.2 
+#
+vsi NN-NO-S5720-EI-2 static
+ pwsignal ldp
+  vsi-id 20112
+  peer 172.20.1.12 
+#
+vsi cust2111
+ pwsignal ldp
+  vsi-id 21110001
+  peer 172.20.1.3 
+#
+vsi vl2000 static
+ pwsignal ldp
+  vsi-id 20001
+  peer 172.20.1.12 
+#
+mpls ldp
+ #
+ ipv4-family
+#
+mpls ldp remote-peer 172.20.1.3
+ remote-ip 172.20.1.3
+#
+mpls ldp remote-peer 172.20.1.2
+ remote-ip 172.20.1.2
+#
+ip pool local_pool_1 bas local
+ gateway 172.31.1.1 255.255.255.0
+ section 0 172.31.1.5 172.31.1.250 
+ lease 0 0 5
+#
+ip pool local_pool_2 bas local
+ gateway 80.1.1.1 255.255.255.0
+ section 1 80.1.1.220 80.1.1.229 
+ dns-server 8.8.8.8 8.8.4.4
+ lease 0 0 5
+#
+ip pool static bas local
+ gateway 10.10.10.1 255.255.255.0
+ section 0 10.10.10.10 10.10.10.99 
+ excluded-ip-address 10.10.10.88 
+ dns-server 8.8.8.8
+#
+acl number 3002
+ rule 5 permit ip source 192.168.1.0 0.0.0.255
+#
+acl name inet_deny_rfc1918 advance
+ rule 10 deny ip destination 10.0.0.0 0.255.255.255
+ rule 20 deny ip destination 172.16.0.0 0.7.255.255
+ rule 30 deny ip destination 192.168.0.0 0.0.255.255
+ rule 100 permit ip
+#
+aaa
+ default-user-name include ip-address . 
+ local-user root password irreversible-cipher +Hv$!xKCa#UY6\$GWJ!N4[QH.O/'HIa@AoURN`>;R"Z8PtIa\3AZAy6Sa60(C6GCN
+ local-user root service-type ssh
+ local-user root level 3
+ local-user root state block fail-times 3 interval 5
+ local-user root expire 2000-01-01
+ local-user adminadmin password irreversible-cipher $1c$_^2_<Q:+{)$l-/lVV<jPJT7U2Q[#NwG"!#@@`wS8Guvj`>_n|<O$
+ local-user adminadmin service-type ftp terminal telnet ssh
+ local-user adminadmin level 3
+ local-user adminadmin state block fail-times 3 interval 5
+ local-user adminadmin ftp-directory cfcard:
+ local-user ansible password irreversible-cipher $1c$mT-J/xa0]($!FWYN9ROc*mc[MJwsgDHg\Fb!@0y'<o)cZ@F.k5W$
+ local-user ansible service-type ssh
+ local-user ansible level 3
+ local-user ansible state block fail-times 3 interval 5
+ #
+ authentication-scheme default0
+ #
+ authentication-scheme default1
+ #
+ authentication-scheme default
+  authentication-mode local radius
+ #
+ authentication-scheme auth1
+  authentication-mode none
+ #
+ authentication-scheme bas_auth1
+  authentication-mode none
+ #
+ authorization-scheme default
+ #
+ accounting-scheme default0
+ #
+ accounting-scheme default1
+ #
+ accounting-scheme bas_acct_1
+  accounting-mode none
+ #
+ domain default0
+ #
+ domain default1
+ #
+ domain default_admin
+ #
+ domain netnordic.lab
+  authentication-scheme bas_auth1
+  accounting-scheme bas_acct_1
+  ip-pool local_pool_2
+  access-user dhcp auto-save enable
+#
+interface Vlanif2001
+ ip binding vpn-instance cust2001
+#
+interface Eth-Trunk10
+ description S6720-30C-EI; Xg0/0/4
+ ip address 172.21.1.34 255.255.255.252
+ ospf network-type p2p
+ ospf enable 1 area 0.0.0.0
+ mode lacp-static
+ mpls
+ mpls ldp
+#
+interface Virtual-Template0
+ ppp authentication-mode auto
+#
+interface GigabitEthernet0/0/0
+ speed auto
+ duplex auto
+ description no-osl-lab-sw-54; 1/40; Management
+ undo shutdown
+ ip binding vpn-instance __LOCAL_OAM_VPN__
+ ip address 10.14.10.80 255.255.255.0
+#
+interface GigabitEthernet0/1/0
+ undo shutdown
+ eth-trunk 10
+ lacp priority 20
+ undo dcn
+#
+interface GigabitEthernet0/1/1
+ description 6720-30c 84 x0/0/5
+ undo shutdown
+ eth-trunk 10
+ undo dcn
+#
+interface GigabitEthernet0/1/2
+ undo shutdown
+ eth-trunk 10
+ undo dcn
+#
+interface GigabitEthernet0/1/3
+ undo shutdown
+ undo dcn
+#
+interface GigabitEthernet0/1/4
+ undo shutdown
+ undo dcn
+#
+interface GigabitEthernet0/1/4.2001
+ description old BNG interface
+ user-vlan 1101 1148 qinq 2003 2010
+ user-vlan 1211 qinq 2005
+ bas
+ #
+  access-type layer2-subscriber default-domain authentication netnordic.lab
+  client-option82
+  client-option60
+  option82-relay-mode include allvalue 
+  option82-identify include static-user
+  authentication-method bind
+  qos-profile BAS_default_profile identifier option82  
+  arp-proxy
+ #
+#
+interface GigabitEthernet0/1/5
+ speed 1000
+ duplex full
+ undo shutdown
+ undo dcn
+#
+interface GigabitEthernet0/1/5.10
+ vlan-type dot1q 10
+ ip address 192.168.10.1 255.255.255.252
+ ospf enable 1 area 0.0.0.0
+ mpls
+ mpls ldp
+#
+interface GigabitEthernet0/1/6
+ speed 1000
+ duplex full
+ undo shutdown
+ undo dcn
+#
+interface GigabitEthernet0/1/6.100
+ vlan-type dot1q 100
+ ip binding vpn-instance TEST-EVPN
+ ip address 222.222.222.2 255.255.255.0
+#
+interface GigabitEthernet0/1/6.200
+ vlan-type dot1q 200
+ evpn binding vpn-instance EVPN
+ bas
+#
+interface GigabitEthernet0/1/6.202
+ user-vlan 200 qinq 200
+#
+interface GigabitEthernet0/1/7
+#
+interface GigabitEthernet0/1/8
+#
+interface LoopBack0
+ ip address 172.20.1.1 255.255.255.255
+#
+interface LoopBack1
+ ip address 1.1.1.1 255.255.255.255
+#
+interface Virtual-Ethernet0/1/100
+ ve-group 100 l3-access
+#
+interface Virtual-Ethernet0/1/100.1
+ description BAS interface
+ user-vlan 1101 1148 qinq 2111 2112
+ bas
+ #
+  access-type layer2-subscriber default-domain authentication netnordic.lab
+  client-option82
+  client-option60
+  option82-relay-mode include allvalue 
+  option82-identify include static-user
+  authentication-method bind
+  qos-profile BAS_default_profile identifier option82  
+  arp-proxy
+ #
+#
+interface Virtual-Ethernet0/1/200
+ ve-group 100 l2-terminate
+#
+interface Virtual-Ethernet0/1/200.2111
+ vlan-type dot1q 2111
+ description SW2111
+ l2 binding vsi cust2111
+#
+interface Virtual-Ethernet0/1/200.2112
+ vlan-type dot1q 2112
+ description SW2112
+ mpls l2vc 172.20.1.2 2112
+#
+interface NULL0
+#
+bgp 65333
+ peer 172.20.1.10 as-number 65333
+ peer 172.20.1.10 connect-interface LoopBack0
+ peer 172.20.1.10 bfd enable
+ #
+ ipv4-family unicast
+  undo synchronization
+  peer 172.20.1.10 enable
+ #
+ ipv4-family vpn-instance __LOCAL_OAM_VPN__
+ #
+ l2vpn-family evpn
+  undo policy vpn-target
+  peer 172.20.1.10 enable
+  peer 172.20.1.10 reflect-client
+#
+ospf 1
+ area 0.0.0.0
+  network 172.20.1.1 0.0.0.0
+#
+undo dcn
+#
+pim
+ auto-rp listening enable
+#
+ip route-static vpn-instance __LOCAL_OAM_VPN__ 0.0.0.0 0.0.0.0 10.14.10.1
+#
+snmp-agent
+snmp-agent local-engineid 800007DB03F02FA7415089
+snmp-agent community read cipher %^%#p/t;;2Sm\Ji9rh%AwRS1D/gT<1P(q(hv"FNgs,';5O+]9zLeT9E.mEFeCn]TDbq^7;!)K5mC9q"b1;p"%^%#
+#
+snmp-agent sys-info contact admin@netnordic.com
+snmp-agent sys-info location LAB_VV2B
+snmp-agent sys-info version v2c
+undo snmp-agent sys-info version v3
+snmp-agent community complexity-check disable
+#
+lldp enable
+#
+stelnet ipv4 server enable
+sftp ipv4 server enable
+snetconf ipv4 server enable
+stelnet ipv6 server enable
+sftp ipv6 server enable
+snetconf ipv6 server enable
+ssh user adminadmin
+ssh user adminadmin authentication-type all
+ssh user adminadmin service-type all
+ssh user adminadmin sftp-directory cfcard:
+ssh user ansible
+ssh user ansible authentication-type all
+ssh user ansible service-type all
+ssh user root
+ssh user root authentication-type password
+ssh user root service-type snetconf stelnet
+ssh authorization-type default aaa
+#
+ssh server cipher aes256_ctr aes128_ctr aes256_cbc aes128_cbc 3des_cbc
+ssh server hmac sha2_256_96 sha2_256 sha1_96
+ssh server key-exchange dh_group_exchange_sha256 dh_group_exchange_sha1 ecdh_sha2_nistp256 ecdh_sha2_nistp384 ecdh_sha2_nistp521 sm2_kep
+#
+user-interface con 0
+ authentication-mode password
+ set authentication password cipher $1c$'Z6'T&@y%Y$#{n/(T)Lf~K6&y;GB]+S8yF8V6*IH/5N0Z9|-EO@$
+#
+user-interface vty 0 4
+ authentication-mode aaa
+ idle-timeout 60 0
+#
+local-aaa-server
+ user 10.10.10.88@netnordic.lab password cipher %^%#3W@a%~)J8I-8*)*sD@]E7.KKLN7".2{tE64j"S|G%^%# authentication-type - block fail-times 3 interval 5
+#
+admin
+ virtual-system TestVS pvmb slot 6 7
+  assign interface GigabitEthernet0/1/7
+  assign interface GigabitEthernet0/1/8
+#
+evpn source-address 172.20.1.1
+#
+l2tp-group default-lac
+ tunnel name HUAWEI
+#
+l2tp-group default-lns
+ tunnel name HUAWEI
+#
+
+# Running configuration for virtual system TestVS
+switch virtual-system TestVS
+#
+service-template template-default0
+#
+service-template template-default1
+#
+service-template template-default2
+#
+service-template template-default3
+#
+service-template template-default4
+#
+evpn vpn-instance EVPN
+ route-distinguisher 65333:1
+ vpn-target 65333:1 export-extcommunity
+ vpn-target 65333:1 import-extcommunity
+#
+ip vpn-instance TEST-EVPN
+ ipv4-family
+  route-distinguisher 222:2
+#
+bfd
+#
+mpls lsr-id 172.20.1.10
+#
+mpls
+#
+mpls l2vpn
+#
+vsi EVPN bd-mode
+#
+mpls ldp
+ #
+ ipv4-family
+#
+aaa
+ #
+ authentication-scheme default0
+ #
+ authentication-scheme default1
+ #
+ authentication-scheme default
+  authentication-mode local
+ #
+ authorization-scheme default
+ #
+ accounting-scheme default0
+ #
+ accounting-scheme default1
+ #
+ domain default0
+ #
+ domain default1
+ #
+ domain default_admin
+#
+interface GigabitEthernet0/1/7
+ speed 1000
+ duplex full
+ undo shutdown
+ set flow-stat interval 10
+#
+interface GigabitEthernet0/1/7.10
+ vlan-type dot1q 10
+ ip address 192.168.10.2 255.255.255.252
+ ospf enable 1 area 0.0.0.0
+ mpls
+ mpls ldp
+#
+interface GigabitEthernet0/1/7.100
+#
+interface GigabitEthernet0/1/8
+ speed 1000
+ duplex full
+ undo shutdown
+#
+interface GigabitEthernet0/1/8.100
+ vlan-type dot1q 100
+ evpn binding vpn-instance EVPN
+#
+interface GigabitEthernet0/1/8.200
+ vlan-type dot1q 200
+ ip binding vpn-instance TEST-EVPN
+ ip address 222.222.222.222 255.255.255.0
+#
+interface LoopBack0
+ ip address 172.20.1.10 255.255.255.255
+ ospf enable 1 area 0.0.0.0
+#
+interface NULL0
+#
+bgp 65333
+ peer 172.20.1.1 as-number 65333
+ peer 172.20.1.1 connect-interface LoopBack0
+ peer 172.20.1.1 bfd enable
+ #
+ ipv4-family unicast
+  undo synchronization
+  peer 172.20.1.1 enable
+ #
+ l2vpn-family evpn
+  undo policy vpn-target
+  peer 172.20.1.1 enable
+#
+ospf 1
+ area 0.0.0.0
+#
+ssh authorization-type default aaa
+#
+local-aaa-server
+#
+evpn source-address 172.20.1.10
+#
+return
+### END nn-bng-r1.nnsol.no

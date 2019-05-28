@@ -1,0 +1,41 @@
+
+
+
+---
+- name: Huawei VRP command test
+  hosts: all
+  connection: local
+  gather_facts: no
+  vars_files:
+   - /etc/ansible/secure/vrp_passwords
+  vars:
+    cli:
+      host: "{{ inventory_hostname }}"
+      port: "{{ ansible_ssh_port }}"
+      username: "{{ vrp_username }}"
+      password: "{{ vrp_password }}"
+      transport: cli
+
+
+
+  tasks:
+
+  - name: "Run display LLDP nei on remote devices"
+    ce_command:
+      commands: display lldp neig brief
+      provider: "{{ cli }}"
+    register: lldp_nei
+
+
+  - debug: var=lldp_nei.stdout_lines
+
+
+
+
+
+
+
+
+
+
+

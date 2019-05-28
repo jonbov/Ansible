@@ -1,0 +1,78 @@
+
+
+
+# Note: examples below use the following provider dict to handle
+#       transport and authentication to the node.
+
+
+
+---
+- name: CLI command test
+  hosts: access
+  connection: local
+  gather_facts: no
+  vars_files:
+   - /etc/ansible/secure/vrp_passwords
+  vars:
+    cli:
+      host: "{{ inventory_hostname }}"
+      port: "{{ ansible_ssh_port }}"
+      username: "{{ vrp_username }}"
+      password: "{{ vrp_password }}"
+#      ansible_ssh_user = "{{ vrp_username }}"
+#      ansible_ssh_pass = "{{ vrp_password }}"
+      transport: cli
+#    dir: results
+#    file: route_report.txt
+#    template_dir: templates_ftth_port
+
+  tasks:
+
+
+  - name: "Run display current interface x"
+    cli_command:
+      command: disp current-configuration interface GigabitEthernet 0/0/{{ ftthport }}
+#      provider: "{{ cli }}"
+    register: current_config_intf
+#    delegate_to: localhost
+
+  - debug:
+      var=current_config_intf.stdout_lines  
+
+
+  - name: "RETURN CLI-COMMAND"
+    cli_command:
+      command: return
+
+
+  - name: "Run clear config on interface test CLI-COMMAND"
+    cli_command:
+      command: "{{ item }}"
+      sendonly: no
+      check_all: no
+      prompt:
+        - '>'
+        - ']'
+        - 'Warning: All configurations of the interface will be cleared, and its state will be shutdown. Continue? [Y/N] :'
+      answer:
+        - ' '
+        - ' '
+        - 'Y'
+    loop:
+#      - return 
+      - system-view
+      - interface GigabitEthernet 0/0/{{ ftthport }}
+      - description test clear inteface*******************************************
+      - clear configuration this
+      - undo shutdown
+#      provider: "{{ cli }}"
+#    delegate_to: localhost
+
+
+
+
+
+
+
+
+
