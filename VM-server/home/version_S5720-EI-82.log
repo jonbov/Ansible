@@ -1,0 +1,45 @@
+{
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information",
+            "version": 2.9
+        },
+        {
+            "msg": "Distribution Ubuntu 16.04 on host S5720-EI-82 should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information",
+            "version": "2.12"
+        }
+    ],
+    "failed": false,
+    "stdout": [
+        "sysname NN-ACCESS-SW82",
+        "Huawei Versatile Routing Platform Software\nVRP (R) software, Version 5.160 (S5720 V200R009C00SPC200)\nCopyright (C) 2000-2016 HUAWEI TECH CO., LTD\nHUAWEI S5720-36C-EI-28S-AC Routing Switch uptime is 22 weeks, 4 days, 5 hours, 58 minutes\n\nES5D2S32C002 0(Master) : uptime is 22 weeks, 4 days, 5 hours, 58 minutes\n2048M bytes DDR Memory\n344M bytes FLASH\nPcb      Version :  VER.C\nBasic  BootROM  Version : 0209.0001 Compiled at Apr 02 2016, 19:02:55\nBootLoad  Version : 0209.0001 Compiled at Apr  8 2016, 00:20:42\nCPLD   Version : 010b \nSoftware Version : VRP (R) Software, Version 5.160 (V200R009C00SPC200)\nPWR1 information\nPcb      Version : PWR VER.B\nFAN1 information\nPcb      Version : NA"
+    ],
+    "stdout_lines": [
+        [
+            "sysname NN-ACCESS-SW82"
+        ],
+        [
+            "Huawei Versatile Routing Platform Software",
+            "VRP (R) software, Version 5.160 (S5720 V200R009C00SPC200)",
+            "Copyright (C) 2000-2016 HUAWEI TECH CO., LTD",
+            "HUAWEI S5720-36C-EI-28S-AC Routing Switch uptime is 22 weeks, 4 days, 5 hours, 58 minutes",
+            "",
+            "ES5D2S32C002 0(Master) : uptime is 22 weeks, 4 days, 5 hours, 58 minutes",
+            "2048M bytes DDR Memory",
+            "344M bytes FLASH",
+            "Pcb      Version :  VER.C",
+            "Basic  BootROM  Version : 0209.0001 Compiled at Apr 02 2016, 19:02:55",
+            "BootLoad  Version : 0209.0001 Compiled at Apr  8 2016, 00:20:42",
+            "CPLD   Version : 010b ",
+            "Software Version : VRP (R) Software, Version 5.160 (V200R009C00SPC200)",
+            "PWR1 information",
+            "Pcb      Version : PWR VER.B",
+            "FAN1 information",
+            "Pcb      Version : NA"
+        ]
+    ]
+}

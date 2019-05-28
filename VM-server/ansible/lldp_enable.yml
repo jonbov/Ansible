@@ -1,0 +1,41 @@
+---
+
+
+
+- hosts: ios
+  connection: local
+  gather_facts: no
+  ignore_errors: yes
+  vars:
+    cli:
+      host: "{{ inventory_hostname }}"
+      username: "{{ username }}"
+      password: "{{ password }}"
+
+  tasks:
+    - name: Enable LLDP service on IOS device
+      ios_lldp:
+        username: "{{ username }}"
+        password: "{{ password }}"
+      state: present
+
+
+- hosts: vrp
+  connection: local
+  gather_facts: no
+  ignore_errors: yes
+  vars:
+    cli:
+      host: "{{ inventory_hostname }}"
+      username: "{{ username }}"
+      password: "{{ password }}"
+
+
+  tasks:
+    - name: "Enable LLDP on VRP device"
+      ce_config:
+        lines: lldp enable
+        save: yes
+        provider: "{{ cli }}"
+
+

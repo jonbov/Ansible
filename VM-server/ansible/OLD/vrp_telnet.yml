@@ -1,0 +1,20 @@
+---
+- hosts: vrp
+  connection: local
+  gather_facts: No
+  ignore_errors: yes
+
+  tasks:
+    - name: test connection
+      telnet:
+        user: admin
+        password: a4068becs
+        pause: 2
+        login_prompt: "Username:"
+        prompts:
+           - "[>|#|:]"
+        command:
+          - system
+          - sysname TESTswitch
+          - return
+

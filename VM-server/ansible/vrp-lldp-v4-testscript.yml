@@ -1,0 +1,96 @@
+---
+- name: "Gather LLDP info to json file"
+  hosts: all
+  connection: local
+  gather_facts: False
+  ignore_errors: yes  
+
+
+  vars:
+    filename: lldp-full-v4-testscript
+    customer: Hvaler Bredband
+
+#  vars_prompt:
+#    - name:   "{{filename}}"
+#      prompt: "Please enter filename with raw LLDP info:"
+
+  tasks:
+
+  - name: ensure empty file exists
+    run_once: true
+    copy:
+      content: ""
+      dest: /home/jonbov/{{filename}}.json
+#      dest: lldp-full-v4.json
+      force: yes
+      group: jonbov
+      owner: jonbov
+      mode: 0555
+
+#  - name: remove old json file
+#    run_once: true    
+#    shell: sudo rm /home/jonbov/{{filename}}.json
+
+
+  - name: get LLDP info
+    ce_command:
+      commands:
+        - display current | in sysname
+#        - display lldp neighbor brief | exclude Intf
+        - display lldp neighbor | include Port ID|System|neighbor
+    register: lldpvar
+
+#  - debug:        msg="{{lldpvar | to_nice_json}}"
+
+  - local_action: lineinfile line='{{lldpvar | to_nice_json }}' insertafter=EOF dest="/home/jonbov/{{filename}}.json"
+
+  - name: execute python script convert to Graphviz dot format
+    run_once: true
+    command: python /home/jonbov/convert-lldp-dot-v4-testscript.py
+    args:
+       chdir: /home/jonbov/ 
+
+
+#  - name: ensure empty png file exists
+#    run_once: true
+#    copy:
+#      content: ""
+#      dest: /home/jonbov/{{filename}}.json.png
+#      force: no
+#      group: jonbov
+#      owner: jonbov
+#      mode: 0777
+
+
+  - name: execute Graphviz dot to png file      
+    run_once: true
+    become: yes
+    become_method: su
+    become_user: jonbov
+    shell: "dot -Tpng /home/jonbov/{{filename}}.json.dot > /home/jonbov/{{filename}}.json.png"
+#    command: dot -Tpng /home/jonbov/{{filename}}.json.dot > {{filename}}.png
+    args:
+       chdir: /home/jonbov/
+ 
+
+
+  - name: Send e-mail, attaching files
+    run_once: true
+    mail:
+     host: mail.bovre.info
+     port: 25
+     username: ansible@bovre.info
+     password: SentFromHvaler
+     subject: Ansible-report for {{customer}}
+     body: Attached discovered network topology for {{customer}}
+     from: ansible@bovre.info
+     to:
+     - <jon.bovre@netnordic.com>
+     attach:
+     - /home/jonbov/{{filename}}.json.png
+#     - /home/jonbov/{{filename}}.json.dot
+     headers:
+     - Reply-To=noreply@bovre.info
+     - X-Special="Something or other"
+     charset: us-ascii
+    delegate_to: localhost

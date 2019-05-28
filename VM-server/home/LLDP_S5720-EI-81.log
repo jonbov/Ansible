@@ -1,0 +1,26 @@
+{
+    "changed": false,
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information",
+            "version": 2.9
+        }
+    ],
+    "failed": false,
+    "stdout": [
+        "sysname NN-ACCESS-SW81",
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/25      -                        1041                      110    \nGE0/0/28      NN-ACCESS-SW82           GE0/0/28                  91     \nXGE0/0/1      NN-6720-SW83-NETCONF     XGE0/0/3                  99     \nXGE0/0/2      NN-ACCESS-SW82           XGE0/0/2                  119"
+    ],
+    "stdout_lines": [
+        [
+            "sysname NN-ACCESS-SW81"
+        ],
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)",
+            "GE0/0/25      -                        1041                      110    ",
+            "GE0/0/28      NN-ACCESS-SW82           GE0/0/28                  91     ",
+            "XGE0/0/1      NN-6720-SW83-NETCONF     XGE0/0/3                  99     ",
+            "XGE0/0/2      NN-ACCESS-SW82           XGE0/0/2                  119"
+        ]
+    ]
+}

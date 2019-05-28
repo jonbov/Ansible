@@ -1,0 +1,50 @@
+---
+- name: "CE test"
+  hosts: all
+  connection: local
+  gather_facts: False
+  ignore_errors: yes  
+
+  tasks:
+
+#  - name: Removing existing lldp.log
+#    file:
+#      path: /home/jonbov/lldp_full.log
+#      state: absent
+
+  - name: ensure empty file exists
+    copy:
+      content: ""
+      dest: /home/jonbov/lldp_full-hvaler.json
+      force: no
+#      group: jonbov
+      owner: jonbov
+      mode: 0555
+
+
+  - name: ensure empty file exists
+    copy:
+      content: ""
+      dest: /home/jonbov/lldp_full-hvaler.yaml
+      force: no
+#      group: jonbov
+      owner: jonbov
+      mode: 0555
+#      deprecation_warnings=False
+
+
+  - name: get LLDP info
+    ce_command:
+      commands:
+        - display current | in sysname
+        - display lldp neighbor brief | exclude Intf
+    register: lldpvar
+
+  - debug:        msg="{{lldpvar | to_nice_json}}"
+
+#  - local_action: copy content='{{lldpvar | to_nice_json}}' dest="/home/jonbov/lldp.log"
+  - local_action: lineinfile line='{{lldpvar | to_nice_json }}' insertafter=EOF dest="/home/jonbov/lldp_full-hvaler.json"
+#  - local_action: copy content='{{ lldpvar | to_nice_json }}' dest="/home/jonbov/LLDP_{{ inventory_hostname }}.log"
+
+
+#  - local_action: lineinfile line='{{lldpvar | to_nice_yaml }}' insertafter=EOF dest="/home/jonbov/lldp_full-hvaler.yaml"

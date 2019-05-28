@@ -1,0 +1,2761 @@
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-access-Sandbakken", 
+        "GigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :MAC address\nPort ID        :480f-cf3a-43ca\nGigabitEthernet0/0/25 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW1-Access-Sandbakken\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-access-Sandbakken"
+        ], 
+        [
+            "GigabitEthernet0/0/3 has 1 neighbor(s):", 
+            "Port ID type   :MAC address", 
+            "Port ID        :480f-cf3a-43ca", 
+            "GigabitEthernet0/0/25 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW1-Access-Sandbakken", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-access-Brattesto", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/3\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-access-Brattesto"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/3", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Sandbakken", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/8\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :GigabitEthernet0/0/25\nSystem name         :SW2-access-Sandbakken\nSystem description  :S5700-28P-PWR-LI-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Sandbakken"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/8", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :GigabitEthernet0/0/25", 
+            "System name         :SW2-access-Sandbakken", 
+            "System description  :S5700-28P-PWR-LI-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-access-Vadbenken8", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/7\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-access-Vadbenken8"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/7", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-access-Neset", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/4\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-access-Neset"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/4", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-Access-Dypedal", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/5\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :GigabitEthernet0/0/49\nSystem name         :SW3-access-Hvalkommune\nSystem description  :S5720-52P-LI-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-Access-Dypedal"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/5", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/3 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :GigabitEthernet0/0/49", 
+            "System name         :SW3-access-Hvalkommune", 
+            "System description  :S5720-52P-LI-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Krakeroy", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/5\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Krakeroy"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/5", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Olasvingen", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/4\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW2-Access-Olasvingen\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Olasvingen"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/4", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW2-Access-Olasvingen", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-Access-Olasvingen", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW1-Access-Olasvingen\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-Access-Olasvingen"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW1-Access-Olasvingen", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Norderhaug", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/6\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-access-Byggern\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Norderhaug"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/6", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-access-Byggern", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Korshavn", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW1-Dist-Korshavn\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Korshavn"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW1-Dist-Korshavn", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Holmetangen", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/7\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Holmetangen"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/7", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-access-Byggern", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW1-Access-Norderhaug\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-access-Byggern"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW1-Access-Norderhaug", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Hvalkommune-01", 
+        "display lldp neighbor | include Port ID|System|neighb \u001b[1Dor\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet0/0/2\nSystem name         :SW1-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Hvalkommune-01"
+        ], 
+        [
+            "display lldp neighbor | include Port ID|System|neighb \u001b[1Dor", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :GigabitEthernet0/0/2", 
+            "System name         :SW1-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Dypedal", 
+        "GigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW2-access-Hvalkommune\nSystem description  :S5700-28X-PWR-LI-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Hvalkommune-01\nSystem description  :S5700-28X-PWR-LI-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW2-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Dypedal"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW2-access-Hvalkommune", 
+            "System description  :S5700-28X-PWR-LI-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "GigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Hvalkommune-01", 
+            "System description  :S5700-28X-PWR-LI-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW2-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-access-Hvalkommune", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet0/0/1\nSystem name         :SW1-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-access-Hvalkommune"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :GigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-Access-Hvalerraadhus", 
+        "display lldp neighbor | include Port ID|System|neighbo \u001b[1Dr\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/13\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-Access-Hvalerraadhus"
+        ], 
+        [
+            "display lldp neighbor | include Port ID|System|neighbo \u001b[1Dr", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/13", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW3-access-Hvalkommune", 
+        "GigabitEthernet0/0/49 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/3\nSystem name         :SW2-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW3-access-Hvalkommune"
+        ], 
+        [
+            "GigabitEthernet0/0/49 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/3", 
+            "System name         :SW2-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Dist-Krakeroy", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :gi2\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/4 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-access-Neset\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/5 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Krakeroy\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/6 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Norderhaug\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/7 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Holmetangen\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/15 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Dist-Korshavn\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/21 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet1/0/0\nSystem name         :R1-BNG-Krakeroy\nSystem description  :\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/22 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet1/0/1\nSystem name         :R1-BNG-Krakeroy\nSystem description  :\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Dist-Krakeroy"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/3 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :gi2", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/4 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-access-Neset", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/5 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Krakeroy", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/6 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Norderhaug", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/7 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Holmetangen", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/15 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Dist-Korshavn", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/21 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :GigabitEthernet1/0/0", 
+            "System name         :R1-BNG-Krakeroy", 
+            "System description  :", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/22 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :GigabitEthernet1/0/1", 
+            "System name         :R1-BNG-Krakeroy", 
+            "System description  :", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Dist-Hvaler", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Hvalerraadhus\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-access-Brattesto\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/4 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Olasvingen\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/5 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW2-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/7 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-access-Vadbenken8\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/8 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Sandbakken\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/11 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/3\nSystem name         :SW1-Dist-Korshavn\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/13 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW2-Access-Hvalerraadhus\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Dist-Hvaler"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Hvalerraadhus", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/3 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-access-Brattesto", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/4 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Olasvingen", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/5 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW2-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/7 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-access-Vadbenken8", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/8 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Sandbakken", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/11 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/3", 
+            "System name         :SW1-Dist-Korshavn", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/13 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW2-Access-Hvalerraadhus", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "failed": true, 
+    "msg": ""
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": true, 
+    "msg": "Command: display lldp neighbor | include port id|system|neighbor, error:too many parameters found."
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Dist-Krakeroy", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :gi2\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/4 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-access-Neset\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/5 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Krakeroy\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/6 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Norderhaug\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/7 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Holmetangen\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/15 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Dist-Korshavn\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/21 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet1/0/0\nSystem name         :R1-BNG-Krakeroy\nSystem description  :\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/22 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet1/0/1\nSystem name         :R1-BNG-Krakeroy\nSystem description  :\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Dist-Krakeroy"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/3 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :gi2", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/4 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-access-Neset", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/5 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Krakeroy", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/6 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Norderhaug", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/7 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Holmetangen", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/15 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Dist-Korshavn", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/21 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :GigabitEthernet1/0/0", 
+            "System name         :R1-BNG-Krakeroy", 
+            "System description  :", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/22 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :GigabitEthernet1/0/1", 
+            "System name         :R1-BNG-Krakeroy", 
+            "System description  :", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Dist-Korshavn", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/15\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Korshavn\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/11\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Dist-Korshavn"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/15", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Korshavn", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/3 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/11", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-access-Sandbakken", 
+        "GigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :MAC address\nPort ID        :480f-cf3a-43ca\nGigabitEthernet0/0/25 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW1-Access-Sandbakken\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-access-Sandbakken"
+        ], 
+        [
+            "GigabitEthernet0/0/3 has 1 neighbor(s):", 
+            "Port ID type   :MAC address", 
+            "Port ID        :480f-cf3a-43ca", 
+            "GigabitEthernet0/0/25 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW1-Access-Sandbakken", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-access-Vadbenken8", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/7\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-access-Vadbenken8"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/7", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-access-Neset", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/4\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-access-Neset"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/4", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-access-Brattesto", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/3\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-access-Brattesto"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/3", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-Access-Dypedal", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/5\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :GigabitEthernet0/0/49\nSystem name         :SW3-access-Hvalkommune\nSystem description  :S5720-52P-LI-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-Access-Dypedal"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/5", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/3 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :GigabitEthernet0/0/49", 
+            "System name         :SW3-access-Hvalkommune", 
+            "System description  :S5720-52P-LI-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Krakeroy", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/5\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Krakeroy"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/5", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-Access-Olasvingen", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW1-Access-Olasvingen\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-Access-Olasvingen"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW1-Access-Olasvingen", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Norderhaug", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/6\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-access-Byggern\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Norderhaug"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/6", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-access-Byggern", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Olasvingen", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/4\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW2-Access-Olasvingen\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Olasvingen"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/4", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW2-Access-Olasvingen", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Holmetangen", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/7\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Holmetangen"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/7", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Korshavn", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW1-Dist-Korshavn\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Korshavn"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW1-Dist-Korshavn", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-access-Byggern", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW1-Access-Norderhaug\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-access-Byggern"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW1-Access-Norderhaug", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Dypedal", 
+        "GigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW2-access-Hvalkommune\nSystem description  :S5700-28X-PWR-LI-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Hvalkommune-01\nSystem description  :S5700-28X-PWR-LI-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW2-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Dypedal"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW2-access-Hvalkommune", 
+            "System description  :S5700-28X-PWR-LI-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "GigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Hvalkommune-01", 
+            "System description  :S5700-28X-PWR-LI-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW2-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Hvalkommune-01", 
+        "display lldp neighbor | include Port ID|System|neighb \u001b[1Dor\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet0/0/2\nSystem name         :SW1-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Hvalkommune-01"
+        ], 
+        [
+            "display lldp neighbor | include Port ID|System|neighb \u001b[1Dor", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :GigabitEthernet0/0/2", 
+            "System name         :SW1-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-access-Hvalkommune", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet0/0/1\nSystem name         :SW1-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-access-Hvalkommune"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :GigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW3-access-Hvalkommune", 
+        "GigabitEthernet0/0/49 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/3\nSystem name         :SW2-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW3-access-Hvalkommune"
+        ], 
+        [
+            "GigabitEthernet0/0/49 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/3", 
+            "System name         :SW2-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-Access-Hvalerraadhus", 
+        "display lldp neighbor | include Port ID|System|neighbo \u001b[1Dr\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/13\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-Access-Hvalerraadhus"
+        ], 
+        [
+            "display lldp neighbor | include Port ID|System|neighbo \u001b[1Dr", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/13", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": true, 
+    "msg": "Command: display lldp neighbor | include port id|system|neighbor, error:too many parameters found."
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-access-Vadbenken8", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/7\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-access-Vadbenken8"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/7", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Hvalerraadhus", 
+        "display lldp neighbor | include Port ID|System|neighbo \u001b[1Dr\nGigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :GigabitEthernet0/0/1\nSystem name         :WLC1-Hvaler\nSystem description  :Huawei AC6005-8 Huawei Versatile Routing Platform Software  VRP (R) software,Version 5.160 (AC6005-8 V200R006C20SPC500) Copyright (C) 2011-2016 Huawei Technologies Co., Ltd\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Hvalerraadhus"
+        ], 
+        [
+            "display lldp neighbor | include Port ID|System|neighbo \u001b[1Dr", 
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :GigabitEthernet0/0/1", 
+            "System name         :WLC1-Hvaler", 
+            "System description  :Huawei AC6005-8 Huawei Versatile Routing Platform Software  VRP (R) software,Version 5.160 (AC6005-8 V200R006C20SPC500) Copyright (C) 2011-2016 Huawei Technologies Co., Ltd", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-access-Sandbakken", 
+        "GigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :MAC address\nPort ID        :480f-cf3a-43ca\nGigabitEthernet0/0/25 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW1-Access-Sandbakken\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-access-Sandbakken"
+        ], 
+        [
+            "GigabitEthernet0/0/3 has 1 neighbor(s):", 
+            "Port ID type   :MAC address", 
+            "Port ID        :480f-cf3a-43ca", 
+            "GigabitEthernet0/0/25 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW1-Access-Sandbakken", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-access-Neset", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/4\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-access-Neset"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/4", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-Access-Dypedal", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/5\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :GigabitEthernet0/0/49\nSystem name         :SW3-access-Hvalkommune\nSystem description  :S5720-52P-LI-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-Access-Dypedal"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/5", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/3 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :GigabitEthernet0/0/49", 
+            "System name         :SW3-access-Hvalkommune", 
+            "System description  :S5720-52P-LI-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Krakeroy", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/5\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Krakeroy"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/5", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-Access-Olasvingen", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW1-Access-Olasvingen\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-Access-Olasvingen"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW1-Access-Olasvingen", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Norderhaug", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/6\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-access-Byggern\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Norderhaug"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/6", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-access-Byggern", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Olasvingen", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/4\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW2-Access-Olasvingen\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Olasvingen"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/4", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW2-Access-Olasvingen", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Korshavn", 
+        "GigabitEthernet0/0/1 has 0 neighbor(s)\nGigabitEthernet0/0/2 has 0 neighbor(s)\nGigabitEthernet0/0/3 has 0 neighbor(s)\nGigabitEthernet0/0/4 has 0 neighbor(s)\nGigabitEthernet0/0/5 has 0 neighbor(s)\nGigabitEthernet0/0/6 has 0 neighbor(s)\nGigabitEthernet0/0/7 has 0 neighbor(s)\nGigabitEthernet0/0/8 has 0 neighbor(s)\nGigabitEthernet0/0/9 has 0 neighbor(s)\nGigabitEthernet0/0/10 has 0 neighbor(s)\nGigabitEthernet0/0/11 has 0 neighbor(s)\nGigabitEthernet0/0/12 has 0 neighbor(s)\nGigabitEthernet0/0/13 has 0 neighbor(s)\nGigabitEthernet0/0/14 has 0 neighbor(s)\nGigabitEthernet0/0/15 has 0 neighbor(s)\nGigabitEthernet0/0/16 has 0 neighbor(s)\nGigabitEthernet0/0/17 has 0 neighbor(s)\nGigabitEthernet0/0/18 has 0 neighbor(s)\nGigabitEthernet0/0/19 has 0 neighbor(s)\nGigabitEthernet0/0/20 has 0 neighbor(s)\nGigabitEthernet0/0/21 has 0 neighbor(s)\nGigabitEthernet0/0/22 has 0 neighbor(s)\nGigabitEthernet0/0/23 has 0 neighbor(s)\nGigabitEthernet0/0/24 has 0 neighbor(s)\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :interfaceName\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW1-Dist-Korshavn\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 0 neighbor(s)\nXGigabitEthernet0/0/3 has 0 neighbor(s)\nXGigabitEthernet0/0/4 has 0 neighbor(s)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Korshavn"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/4 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/5 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/6 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/7 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/8 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/9 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/10 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/11 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/12 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/13 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/14 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/15 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/16 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/17 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/18 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/19 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/20 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/21 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/22 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/23 has 0 neighbor(s)", 
+            "GigabitEthernet0/0/24 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :interfaceName", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW1-Dist-Korshavn", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/3 has 0 neighbor(s)", 
+            "XGigabitEthernet0/0/4 has 0 neighbor(s)"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Holmetangen", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/7\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Holmetangen"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/7", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-access-Byggern", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW1-Access-Norderhaug\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-access-Byggern"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW1-Access-Norderhaug", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Dypedal", 
+        "GigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW2-access-Hvalkommune\nSystem description  :S5700-28X-PWR-LI-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Hvalkommune-01\nSystem description  :S5700-28X-PWR-LI-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/2\nSystem name         :SW2-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Dypedal"
+        ], 
+        [
+            "GigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW2-access-Hvalkommune", 
+            "System description  :S5700-28X-PWR-LI-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "GigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Hvalkommune-01", 
+            "System description  :S5700-28X-PWR-LI-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/2", 
+            "System name         :SW2-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Access-Hvalkommune-01", 
+        "display lldp neighbor | include Port ID|System|neighb \u001b[1Dor\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet0/0/2\nSystem name         :SW1-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Access-Hvalkommune-01"
+        ], 
+        [
+            "display lldp neighbor | include Port ID|System|neighb \u001b[1Dor", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :GigabitEthernet0/0/2", 
+            "System name         :SW1-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-Access-Hvalerraadhus", 
+        "display lldp neighbor | include Port ID|System|neighbo \u001b[1Dr\nXGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/13\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-Access-Hvalerraadhus"
+        ], 
+        [
+            "display lldp neighbor | include Port ID|System|neighbo \u001b[1Dr", 
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/13", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW2-access-Hvalkommune", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet0/0/1\nSystem name         :SW1-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW2-access-Hvalkommune"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :GigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": true, 
+    "msg": "Command: display lldp neighbor | include port id|system|neighbor, error:too many parameters found."
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW3-access-Hvalkommune", 
+        "GigabitEthernet0/0/49 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/3\nSystem name         :SW2-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW3-access-Hvalkommune"
+        ], 
+        [
+            "GigabitEthernet0/0/49 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/3", 
+            "System name         :SW2-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Dist-Krakeroy", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :gi2\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/4 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-access-Neset\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/5 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Krakeroy\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/6 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Norderhaug\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/7 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Holmetangen\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/15 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Dist-Korshavn\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/21 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet1/0/0\nSystem name         :R1-BNG-Krakeroy\nSystem description  :\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/22 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :GigabitEthernet1/0/1\nSystem name         :R1-BNG-Krakeroy\nSystem description  :\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Dist-Krakeroy"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/3 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :gi2", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/4 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-access-Neset", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/5 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Krakeroy", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/6 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Norderhaug", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/7 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Holmetangen", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/15 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Dist-Korshavn", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/21 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :GigabitEthernet1/0/0", 
+            "System name         :R1-BNG-Krakeroy", 
+            "System description  :", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/22 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :GigabitEthernet1/0/1", 
+            "System name         :R1-BNG-Krakeroy", 
+            "System description  :", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Dist-Hvaler", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Hvalerraadhus\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-access-Brattesto\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/4 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Olasvingen\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/5 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW2-Access-Dypedal\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/7 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-access-Vadbenken8\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/8 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Sandbakken\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/11 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/3\nSystem name         :SW1-Dist-Korshavn\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/13 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW2-Access-Hvalerraadhus\nSystem description  :S5701-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Dist-Hvaler"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Hvalerraadhus", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/3 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-access-Brattesto", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/4 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Olasvingen", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/5 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW2-Access-Dypedal", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/7 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-access-Vadbenken8", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/8 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Sandbakken", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/11 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/3", 
+            "System name         :SW1-Dist-Korshavn", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/13 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW2-Access-Hvalerraadhus", 
+            "System description  :S5701-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SW1-Dist-Korshavn", 
+        "XGigabitEthernet0/0/1 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/15\nSystem name         :SW1-Dist-Krakeroy\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router\nXGigabitEthernet0/0/2 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/1\nSystem name         :SW1-Access-Korshavn\nSystem description  :S5700-28X-LI-24S-AC\nSystem capabilities supported   :bridge\nSystem capabilities enabled     :bridge\nXGigabitEthernet0/0/3 has 1 neighbor(s):\nPort ID type   :Interface name\nPort ID        :XGigabitEthernet0/0/11\nSystem name         :SW1-Dist-Hvaler\nSystem description  :S6720S-26Q-EI-24S-AC\nSystem capabilities supported   :bridge router\nSystem capabilities enabled     :bridge router"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SW1-Dist-Korshavn"
+        ], 
+        [
+            "XGigabitEthernet0/0/1 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/15", 
+            "System name         :SW1-Dist-Krakeroy", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router", 
+            "XGigabitEthernet0/0/2 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/1", 
+            "System name         :SW1-Access-Korshavn", 
+            "System description  :S5700-28X-LI-24S-AC", 
+            "System capabilities supported   :bridge", 
+            "System capabilities enabled     :bridge", 
+            "XGigabitEthernet0/0/3 has 1 neighbor(s):", 
+            "Port ID type   :Interface name", 
+            "Port ID        :XGigabitEthernet0/0/11", 
+            "System name         :SW1-Dist-Hvaler", 
+            "System description  :S6720S-26Q-EI-24S-AC", 
+            "System capabilities supported   :bridge router", 
+            "System capabilities enabled     :bridge router"
+        ]
+    ]
+}

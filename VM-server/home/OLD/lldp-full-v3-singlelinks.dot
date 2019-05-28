@@ -1,0 +1,28 @@
+graph {
+rankdir=LR;
+node [shape=box];
+SW2_access_Sandbakken -- SW1_Access_Sandbakken [fontsize=8, headlabel="G0/0/25" ,taillabel="XG0/0/2"];
+SW1_access_Brattesto -- SW1_Dist_Hvaler [fontsize=8, headlabel="XG0/0/1" ,taillabel="XG0/0/3"];
+SW1_access_Vadbenken8 -- SW1_Dist_Hvaler [fontsize=8, headlabel="XG0/0/1" ,taillabel="XG0/0/7"];
+SW1_access_Neset -- SW1_Dist_Krakeroy [fontsize=8, headlabel="XG0/0/1" ,taillabel="XG0/0/4"];
+SW2_Access_Dypedal -- SW1_Dist_Hvaler [fontsize=8, headlabel="XG0/0/1" ,taillabel="XG0/0/5"];
+SW1_Access_Krakeroy -- SW1_Dist_Krakeroy [fontsize=8, headlabel="XG0/0/1" ,taillabel="XG0/0/5"];
+SW1_Access_Olasvingen -- SW1_Dist_Hvaler [fontsize=8, headlabel="XG0/0/1" ,taillabel="XG0/0/4"];
+SW1_Access_Olasvingen -- SW2_Access_Olasvingen [fontsize=8, headlabel="XG0/0/2" ,taillabel="XG0/0/1"];
+SW1_Access_Korshavn -- SW1_Dist_Korshavn [fontsize=8, headlabel="XG0/0/1" ,taillabel="XG0/0/2"];
+SW1_Access_Holmetangen -- SW1_Dist_Krakeroy [fontsize=8, headlabel="XG0/0/1" ,taillabel="XG0/0/7"];
+SW1_access_Byggern -- SW1_Access_Norderhaug [fontsize=8, headlabel="XG0/0/1" ,taillabel="XG0/0/2"];
+SW1_Access_Hvalkommune_01 -- SW1_Access_Dypedal [fontsize=8, headlabel="XG0/0/1" ,taillabel="G0/0/2"];
+SW1_Access_Dypedal -- SW2_Access_Dypedal [fontsize=8, headlabel="XG0/0/1" ,taillabel="XG0/0/2"];
+SW2_access_Hvalkommune -- SW1_Access_Dypedal [fontsize=8, headlabel="XG0/0/1" ,taillabel="G0/0/1"];
+SW2_Access_Hvalerraadhus -- SW1_Dist_Hvaler [fontsize=8, headlabel="XG0/0/1" ,taillabel="XG0/0/13"];
+SW3_access_Hvalkommune -- SW2_Access_Dypedal [fontsize=8, headlabel="G0/0/49" ,taillabel="XG0/0/3"];
+SW1_Dist_Krakeroy -- SW1_Dist_Hvaler [fontsize=8, headlabel="XG0/0/1" ,taillabel="XG0/0/1"];
+SW1_Dist_Krakeroy -- SW1_Access_Norderhaug [fontsize=8, headlabel="XG0/0/6" ,taillabel="XG0/0/1"];
+SW1_Dist_Krakeroy -- SW1_Dist_Korshavn [fontsize=8, headlabel="XG0/0/15" ,taillabel="XG0/0/1"];
+SW1_Dist_Krakeroy -- R1_BNG_Krakeroy [fontsize=8, headlabel="XG0/0/21" ,taillabel="G1/0/0"];
+SW1_Dist_Krakeroy -- R1_BNG_Krakeroy [fontsize=8, headlabel="XG0/0/22" ,taillabel="G1/0/1"];
+SW1_Dist_Hvaler -- SW1_Access_Hvalerraadhus [fontsize=8, headlabel="XG0/0/2" ,taillabel="XG0/0/1"];
+SW1_Dist_Hvaler -- SW1_Access_Sandbakken [fontsize=8, headlabel="XG0/0/8" ,taillabel="XG0/0/1"];
+SW1_Dist_Hvaler -- SW1_Dist_Korshavn [fontsize=8, headlabel="XG0/0/11" ,taillabel="XG0/0/3"];
+}

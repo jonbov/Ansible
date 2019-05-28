@@ -1,0 +1,28 @@
+---
+- name: "CE test"
+  hosts: all
+  connection: local
+  gather_facts: False
+  ignore_errors: yes
+
+  vars:
+    facts_output:
+
+
+  tasks:
+    - name: run display commands
+      ce_command:
+        commands:
+          - display current | in sysname
+          - display lldp neighbor brief
+        register: facts_output
+        - debug: msg="{{facts_output | to_nice_json}}"
+          - local_action: copy content='{{facts_output | to_nice_json}}' dest="/home/jonbov/output.log"
+
+           
+    - name: show hostnames
+      debug:
+        msg: "{{ item }}"
+      with_inventory_hostnames:
+        - all
+

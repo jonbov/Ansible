@@ -1,0 +1,513 @@
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW1-ACCESS-24", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1       SK-AP-02                 GE0/0/0                   95     \nGE0/0/2       SK-AP-53                 GE0/0/0                   91     \nGE0/0/6       -                        4437-e655-1d9d            3035   \nGE0/0/7       SK-AP-13                 GE0/0/0                   111    \nGE0/0/8       SK-AP-67                 GE0/0/0                   118    \nGE0/0/15      -                        e04f-4391-3679            3534   \nGE0/0/18      -                        c85b-76d8-eb69            3515   \nGE0/0/23      -                        54ee-7528-86aa            3334   \nGE0/0/24      SK-AP-11                 GE0/0/0                   98     \nXGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 118"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW1-ACCESS-24"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/1       SK-AP-02                 GE0/0/0                   95     ", 
+            "GE0/0/2       SK-AP-53                 GE0/0/0                   91     ", 
+            "GE0/0/6       -                        4437-e655-1d9d            3035   ", 
+            "GE0/0/7       SK-AP-13                 GE0/0/0                   111    ", 
+            "GE0/0/8       SK-AP-67                 GE0/0/0                   118    ", 
+            "GE0/0/15      -                        e04f-4391-3679            3534   ", 
+            "GE0/0/18      -                        c85b-76d8-eb69            3515   ", 
+            "GE0/0/23      -                        54ee-7528-86aa            3334   ", 
+            "GE0/0/24      SK-AP-11                 GE0/0/0                   98     ", 
+            "XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 118"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW1-DIST-24", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nXGE0/0/2      SK-AC1                   XGE0/0/1                  105    \nXGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  93     \nXGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  118    \nXGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  100    \nXGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  107    \nXGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  95     \nXGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  99     \nXGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  118    \nXGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  99     \nXGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  118    \nXGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  119    \nXGE0/0/23     R1-CORE                  GE0/1/0                   103    \nXGE0/0/24     R1-CORE                  GE0/1/1                   103"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW1-DIST-24"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "XGE0/0/2      SK-AC1                   XGE0/0/1                  105    ", 
+            "XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  93     ", 
+            "XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  118    ", 
+            "XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  100    ", 
+            "XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  107    ", 
+            "XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  95     ", 
+            "XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  99     ", 
+            "XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  118    ", 
+            "XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  99     ", 
+            "XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  118    ", 
+            "XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  119    ", 
+            "XGE0/0/23     R1-CORE                  GE0/1/0                   103    ", 
+            "XGE0/0/24     R1-CORE                  GE0/1/1                   103"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW3-ACCESS-24", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/16      -                        54e1-ad6d-2dfd            3012   \nGE0/0/19      SK-AP-19                 GE0/0/0                   104    \nGE0/0/23      SK-AP-04                 GE0/0/0                   120    \nGE0/0/24      SK-AP-05                 GE0/0/0                   119    \nXGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 103"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW3-ACCESS-24"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/16      -                        54e1-ad6d-2dfd            3012   ", 
+            "GE0/0/19      SK-AP-19                 GE0/0/0                   104    ", 
+            "GE0/0/23      SK-AP-04                 GE0/0/0                   120    ", 
+            "GE0/0/24      SK-AP-05                 GE0/0/0                   119    ", 
+            "XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 103"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW2-ACCESS-24", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1       SK-AP-65                 GE0/0/0                   95     \nGE0/0/2       SK-AP-17                 GE0/0/0                   92     \nXGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 117"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW2-ACCESS-24"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/1       SK-AP-65                 GE0/0/0                   95     ", 
+            "GE0/0/2       SK-AP-17                 GE0/0/0                   92     ", 
+            "XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 117"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW4-ACCESS-24", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1       SK-AP-47                 GE0/0/0                   112    \nGE0/0/2       SK-AP-03                 GE0/0/0                   116    \nGE0/0/6       -                        54ee-7528-86b3            3088   \nGE0/0/7       -                        54ee-752d-0ece            3255   \nGE0/0/8       -                        28d2-4480-8e94            3122   \nGE0/0/9       -                        3c97-0e99-e5ad            3479   \nGE0/0/10      -                        54ee-752d-b140            3472   \nGE0/0/12      -                        3c97-0ea1-6480            2748   \nGE0/0/13      -                        54ee-752d-0ecd            2985   \nXGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 114"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW4-ACCESS-24"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/1       SK-AP-47                 GE0/0/0                   112    ", 
+            "GE0/0/2       SK-AP-03                 GE0/0/0                   116    ", 
+            "GE0/0/6       -                        54ee-7528-86b3            3088   ", 
+            "GE0/0/7       -                        54ee-752d-0ece            3255   ", 
+            "GE0/0/8       -                        28d2-4480-8e94            3122   ", 
+            "GE0/0/9       -                        3c97-0e99-e5ad            3479   ", 
+            "GE0/0/10      -                        54ee-752d-b140            3472   ", 
+            "GE0/0/12      -                        3c97-0ea1-6480            2748   ", 
+            "GE0/0/13      -                        54ee-752d-0ecd            2985   ", 
+            "XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 114"
+        ]
+    ]
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW7-ACCESS-24", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1       SK-AP-20                 GE0/0/0                   90     \nGE0/0/2       SK-AP-25                 GE0/0/0                   110    \nGE0/0/3       SK-AP-26                 GE0/0/0                   103    \nGE0/0/4       SK-AP-24                 GE0/0/0                   114    \nXGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  91"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW7-ACCESS-24"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/1       SK-AP-20                 GE0/0/0                   90     ", 
+            "GE0/0/2       SK-AP-25                 GE0/0/0                   110    ", 
+            "GE0/0/3       SK-AP-26                 GE0/0/0                   103    ", 
+            "GE0/0/4       SK-AP-24                 GE0/0/0                   114    ", 
+            "XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  91"
+        ]
+    ]
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW8-ACCESS-24", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/23      SK-AP-28                 GE0/0/0                   100    \nGE0/0/24      SK-AP-30                 GE0/0/0                   103    \nXGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  100"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW8-ACCESS-24"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/23      SK-AP-28                 GE0/0/0                   100    ", 
+            "GE0/0/24      SK-AP-30                 GE0/0/0                   103    ", 
+            "XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  100"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW9-ACCESS-24", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/3       SK-AP-35                 GE0/0/0                   97     \nGE0/0/13      SK-AP-32                 GE0/0/0                   90     \nXGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  119"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW9-ACCESS-24"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/3       SK-AP-35                 GE0/0/0                   97     ", 
+            "GE0/0/13      SK-AP-32                 GE0/0/0                   90     ", 
+            "XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  119"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW10-ACCESS-24", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/19      -                        54ee-7530-56ce            2801   \nXGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  105"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW10-ACCESS-24"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/19      -                        54ee-7530-56ce            2801   ", 
+            "XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  105"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW11-ACCESS-24", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1       SK-AP-49                 GE0/0/0                   92     \nGE0/0/2       SK-AP-45                 GE0/0/0                   94     \nGE0/0/3       SK-AP-31                 GE0/0/0                   104    \nGE0/0/4       SK-AP-09                 GE0/0/0                   100    \nXGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  100"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW11-ACCESS-24"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/1       SK-AP-49                 GE0/0/0                   92     ", 
+            "GE0/0/2       SK-AP-45                 GE0/0/0                   94     ", 
+            "GE0/0/3       SK-AP-31                 GE0/0/0                   104    ", 
+            "GE0/0/4       SK-AP-09                 GE0/0/0                   100    ", 
+            "XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  100"
+        ]
+    ]
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW14-ACCESS-24", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1       SK-AP-14                 GE0/0/0                   112    \nGE0/0/2       SK-AP-29                 GE0/0/0                   118    \nGE0/0/3       SK-AP-60                 GE0/0/0                   102    \nGE0/0/4       SK-AP-62                 GE0/0/0                   113    \nGE0/0/6       SK-AP-59                 GE0/0/0                   91     \nGE0/0/22      -                        54ee-752d-36c9            3181   \nXGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 103"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW14-ACCESS-24"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/1       SK-AP-14                 GE0/0/0                   112    ", 
+            "GE0/0/2       SK-AP-29                 GE0/0/0                   118    ", 
+            "GE0/0/3       SK-AP-60                 GE0/0/0                   102    ", 
+            "GE0/0/4       SK-AP-62                 GE0/0/0                   113    ", 
+            "GE0/0/6       SK-AP-59                 GE0/0/0                   91     ", 
+            "GE0/0/22      -                        54ee-752d-36c9            3181   ", 
+            "XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 103"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW13-ACCESS-24", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/9       SK-AP-51                 GE0/0/0                   109    \nGE0/0/10      SK-AP-56                 GE0/0/0                   117    \nGE0/0/11      SK-AP-58                 GE0/0/0                   113    \nGE0/0/12      SK-AP-57                 GE0/0/0                   119    \nGE0/0/13      SK-AP-54                 GE0/0/0                   97     \nGE0/0/14      SK-AP-52                 GE0/0/0                   104    \nGE0/0/15      SK-AP-61                 GE0/0/0                   101    \nGE0/0/16      SK-AP-63                 GE0/0/0                   93     \nGE0/0/17      SK-AP-55                 GE0/0/0                   108    \nXGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  107"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW13-ACCESS-24"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/9       SK-AP-51                 GE0/0/0                   109    ", 
+            "GE0/0/10      SK-AP-56                 GE0/0/0                   117    ", 
+            "GE0/0/11      SK-AP-58                 GE0/0/0                   113    ", 
+            "GE0/0/12      SK-AP-57                 GE0/0/0                   119    ", 
+            "GE0/0/13      SK-AP-54                 GE0/0/0                   97     ", 
+            "GE0/0/14      SK-AP-52                 GE0/0/0                   104    ", 
+            "GE0/0/15      SK-AP-61                 GE0/0/0                   101    ", 
+            "GE0/0/16      SK-AP-63                 GE0/0/0                   93     ", 
+            "GE0/0/17      SK-AP-55                 GE0/0/0                   108    ", 
+            "XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  107"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW15-ACCESS-12", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/7       SK-AP-50                 GE0/0/0                   116    \nGE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  94"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW15-ACCESS-12"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/7       SK-AP-50                 GE0/0/0                   116    ", 
+            "GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  94"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW17-ACCESS-12", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1       SK-AP-06                 GE0/0/0                   93     \nGE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  97"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW17-ACCESS-12"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/1       SK-AP-06                 GE0/0/0                   93     ", 
+            "GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  97"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW16-ACCESS-12", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1       -                        fc4d-d42d-d3cd            3382   \nGE0/0/4       SK-AP-48                 GE0/0/0                   102    \nGE0/0/10      SK-AP-12                 GE0/0/0                   100    \nGE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 118"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW16-ACCESS-12"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/1       -                        fc4d-d42d-d3cd            3382   ", 
+            "GE0/0/4       SK-AP-48                 GE0/0/0                   102    ", 
+            "GE0/0/10      SK-AP-12                 GE0/0/0                   100    ", 
+            "GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 118"
+        ]
+    ]
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW20-ACCESS-48", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1       SK-AP-23                 GE0/0/0                   104    \nGE0/0/3       SK-AP-22                 GE0/0/0                   116    \nGE0/0/13      SK-AP-33                 GE0/0/0                   90     \nGE0/0/33      SK-AP-34                 GE0/0/0                   101    \nGE0/0/38      SK-AP-27                 GE0/0/0                   91     \nGE0/0/39      -                        d43d-7e21-7bd2            2936   \nGE0/0/47      SK-AP-21                 GE0/0/0                   110    \nXGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  91     \nXGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  110    \nXGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  119    \nXGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  102"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW20-ACCESS-48"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "GE0/0/1       SK-AP-23                 GE0/0/0                   104    ", 
+            "GE0/0/3       SK-AP-22                 GE0/0/0                   116    ", 
+            "GE0/0/13      SK-AP-33                 GE0/0/0                   90     ", 
+            "GE0/0/33      SK-AP-34                 GE0/0/0                   101    ", 
+            "GE0/0/38      SK-AP-27                 GE0/0/0                   91     ", 
+            "GE0/0/39      -                        d43d-7e21-7bd2            2936   ", 
+            "GE0/0/47      SK-AP-21                 GE0/0/0                   110    ", 
+            "XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  91     ", 
+            "XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  110    ", 
+            "XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  119    ", 
+            "XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  102"
+        ]
+    ]
+}
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW21-ACCESS-48", 
+        "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nXGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  92     \nXGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  116    \nXGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  114    \nXGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  94"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW21-ACCESS-48"
+        ], 
+        [
+            "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)", 
+            "XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  92     ", 
+            "XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  116    ", 
+            "XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  114    ", 
+            "XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  94"
+        ]
+    ]
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "failed": true, 
+    "msg": "[Errno None] Unable to connect to port 22 on  or 10.190.255.71"
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}
+{
+    "failed": true, 
+    "msg": "timed out"
+}

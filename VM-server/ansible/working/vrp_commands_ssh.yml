@@ -1,0 +1,40 @@
+
+---
+- name: "CE test"
+  hosts: all
+  connection: local
+  gather_facts: False
+  ignore_errors: yes
+  
+#  vars:
+#    result []
+
+  tasks:
+
+#  - name: "Clean file version2.log"
+#      file: path:/home/jonbov/version2.log state=empty
+
+  - name: testrun
+    ce_command:
+      commands: 
+        - display current | in sysname
+        - display version
+    register: version    
+  - debug:        msg="{{ version }}"
+#  - local_action: copy content='{{ version | to_nice_json }}' dest="/home/jonbov/version.log"
+  - local_action: lineinfile line='{{ version | to_nice_json }}' insertafter=EOF dest="/home/jonbov/version2.log"
+
+
+
+
+  - name: run display commands
+    ce_command:
+      commands:
+        - display current | in sysname
+        - display lldp neighbor brief
+    register: result
+
+  - debug:        msg="{{result | to_nice_json}}"
+#  - local_action: copy content='{{result | to_nice_json}}' dest="/home/jonbov/result.log"
+  - local_action: lineinfile line='{{result | to_nice_json }}' insertafter=EOF dest="/home/jonbov/result.log"
+           

@@ -1,0 +1,40 @@
+
+---
+- name: "CE test"
+  hosts: all
+#  connection: local
+  connection: network_cli
+  gather_facts: False
+  ignore_errors: yes
+
+
+  tasks:
+  - name: Removing existing {{ inventory_hostname }}_currentconfig.cfg"
+    file:
+      path: /etc/ansible/output/{{ inventory_hostname }}_currentconfig.cfg"
+      state: absent
+
+  - name: run display commands
+    ce_command:
+      commands:
+        - display current
+    register: currentconfig
+
+#  - debug:        msg="{{currentconfig | to_nice_json}}"
+  - local_action: copy content='{{ currentconfig }}' dest="/etc/ansible/output/{{ inventory_hostname }}_currentconfig.cfg"           
+  - local_action: copy content='{{ currentconfig | to_nice_json }}' dest="/etc/ansible/output/{{ inventory_hostname }}_currentconfig_json.cfg"
+
+  - name: Removing existing {{ inventory_hostname }}_version.cfg"
+    file:
+      path: /etc/ansible/output/{{ inventory_hostname }}_version.cfg"
+      state: absent
+
+  - name: run display commands
+    ce_command:
+      commands:
+        - display version
+    register: version
+
+#  - debug:        msg="{{version | to_nice_json}}"
+  - local_action: copy content='{{ version | to_nice_json }}' dest="/etc/ansible/output/{{ inventory_hostname }}_version_json.cfg"
+

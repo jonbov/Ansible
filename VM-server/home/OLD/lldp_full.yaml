@@ -1,0 +1,4669 @@
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-ACCESS-24
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1\
+    \       SK-AP-02                 GE0/0/0                   116    \nGE0/0/2  \
+    \     SK-AP-53                 GE0/0/0                   104    \nGE0/0/3    \
+    \   -                        c85b-76dd-271f            2662   \nGE0/0/6      \
+    \ -                        4437-e655-1d9d            3256   \nGE0/0/7       SK-AP-13\
+    \                 GE0/0/0                   91     \nGE0/0/8       SK-AP-67  \
+    \               GE0/0/0                   101    \nGE0/0/24      SK-AP-11    \
+    \             GE0/0/0                   111    \nXGE0/0/1      SK-SW1-DIST-24\
+    \           XGE0/0/13                 93"
+stdout_lines:
+-   - sysname SK-SW1-ACCESS-24
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'GE0/0/1       SK-AP-02                 GE0/0/0                   116    '
+    - 'GE0/0/2       SK-AP-53                 GE0/0/0                   104    '
+    - 'GE0/0/3       -                        c85b-76dd-271f            2662   '
+    - 'GE0/0/6       -                        4437-e655-1d9d            3256   '
+    - 'GE0/0/7       SK-AP-13                 GE0/0/0                   91     '
+    - 'GE0/0/8       SK-AP-67                 GE0/0/0                   101    '
+    - 'GE0/0/24      SK-AP-11                 GE0/0/0                   111    '
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 93
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-DIST-24
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nXGE0/0/2\
+    \      SK-AC1                   XGE0/0/1                  118    \nXGE0/0/3  \
+    \    SK-SW21-ACCESS-48        XGE0/0/1                  90     \nXGE0/0/4    \
+    \  SK-SW20-ACCESS-48        XGE0/0/1                  112    \nXGE0/0/9      SK-SW13-ACCESS-24\
+    \        XGE0/0/1                  105    \nXGE0/0/10     SK-SW14-ACCESS-24  \
+    \      XGE0/0/1                  102    \nXGE0/0/12     SK-SW18-ACCESS-12    \
+    \    GE0/0/12                  110    \nXGE0/0/13     SK-SW1-ACCESS-24       \
+    \  XGE0/0/1                  99     \nXGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1\
+    \                  106    \nXGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1  \
+    \                96     \nXGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12    \
+    \              105    \nXGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1      \
+    \            117    \nXGE0/0/23     R1-CORE                  GE0/1/0         \
+    \          102    \nXGE0/0/24     R1-CORE                  GE0/1/1           \
+    \        102"
+stdout_lines:
+-   - sysname SK-SW1-DIST-24
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'XGE0/0/2      SK-AC1                   XGE0/0/1                  118    '
+    - 'XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  90     '
+    - 'XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  112    '
+    - 'XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  105    '
+    - 'XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  102    '
+    - 'XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  110    '
+    - 'XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  99     '
+    - 'XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  106    '
+    - 'XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  96     '
+    - 'XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  105    '
+    - 'XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  117    '
+    - 'XGE0/0/23     R1-CORE                  GE0/1/0                   102    '
+    - XGE0/0/24     R1-CORE                  GE0/1/1                   102
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW3-ACCESS-24
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/19\
+    \      SK-AP-19                 GE0/0/0                   119    \nGE0/0/23  \
+    \    SK-AP-04                 GE0/0/0                   107    \nGE0/0/24    \
+    \  SK-AP-05                 GE0/0/0                   117    \nXGE0/0/1      SK-SW1-DIST-24\
+    \           XGE0/0/16                 114"
+stdout_lines:
+-   - sysname SK-SW3-ACCESS-24
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'GE0/0/19      SK-AP-19                 GE0/0/0                   119    '
+    - 'GE0/0/23      SK-AP-04                 GE0/0/0                   107    '
+    - 'GE0/0/24      SK-AP-05                 GE0/0/0                   117    '
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 114
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW4-ACCESS-24
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1\
+    \       SK-AP-47                 GE0/0/0                   90     \nGE0/0/2  \
+    \     SK-AP-03                 GE0/0/0                   98     \nGE0/0/7    \
+    \   -                        54ee-752d-0ece            3325   \nGE0/0/8      \
+    \ -                        28d2-4480-8e94            3377   \nGE0/0/10      -\
+    \                        54ee-752d-b140            2785   \nGE0/0/12      -  \
+    \                      3c97-0ea1-6480            3003   \nXGE0/0/1      SK-SW1-DIST-24\
+    \           XGE0/0/18                 92"
+stdout_lines:
+-   - sysname SK-SW4-ACCESS-24
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'GE0/0/1       SK-AP-47                 GE0/0/0                   90     '
+    - 'GE0/0/2       SK-AP-03                 GE0/0/0                   98     '
+    - 'GE0/0/7       -                        54ee-752d-0ece            3325   '
+    - 'GE0/0/8       -                        28d2-4480-8e94            3377   '
+    - 'GE0/0/10      -                        54ee-752d-b140            2785   '
+    - 'GE0/0/12      -                        3c97-0ea1-6480            3003   '
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 92
+
+failed: true
+msg: timed out
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW7-ACCESS-24
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1\
+    \       SK-AP-20                 GE0/0/0                   119    \nGE0/0/2  \
+    \     SK-AP-25                 GE0/0/0                   106    \nGE0/0/3    \
+    \   SK-AP-26                 GE0/0/0                   99     \nGE0/0/4      \
+    \ SK-AP-24                 GE0/0/0                   115    \nXGE0/0/1      SK-SW20-ACCESS-48\
+    \        XGE0/0/2                  96"
+stdout_lines:
+-   - sysname SK-SW7-ACCESS-24
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'GE0/0/1       SK-AP-20                 GE0/0/0                   119    '
+    - 'GE0/0/2       SK-AP-25                 GE0/0/0                   106    '
+    - 'GE0/0/3       SK-AP-26                 GE0/0/0                   99     '
+    - 'GE0/0/4       SK-AP-24                 GE0/0/0                   115    '
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  96
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW8-ACCESS-24
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/23\
+    \      SK-AP-28                 GE0/0/0                   95     \nGE0/0/24  \
+    \    SK-AP-30                 GE0/0/0                   112    \nXGE0/0/1    \
+    \  SK-SW20-ACCESS-48        XGE0/0/3                  107"
+stdout_lines:
+-   - sysname SK-SW8-ACCESS-24
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'GE0/0/23      SK-AP-28                 GE0/0/0                   95     '
+    - 'GE0/0/24      SK-AP-30                 GE0/0/0                   112    '
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  107
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW9-ACCESS-24
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/3\
+    \       SK-AP-35                 GE0/0/0                   119    \nGE0/0/13 \
+    \     SK-AP-32                 GE0/0/0                   99     \nXGE0/0/1   \
+    \   SK-SW21-ACCESS-48        XGE0/0/2                  111"
+stdout_lines:
+-   - sysname SK-SW9-ACCESS-24
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'GE0/0/3       SK-AP-35                 GE0/0/0                   119    '
+    - 'GE0/0/13      SK-AP-32                 GE0/0/0                   99     '
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  111
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW10-ACCESS-24
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/19\
+    \      -                        54ee-7530-56ce            3056   \nXGE0/0/1  \
+    \    SK-SW20-ACCESS-48        XGE0/0/4                  98"
+stdout_lines:
+-   - sysname SK-SW10-ACCESS-24
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'GE0/0/19      -                        54ee-7530-56ce            3056   '
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  98
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW11-ACCESS-24
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1\
+    \       SK-AP-49                 GE0/0/0                   100    \nGE0/0/2  \
+    \     SK-AP-45                 GE0/0/0                   104    \nGE0/0/3    \
+    \   SK-AP-31                 GE0/0/0                   108    \nGE0/0/4      \
+    \ SK-AP-09                 GE0/0/0                   110    \nXGE0/0/1      SK-SW21-ACCESS-48\
+    \        XGE0/0/3                  91"
+stdout_lines:
+-   - sysname SK-SW11-ACCESS-24
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'GE0/0/1       SK-AP-49                 GE0/0/0                   100    '
+    - 'GE0/0/2       SK-AP-45                 GE0/0/0                   104    '
+    - 'GE0/0/3       SK-AP-31                 GE0/0/0                   108    '
+    - 'GE0/0/4       SK-AP-09                 GE0/0/0                   110    '
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  91
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW13-ACCESS-24
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/9\
+    \       SK-AP-51                 GE0/0/0                   117    \nGE0/0/10 \
+    \     SK-AP-56                 GE0/0/0                   117    \nGE0/0/11   \
+    \   SK-AP-58                 GE0/0/0                   103    \nGE0/0/12     \
+    \ SK-AP-57                 GE0/0/0                   92     \nGE0/0/13      SK-AP-54\
+    \                 GE0/0/0                   117    \nGE0/0/14      SK-AP-52  \
+    \               GE0/0/0                   97     \nGE0/0/15      SK-AP-61    \
+    \             GE0/0/0                   110    \nGE0/0/16      SK-AP-63      \
+    \           GE0/0/0                   98     \nGE0/0/17      SK-AP-55        \
+    \         GE0/0/0                   115    \nXGE0/0/1      SK-SW1-DIST-24    \
+    \       XGE0/0/9                  107"
+stdout_lines:
+-   - sysname SK-SW13-ACCESS-24
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'GE0/0/9       SK-AP-51                 GE0/0/0                   117    '
+    - 'GE0/0/10      SK-AP-56                 GE0/0/0                   117    '
+    - 'GE0/0/11      SK-AP-58                 GE0/0/0                   103    '
+    - 'GE0/0/12      SK-AP-57                 GE0/0/0                   92     '
+    - 'GE0/0/13      SK-AP-54                 GE0/0/0                   117    '
+    - 'GE0/0/14      SK-AP-52                 GE0/0/0                   97     '
+    - 'GE0/0/15      SK-AP-61                 GE0/0/0                   110    '
+    - 'GE0/0/16      SK-AP-63                 GE0/0/0                   98     '
+    - 'GE0/0/17      SK-AP-55                 GE0/0/0                   115    '
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  107
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW14-ACCESS-24
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1\
+    \       SK-AP-14                 GE0/0/0                   109    \nGE0/0/2  \
+    \     SK-AP-29                 GE0/0/0                   90     \nGE0/0/3    \
+    \   SK-AP-60                 GE0/0/0                   115    \nGE0/0/4      \
+    \ SK-AP-62                 GE0/0/0                   106    \nGE0/0/6       SK-AP-59\
+    \                 GE0/0/0                   111    \nGE0/0/22      -         \
+    \               54ee-752d-36c9            3447   \nXGE0/0/1      SK-SW1-DIST-24\
+    \           XGE0/0/10                 120"
+stdout_lines:
+-   - sysname SK-SW14-ACCESS-24
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'GE0/0/1       SK-AP-14                 GE0/0/0                   109    '
+    - 'GE0/0/2       SK-AP-29                 GE0/0/0                   90     '
+    - 'GE0/0/3       SK-AP-60                 GE0/0/0                   115    '
+    - 'GE0/0/4       SK-AP-62                 GE0/0/0                   106    '
+    - 'GE0/0/6       SK-AP-59                 GE0/0/0                   111    '
+    - 'GE0/0/22      -                        54ee-752d-36c9            3447   '
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 120
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW15-ACCESS-12
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/7\
+    \       SK-AP-50                 GE0/0/0                   112    \nGE0/0/12 \
+    \     SK-SW21-ACCESS-48        XGE0/0/4                  97"
+stdout_lines:
+-   - sysname SK-SW15-ACCESS-12
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'GE0/0/7       SK-AP-50                 GE0/0/0                   112    '
+    - GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  97
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW17-ACCESS-12
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1\
+    \       SK-AP-06                 GE0/0/0                   110    \nGE0/0/12 \
+    \     SK-SW18-ACCESS-12        GE0/0/11                  118"
+stdout_lines:
+-   - sysname SK-SW17-ACCESS-12
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'GE0/0/1       SK-AP-06                 GE0/0/0                   110    '
+    - GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  118
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW18-ACCESS-12
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1\
+    \       SK-AP-07                 GE0/0/0                   99     \nGE0/0/2  \
+    \     SK-AP-08                 GE0/0/0                   108    \nGE0/0/11   \
+    \   SK-SW17-ACCESS-12        GE0/0/12                  118    \nGE0/0/12     \
+    \ SK-SW1-DIST-24           XGE0/0/12                 100"
+stdout_lines:
+-   - sysname SK-SW18-ACCESS-12
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'GE0/0/1       SK-AP-07                 GE0/0/0                   99     '
+    - 'GE0/0/2       SK-AP-08                 GE0/0/0                   108    '
+    - 'GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  118    '
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 100
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW20-ACCESS-48
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nGE0/0/1\
+    \       SK-AP-23                 GE0/0/0                   93     \nGE0/0/3  \
+    \     SK-AP-22                 GE0/0/0                   115    \nGE0/0/13   \
+    \   SK-AP-33                 GE0/0/0                   91     \nGE0/0/33     \
+    \ SK-AP-34                 GE0/0/0                   102    \nGE0/0/38      SK-AP-27\
+    \                 GE0/0/0                   92     \nGE0/0/39      -         \
+    \               d43d-7e21-7bd2            3210   \nGE0/0/47      SK-AP-21    \
+    \             GE0/0/0                   110    \nXGE0/0/1      SK-SW1-DIST-24\
+    \           XGE0/0/4                  115    \nXGE0/0/2      SK-SW7-ACCESS-24\
+    \         XGE0/0/1                  90     \nXGE0/0/3      SK-SW8-ACCESS-24  \
+    \       XGE0/0/1                  105    \nXGE0/0/4      SK-SW10-ACCESS-24   \
+    \     XGE0/0/1                  110"
+stdout_lines:
+-   - sysname SK-SW20-ACCESS-48
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'GE0/0/1       SK-AP-23                 GE0/0/0                   93     '
+    - 'GE0/0/3       SK-AP-22                 GE0/0/0                   115    '
+    - 'GE0/0/13      SK-AP-33                 GE0/0/0                   91     '
+    - 'GE0/0/33      SK-AP-34                 GE0/0/0                   102    '
+    - 'GE0/0/38      SK-AP-27                 GE0/0/0                   92     '
+    - 'GE0/0/39      -                        d43d-7e21-7bd2            3210   '
+    - 'GE0/0/47      SK-AP-21                 GE0/0/0                   110    '
+    - 'XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  115    '
+    - 'XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  90     '
+    - 'XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  105    '
+    - XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  110
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW21-ACCESS-48
+- "Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)\nXGE0/0/1\
+    \      SK-SW1-DIST-24           XGE0/0/3                  97     \nXGE0/0/2  \
+    \    SK-SW9-ACCESS-24         XGE0/0/1                  105    \nXGE0/0/3    \
+    \  SK-SW11-ACCESS-24        XGE0/0/1                  101    \nXGE0/0/4      SK-SW15-ACCESS-12\
+    \        GE0/0/12                  105"
+stdout_lines:
+-   - sysname SK-SW21-ACCESS-48
+-   - Local Intf    Neighbor Dev             Neighbor Intf             Exptime(s)
+    - 'XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  97     '
+    - 'XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  105    '
+    - 'XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  101    '
+    - XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  105
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-DIST-24
+- 'XGE0/0/2      SK-AC1                   XGE0/0/1                  106
+
+    XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  108
+
+    XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  100
+
+    XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  93
+
+    XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  120
+
+    XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  98
+
+    XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  117
+
+    XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  93
+
+    XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  114
+
+    XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  92
+
+    XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  105
+
+    XGE0/0/23     R1-CORE                  GE0/1/0                   120
+
+    XGE0/0/24     R1-CORE                  GE0/1/1                   120'
+stdout_lines:
+-   - sysname SK-SW1-DIST-24
+-   - XGE0/0/2      SK-AC1                   XGE0/0/1                  106
+    - XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  108
+    - XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  100
+    - XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  93
+    - XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  120
+    - XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  98
+    - XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  117
+    - XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  93
+    - XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  114
+    - XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  92
+    - XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  105
+    - XGE0/0/23     R1-CORE                  GE0/1/0                   120
+    - XGE0/0/24     R1-CORE                  GE0/1/1                   120
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW2-ACCESS-24
+- 'GE0/0/1       SK-AP-65                 GE0/0/0                   105
+
+    GE0/0/2       SK-AP-17                 GE0/0/0                   109
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 114'
+stdout_lines:
+-   - sysname SK-SW2-ACCESS-24
+-   - GE0/0/1       SK-AP-65                 GE0/0/0                   105
+    - GE0/0/2       SK-AP-17                 GE0/0/0                   109
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 114
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-ACCESS-24
+- 'GE0/0/1       SK-AP-02                 GE0/0/0                   119
+
+    GE0/0/2       SK-AP-53                 GE0/0/0                   107
+
+    GE0/0/3       -                        c85b-76dd-271f            2815
+
+    GE0/0/6       -                        4437-e655-1d9d            3409
+
+    GE0/0/7       SK-AP-13                 GE0/0/0                   109
+
+    GE0/0/8       SK-AP-67                 GE0/0/0                   104
+
+    GE0/0/24      SK-AP-11                 GE0/0/0                   99
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 111'
+stdout_lines:
+-   - sysname SK-SW1-ACCESS-24
+-   - GE0/0/1       SK-AP-02                 GE0/0/0                   119
+    - GE0/0/2       SK-AP-53                 GE0/0/0                   107
+    - GE0/0/3       -                        c85b-76dd-271f            2815
+    - GE0/0/6       -                        4437-e655-1d9d            3409
+    - GE0/0/7       SK-AP-13                 GE0/0/0                   109
+    - GE0/0/8       SK-AP-67                 GE0/0/0                   104
+    - GE0/0/24      SK-AP-11                 GE0/0/0                   99
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 111
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW4-ACCESS-24
+- 'GE0/0/1       SK-AP-47                 GE0/0/0                   91
+
+    GE0/0/2       SK-AP-03                 GE0/0/0                   95
+
+    GE0/0/7       -                        54ee-752d-0ece            3477
+
+    GE0/0/8       -                        28d2-4480-8e94            3529
+
+    GE0/0/10      -                        54ee-752d-b140            2937
+
+    GE0/0/12      -                        3c97-0ea1-6480            3155
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 109'
+stdout_lines:
+-   - sysname SK-SW4-ACCESS-24
+-   - GE0/0/1       SK-AP-47                 GE0/0/0                   91
+    - GE0/0/2       SK-AP-03                 GE0/0/0                   95
+    - GE0/0/7       -                        54ee-752d-0ece            3477
+    - GE0/0/8       -                        28d2-4480-8e94            3529
+    - GE0/0/10      -                        54ee-752d-b140            2937
+    - GE0/0/12      -                        3c97-0ea1-6480            3155
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 109
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW3-ACCESS-24
+- 'GE0/0/19      SK-AP-19                 GE0/0/0                   107
+
+    GE0/0/23      SK-AP-04                 GE0/0/0                   108
+
+    GE0/0/24      SK-AP-05                 GE0/0/0                   114
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 102'
+stdout_lines:
+-   - sysname SK-SW3-ACCESS-24
+-   - GE0/0/19      SK-AP-19                 GE0/0/0                   107
+    - GE0/0/23      SK-AP-04                 GE0/0/0                   108
+    - GE0/0/24      SK-AP-05                 GE0/0/0                   114
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 102
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW7-ACCESS-24
+- 'GE0/0/1       SK-AP-20                 GE0/0/0                   105
+
+    GE0/0/2       SK-AP-25                 GE0/0/0                   91
+
+    GE0/0/3       SK-AP-26                 GE0/0/0                   115
+
+    GE0/0/4       SK-AP-24                 GE0/0/0                   101
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  112'
+stdout_lines:
+-   - sysname SK-SW7-ACCESS-24
+-   - GE0/0/1       SK-AP-20                 GE0/0/0                   105
+    - GE0/0/2       SK-AP-25                 GE0/0/0                   91
+    - GE0/0/3       SK-AP-26                 GE0/0/0                   115
+    - GE0/0/4       SK-AP-24                 GE0/0/0                   101
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  112
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW8-ACCESS-24
+- 'GE0/0/23      SK-AP-28                 GE0/0/0                   111
+
+    GE0/0/24      SK-AP-30                 GE0/0/0                   98
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  93'
+stdout_lines:
+-   - sysname SK-SW8-ACCESS-24
+-   - GE0/0/23      SK-AP-28                 GE0/0/0                   111
+    - GE0/0/24      SK-AP-30                 GE0/0/0                   98
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  93
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW9-ACCESS-24
+- 'GE0/0/3       SK-AP-35                 GE0/0/0                   107
+
+    GE0/0/13      SK-AP-32                 GE0/0/0                   117
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  99'
+stdout_lines:
+-   - sysname SK-SW9-ACCESS-24
+-   - GE0/0/3       SK-AP-35                 GE0/0/0                   107
+    - GE0/0/13      SK-AP-32                 GE0/0/0                   117
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  99
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW10-ACCESS-24
+- 'GE0/0/19      -                        54ee-7530-56ce            3206
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  114'
+stdout_lines:
+-   - sysname SK-SW10-ACCESS-24
+-   - GE0/0/19      -                        54ee-7530-56ce            3206
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  114
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW11-ACCESS-24
+- 'GE0/0/1       SK-AP-49                 GE0/0/0                   93
+
+    GE0/0/2       SK-AP-45                 GE0/0/0                   106
+
+    GE0/0/3       SK-AP-31                 GE0/0/0                   95
+
+    GE0/0/4       SK-AP-09                 GE0/0/0                   97
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  107'
+stdout_lines:
+-   - sysname SK-SW11-ACCESS-24
+-   - GE0/0/1       SK-AP-49                 GE0/0/0                   93
+    - GE0/0/2       SK-AP-45                 GE0/0/0                   106
+    - GE0/0/3       SK-AP-31                 GE0/0/0                   95
+    - GE0/0/4       SK-AP-09                 GE0/0/0                   97
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  107
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW14-ACCESS-24
+- 'GE0/0/1       SK-AP-14                 GE0/0/0                   96
+
+    GE0/0/2       SK-AP-29                 GE0/0/0                   107
+
+    GE0/0/3       SK-AP-60                 GE0/0/0                   112
+
+    GE0/0/4       SK-AP-62                 GE0/0/0                   99
+
+    GE0/0/6       SK-AP-59                 GE0/0/0                   108
+
+    GE0/0/22      -                        54ee-752d-36c9            3598
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 107'
+stdout_lines:
+-   - sysname SK-SW14-ACCESS-24
+-   - GE0/0/1       SK-AP-14                 GE0/0/0                   96
+    - GE0/0/2       SK-AP-29                 GE0/0/0                   107
+    - GE0/0/3       SK-AP-60                 GE0/0/0                   112
+    - GE0/0/4       SK-AP-62                 GE0/0/0                   99
+    - GE0/0/6       SK-AP-59                 GE0/0/0                   108
+    - GE0/0/22      -                        54ee-752d-36c9            3598
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 107
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW15-ACCESS-12
+- 'GE0/0/7       SK-AP-50                 GE0/0/0                   103
+
+    GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  113'
+stdout_lines:
+-   - sysname SK-SW15-ACCESS-12
+-   - GE0/0/7       SK-AP-50                 GE0/0/0                   103
+    - GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  113
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW16-ACCESS-12
+- 'GE0/0/1       -                        fc4d-d42d-d3cd            2845
+
+    GE0/0/4       SK-AP-48                 GE0/0/0                   106
+
+    GE0/0/10      SK-AP-12                 GE0/0/0                   110
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 117'
+stdout_lines:
+-   - sysname SK-SW16-ACCESS-12
+-   - GE0/0/1       -                        fc4d-d42d-d3cd            2845
+    - GE0/0/4       SK-AP-48                 GE0/0/0                   106
+    - GE0/0/10      SK-AP-12                 GE0/0/0                   110
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 117
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW17-ACCESS-12
+- 'GE0/0/1       SK-AP-06                 GE0/0/0                   106
+
+    GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  105'
+stdout_lines:
+-   - sysname SK-SW17-ACCESS-12
+-   - GE0/0/1       SK-AP-06                 GE0/0/0                   106
+    - GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  105
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW20-ACCESS-48
+- 'GE0/0/1       SK-AP-23                 GE0/0/0                   108
+
+    GE0/0/3       SK-AP-22                 GE0/0/0                   100
+
+    GE0/0/13      SK-AP-33                 GE0/0/0                   107
+
+    GE0/0/33      SK-AP-34                 GE0/0/0                   118
+
+    GE0/0/38      SK-AP-27                 GE0/0/0                   108
+
+    GE0/0/39      -                        d43d-7e21-7bd2            3360
+
+    GE0/0/47      SK-AP-21                 GE0/0/0                   96
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  101
+
+    XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  106
+
+    XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  91
+
+    XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  96'
+stdout_lines:
+-   - sysname SK-SW20-ACCESS-48
+-   - GE0/0/1       SK-AP-23                 GE0/0/0                   108
+    - GE0/0/3       SK-AP-22                 GE0/0/0                   100
+    - GE0/0/13      SK-AP-33                 GE0/0/0                   107
+    - GE0/0/33      SK-AP-34                 GE0/0/0                   118
+    - GE0/0/38      SK-AP-27                 GE0/0/0                   108
+    - GE0/0/39      -                        d43d-7e21-7bd2            3360
+    - GE0/0/47      SK-AP-21                 GE0/0/0                   96
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  101
+    - XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  106
+    - XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  91
+    - XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  96
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW21-ACCESS-48
+- 'XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  114
+
+    XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  92
+
+    XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  118
+
+    XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  92'
+stdout_lines:
+-   - sysname SK-SW21-ACCESS-48
+-   - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  114
+    - XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  92
+    - XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  118
+    - XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  92
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-ACCESS-24
+- 'GE0/0/1       SK-AP-02                 GE0/0/0                   91
+
+    GE0/0/2       SK-AP-53                 GE0/0/0                   110
+
+    GE0/0/3       -                        c85b-76dd-271f            3579
+
+    GE0/0/6       -                        4437-e655-1d9d            3229
+
+    GE0/0/7       SK-AP-13                 GE0/0/0                   109
+
+    GE0/0/8       SK-AP-67                 GE0/0/0                   108
+
+    GE0/0/24      SK-AP-11                 GE0/0/0                   99
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 111'
+stdout_lines:
+-   - sysname SK-SW1-ACCESS-24
+-   - GE0/0/1       SK-AP-02                 GE0/0/0                   91
+    - GE0/0/2       SK-AP-53                 GE0/0/0                   110
+    - GE0/0/3       -                        c85b-76dd-271f            3579
+    - GE0/0/6       -                        4437-e655-1d9d            3229
+    - GE0/0/7       SK-AP-13                 GE0/0/0                   109
+    - GE0/0/8       SK-AP-67                 GE0/0/0                   108
+    - GE0/0/24      SK-AP-11                 GE0/0/0                   99
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 111
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW3-ACCESS-24
+- 'GE0/0/19      SK-AP-19                 GE0/0/0                   107
+
+    GE0/0/23      SK-AP-04                 GE0/0/0                   111
+
+    GE0/0/24      SK-AP-05                 GE0/0/0                   116
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 102'
+stdout_lines:
+-   - sysname SK-SW3-ACCESS-24
+-   - GE0/0/19      SK-AP-19                 GE0/0/0                   107
+    - GE0/0/23      SK-AP-04                 GE0/0/0                   111
+    - GE0/0/24      SK-AP-05                 GE0/0/0                   116
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 102
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW4-ACCESS-24
+- 'GE0/0/1       SK-AP-47                 GE0/0/0                   94
+
+    GE0/0/2       SK-AP-03                 GE0/0/0                   97
+
+    GE0/0/7       -                        54ee-752d-0ece            3297
+
+    GE0/0/8       -                        28d2-4480-8e94            3349
+
+    GE0/0/10      -                        54ee-752d-b140            2757
+
+    GE0/0/12      -                        3c97-0ea1-6480            2975
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 109'
+stdout_lines:
+-   - sysname SK-SW4-ACCESS-24
+-   - GE0/0/1       SK-AP-47                 GE0/0/0                   94
+    - GE0/0/2       SK-AP-03                 GE0/0/0                   97
+    - GE0/0/7       -                        54ee-752d-0ece            3297
+    - GE0/0/8       -                        28d2-4480-8e94            3349
+    - GE0/0/10      -                        54ee-752d-b140            2757
+    - GE0/0/12      -                        3c97-0ea1-6480            2975
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 109
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW8-ACCESS-24
+- 'GE0/0/23      SK-AP-28                 GE0/0/0                   112
+
+    GE0/0/24      SK-AP-30                 GE0/0/0                   99
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  94'
+stdout_lines:
+-   - sysname SK-SW8-ACCESS-24
+-   - GE0/0/23      SK-AP-28                 GE0/0/0                   112
+    - GE0/0/24      SK-AP-30                 GE0/0/0                   99
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  94
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW9-ACCESS-24
+- 'GE0/0/3       SK-AP-35                 GE0/0/0                   106
+
+    GE0/0/13      SK-AP-32                 GE0/0/0                   116
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  98'
+stdout_lines:
+-   - sysname SK-SW9-ACCESS-24
+-   - GE0/0/3       SK-AP-35                 GE0/0/0                   106
+    - GE0/0/13      SK-AP-32                 GE0/0/0                   116
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  98
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW7-ACCESS-24
+- 'GE0/0/1       SK-AP-20                 GE0/0/0                   106
+
+    GE0/0/2       SK-AP-25                 GE0/0/0                   92
+
+    GE0/0/3       SK-AP-26                 GE0/0/0                   116
+
+    GE0/0/4       SK-AP-24                 GE0/0/0                   102
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  113'
+stdout_lines:
+-   - sysname SK-SW7-ACCESS-24
+-   - GE0/0/1       SK-AP-20                 GE0/0/0                   106
+    - GE0/0/2       SK-AP-25                 GE0/0/0                   92
+    - GE0/0/3       SK-AP-26                 GE0/0/0                   116
+    - GE0/0/4       SK-AP-24                 GE0/0/0                   102
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  113
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW11-ACCESS-24
+- 'GE0/0/1       SK-AP-49                 GE0/0/0                   95
+
+    GE0/0/2       SK-AP-45                 GE0/0/0                   110
+
+    GE0/0/3       SK-AP-31                 GE0/0/0                   96
+
+    GE0/0/4       SK-AP-09                 GE0/0/0                   98
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  108'
+stdout_lines:
+-   - sysname SK-SW11-ACCESS-24
+-   - GE0/0/1       SK-AP-49                 GE0/0/0                   95
+    - GE0/0/2       SK-AP-45                 GE0/0/0                   110
+    - GE0/0/3       SK-AP-31                 GE0/0/0                   96
+    - GE0/0/4       SK-AP-09                 GE0/0/0                   98
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  108
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW13-ACCESS-24
+- 'GE0/0/9       SK-AP-51                 GE0/0/0                   93
+
+    GE0/0/10      SK-AP-56                 GE0/0/0                   114
+
+    GE0/0/11      SK-AP-58                 GE0/0/0                   109
+
+    GE0/0/12      SK-AP-57                 GE0/0/0                   100
+
+    GE0/0/13      SK-AP-54                 GE0/0/0                   92
+
+    GE0/0/14      SK-AP-52                 GE0/0/0                   102
+
+    GE0/0/15      SK-AP-61                 GE0/0/0                   109
+
+    GE0/0/16      SK-AP-63                 GE0/0/0                   93
+
+    GE0/0/17      SK-AP-55                 GE0/0/0                   92
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  97'
+stdout_lines:
+-   - sysname SK-SW13-ACCESS-24
+-   - GE0/0/9       SK-AP-51                 GE0/0/0                   93
+    - GE0/0/10      SK-AP-56                 GE0/0/0                   114
+    - GE0/0/11      SK-AP-58                 GE0/0/0                   109
+    - GE0/0/12      SK-AP-57                 GE0/0/0                   100
+    - GE0/0/13      SK-AP-54                 GE0/0/0                   92
+    - GE0/0/14      SK-AP-52                 GE0/0/0                   102
+    - GE0/0/15      SK-AP-61                 GE0/0/0                   109
+    - GE0/0/16      SK-AP-63                 GE0/0/0                   93
+    - GE0/0/17      SK-AP-55                 GE0/0/0                   92
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  97
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW15-ACCESS-12
+- 'GE0/0/7       SK-AP-50                 GE0/0/0                   105
+
+    GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  113'
+stdout_lines:
+-   - sysname SK-SW15-ACCESS-12
+-   - GE0/0/7       SK-AP-50                 GE0/0/0                   105
+    - GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  113
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW14-ACCESS-24
+- 'GE0/0/1       SK-AP-14                 GE0/0/0                   96
+
+    GE0/0/2       SK-AP-29                 GE0/0/0                   107
+
+    GE0/0/3       SK-AP-60                 GE0/0/0                   114
+
+    GE0/0/4       SK-AP-62                 GE0/0/0                   101
+
+    GE0/0/6       SK-AP-59                 GE0/0/0                   110
+
+    GE0/0/22      -                        54ee-752d-36c9            3418
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 107'
+stdout_lines:
+-   - sysname SK-SW14-ACCESS-24
+-   - GE0/0/1       SK-AP-14                 GE0/0/0                   96
+    - GE0/0/2       SK-AP-29                 GE0/0/0                   107
+    - GE0/0/3       SK-AP-60                 GE0/0/0                   114
+    - GE0/0/4       SK-AP-62                 GE0/0/0                   101
+    - GE0/0/6       SK-AP-59                 GE0/0/0                   110
+    - GE0/0/22      -                        54ee-752d-36c9            3418
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 107
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW16-ACCESS-12
+- 'GE0/0/1       -                        fc4d-d42d-d3cd            2666
+
+    GE0/0/4       SK-AP-48                 GE0/0/0                   110
+
+    GE0/0/10      SK-AP-12                 GE0/0/0                   111
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 118'
+stdout_lines:
+-   - sysname SK-SW16-ACCESS-12
+-   - GE0/0/1       -                        fc4d-d42d-d3cd            2666
+    - GE0/0/4       SK-AP-48                 GE0/0/0                   110
+    - GE0/0/10      SK-AP-12                 GE0/0/0                   111
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 118
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW17-ACCESS-12
+- 'GE0/0/1       SK-AP-06                 GE0/0/0                   109
+
+    GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  106'
+stdout_lines:
+-   - sysname SK-SW17-ACCESS-12
+-   - GE0/0/1       SK-AP-06                 GE0/0/0                   109
+    - GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  106
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW18-ACCESS-12
+- 'GE0/0/1       SK-AP-07                 GE0/0/0                   104
+
+    GE0/0/2       SK-AP-08                 GE0/0/0                   99
+
+    GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  104
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 116'
+stdout_lines:
+-   - sysname SK-SW18-ACCESS-12
+-   - GE0/0/1       SK-AP-07                 GE0/0/0                   104
+    - GE0/0/2       SK-AP-08                 GE0/0/0                   99
+    - GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  104
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 116
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW20-ACCESS-48
+- 'GE0/0/1       SK-AP-23                 GE0/0/0                   108
+
+    GE0/0/3       SK-AP-22                 GE0/0/0                   100
+
+    GE0/0/13      SK-AP-33                 GE0/0/0                   106
+
+    GE0/0/33      SK-AP-34                 GE0/0/0                   118
+
+    GE0/0/38      SK-AP-27                 GE0/0/0                   108
+
+    GE0/0/39      -                        d43d-7e21-7bd2            3180
+
+    GE0/0/47      SK-AP-21                 GE0/0/0                   96
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  101
+
+    XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  106
+
+    XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  91
+
+    XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  96'
+stdout_lines:
+-   - sysname SK-SW20-ACCESS-48
+-   - GE0/0/1       SK-AP-23                 GE0/0/0                   108
+    - GE0/0/3       SK-AP-22                 GE0/0/0                   100
+    - GE0/0/13      SK-AP-33                 GE0/0/0                   106
+    - GE0/0/33      SK-AP-34                 GE0/0/0                   118
+    - GE0/0/38      SK-AP-27                 GE0/0/0                   108
+    - GE0/0/39      -                        d43d-7e21-7bd2            3180
+    - GE0/0/47      SK-AP-21                 GE0/0/0                   96
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  101
+    - XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  106
+    - XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  91
+    - XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  96
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW21-ACCESS-48
+- 'XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  114
+
+    XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  92
+
+    XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  118
+
+    XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  92'
+stdout_lines:
+-   - sysname SK-SW21-ACCESS-48
+-   - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  114
+    - XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  92
+    - XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  118
+    - XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  92
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-DIST-24
+- 'XGE0/0/2      SK-AC1                   XGE0/0/1                  108
+
+    XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  110
+
+    XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  102
+
+    XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  95
+
+    XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  92
+
+    XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  100
+
+    XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  119
+
+    XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  96
+
+    XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  116
+
+    XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  94
+
+    XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  108
+
+    XGE0/0/23     R1-CORE                  GE0/1/0                   92
+
+    XGE0/0/24     R1-CORE                  GE0/1/1                   92'
+stdout_lines:
+-   - sysname SK-SW1-DIST-24
+-   - XGE0/0/2      SK-AC1                   XGE0/0/1                  108
+    - XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  110
+    - XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  102
+    - XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  95
+    - XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  92
+    - XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  100
+    - XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  119
+    - XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  96
+    - XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  116
+    - XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  94
+    - XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  108
+    - XGE0/0/23     R1-CORE                  GE0/1/0                   92
+    - XGE0/0/24     R1-CORE                  GE0/1/1                   92
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-ACCESS-24
+- 'GE0/0/1       SK-AP-02                 GE0/0/0                   115
+
+    GE0/0/2       SK-AP-53                 GE0/0/0                   103
+
+    GE0/0/3       -                        c85b-76dd-271f            3358
+
+    GE0/0/6       -                        4437-e655-1d9d            3008
+
+    GE0/0/7       SK-AP-13                 GE0/0/0                   97
+
+    GE0/0/8       SK-AP-67                 GE0/0/0                   101
+
+    GE0/0/24      SK-AP-11                 GE0/0/0                   118
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 100'
+stdout_lines:
+-   - sysname SK-SW1-ACCESS-24
+-   - GE0/0/1       SK-AP-02                 GE0/0/0                   115
+    - GE0/0/2       SK-AP-53                 GE0/0/0                   103
+    - GE0/0/3       -                        c85b-76dd-271f            3358
+    - GE0/0/6       -                        4437-e655-1d9d            3008
+    - GE0/0/7       SK-AP-13                 GE0/0/0                   97
+    - GE0/0/8       SK-AP-67                 GE0/0/0                   101
+    - GE0/0/24      SK-AP-11                 GE0/0/0                   118
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 100
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW4-ACCESS-24
+- 'GE0/0/1       SK-AP-47                 GE0/0/0                   118
+
+    GE0/0/2       SK-AP-03                 GE0/0/0                   120
+
+    GE0/0/7       -                        54ee-752d-0ece            3077
+
+    GE0/0/8       -                        28d2-4480-8e94            3129
+
+    GE0/0/10      -                        54ee-752d-b140            3481
+
+    GE0/0/12      -                        3c97-0ea1-6480            2755
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 98'
+stdout_lines:
+-   - sysname SK-SW4-ACCESS-24
+-   - GE0/0/1       SK-AP-47                 GE0/0/0                   118
+    - GE0/0/2       SK-AP-03                 GE0/0/0                   120
+    - GE0/0/7       -                        54ee-752d-0ece            3077
+    - GE0/0/8       -                        28d2-4480-8e94            3129
+    - GE0/0/10      -                        54ee-752d-b140            3481
+    - GE0/0/12      -                        3c97-0ea1-6480            2755
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 98
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-DIST-24
+- 'XGE0/0/2      SK-AC1                   XGE0/0/1                  95
+
+    XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  97
+
+    XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  119
+
+    XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  113
+
+    XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  109
+
+    XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  117
+
+    XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  106
+
+    XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  113
+
+    XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  103
+
+    XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  112
+
+    XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  95
+
+    XGE0/0/23     R1-CORE                  GE0/1/0                   109
+
+    XGE0/0/24     R1-CORE                  GE0/1/1                   109'
+stdout_lines:
+-   - sysname SK-SW1-DIST-24
+-   - XGE0/0/2      SK-AC1                   XGE0/0/1                  95
+    - XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  97
+    - XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  119
+    - XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  113
+    - XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  109
+    - XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  117
+    - XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  106
+    - XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  113
+    - XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  103
+    - XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  112
+    - XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  95
+    - XGE0/0/23     R1-CORE                  GE0/1/0                   109
+    - XGE0/0/24     R1-CORE                  GE0/1/1                   109
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW2-ACCESS-24
+- 'GE0/0/1       SK-AP-65                 GE0/0/0                   100
+
+    GE0/0/2       SK-AP-17                 GE0/0/0                   99
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 103'
+stdout_lines:
+-   - sysname SK-SW2-ACCESS-24
+-   - GE0/0/1       SK-AP-65                 GE0/0/0                   100
+    - GE0/0/2       SK-AP-17                 GE0/0/0                   99
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 103
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW3-ACCESS-24
+- 'GE0/0/19      SK-AP-19                 GE0/0/0                   96
+
+    GE0/0/23      SK-AP-04                 GE0/0/0                   104
+
+    GE0/0/24      SK-AP-05                 GE0/0/0                   107
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 91'
+stdout_lines:
+-   - sysname SK-SW3-ACCESS-24
+-   - GE0/0/19      SK-AP-19                 GE0/0/0                   96
+    - GE0/0/23      SK-AP-04                 GE0/0/0                   104
+    - GE0/0/24      SK-AP-05                 GE0/0/0                   107
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 91
+
+failed: true
+msg: timed out
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW7-ACCESS-24
+- 'GE0/0/1       SK-AP-20                 GE0/0/0                   95
+
+    GE0/0/2       SK-AP-25                 GE0/0/0                   111
+
+    GE0/0/3       SK-AP-26                 GE0/0/0                   105
+
+    GE0/0/4       SK-AP-24                 GE0/0/0                   91
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  102'
+stdout_lines:
+-   - sysname SK-SW7-ACCESS-24
+-   - GE0/0/1       SK-AP-20                 GE0/0/0                   95
+    - GE0/0/2       SK-AP-25                 GE0/0/0                   111
+    - GE0/0/3       SK-AP-26                 GE0/0/0                   105
+    - GE0/0/4       SK-AP-24                 GE0/0/0                   91
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  102
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW8-ACCESS-24
+- 'GE0/0/23      SK-AP-28                 GE0/0/0                   101
+
+    GE0/0/24      SK-AP-30                 GE0/0/0                   118
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  113'
+stdout_lines:
+-   - sysname SK-SW8-ACCESS-24
+-   - GE0/0/23      SK-AP-28                 GE0/0/0                   101
+    - GE0/0/24      SK-AP-30                 GE0/0/0                   118
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  113
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW9-ACCESS-24
+- 'GE0/0/3       SK-AP-35                 GE0/0/0                   96
+
+    GE0/0/13      SK-AP-32                 GE0/0/0                   106
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  118'
+stdout_lines:
+-   - sysname SK-SW9-ACCESS-24
+-   - GE0/0/3       SK-AP-35                 GE0/0/0                   96
+    - GE0/0/13      SK-AP-32                 GE0/0/0                   106
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  118
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW10-ACCESS-24
+- 'GE0/0/19      -                        54ee-7530-56ce            2806
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  104'
+stdout_lines:
+-   - sysname SK-SW10-ACCESS-24
+-   - GE0/0/19      -                        54ee-7530-56ce            2806
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  104
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW11-ACCESS-24
+- 'GE0/0/1       SK-AP-49                 GE0/0/0                   115
+
+    GE0/0/2       SK-AP-45                 GE0/0/0                   102
+
+    GE0/0/3       SK-AP-31                 GE0/0/0                   114
+
+    GE0/0/4       SK-AP-09                 GE0/0/0                   116
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  96'
+stdout_lines:
+-   - sysname SK-SW11-ACCESS-24
+-   - GE0/0/1       SK-AP-49                 GE0/0/0                   115
+    - GE0/0/2       SK-AP-45                 GE0/0/0                   102
+    - GE0/0/3       SK-AP-31                 GE0/0/0                   114
+    - GE0/0/4       SK-AP-09                 GE0/0/0                   116
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  96
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW13-ACCESS-24
+- 'GE0/0/9       SK-AP-51                 GE0/0/0                   114
+
+    GE0/0/10      SK-AP-56                 GE0/0/0                   102
+
+    GE0/0/11      SK-AP-58                 GE0/0/0                   100
+
+    GE0/0/12      SK-AP-57                 GE0/0/0                   91
+
+    GE0/0/13      SK-AP-54                 GE0/0/0                   112
+
+    GE0/0/14      SK-AP-52                 GE0/0/0                   92
+
+    GE0/0/15      SK-AP-61                 GE0/0/0                   98
+
+    GE0/0/16      SK-AP-63                 GE0/0/0                   111
+
+    GE0/0/17      SK-AP-55                 GE0/0/0                   114
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  113'
+stdout_lines:
+-   - sysname SK-SW13-ACCESS-24
+-   - GE0/0/9       SK-AP-51                 GE0/0/0                   114
+    - GE0/0/10      SK-AP-56                 GE0/0/0                   102
+    - GE0/0/11      SK-AP-58                 GE0/0/0                   100
+    - GE0/0/12      SK-AP-57                 GE0/0/0                   91
+    - GE0/0/13      SK-AP-54                 GE0/0/0                   112
+    - GE0/0/14      SK-AP-52                 GE0/0/0                   92
+    - GE0/0/15      SK-AP-61                 GE0/0/0                   98
+    - GE0/0/16      SK-AP-63                 GE0/0/0                   111
+    - GE0/0/17      SK-AP-55                 GE0/0/0                   114
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  113
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW14-ACCESS-24
+- 'GE0/0/1       SK-AP-14                 GE0/0/0                   116
+
+    GE0/0/2       SK-AP-29                 GE0/0/0                   97
+
+    GE0/0/3       SK-AP-60                 GE0/0/0                   107
+
+    GE0/0/4       SK-AP-62                 GE0/0/0                   92
+
+    GE0/0/6       SK-AP-59                 GE0/0/0                   103
+
+    GE0/0/22      -                        54ee-752d-36c9            3198
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 97'
+stdout_lines:
+-   - sysname SK-SW14-ACCESS-24
+-   - GE0/0/1       SK-AP-14                 GE0/0/0                   116
+    - GE0/0/2       SK-AP-29                 GE0/0/0                   97
+    - GE0/0/3       SK-AP-60                 GE0/0/0                   107
+    - GE0/0/4       SK-AP-62                 GE0/0/0                   92
+    - GE0/0/6       SK-AP-59                 GE0/0/0                   103
+    - GE0/0/22      -                        54ee-752d-36c9            3198
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 97
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW16-ACCESS-12
+- 'GE0/0/1       -                        fc4d-d42d-d3cd            3390
+
+    GE0/0/4       SK-AP-48                 GE0/0/0                   101
+
+    GE0/0/10      SK-AP-12                 GE0/0/0                   100
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 107'
+stdout_lines:
+-   - sysname SK-SW16-ACCESS-12
+-   - GE0/0/1       -                        fc4d-d42d-d3cd            3390
+    - GE0/0/4       SK-AP-48                 GE0/0/0                   101
+    - GE0/0/10      SK-AP-12                 GE0/0/0                   100
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 107
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW15-ACCESS-12
+- 'GE0/0/7       SK-AP-50                 GE0/0/0                   96
+
+    GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  103'
+stdout_lines:
+-   - sysname SK-SW15-ACCESS-12
+-   - GE0/0/7       SK-AP-50                 GE0/0/0                   96
+    - GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  103
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW17-ACCESS-12
+- 'GE0/0/1       SK-AP-06                 GE0/0/0                   99
+
+    GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  94'
+stdout_lines:
+-   - sysname SK-SW17-ACCESS-12
+-   - GE0/0/1       SK-AP-06                 GE0/0/0                   99
+    - GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  94
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW18-ACCESS-12
+- 'GE0/0/1       SK-AP-07                 GE0/0/0                   98
+
+    GE0/0/2       SK-AP-08                 GE0/0/0                   91
+
+    GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  94
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 106'
+stdout_lines:
+-   - sysname SK-SW18-ACCESS-12
+-   - GE0/0/1       SK-AP-07                 GE0/0/0                   98
+    - GE0/0/2       SK-AP-08                 GE0/0/0                   91
+    - GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  94
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 106
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW21-ACCESS-48
+- 'XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  103
+
+    XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  111
+
+    XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  107
+
+    XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  111'
+stdout_lines:
+-   - sysname SK-SW21-ACCESS-48
+-   - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  103
+    - XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  111
+    - XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  107
+    - XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  111
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-ACCESS-24
+- 'GE0/0/1       SK-AP-02                 GE0/0/0                   109
+
+    GE0/0/2       SK-AP-53                 GE0/0/0                   98
+
+    GE0/0/3       -                        c85b-76dd-271f            3291
+
+    GE0/0/6       -                        4437-e655-1d9d            2941
+
+    GE0/0/7       SK-AP-13                 GE0/0/0                   90
+
+    GE0/0/8       SK-AP-67                 GE0/0/0                   95
+
+    GE0/0/24      SK-AP-11                 GE0/0/0                   111
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 93'
+stdout_lines:
+-   - sysname SK-SW1-ACCESS-24
+-   - GE0/0/1       SK-AP-02                 GE0/0/0                   109
+    - GE0/0/2       SK-AP-53                 GE0/0/0                   98
+    - GE0/0/3       -                        c85b-76dd-271f            3291
+    - GE0/0/6       -                        4437-e655-1d9d            2941
+    - GE0/0/7       SK-AP-13                 GE0/0/0                   90
+    - GE0/0/8       SK-AP-67                 GE0/0/0                   95
+    - GE0/0/24      SK-AP-11                 GE0/0/0                   111
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 93
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW2-ACCESS-24
+- 'GE0/0/1       SK-AP-65                 GE0/0/0                   92
+
+    GE0/0/2       SK-AP-17                 GE0/0/0                   91
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 95'
+stdout_lines:
+-   - sysname SK-SW2-ACCESS-24
+-   - GE0/0/1       SK-AP-65                 GE0/0/0                   92
+    - GE0/0/2       SK-AP-17                 GE0/0/0                   91
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 95
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-DIST-24
+- 'XGE0/0/2      SK-AC1                   XGE0/0/1                  118
+
+    XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  90
+
+    XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  113
+
+    XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  106
+
+    XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  102
+
+    XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  110
+
+    XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  99
+
+    XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  106
+
+    XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  96
+
+    XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  105
+
+    XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  118
+
+    XGE0/0/23     R1-CORE                  GE0/1/0                   102
+
+    XGE0/0/24     R1-CORE                  GE0/1/1                   102'
+stdout_lines:
+-   - sysname SK-SW1-DIST-24
+-   - XGE0/0/2      SK-AC1                   XGE0/0/1                  118
+    - XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  90
+    - XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  113
+    - XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  106
+    - XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  102
+    - XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  110
+    - XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  99
+    - XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  106
+    - XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  96
+    - XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  105
+    - XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  118
+    - XGE0/0/23     R1-CORE                  GE0/1/0                   102
+    - XGE0/0/24     R1-CORE                  GE0/1/1                   102
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW3-ACCESS-24
+- 'GE0/0/19      SK-AP-19                 GE0/0/0                   118
+
+    GE0/0/23      SK-AP-04                 GE0/0/0                   97
+
+    GE0/0/24      SK-AP-05                 GE0/0/0                   101
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 114'
+stdout_lines:
+-   - sysname SK-SW3-ACCESS-24
+-   - GE0/0/19      SK-AP-19                 GE0/0/0                   118
+    - GE0/0/23      SK-AP-04                 GE0/0/0                   97
+    - GE0/0/24      SK-AP-05                 GE0/0/0                   101
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 114
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW4-ACCESS-24
+- 'GE0/0/1       SK-AP-47                 GE0/0/0                   111
+
+    GE0/0/2       SK-AP-03                 GE0/0/0                   113
+
+    GE0/0/7       -                        54ee-752d-0ece            3009
+
+    GE0/0/8       -                        28d2-4480-8e94            3061
+
+    GE0/0/10      -                        54ee-752d-b140            3413
+
+    GE0/0/12      -                        3c97-0ea1-6480            2687
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 90'
+stdout_lines:
+-   - sysname SK-SW4-ACCESS-24
+-   - GE0/0/1       SK-AP-47                 GE0/0/0                   111
+    - GE0/0/2       SK-AP-03                 GE0/0/0                   113
+    - GE0/0/7       -                        54ee-752d-0ece            3009
+    - GE0/0/8       -                        28d2-4480-8e94            3061
+    - GE0/0/10      -                        54ee-752d-b140            3413
+    - GE0/0/12      -                        3c97-0ea1-6480            2687
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 90
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW7-ACCESS-24
+- 'GE0/0/1       SK-AP-20                 GE0/0/0                   117
+
+    GE0/0/2       SK-AP-25                 GE0/0/0                   103
+
+    GE0/0/3       SK-AP-26                 GE0/0/0                   97
+
+    GE0/0/4       SK-AP-24                 GE0/0/0                   113
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  94'
+stdout_lines:
+-   - sysname SK-SW7-ACCESS-24
+-   - GE0/0/1       SK-AP-20                 GE0/0/0                   117
+    - GE0/0/2       SK-AP-25                 GE0/0/0                   103
+    - GE0/0/3       SK-AP-26                 GE0/0/0                   97
+    - GE0/0/4       SK-AP-24                 GE0/0/0                   113
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  94
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW8-ACCESS-24
+- 'GE0/0/23      SK-AP-28                 GE0/0/0                   94
+
+    GE0/0/24      SK-AP-30                 GE0/0/0                   111
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  106'
+stdout_lines:
+-   - sysname SK-SW8-ACCESS-24
+-   - GE0/0/23      SK-AP-28                 GE0/0/0                   94
+    - GE0/0/24      SK-AP-30                 GE0/0/0                   111
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  106
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW10-ACCESS-24
+- 'GE0/0/19      -                        54ee-7530-56ce            2738
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  96'
+stdout_lines:
+-   - sysname SK-SW10-ACCESS-24
+-   - GE0/0/19      -                        54ee-7530-56ce            2738
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  96
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW11-ACCESS-24
+- 'GE0/0/1       SK-AP-49                 GE0/0/0                   109
+
+    GE0/0/2       SK-AP-45                 GE0/0/0                   96
+
+    GE0/0/3       SK-AP-31                 GE0/0/0                   106
+
+    GE0/0/4       SK-AP-09                 GE0/0/0                   109
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  119'
+stdout_lines:
+-   - sysname SK-SW11-ACCESS-24
+-   - GE0/0/1       SK-AP-49                 GE0/0/0                   109
+    - GE0/0/2       SK-AP-45                 GE0/0/0                   96
+    - GE0/0/3       SK-AP-31                 GE0/0/0                   106
+    - GE0/0/4       SK-AP-09                 GE0/0/0                   109
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  119
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW14-ACCESS-24
+- 'GE0/0/1       SK-AP-14                 GE0/0/0                   108
+
+    GE0/0/2       SK-AP-29                 GE0/0/0                   119
+
+    GE0/0/3       SK-AP-60                 GE0/0/0                   99
+
+    GE0/0/4       SK-AP-62                 GE0/0/0                   115
+
+    GE0/0/6       SK-AP-59                 GE0/0/0                   96
+
+    GE0/0/22      -                        54ee-752d-36c9            3130
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 119'
+stdout_lines:
+-   - sysname SK-SW14-ACCESS-24
+-   - GE0/0/1       SK-AP-14                 GE0/0/0                   108
+    - GE0/0/2       SK-AP-29                 GE0/0/0                   119
+    - GE0/0/3       SK-AP-60                 GE0/0/0                   99
+    - GE0/0/4       SK-AP-62                 GE0/0/0                   115
+    - GE0/0/6       SK-AP-59                 GE0/0/0                   96
+    - GE0/0/22      -                        54ee-752d-36c9            3130
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 119
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW13-ACCESS-24
+- 'GE0/0/9       SK-AP-51                 GE0/0/0                   108
+
+    GE0/0/10      SK-AP-56                 GE0/0/0                   96
+
+    GE0/0/11      SK-AP-58                 GE0/0/0                   94
+
+    GE0/0/12      SK-AP-57                 GE0/0/0                   116
+
+    GE0/0/13      SK-AP-54                 GE0/0/0                   106
+
+    GE0/0/14      SK-AP-52                 GE0/0/0                   116
+
+    GE0/0/15      SK-AP-61                 GE0/0/0                   92
+
+    GE0/0/16      SK-AP-63                 GE0/0/0                   104
+
+    GE0/0/17      SK-AP-55                 GE0/0/0                   108
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  106'
+stdout_lines:
+-   - sysname SK-SW13-ACCESS-24
+-   - GE0/0/9       SK-AP-51                 GE0/0/0                   108
+    - GE0/0/10      SK-AP-56                 GE0/0/0                   96
+    - GE0/0/11      SK-AP-58                 GE0/0/0                   94
+    - GE0/0/12      SK-AP-57                 GE0/0/0                   116
+    - GE0/0/13      SK-AP-54                 GE0/0/0                   106
+    - GE0/0/14      SK-AP-52                 GE0/0/0                   116
+    - GE0/0/15      SK-AP-61                 GE0/0/0                   92
+    - GE0/0/16      SK-AP-63                 GE0/0/0                   104
+    - GE0/0/17      SK-AP-55                 GE0/0/0                   108
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  106
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW15-ACCESS-12
+- 'GE0/0/7       SK-AP-50                 GE0/0/0                   117
+
+    GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  94'
+stdout_lines:
+-   - sysname SK-SW15-ACCESS-12
+-   - GE0/0/7       SK-AP-50                 GE0/0/0                   117
+    - GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  94
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW16-ACCESS-12
+- 'GE0/0/1       -                        fc4d-d42d-d3cd            3323
+
+    GE0/0/4       SK-AP-48                 GE0/0/0                   95
+
+    GE0/0/10      SK-AP-12                 GE0/0/0                   93
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 100'
+stdout_lines:
+-   - sysname SK-SW16-ACCESS-12
+-   - GE0/0/1       -                        fc4d-d42d-d3cd            3323
+    - GE0/0/4       SK-AP-48                 GE0/0/0                   95
+    - GE0/0/10      SK-AP-12                 GE0/0/0                   93
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 100
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW17-ACCESS-12
+- 'GE0/0/1       SK-AP-06                 GE0/0/0                   93
+
+    GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  117'
+stdout_lines:
+-   - sysname SK-SW17-ACCESS-12
+-   - GE0/0/1       SK-AP-06                 GE0/0/0                   93
+    - GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  117
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW20-ACCESS-48
+- 'GE0/0/1       SK-AP-23                 GE0/0/0                   91
+
+    GE0/0/3       SK-AP-22                 GE0/0/0                   113
+
+    GE0/0/13      SK-AP-33                 GE0/0/0                   119
+
+    GE0/0/33      SK-AP-34                 GE0/0/0                   101
+
+    GE0/0/38      SK-AP-27                 GE0/0/0                   91
+
+    GE0/0/39      -                        d43d-7e21-7bd2            2893
+
+    GE0/0/47      SK-AP-21                 GE0/0/0                   108
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  114
+
+    XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  119
+
+    XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  104
+
+    XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  109'
+stdout_lines:
+-   - sysname SK-SW20-ACCESS-48
+-   - GE0/0/1       SK-AP-23                 GE0/0/0                   91
+    - GE0/0/3       SK-AP-22                 GE0/0/0                   113
+    - GE0/0/13      SK-AP-33                 GE0/0/0                   119
+    - GE0/0/33      SK-AP-34                 GE0/0/0                   101
+    - GE0/0/38      SK-AP-27                 GE0/0/0                   91
+    - GE0/0/39      -                        d43d-7e21-7bd2            2893
+    - GE0/0/47      SK-AP-21                 GE0/0/0                   108
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  114
+    - XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  119
+    - XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  104
+    - XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  109
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW21-ACCESS-48
+- 'XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  96
+
+    XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  104
+
+    XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  100
+
+    XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  104'
+stdout_lines:
+-   - sysname SK-SW21-ACCESS-48
+-   - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  96
+    - XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  104
+    - XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  100
+    - XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  104
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-ACCESS-24
+- 'GE0/0/1       SK-AP-02                 GE0/0/0                   119
+
+    GE0/0/2       SK-AP-53                 GE0/0/0                   108
+
+    GE0/0/3       -                        c85b-76dd-271f            3026
+
+    GE0/0/6       -                        4437-e655-1d9d            2676
+
+    GE0/0/7       SK-AP-13                 GE0/0/0                   95
+
+    GE0/0/8       SK-AP-67                 GE0/0/0                   105
+
+    GE0/0/24      SK-AP-11                 GE0/0/0                   116
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 98'
+stdout_lines:
+-   - sysname SK-SW1-ACCESS-24
+-   - GE0/0/1       SK-AP-02                 GE0/0/0                   119
+    - GE0/0/2       SK-AP-53                 GE0/0/0                   108
+    - GE0/0/3       -                        c85b-76dd-271f            3026
+    - GE0/0/6       -                        4437-e655-1d9d            2676
+    - GE0/0/7       SK-AP-13                 GE0/0/0                   95
+    - GE0/0/8       SK-AP-67                 GE0/0/0                   105
+    - GE0/0/24      SK-AP-11                 GE0/0/0                   116
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 98
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW2-ACCESS-24
+- 'GE0/0/1       SK-AP-65                 GE0/0/0                   100
+
+    GE0/0/2       SK-AP-17                 GE0/0/0                   96
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 100'
+stdout_lines:
+-   - sysname SK-SW2-ACCESS-24
+-   - GE0/0/1       SK-AP-65                 GE0/0/0                   100
+    - GE0/0/2       SK-AP-17                 GE0/0/0                   96
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 100
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW3-ACCESS-24
+- 'GE0/0/19      SK-AP-19                 GE0/0/0                   93
+
+    GE0/0/23      SK-AP-04                 GE0/0/0                   107
+
+    GE0/0/24      SK-AP-05                 GE0/0/0                   109
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 119'
+stdout_lines:
+-   - sysname SK-SW3-ACCESS-24
+-   - GE0/0/19      SK-AP-19                 GE0/0/0                   93
+    - GE0/0/23      SK-AP-04                 GE0/0/0                   107
+    - GE0/0/24      SK-AP-05                 GE0/0/0                   109
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 119
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW4-ACCESS-24
+- 'GE0/0/1       SK-AP-47                 GE0/0/0                   91
+
+    GE0/0/2       SK-AP-03                 GE0/0/0                   91
+
+    GE0/0/7       -                        54ee-752d-0ece            2744
+
+    GE0/0/8       -                        28d2-4480-8e94            2796
+
+    GE0/0/10      -                        54ee-752d-b140            3148
+
+    GE0/0/12      -                        3c97-0ea1-6480            3366
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 95'
+stdout_lines:
+-   - sysname SK-SW4-ACCESS-24
+-   - GE0/0/1       SK-AP-47                 GE0/0/0                   91
+    - GE0/0/2       SK-AP-03                 GE0/0/0                   91
+    - GE0/0/7       -                        54ee-752d-0ece            2744
+    - GE0/0/8       -                        28d2-4480-8e94            2796
+    - GE0/0/10      -                        54ee-752d-b140            3148
+    - GE0/0/12      -                        3c97-0ea1-6480            3366
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 95
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW7-ACCESS-24
+- 'GE0/0/1       SK-AP-20                 GE0/0/0                   98
+
+    GE0/0/2       SK-AP-25                 GE0/0/0                   114
+
+    GE0/0/3       SK-AP-26                 GE0/0/0                   108
+
+    GE0/0/4       SK-AP-24                 GE0/0/0                   94
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  106'
+stdout_lines:
+-   - sysname SK-SW7-ACCESS-24
+-   - GE0/0/1       SK-AP-20                 GE0/0/0                   98
+    - GE0/0/2       SK-AP-25                 GE0/0/0                   114
+    - GE0/0/3       SK-AP-26                 GE0/0/0                   108
+    - GE0/0/4       SK-AP-24                 GE0/0/0                   94
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  106
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW8-ACCESS-24
+- 'GE0/0/23      SK-AP-28                 GE0/0/0                   99
+
+    GE0/0/24      SK-AP-30                 GE0/0/0                   116
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  111'
+stdout_lines:
+-   - sysname SK-SW8-ACCESS-24
+-   - GE0/0/23      SK-AP-28                 GE0/0/0                   99
+    - GE0/0/24      SK-AP-30                 GE0/0/0                   116
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  111
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW10-ACCESS-24
+- 'GE0/0/19      -                        54ee-7530-56ce            3423
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  106'
+stdout_lines:
+-   - sysname SK-SW10-ACCESS-24
+-   - GE0/0/19      -                        54ee-7530-56ce            3423
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  106
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW11-ACCESS-24
+- 'GE0/0/1       SK-AP-49                 GE0/0/0                   91
+
+    GE0/0/2       SK-AP-45                 GE0/0/0                   112
+
+    GE0/0/3       SK-AP-31                 GE0/0/0                   116
+
+    GE0/0/4       SK-AP-09                 GE0/0/0                   118
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  99'
+stdout_lines:
+-   - sysname SK-SW11-ACCESS-24
+-   - GE0/0/1       SK-AP-49                 GE0/0/0                   91
+    - GE0/0/2       SK-AP-45                 GE0/0/0                   112
+    - GE0/0/3       SK-AP-31                 GE0/0/0                   116
+    - GE0/0/4       SK-AP-09                 GE0/0/0                   118
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  99
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW9-ACCESS-24
+- 'GE0/0/3       SK-AP-35                 GE0/0/0                   93
+
+    GE0/0/13      SK-AP-32                 GE0/0/0                   103
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  115'
+stdout_lines:
+-   - sysname SK-SW9-ACCESS-24
+-   - GE0/0/3       SK-AP-35                 GE0/0/0                   93
+    - GE0/0/13      SK-AP-32                 GE0/0/0                   103
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  115
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW13-ACCESS-24
+- 'GE0/0/9       SK-AP-51                 GE0/0/0                   94
+
+    GE0/0/10      SK-AP-56                 GE0/0/0                   110
+
+    GE0/0/11      SK-AP-58                 GE0/0/0                   110
+
+    GE0/0/12      SK-AP-57                 GE0/0/0                   102
+
+    GE0/0/13      SK-AP-54                 GE0/0/0                   92
+
+    GE0/0/14      SK-AP-52                 GE0/0/0                   102
+
+    GE0/0/15      SK-AP-61                 GE0/0/0                   106
+
+    GE0/0/16      SK-AP-63                 GE0/0/0                   118
+
+    GE0/0/17      SK-AP-55                 GE0/0/0                   95
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  118'
+stdout_lines:
+-   - sysname SK-SW13-ACCESS-24
+-   - GE0/0/9       SK-AP-51                 GE0/0/0                   94
+    - GE0/0/10      SK-AP-56                 GE0/0/0                   110
+    - GE0/0/11      SK-AP-58                 GE0/0/0                   110
+    - GE0/0/12      SK-AP-57                 GE0/0/0                   102
+    - GE0/0/13      SK-AP-54                 GE0/0/0                   92
+    - GE0/0/14      SK-AP-52                 GE0/0/0                   102
+    - GE0/0/15      SK-AP-61                 GE0/0/0                   106
+    - GE0/0/16      SK-AP-63                 GE0/0/0                   118
+    - GE0/0/17      SK-AP-55                 GE0/0/0                   95
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  118
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW14-ACCESS-24
+- 'GE0/0/1       SK-AP-14                 GE0/0/0                   117
+
+    GE0/0/2       SK-AP-29                 GE0/0/0                   98
+
+    GE0/0/3       SK-AP-60                 GE0/0/0                   111
+
+    GE0/0/4       SK-AP-62                 GE0/0/0                   96
+
+    GE0/0/6       SK-AP-59                 GE0/0/0                   108
+
+    GE0/0/22      -                        54ee-752d-36c9            2869
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 98'
+stdout_lines:
+-   - sysname SK-SW14-ACCESS-24
+-   - GE0/0/1       SK-AP-14                 GE0/0/0                   117
+    - GE0/0/2       SK-AP-29                 GE0/0/0                   98
+    - GE0/0/3       SK-AP-60                 GE0/0/0                   111
+    - GE0/0/4       SK-AP-62                 GE0/0/0                   96
+    - GE0/0/6       SK-AP-59                 GE0/0/0                   108
+    - GE0/0/22      -                        54ee-752d-36c9            2869
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 98
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW15-ACCESS-12
+- 'GE0/0/7       SK-AP-50                 GE0/0/0                   100
+
+    GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  105'
+stdout_lines:
+-   - sysname SK-SW15-ACCESS-12
+-   - GE0/0/7       SK-AP-50                 GE0/0/0                   100
+    - GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  105
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW16-ACCESS-12
+- 'GE0/0/1       -                        fc4d-d42d-d3cd            3062
+
+    GE0/0/4       SK-AP-48                 GE0/0/0                   107
+
+    GE0/0/10      SK-AP-12                 GE0/0/0                   102
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 109'
+stdout_lines:
+-   - sysname SK-SW16-ACCESS-12
+-   - GE0/0/1       -                        fc4d-d42d-d3cd            3062
+    - GE0/0/4       SK-AP-48                 GE0/0/0                   107
+    - GE0/0/10      SK-AP-12                 GE0/0/0                   102
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 109
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW17-ACCESS-12
+- 'GE0/0/1       SK-AP-06                 GE0/0/0                   107
+
+    GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  98'
+stdout_lines:
+-   - sysname SK-SW17-ACCESS-12
+-   - GE0/0/1       SK-AP-06                 GE0/0/0                   107
+    - GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  98
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW18-ACCESS-12
+- 'GE0/0/1       SK-AP-07                 GE0/0/0                   111
+
+    GE0/0/2       SK-AP-08                 GE0/0/0                   99
+
+    GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  101
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 113'
+stdout_lines:
+-   - sysname SK-SW18-ACCESS-12
+-   - GE0/0/1       SK-AP-07                 GE0/0/0                   111
+    - GE0/0/2       SK-AP-08                 GE0/0/0                   99
+    - GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  101
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 113
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW21-ACCESS-48
+- 'XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  105
+
+    XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  113
+
+    XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  109
+
+    XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  113'
+stdout_lines:
+-   - sysname SK-SW21-ACCESS-48
+-   - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  105
+    - XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  113
+    - XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  109
+    - XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  113
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW20-ACCESS-48
+- 'GE0/0/1       SK-AP-23                 GE0/0/0                   100
+
+    GE0/0/3       SK-AP-22                 GE0/0/0                   92
+
+    GE0/0/13      SK-AP-33                 GE0/0/0                   98
+
+    GE0/0/33      SK-AP-34                 GE0/0/0                   110
+
+    GE0/0/38      SK-AP-27                 GE0/0/0                   99
+
+    GE0/0/39      -                        d43d-7e21-7bd2            3576
+
+    GE0/0/47      SK-AP-21                 GE0/0/0                   117
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  92
+
+    XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  97
+
+    XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  113
+
+    XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  118'
+stdout_lines:
+-   - sysname SK-SW20-ACCESS-48
+-   - GE0/0/1       SK-AP-23                 GE0/0/0                   100
+    - GE0/0/3       SK-AP-22                 GE0/0/0                   92
+    - GE0/0/13      SK-AP-33                 GE0/0/0                   98
+    - GE0/0/33      SK-AP-34                 GE0/0/0                   110
+    - GE0/0/38      SK-AP-27                 GE0/0/0                   99
+    - GE0/0/39      -                        d43d-7e21-7bd2            3576
+    - GE0/0/47      SK-AP-21                 GE0/0/0                   117
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  92
+    - XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  97
+    - XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  113
+    - XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  118
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-DIST-24
+- 'XGE0/0/2      SK-AC1                   XGE0/0/1                  104
+
+    XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  106
+
+    XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  99
+
+    XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  92
+
+    XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  118
+
+    XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  96
+
+    XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  115
+
+    XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  92
+
+    XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  112
+
+    XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  91
+
+    XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  104
+
+    XGE0/0/23     R1-CORE                  GE0/1/0                   118
+
+    XGE0/0/24     R1-CORE                  GE0/1/1                   118'
+stdout_lines:
+-   - sysname SK-SW1-DIST-24
+-   - XGE0/0/2      SK-AC1                   XGE0/0/1                  104
+    - XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  106
+    - XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  99
+    - XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  92
+    - XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  118
+    - XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  96
+    - XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  115
+    - XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  92
+    - XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  112
+    - XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  91
+    - XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  104
+    - XGE0/0/23     R1-CORE                  GE0/1/0                   118
+    - XGE0/0/24     R1-CORE                  GE0/1/1                   118
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW2-ACCESS-24
+- 'GE0/0/1       SK-AP-65                 GE0/0/0                   118
+
+    GE0/0/2       SK-AP-17                 GE0/0/0                   110
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 114'
+stdout_lines:
+-   - sysname SK-SW2-ACCESS-24
+-   - GE0/0/1       SK-AP-65                 GE0/0/0                   118
+    - GE0/0/2       SK-AP-17                 GE0/0/0                   110
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 114
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW4-ACCESS-24
+- 'GE0/0/1       SK-AP-47                 GE0/0/0                   110
+
+    GE0/0/2       SK-AP-03                 GE0/0/0                   109
+
+    GE0/0/7       -                        54ee-752d-0ece            3402
+
+    GE0/0/8       -                        28d2-4480-8e94            3454
+
+    GE0/0/10      -                        54ee-752d-b140            2862
+
+    GE0/0/12      -                        3c97-0ea1-6480            3080
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 109'
+stdout_lines:
+-   - sysname SK-SW4-ACCESS-24
+-   - GE0/0/1       SK-AP-47                 GE0/0/0                   110
+    - GE0/0/2       SK-AP-03                 GE0/0/0                   109
+    - GE0/0/7       -                        54ee-752d-0ece            3402
+    - GE0/0/8       -                        28d2-4480-8e94            3454
+    - GE0/0/10      -                        54ee-752d-b140            2862
+    - GE0/0/12      -                        3c97-0ea1-6480            3080
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 109
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-ACCESS-24
+- 'GE0/0/1       SK-AP-02                 GE0/0/0                   106
+
+    GE0/0/2       SK-AP-53                 GE0/0/0                   96
+
+    GE0/0/3       -                        c85b-76dd-271f            2739
+
+    GE0/0/6       -                        4437-e655-1d9d            3333
+
+    GE0/0/7       SK-AP-13                 GE0/0/0                   108
+
+    GE0/0/8       SK-AP-67                 GE0/0/0                   93
+
+    GE0/0/24      SK-AP-11                 GE0/0/0                   98
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 111'
+stdout_lines:
+-   - sysname SK-SW1-ACCESS-24
+-   - GE0/0/1       SK-AP-02                 GE0/0/0                   106
+    - GE0/0/2       SK-AP-53                 GE0/0/0                   96
+    - GE0/0/3       -                        c85b-76dd-271f            2739
+    - GE0/0/6       -                        4437-e655-1d9d            3333
+    - GE0/0/7       SK-AP-13                 GE0/0/0                   108
+    - GE0/0/8       SK-AP-67                 GE0/0/0                   93
+    - GE0/0/24      SK-AP-11                 GE0/0/0                   98
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 111
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW3-ACCESS-24
+- 'GE0/0/19      SK-AP-19                 GE0/0/0                   106
+
+    GE0/0/23      SK-AP-04                 GE0/0/0                   94
+
+    GE0/0/24      SK-AP-05                 GE0/0/0                   94
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 102'
+stdout_lines:
+-   - sysname SK-SW3-ACCESS-24
+-   - GE0/0/19      SK-AP-19                 GE0/0/0                   106
+    - GE0/0/23      SK-AP-04                 GE0/0/0                   94
+    - GE0/0/24      SK-AP-05                 GE0/0/0                   94
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 102
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW7-ACCESS-24
+- 'GE0/0/1       SK-AP-20                 GE0/0/0                   111
+
+    GE0/0/2       SK-AP-25                 GE0/0/0                   97
+
+    GE0/0/3       SK-AP-26                 GE0/0/0                   90
+
+    GE0/0/4       SK-AP-24                 GE0/0/0                   107
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  118'
+stdout_lines:
+-   - sysname SK-SW7-ACCESS-24
+-   - GE0/0/1       SK-AP-20                 GE0/0/0                   111
+    - GE0/0/2       SK-AP-25                 GE0/0/0                   97
+    - GE0/0/3       SK-AP-26                 GE0/0/0                   90
+    - GE0/0/4       SK-AP-24                 GE0/0/0                   107
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  118
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW8-ACCESS-24
+- 'GE0/0/23      SK-AP-28                 GE0/0/0                   112
+
+    GE0/0/24      SK-AP-30                 GE0/0/0                   98
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  94'
+stdout_lines:
+-   - sysname SK-SW8-ACCESS-24
+-   - GE0/0/23      SK-AP-28                 GE0/0/0                   112
+    - GE0/0/24      SK-AP-30                 GE0/0/0                   98
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  94
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW10-ACCESS-24
+- 'GE0/0/19      -                        54ee-7530-56ce            3137
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  90'
+stdout_lines:
+-   - sysname SK-SW10-ACCESS-24
+-   - GE0/0/19      -                        54ee-7530-56ce            3137
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  90
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW9-ACCESS-24
+- 'GE0/0/3       SK-AP-35                 GE0/0/0                   107
+
+    GE0/0/13      SK-AP-32                 GE0/0/0                   116
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  99'
+stdout_lines:
+-   - sysname SK-SW9-ACCESS-24
+-   - GE0/0/3       SK-AP-35                 GE0/0/0                   107
+    - GE0/0/13      SK-AP-32                 GE0/0/0                   116
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  99
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW11-ACCESS-24
+- 'GE0/0/1       SK-AP-49                 GE0/0/0                   107
+
+    GE0/0/2       SK-AP-45                 GE0/0/0                   101
+
+    GE0/0/3       SK-AP-31                 GE0/0/0                   100
+
+    GE0/0/4       SK-AP-09                 GE0/0/0                   103
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  113'
+stdout_lines:
+-   - sysname SK-SW11-ACCESS-24
+-   - GE0/0/1       SK-AP-49                 GE0/0/0                   107
+    - GE0/0/2       SK-AP-45                 GE0/0/0                   101
+    - GE0/0/3       SK-AP-31                 GE0/0/0                   100
+    - GE0/0/4       SK-AP-09                 GE0/0/0                   103
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  113
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW13-ACCESS-24
+- 'GE0/0/9       SK-AP-51                 GE0/0/0                   112
+
+    GE0/0/10      SK-AP-56                 GE0/0/0                   95
+
+    GE0/0/11      SK-AP-58                 GE0/0/0                   98
+
+    GE0/0/12      SK-AP-57                 GE0/0/0                   91
+
+    GE0/0/13      SK-AP-54                 GE0/0/0                   110
+
+    GE0/0/14      SK-AP-52                 GE0/0/0                   120
+
+    GE0/0/15      SK-AP-61                 GE0/0/0                   92
+
+    GE0/0/16      SK-AP-63                 GE0/0/0                   102
+
+    GE0/0/17      SK-AP-55                 GE0/0/0                   113
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  101'
+stdout_lines:
+-   - sysname SK-SW13-ACCESS-24
+-   - GE0/0/9       SK-AP-51                 GE0/0/0                   112
+    - GE0/0/10      SK-AP-56                 GE0/0/0                   95
+    - GE0/0/11      SK-AP-58                 GE0/0/0                   98
+    - GE0/0/12      SK-AP-57                 GE0/0/0                   91
+    - GE0/0/13      SK-AP-54                 GE0/0/0                   110
+    - GE0/0/14      SK-AP-52                 GE0/0/0                   120
+    - GE0/0/15      SK-AP-61                 GE0/0/0                   92
+    - GE0/0/16      SK-AP-63                 GE0/0/0                   102
+    - GE0/0/17      SK-AP-55                 GE0/0/0                   113
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  101
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW15-ACCESS-12
+- 'GE0/0/7       SK-AP-50                 GE0/0/0                   115
+
+    GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  118'
+stdout_lines:
+-   - sysname SK-SW15-ACCESS-12
+-   - GE0/0/7       SK-AP-50                 GE0/0/0                   115
+    - GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  118
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW14-ACCESS-24
+- 'GE0/0/1       SK-AP-14                 GE0/0/0                   100
+
+    GE0/0/2       SK-AP-29                 GE0/0/0                   112
+
+    GE0/0/3       SK-AP-60                 GE0/0/0                   99
+
+    GE0/0/4       SK-AP-62                 GE0/0/0                   112
+
+    GE0/0/6       SK-AP-59                 GE0/0/0                   95
+
+    GE0/0/22      -                        54ee-752d-36c9            3528
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 112'
+stdout_lines:
+-   - sysname SK-SW14-ACCESS-24
+-   - GE0/0/1       SK-AP-14                 GE0/0/0                   100
+    - GE0/0/2       SK-AP-29                 GE0/0/0                   112
+    - GE0/0/3       SK-AP-60                 GE0/0/0                   99
+    - GE0/0/4       SK-AP-62                 GE0/0/0                   112
+    - GE0/0/6       SK-AP-59                 GE0/0/0                   95
+    - GE0/0/22      -                        54ee-752d-36c9            3528
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 112
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW16-ACCESS-12
+- 'GE0/0/1       -                        fc4d-d42d-d3cd            2775
+
+    GE0/0/4       SK-AP-48                 GE0/0/0                   94
+
+    GE0/0/10      SK-AP-12                 GE0/0/0                   115
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 92'
+stdout_lines:
+-   - sysname SK-SW16-ACCESS-12
+-   - GE0/0/1       -                        fc4d-d42d-d3cd            2775
+    - GE0/0/4       SK-AP-48                 GE0/0/0                   94
+    - GE0/0/10      SK-AP-12                 GE0/0/0                   115
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 92
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW17-ACCESS-12
+- 'GE0/0/1       SK-AP-06                 GE0/0/0                   93
+
+    GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  111'
+stdout_lines:
+-   - sysname SK-SW17-ACCESS-12
+-   - GE0/0/1       SK-AP-06                 GE0/0/0                   93
+    - GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  111
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW18-ACCESS-12
+- 'GE0/0/1       SK-AP-07                 GE0/0/0                   100
+
+    GE0/0/2       SK-AP-08                 GE0/0/0                   114
+
+    GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  114
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 96'
+stdout_lines:
+-   - sysname SK-SW18-ACCESS-12
+-   - GE0/0/1       SK-AP-07                 GE0/0/0                   100
+    - GE0/0/2       SK-AP-08                 GE0/0/0                   114
+    - GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  114
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 96
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW21-ACCESS-48
+- 'XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  119
+
+    XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  97
+
+    XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  93
+
+    XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  97'
+stdout_lines:
+-   - sysname SK-SW21-ACCESS-48
+-   - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  119
+    - XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  97
+    - XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  93
+    - XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  97
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-DIST-24
+- 'XGE0/0/2      SK-AC1                   XGE0/0/1                  117
+
+    XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  119
+
+    XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  112
+
+    XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  105
+
+    XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  101
+
+    XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  109
+
+    XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  98
+
+    XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  105
+
+    XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  95
+
+    XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  103
+
+    XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  117
+
+    XGE0/0/23     R1-CORE                  GE0/1/0                   101
+
+    XGE0/0/24     R1-CORE                  GE0/1/1                   101'
+stdout_lines:
+-   - sysname SK-SW1-DIST-24
+-   - XGE0/0/2      SK-AC1                   XGE0/0/1                  117
+    - XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  119
+    - XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  112
+    - XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  105
+    - XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  101
+    - XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  109
+    - XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  98
+    - XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  105
+    - XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  95
+    - XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  103
+    - XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  117
+    - XGE0/0/23     R1-CORE                  GE0/1/0                   101
+    - XGE0/0/24     R1-CORE                  GE0/1/1                   101
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW2-ACCESS-24
+- 'GE0/0/1       SK-AP-65                 GE0/0/0                   111
+
+    GE0/0/2       SK-AP-17                 GE0/0/0                   102
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 106'
+stdout_lines:
+-   - sysname SK-SW2-ACCESS-24
+-   - GE0/0/1       SK-AP-65                 GE0/0/0                   111
+    - GE0/0/2       SK-AP-17                 GE0/0/0                   102
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 106
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW3-ACCESS-24
+- 'GE0/0/19      SK-AP-19                 GE0/0/0                   99
+
+    GE0/0/23      SK-AP-04                 GE0/0/0                   119
+
+    GE0/0/24      SK-AP-05                 GE0/0/0                   119
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 95'
+stdout_lines:
+-   - sysname SK-SW3-ACCESS-24
+-   - GE0/0/19      SK-AP-19                 GE0/0/0                   99
+    - GE0/0/23      SK-AP-04                 GE0/0/0                   119
+    - GE0/0/24      SK-AP-05                 GE0/0/0                   119
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 95
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW4-ACCESS-24
+- 'GE0/0/1       SK-AP-47                 GE0/0/0                   104
+
+    GE0/0/2       SK-AP-03                 GE0/0/0                   102
+
+    GE0/0/7       -                        54ee-752d-0ece            3274
+
+    GE0/0/8       -                        28d2-4480-8e94            3326
+
+    GE0/0/10      -                        54ee-752d-b140            2734
+
+    GE0/0/12      -                        3c97-0ea1-6480            2952
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 101'
+stdout_lines:
+-   - sysname SK-SW4-ACCESS-24
+-   - GE0/0/1       SK-AP-47                 GE0/0/0                   104
+    - GE0/0/2       SK-AP-03                 GE0/0/0                   102
+    - GE0/0/7       -                        54ee-752d-0ece            3274
+    - GE0/0/8       -                        28d2-4480-8e94            3326
+    - GE0/0/10      -                        54ee-752d-b140            2734
+    - GE0/0/12      -                        3c97-0ea1-6480            2952
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 101
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW7-ACCESS-24
+- 'GE0/0/1       SK-AP-20                 GE0/0/0                   104
+
+    GE0/0/2       SK-AP-25                 GE0/0/0                   90
+
+    GE0/0/3       SK-AP-26                 GE0/0/0                   113
+
+    GE0/0/4       SK-AP-24                 GE0/0/0                   100
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  111'
+stdout_lines:
+-   - sysname SK-SW7-ACCESS-24
+-   - GE0/0/1       SK-AP-20                 GE0/0/0                   104
+    - GE0/0/2       SK-AP-25                 GE0/0/0                   90
+    - GE0/0/3       SK-AP-26                 GE0/0/0                   113
+    - GE0/0/4       SK-AP-24                 GE0/0/0                   100
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  111
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW8-ACCESS-24
+- 'GE0/0/23      SK-AP-28                 GE0/0/0                   105
+
+    GE0/0/24      SK-AP-30                 GE0/0/0                   92
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  118'
+stdout_lines:
+-   - sysname SK-SW8-ACCESS-24
+-   - GE0/0/23      SK-AP-28                 GE0/0/0                   105
+    - GE0/0/24      SK-AP-30                 GE0/0/0                   92
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  118
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW10-ACCESS-24
+- 'GE0/0/19      -                        54ee-7530-56ce            3010
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  113'
+stdout_lines:
+-   - sysname SK-SW10-ACCESS-24
+-   - GE0/0/19      -                        54ee-7530-56ce            3010
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  113
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW11-ACCESS-24
+- 'GE0/0/1       SK-AP-49                 GE0/0/0                   100
+
+    GE0/0/2       SK-AP-45                 GE0/0/0                   95
+
+    GE0/0/3       SK-AP-31                 GE0/0/0                   92
+
+    GE0/0/4       SK-AP-09                 GE0/0/0                   94
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  105'
+stdout_lines:
+-   - sysname SK-SW11-ACCESS-24
+-   - GE0/0/1       SK-AP-49                 GE0/0/0                   100
+    - GE0/0/2       SK-AP-45                 GE0/0/0                   95
+    - GE0/0/3       SK-AP-31                 GE0/0/0                   92
+    - GE0/0/4       SK-AP-09                 GE0/0/0                   94
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  105
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW13-ACCESS-24
+- 'GE0/0/9       SK-AP-51                 GE0/0/0                   107
+
+    GE0/0/10      SK-AP-56                 GE0/0/0                   118
+
+    GE0/0/11      SK-AP-58                 GE0/0/0                   93
+
+    GE0/0/12      SK-AP-57                 GE0/0/0                   117
+
+    GE0/0/13      SK-AP-54                 GE0/0/0                   105
+
+    GE0/0/14      SK-AP-52                 GE0/0/0                   114
+
+    GE0/0/15      SK-AP-61                 GE0/0/0                   116
+
+    GE0/0/16      SK-AP-63                 GE0/0/0                   96
+
+    GE0/0/17      SK-AP-55                 GE0/0/0                   109
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  94'
+stdout_lines:
+-   - sysname SK-SW13-ACCESS-24
+-   - GE0/0/9       SK-AP-51                 GE0/0/0                   107
+    - GE0/0/10      SK-AP-56                 GE0/0/0                   118
+    - GE0/0/11      SK-AP-58                 GE0/0/0                   93
+    - GE0/0/12      SK-AP-57                 GE0/0/0                   117
+    - GE0/0/13      SK-AP-54                 GE0/0/0                   105
+    - GE0/0/14      SK-AP-52                 GE0/0/0                   114
+    - GE0/0/15      SK-AP-61                 GE0/0/0                   116
+    - GE0/0/16      SK-AP-63                 GE0/0/0                   96
+    - GE0/0/17      SK-AP-55                 GE0/0/0                   109
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  94
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW14-ACCESS-24
+- 'GE0/0/1       SK-AP-14                 GE0/0/0                   94
+
+    GE0/0/2       SK-AP-29                 GE0/0/0                   106
+
+    GE0/0/3       SK-AP-60                 GE0/0/0                   94
+
+    GE0/0/4       SK-AP-62                 GE0/0/0                   107
+
+    GE0/0/6       SK-AP-59                 GE0/0/0                   91
+
+    GE0/0/22      -                        54ee-752d-36c9            3402
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 106'
+stdout_lines:
+-   - sysname SK-SW14-ACCESS-24
+-   - GE0/0/1       SK-AP-14                 GE0/0/0                   94
+    - GE0/0/2       SK-AP-29                 GE0/0/0                   106
+    - GE0/0/3       SK-AP-60                 GE0/0/0                   94
+    - GE0/0/4       SK-AP-62                 GE0/0/0                   107
+    - GE0/0/6       SK-AP-59                 GE0/0/0                   91
+    - GE0/0/22      -                        54ee-752d-36c9            3402
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 106
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW15-ACCESS-12
+- 'GE0/0/7       SK-AP-50                 GE0/0/0                   109
+
+    GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  111'
+stdout_lines:
+-   - sysname SK-SW15-ACCESS-12
+-   - GE0/0/7       SK-AP-50                 GE0/0/0                   109
+    - GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  111
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW16-ACCESS-12
+- 'GE0/0/1       -                        fc4d-d42d-d3cd            3593
+
+    GE0/0/4       SK-AP-48                 GE0/0/0                   120
+
+    GE0/0/10      SK-AP-12                 GE0/0/0                   109
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 115'
+stdout_lines:
+-   - sysname SK-SW16-ACCESS-12
+-   - GE0/0/1       -                        fc4d-d42d-d3cd            3593
+    - GE0/0/4       SK-AP-48                 GE0/0/0                   120
+    - GE0/0/10      SK-AP-12                 GE0/0/0                   109
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 115
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW17-ACCESS-12
+- 'GE0/0/1       SK-AP-06                 GE0/0/0                   118
+
+    GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  105'
+stdout_lines:
+-   - sysname SK-SW17-ACCESS-12
+-   - GE0/0/1       SK-AP-06                 GE0/0/0                   118
+    - GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  105
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW20-ACCESS-48
+- 'GE0/0/1       SK-AP-23                 GE0/0/0                   108
+
+    GE0/0/3       SK-AP-22                 GE0/0/0                   100
+
+    GE0/0/13      SK-AP-33                 GE0/0/0                   106
+
+    GE0/0/33      SK-AP-34                 GE0/0/0                   118
+
+    GE0/0/38      SK-AP-27                 GE0/0/0                   107
+
+    GE0/0/39      -                        d43d-7e21-7bd2            3164
+
+    GE0/0/47      SK-AP-21                 GE0/0/0                   95
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  101
+
+    XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  106
+
+    XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  91
+
+    XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  96'
+stdout_lines:
+-   - sysname SK-SW20-ACCESS-48
+-   - GE0/0/1       SK-AP-23                 GE0/0/0                   108
+    - GE0/0/3       SK-AP-22                 GE0/0/0                   100
+    - GE0/0/13      SK-AP-33                 GE0/0/0                   106
+    - GE0/0/33      SK-AP-34                 GE0/0/0                   118
+    - GE0/0/38      SK-AP-27                 GE0/0/0                   107
+    - GE0/0/39      -                        d43d-7e21-7bd2            3164
+    - GE0/0/47      SK-AP-21                 GE0/0/0                   95
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  101
+    - XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  106
+    - XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  91
+    - XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  96
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW18-ACCESS-12
+- 'GE0/0/1       SK-AP-07                 GE0/0/0                   95
+
+    GE0/0/2       SK-AP-08                 GE0/0/0                   107
+
+    GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  107
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 119'
+stdout_lines:
+-   - sysname SK-SW18-ACCESS-12
+-   - GE0/0/1       SK-AP-07                 GE0/0/0                   95
+    - GE0/0/2       SK-AP-08                 GE0/0/0                   107
+    - GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  107
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 119
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW21-ACCESS-48
+- 'XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  112
+
+    XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  90
+
+    XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  116
+
+    XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  90'
+stdout_lines:
+-   - sysname SK-SW21-ACCESS-48
+-   - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  112
+    - XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  90
+    - XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  116
+    - XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  90
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-DIST-24
+- 'XGE0/0/2      SK-AC1                   XGE0/0/1                  110
+
+    XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  113
+
+    XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  106
+
+    XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  99
+
+    XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  95
+
+    XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  103
+
+    XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  93
+
+    XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  99
+
+    XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  119
+
+    XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  98
+
+    XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  111
+
+    XGE0/0/23     R1-CORE                  GE0/1/0                   95
+
+    XGE0/0/24     R1-CORE                  GE0/1/1                   95'
+stdout_lines:
+-   - sysname SK-SW1-DIST-24
+-   - XGE0/0/2      SK-AC1                   XGE0/0/1                  110
+    - XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  113
+    - XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  106
+    - XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  99
+    - XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  95
+    - XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  103
+    - XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  93
+    - XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  99
+    - XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  119
+    - XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  98
+    - XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  111
+    - XGE0/0/23     R1-CORE                  GE0/1/0                   95
+    - XGE0/0/24     R1-CORE                  GE0/1/1                   95
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW2-ACCESS-24
+- 'GE0/0/1       SK-AP-65                 GE0/0/0                   101
+
+    GE0/0/2       SK-AP-17                 GE0/0/0                   91
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 95'
+stdout_lines:
+-   - sysname SK-SW2-ACCESS-24
+-   - GE0/0/1       SK-AP-65                 GE0/0/0                   101
+    - GE0/0/2       SK-AP-17                 GE0/0/0                   91
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 95
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW7-ACCESS-24
+- 'GE0/0/1       SK-AP-20                 GE0/0/0                   94
+
+    GE0/0/2       SK-AP-25                 GE0/0/0                   110
+
+    GE0/0/3       SK-AP-26                 GE0/0/0                   103
+
+    GE0/0/4       SK-AP-24                 GE0/0/0                   120
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  101'
+stdout_lines:
+-   - sysname SK-SW7-ACCESS-24
+-   - GE0/0/1       SK-AP-20                 GE0/0/0                   94
+    - GE0/0/2       SK-AP-25                 GE0/0/0                   110
+    - GE0/0/3       SK-AP-26                 GE0/0/0                   103
+    - GE0/0/4       SK-AP-24                 GE0/0/0                   120
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  101
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-ACCESS-24
+- 'GE0/0/1       SK-AP-02                 GE0/0/0                   93
+
+    GE0/0/2       SK-AP-53                 GE0/0/0                   113
+
+    GE0/0/3       -                        c85b-76dd-271f            3456
+
+    GE0/0/6       -                        4437-e655-1d9d            3106
+
+    GE0/0/7       SK-AP-13                 GE0/0/0                   91
+
+    GE0/0/8       SK-AP-67                 GE0/0/0                   111
+
+    GE0/0/24      SK-AP-11                 GE0/0/0                   111
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 93'
+stdout_lines:
+-   - sysname SK-SW1-ACCESS-24
+-   - GE0/0/1       SK-AP-02                 GE0/0/0                   93
+    - GE0/0/2       SK-AP-53                 GE0/0/0                   113
+    - GE0/0/3       -                        c85b-76dd-271f            3456
+    - GE0/0/6       -                        4437-e655-1d9d            3106
+    - GE0/0/7       SK-AP-13                 GE0/0/0                   91
+    - GE0/0/8       SK-AP-67                 GE0/0/0                   111
+    - GE0/0/24      SK-AP-11                 GE0/0/0                   111
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 93
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW4-ACCESS-24
+- 'GE0/0/1       SK-AP-47                 GE0/0/0                   96
+
+    GE0/0/2       SK-AP-03                 GE0/0/0                   93
+
+    GE0/0/7       -                        54ee-752d-0ece            3174
+
+    GE0/0/8       -                        28d2-4480-8e94            3226
+
+    GE0/0/10      -                        54ee-752d-b140            3578
+
+    GE0/0/12      -                        3c97-0ea1-6480            2852
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 91'
+stdout_lines:
+-   - sysname SK-SW4-ACCESS-24
+-   - GE0/0/1       SK-AP-47                 GE0/0/0                   96
+    - GE0/0/2       SK-AP-03                 GE0/0/0                   93
+    - GE0/0/7       -                        54ee-752d-0ece            3174
+    - GE0/0/8       -                        28d2-4480-8e94            3226
+    - GE0/0/10      -                        54ee-752d-b140            3578
+    - GE0/0/12      -                        3c97-0ea1-6480            2852
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 91
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW9-ACCESS-24
+- 'GE0/0/3       SK-AP-35                 GE0/0/0                   118
+
+    GE0/0/13      SK-AP-32                 GE0/0/0                   97
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  110'
+stdout_lines:
+-   - sysname SK-SW9-ACCESS-24
+-   - GE0/0/3       SK-AP-35                 GE0/0/0                   118
+    - GE0/0/13      SK-AP-32                 GE0/0/0                   97
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  110
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW11-ACCESS-24
+- 'GE0/0/1       SK-AP-49                 GE0/0/0                   120
+
+    GE0/0/2       SK-AP-45                 GE0/0/0                   116
+
+    GE0/0/3       SK-AP-31                 GE0/0/0                   111
+
+    GE0/0/4       SK-AP-09                 GE0/0/0                   113
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  94'
+stdout_lines:
+-   - sysname SK-SW11-ACCESS-24
+-   - GE0/0/1       SK-AP-49                 GE0/0/0                   120
+    - GE0/0/2       SK-AP-45                 GE0/0/0                   116
+    - GE0/0/3       SK-AP-31                 GE0/0/0                   111
+    - GE0/0/4       SK-AP-09                 GE0/0/0                   113
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  94
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW10-ACCESS-24
+- 'GE0/0/19      -                        54ee-7530-56ce            2908
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  101'
+stdout_lines:
+-   - sysname SK-SW10-ACCESS-24
+-   - GE0/0/19      -                        54ee-7530-56ce            2908
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  101
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW13-ACCESS-24
+- 'GE0/0/9       SK-AP-51                 GE0/0/0                   98
+
+    GE0/0/10      SK-AP-56                 GE0/0/0                   108
+
+    GE0/0/11      SK-AP-58                 GE0/0/0                   114
+
+    GE0/0/12      SK-AP-57                 GE0/0/0                   107
+
+    GE0/0/13      SK-AP-54                 GE0/0/0                   95
+
+    GE0/0/14      SK-AP-52                 GE0/0/0                   105
+
+    GE0/0/15      SK-AP-61                 GE0/0/0                   106
+
+    GE0/0/16      SK-AP-63                 GE0/0/0                   115
+
+    GE0/0/17      SK-AP-55                 GE0/0/0                   99
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  113'
+stdout_lines:
+-   - sysname SK-SW13-ACCESS-24
+-   - GE0/0/9       SK-AP-51                 GE0/0/0                   98
+    - GE0/0/10      SK-AP-56                 GE0/0/0                   108
+    - GE0/0/11      SK-AP-58                 GE0/0/0                   114
+    - GE0/0/12      SK-AP-57                 GE0/0/0                   107
+    - GE0/0/13      SK-AP-54                 GE0/0/0                   95
+    - GE0/0/14      SK-AP-52                 GE0/0/0                   105
+    - GE0/0/15      SK-AP-61                 GE0/0/0                   106
+    - GE0/0/16      SK-AP-63                 GE0/0/0                   115
+    - GE0/0/17      SK-AP-55                 GE0/0/0                   99
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  113
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW14-ACCESS-24
+- 'GE0/0/1       SK-AP-14                 GE0/0/0                   111
+
+    GE0/0/2       SK-AP-29                 GE0/0/0                   93
+
+    GE0/0/3       SK-AP-60                 GE0/0/0                   113
+
+    GE0/0/4       SK-AP-62                 GE0/0/0                   94
+
+    GE0/0/6       SK-AP-59                 GE0/0/0                   109
+
+    GE0/0/22      -                        54ee-752d-36c9            3299
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 93'
+stdout_lines:
+-   - sysname SK-SW14-ACCESS-24
+-   - GE0/0/1       SK-AP-14                 GE0/0/0                   111
+    - GE0/0/2       SK-AP-29                 GE0/0/0                   93
+    - GE0/0/3       SK-AP-60                 GE0/0/0                   113
+    - GE0/0/4       SK-AP-62                 GE0/0/0                   94
+    - GE0/0/6       SK-AP-59                 GE0/0/0                   109
+    - GE0/0/22      -                        54ee-752d-36c9            3299
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 93
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW17-ACCESS-12
+- 'GE0/0/1       SK-AP-06                 GE0/0/0                   107
+
+    GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  93'
+stdout_lines:
+-   - sysname SK-SW17-ACCESS-12
+-   - GE0/0/1       SK-AP-06                 GE0/0/0                   107
+    - GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  93
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW15-ACCESS-12
+- 'GE0/0/7       SK-AP-50                 GE0/0/0                   99
+
+    GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  100'
+stdout_lines:
+-   - sysname SK-SW15-ACCESS-12
+-   - GE0/0/7       SK-AP-50                 GE0/0/0                   99
+    - GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  100
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW16-ACCESS-12
+- 'GE0/0/1       -                        fc4d-d42d-d3cd            3491
+
+    GE0/0/4       SK-AP-48                 GE0/0/0                   109
+
+    GE0/0/10      SK-AP-12                 GE0/0/0                   97
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 104'
+stdout_lines:
+-   - sysname SK-SW16-ACCESS-12
+-   - GE0/0/1       -                        fc4d-d42d-d3cd            3491
+    - GE0/0/4       SK-AP-48                 GE0/0/0                   109
+    - GE0/0/10      SK-AP-12                 GE0/0/0                   97
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 104
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW18-ACCESS-12
+- 'GE0/0/1       SK-AP-07                 GE0/0/0                   115
+
+    GE0/0/2       SK-AP-08                 GE0/0/0                   96
+
+    GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  95
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 107'
+stdout_lines:
+-   - sysname SK-SW18-ACCESS-12
+-   - GE0/0/1       SK-AP-07                 GE0/0/0                   115
+    - GE0/0/2       SK-AP-08                 GE0/0/0                   96
+    - GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  95
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 107
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW20-ACCESS-48
+- 'GE0/0/1       SK-AP-23                 GE0/0/0                   95
+
+    GE0/0/3       SK-AP-22                 GE0/0/0                   117
+
+    GE0/0/13      SK-AP-33                 GE0/0/0                   93
+
+    GE0/0/33      SK-AP-34                 GE0/0/0                   105
+
+    GE0/0/38      SK-AP-27                 GE0/0/0                   94
+
+    GE0/0/39      -                        d43d-7e21-7bd2            3061
+
+    GE0/0/47      SK-AP-21                 GE0/0/0                   112
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  118
+
+    XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  93
+
+    XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  108
+
+    XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  113'
+stdout_lines:
+-   - sysname SK-SW20-ACCESS-48
+-   - GE0/0/1       SK-AP-23                 GE0/0/0                   95
+    - GE0/0/3       SK-AP-22                 GE0/0/0                   117
+    - GE0/0/13      SK-AP-33                 GE0/0/0                   93
+    - GE0/0/33      SK-AP-34                 GE0/0/0                   105
+    - GE0/0/38      SK-AP-27                 GE0/0/0                   94
+    - GE0/0/39      -                        d43d-7e21-7bd2            3061
+    - GE0/0/47      SK-AP-21                 GE0/0/0                   112
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  118
+    - XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  93
+    - XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  108
+    - XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  113
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW21-ACCESS-48
+- 'XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  101
+
+    XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  109
+
+    XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  105
+
+    XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  109'
+stdout_lines:
+-   - sysname SK-SW21-ACCESS-48
+-   - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  101
+    - XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  109
+    - XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  105
+    - XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  109
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-DIST-24
+- 'XGE0/0/2      SK-AC1                   XGE0/0/1                  98
+
+    XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  101
+
+    XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  93
+
+    XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  117
+
+    XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  113
+
+    XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  91
+
+    XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  111
+
+    XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  117
+
+    XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  107
+
+    XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  116
+
+    XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  99
+
+    XGE0/0/23     R1-CORE                  GE0/1/0                   112
+
+    XGE0/0/24     R1-CORE                  GE0/1/1                   112'
+stdout_lines:
+-   - sysname SK-SW1-DIST-24
+-   - XGE0/0/2      SK-AC1                   XGE0/0/1                  98
+    - XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  101
+    - XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  93
+    - XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  117
+    - XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  113
+    - XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  91
+    - XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  111
+    - XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  117
+    - XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  107
+    - XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  116
+    - XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  99
+    - XGE0/0/23     R1-CORE                  GE0/1/0                   112
+    - XGE0/0/24     R1-CORE                  GE0/1/1                   112
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW2-ACCESS-24
+- 'GE0/0/1       SK-AP-65                 GE0/0/0                   97
+
+    GE0/0/2       SK-AP-17                 GE0/0/0                   103
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 116'
+stdout_lines:
+-   - sysname SK-SW2-ACCESS-24
+-   - GE0/0/1       SK-AP-65                 GE0/0/0                   97
+    - GE0/0/2       SK-AP-17                 GE0/0/0                   103
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 116
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-ACCESS-24
+- 'GE0/0/1       SK-AP-02                 GE0/0/0                   114
+
+    GE0/0/2       SK-AP-53                 GE0/0/0                   98
+
+    GE0/0/6       -                        4437-e655-1d9d            2839
+
+    GE0/0/7       SK-AP-13                 GE0/0/0                   108
+
+    GE0/0/8       SK-AP-67                 GE0/0/0                   97
+
+    GE0/0/15      -                        e04f-4391-3679            3283
+
+    GE0/0/24      SK-AP-11                 GE0/0/0                   102
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 114'
+stdout_lines:
+-   - sysname SK-SW1-ACCESS-24
+-   - GE0/0/1       SK-AP-02                 GE0/0/0                   114
+    - GE0/0/2       SK-AP-53                 GE0/0/0                   98
+    - GE0/0/6       -                        4437-e655-1d9d            2839
+    - GE0/0/7       SK-AP-13                 GE0/0/0                   108
+    - GE0/0/8       SK-AP-67                 GE0/0/0                   97
+    - GE0/0/15      -                        e04f-4391-3679            3283
+    - GE0/0/24      SK-AP-11                 GE0/0/0                   102
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 114
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW4-ACCESS-24
+- 'GE0/0/1       SK-AP-47                 GE0/0/0                   111
+
+    GE0/0/2       SK-AP-03                 GE0/0/0                   106
+
+    GE0/0/8       -                        28d2-4480-8e94            2960
+
+    GE0/0/10      -                        54ee-752d-b140            3316
+
+    GE0/0/12      -                        3c97-0ea1-6480            3530
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 111'
+stdout_lines:
+-   - sysname SK-SW4-ACCESS-24
+-   - GE0/0/1       SK-AP-47                 GE0/0/0                   111
+    - GE0/0/2       SK-AP-03                 GE0/0/0                   106
+    - GE0/0/8       -                        28d2-4480-8e94            2960
+    - GE0/0/10      -                        54ee-752d-b140            3316
+    - GE0/0/12      -                        3c97-0ea1-6480            3530
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 111
+
+failed: true
+msg: timed out
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW7-ACCESS-24
+- 'GE0/0/1       SK-AP-20                 GE0/0/0                   101
+
+    GE0/0/2       SK-AP-25                 GE0/0/0                   95
+
+    GE0/0/3       SK-AP-26                 GE0/0/0                   118
+
+    GE0/0/4       SK-AP-24                 GE0/0/0                   99
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  102'
+stdout_lines:
+-   - sysname SK-SW7-ACCESS-24
+-   - GE0/0/1       SK-AP-20                 GE0/0/0                   101
+    - GE0/0/2       SK-AP-25                 GE0/0/0                   95
+    - GE0/0/3       SK-AP-26                 GE0/0/0                   118
+    - GE0/0/4       SK-AP-24                 GE0/0/0                   99
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  102
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW9-ACCESS-24
+- 'GE0/0/3       SK-AP-35                 GE0/0/0                   98
+
+    GE0/0/13      SK-AP-32                 GE0/0/0                   116
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  90'
+stdout_lines:
+-   - sysname SK-SW9-ACCESS-24
+-   - GE0/0/3       SK-AP-35                 GE0/0/0                   98
+    - GE0/0/13      SK-AP-32                 GE0/0/0                   116
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  90
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW8-ACCESS-24
+- 'GE0/0/23      SK-AP-28                 GE0/0/0                   113
+
+    GE0/0/24      SK-AP-30                 GE0/0/0                   119
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  114'
+stdout_lines:
+-   - sysname SK-SW8-ACCESS-24
+-   - GE0/0/23      SK-AP-28                 GE0/0/0                   113
+    - GE0/0/24      SK-AP-30                 GE0/0/0                   119
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  114
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW11-ACCESS-24
+- 'GE0/0/1       SK-AP-49                 GE0/0/0                   97
+
+    GE0/0/2       SK-AP-45                 GE0/0/0                   99
+
+    GE0/0/3       SK-AP-31                 GE0/0/0                   108
+
+    GE0/0/4       SK-AP-09                 GE0/0/0                   119
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  99'
+stdout_lines:
+-   - sysname SK-SW11-ACCESS-24
+-   - GE0/0/1       SK-AP-49                 GE0/0/0                   97
+    - GE0/0/2       SK-AP-45                 GE0/0/0                   99
+    - GE0/0/3       SK-AP-31                 GE0/0/0                   108
+    - GE0/0/4       SK-AP-09                 GE0/0/0                   119
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  99
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW14-ACCESS-24
+- 'GE0/0/1       SK-AP-14                 GE0/0/0                   102
+
+    GE0/0/2       SK-AP-29                 GE0/0/0                   91
+
+    GE0/0/3       SK-AP-60                 GE0/0/0                   108
+
+    GE0/0/4       SK-AP-62                 GE0/0/0                   110
+
+    GE0/0/6       SK-AP-59                 GE0/0/0                   116
+
+    GE0/0/7       -                        54ee-752d-af24            2892
+
+    GE0/0/22      -                        54ee-752d-36c9            3032
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 109'
+stdout_lines:
+-   - sysname SK-SW14-ACCESS-24
+-   - GE0/0/1       SK-AP-14                 GE0/0/0                   102
+    - GE0/0/2       SK-AP-29                 GE0/0/0                   91
+    - GE0/0/3       SK-AP-60                 GE0/0/0                   108
+    - GE0/0/4       SK-AP-62                 GE0/0/0                   110
+    - GE0/0/6       SK-AP-59                 GE0/0/0                   116
+    - GE0/0/7       -                        54ee-752d-af24            2892
+    - GE0/0/22      -                        54ee-752d-36c9            3032
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 109
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW13-ACCESS-24
+- 'GE0/0/9       SK-AP-51                 GE0/0/0                   100
+
+    GE0/0/10      SK-AP-56                 GE0/0/0                   98
+
+    GE0/0/11      SK-AP-58                 GE0/0/0                   120
+
+    GE0/0/12      SK-AP-57                 GE0/0/0                   112
+
+    GE0/0/13      SK-AP-54                 GE0/0/0                   99
+
+    GE0/0/14      SK-AP-52                 GE0/0/0                   92
+
+    GE0/0/15      SK-AP-61                 GE0/0/0                   106
+
+    GE0/0/16      SK-AP-63                 GE0/0/0                   106
+
+    GE0/0/17      SK-AP-55                 GE0/0/0                   109
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  97'
+stdout_lines:
+-   - sysname SK-SW13-ACCESS-24
+-   - GE0/0/9       SK-AP-51                 GE0/0/0                   100
+    - GE0/0/10      SK-AP-56                 GE0/0/0                   98
+    - GE0/0/11      SK-AP-58                 GE0/0/0                   120
+    - GE0/0/12      SK-AP-57                 GE0/0/0                   112
+    - GE0/0/13      SK-AP-54                 GE0/0/0                   99
+    - GE0/0/14      SK-AP-52                 GE0/0/0                   92
+    - GE0/0/15      SK-AP-61                 GE0/0/0                   106
+    - GE0/0/16      SK-AP-63                 GE0/0/0                   106
+    - GE0/0/17      SK-AP-55                 GE0/0/0                   109
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  97
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW15-ACCESS-12
+- 'GE0/0/7       SK-AP-50                 GE0/0/0                   95
+
+    GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  105'
+stdout_lines:
+-   - sysname SK-SW15-ACCESS-12
+-   - GE0/0/7       SK-AP-50                 GE0/0/0                   95
+    - GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  105
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW16-ACCESS-12
+- 'GE0/0/1       -                        fc4d-d42d-d3cd            3217
+
+    GE0/0/4       SK-AP-48                 GE0/0/0                   119
+
+    GE0/0/10      SK-AP-12                 GE0/0/0                   106
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 118'
+stdout_lines:
+-   - sysname SK-SW16-ACCESS-12
+-   - GE0/0/1       -                        fc4d-d42d-d3cd            3217
+    - GE0/0/4       SK-AP-48                 GE0/0/0                   119
+    - GE0/0/10      SK-AP-12                 GE0/0/0                   106
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 118
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW17-ACCESS-12
+- 'GE0/0/1       SK-AP-06                 GE0/0/0                   108
+
+    GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  111'
+stdout_lines:
+-   - sysname SK-SW17-ACCESS-12
+-   - GE0/0/1       SK-AP-06                 GE0/0/0                   108
+    - GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  111
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW18-ACCESS-12
+- 'GE0/0/1       SK-AP-07                 GE0/0/0                   111
+
+    GE0/0/2       SK-AP-08                 GE0/0/0                   118
+
+    GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  103
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 118'
+stdout_lines:
+-   - sysname SK-SW18-ACCESS-12
+-   - GE0/0/1       SK-AP-07                 GE0/0/0                   111
+    - GE0/0/2       SK-AP-08                 GE0/0/0                   118
+    - GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  103
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 118
+
+failed: true
+msg: timed out
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW21-ACCESS-48
+- 'XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  115
+
+    XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  102
+
+    XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  96
+
+    XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  93'
+stdout_lines:
+-   - sysname SK-SW21-ACCESS-48
+-   - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  115
+    - XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  102
+    - XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  96
+    - XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  93
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-DIST-24
+- 'XGE0/0/2      SK-AC1                   XGE0/0/1                  108
+
+    XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  102
+
+    XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  91
+
+    XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  100
+
+    XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  112
+
+    XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  106
+
+    XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  115
+
+    XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  103
+
+    XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  107
+
+    XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  102
+
+    XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  98
+
+    XGE0/0/23     R1-CORE                  GE0/1/0                   103
+
+    XGE0/0/24     R1-CORE                  GE0/1/1                   103'
+stdout_lines:
+-   - sysname SK-SW1-DIST-24
+-   - XGE0/0/2      SK-AC1                   XGE0/0/1                  108
+    - XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  102
+    - XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  91
+    - XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  100
+    - XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  112
+    - XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  106
+    - XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  115
+    - XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  103
+    - XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  107
+    - XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  102
+    - XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  98
+    - XGE0/0/23     R1-CORE                  GE0/1/0                   103
+    - XGE0/0/24     R1-CORE                  GE0/1/1                   103
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-ACCESS-24
+- 'GE0/0/1       SK-AP-02                 GE0/0/0                   118
+
+    GE0/0/2       SK-AP-53                 GE0/0/0                   104
+
+    GE0/0/6       -                        4437-e655-1d9d            3541
+
+    GE0/0/7       SK-AP-13                 GE0/0/0                   91
+
+    GE0/0/8       SK-AP-67                 GE0/0/0                   103
+
+    GE0/0/15      -                        e04f-4391-3679            3042
+
+    GE0/0/17      -                        54ee-752a-8f14            3334
+
+    GE0/0/20      -                        3c97-0ed6-1f03            3498
+
+    GE0/0/24      SK-AP-11                 GE0/0/0                   115
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 96'
+stdout_lines:
+-   - sysname SK-SW1-ACCESS-24
+-   - GE0/0/1       SK-AP-02                 GE0/0/0                   118
+    - GE0/0/2       SK-AP-53                 GE0/0/0                   104
+    - GE0/0/6       -                        4437-e655-1d9d            3541
+    - GE0/0/7       SK-AP-13                 GE0/0/0                   91
+    - GE0/0/8       SK-AP-67                 GE0/0/0                   103
+    - GE0/0/15      -                        e04f-4391-3679            3042
+    - GE0/0/17      -                        54ee-752a-8f14            3334
+    - GE0/0/20      -                        3c97-0ed6-1f03            3498
+    - GE0/0/24      SK-AP-11                 GE0/0/0                   115
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/13                 96
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW2-ACCESS-24
+- 'GE0/0/1       SK-AP-65                 GE0/0/0                   94
+
+    GE0/0/2       SK-AP-17                 GE0/0/0                   117
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 100'
+stdout_lines:
+-   - sysname SK-SW2-ACCESS-24
+-   - GE0/0/1       SK-AP-65                 GE0/0/0                   94
+    - GE0/0/2       SK-AP-17                 GE0/0/0                   117
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/14                 100
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW4-ACCESS-24
+- 'GE0/0/1       SK-AP-47                 GE0/0/0                   116
+
+    GE0/0/2       SK-AP-03                 GE0/0/0                   105
+
+    GE0/0/8       -                        28d2-4480-8e94            2718
+
+    GE0/0/10      -                        54ee-752d-b140            3074
+
+    GE0/0/12      -                        3c97-0ea1-6480            3289
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 95'
+stdout_lines:
+-   - sysname SK-SW4-ACCESS-24
+-   - GE0/0/1       SK-AP-47                 GE0/0/0                   116
+    - GE0/0/2       SK-AP-03                 GE0/0/0                   105
+    - GE0/0/8       -                        28d2-4480-8e94            2718
+    - GE0/0/10      -                        54ee-752d-b140            3074
+    - GE0/0/12      -                        3c97-0ea1-6480            3289
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/18                 95
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW3-ACCESS-24
+- 'GE0/0/16      -                        54e1-ad6d-2dfd            3447
+
+    GE0/0/19      SK-AP-19                 GE0/0/0                   118
+
+    GE0/0/23      SK-AP-04                 GE0/0/0                   101
+
+    GE0/0/24      SK-AP-05                 GE0/0/0                   115
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 118'
+stdout_lines:
+-   - sysname SK-SW3-ACCESS-24
+-   - GE0/0/16      -                        54e1-ad6d-2dfd            3447
+    - GE0/0/19      SK-AP-19                 GE0/0/0                   118
+    - GE0/0/23      SK-AP-04                 GE0/0/0                   101
+    - GE0/0/24      SK-AP-05                 GE0/0/0                   115
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/16                 118
+
+failed: true
+msg: timed out
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW8-ACCESS-24
+- 'GE0/0/23      SK-AP-28                 GE0/0/0                   96
+
+    GE0/0/24      SK-AP-30                 GE0/0/0                   102
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  97'
+stdout_lines:
+-   - sysname SK-SW8-ACCESS-24
+-   - GE0/0/23      SK-AP-28                 GE0/0/0                   96
+    - GE0/0/24      SK-AP-30                 GE0/0/0                   102
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/3                  97
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW7-ACCESS-24
+- 'GE0/0/1       SK-AP-20                 GE0/0/0                   114
+
+    GE0/0/2       SK-AP-25                 GE0/0/0                   108
+
+    GE0/0/3       SK-AP-26                 GE0/0/0                   101
+
+    GE0/0/4       SK-AP-24                 GE0/0/0                   112
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  115'
+stdout_lines:
+-   - sysname SK-SW7-ACCESS-24
+-   - GE0/0/1       SK-AP-20                 GE0/0/0                   114
+    - GE0/0/2       SK-AP-25                 GE0/0/0                   108
+    - GE0/0/3       SK-AP-26                 GE0/0/0                   101
+    - GE0/0/4       SK-AP-24                 GE0/0/0                   112
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/2                  115
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW10-ACCESS-24
+- 'GE0/0/19      -                        54ee-7530-56ce            3345
+
+    XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  119'
+stdout_lines:
+-   - sysname SK-SW10-ACCESS-24
+-   - GE0/0/19      -                        54ee-7530-56ce            3345
+    - XGE0/0/1      SK-SW20-ACCESS-48        XGE0/0/4                  119
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW9-ACCESS-24
+- 'GE0/0/3       SK-AP-35                 GE0/0/0                   112
+
+    GE0/0/13      SK-AP-32                 GE0/0/0                   100
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  104'
+stdout_lines:
+-   - sysname SK-SW9-ACCESS-24
+-   - GE0/0/3       SK-AP-35                 GE0/0/0                   112
+    - GE0/0/13      SK-AP-32                 GE0/0/0                   100
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/2                  104
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW11-ACCESS-24
+- 'GE0/0/1       SK-AP-49                 GE0/0/0                   90
+
+    GE0/0/2       SK-AP-45                 GE0/0/0                   106
+
+    GE0/0/3       SK-AP-31                 GE0/0/0                   92
+
+    GE0/0/4       SK-AP-09                 GE0/0/0                   103
+
+    XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  113'
+stdout_lines:
+-   - sysname SK-SW11-ACCESS-24
+-   - GE0/0/1       SK-AP-49                 GE0/0/0                   90
+    - GE0/0/2       SK-AP-45                 GE0/0/0                   106
+    - GE0/0/3       SK-AP-31                 GE0/0/0                   92
+    - GE0/0/4       SK-AP-09                 GE0/0/0                   103
+    - XGE0/0/1      SK-SW21-ACCESS-48        XGE0/0/3                  113
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW13-ACCESS-24
+- 'GE0/0/9       SK-AP-51                 GE0/0/0                   106
+
+    GE0/0/10      SK-AP-56                 GE0/0/0                   92
+
+    GE0/0/11      SK-AP-58                 GE0/0/0                   94
+
+    GE0/0/12      SK-AP-57                 GE0/0/0                   119
+
+    GE0/0/13      SK-AP-54                 GE0/0/0                   102
+
+    GE0/0/14      SK-AP-52                 GE0/0/0                   95
+
+    GE0/0/15      SK-AP-61                 GE0/0/0                   102
+
+    GE0/0/16      SK-AP-63                 GE0/0/0                   97
+
+    GE0/0/17      SK-AP-55                 GE0/0/0                   116
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  112'
+stdout_lines:
+-   - sysname SK-SW13-ACCESS-24
+-   - GE0/0/9       SK-AP-51                 GE0/0/0                   106
+    - GE0/0/10      SK-AP-56                 GE0/0/0                   92
+    - GE0/0/11      SK-AP-58                 GE0/0/0                   94
+    - GE0/0/12      SK-AP-57                 GE0/0/0                   119
+    - GE0/0/13      SK-AP-54                 GE0/0/0                   102
+    - GE0/0/14      SK-AP-52                 GE0/0/0                   95
+    - GE0/0/15      SK-AP-61                 GE0/0/0                   102
+    - GE0/0/16      SK-AP-63                 GE0/0/0                   97
+    - GE0/0/17      SK-AP-55                 GE0/0/0                   116
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/9                  112
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW14-ACCESS-24
+- 'GE0/0/1       SK-AP-14                 GE0/0/0                   116
+
+    GE0/0/2       SK-AP-29                 GE0/0/0                   106
+
+    GE0/0/3       SK-AP-60                 GE0/0/0                   107
+
+    GE0/0/4       SK-AP-62                 GE0/0/0                   104
+
+    GE0/0/6       SK-AP-59                 GE0/0/0                   115
+
+    GE0/0/7       -                        54ee-752d-af24            3597
+
+    GE0/0/14      -                        c85b-76c6-69ab            3233
+
+    GE0/0/22      -                        54ee-752d-36c9            2792
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 94'
+stdout_lines:
+-   - sysname SK-SW14-ACCESS-24
+-   - GE0/0/1       SK-AP-14                 GE0/0/0                   116
+    - GE0/0/2       SK-AP-29                 GE0/0/0                   106
+    - GE0/0/3       SK-AP-60                 GE0/0/0                   107
+    - GE0/0/4       SK-AP-62                 GE0/0/0                   104
+    - GE0/0/6       SK-AP-59                 GE0/0/0                   115
+    - GE0/0/7       -                        54ee-752d-af24            3597
+    - GE0/0/14      -                        c85b-76c6-69ab            3233
+    - GE0/0/22      -                        54ee-752d-36c9            2792
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/10                 94
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW16-ACCESS-12
+- 'GE0/0/1       -                        fc4d-d42d-d3cd            2976
+
+    GE0/0/4       SK-AP-48                 GE0/0/0                   118
+
+    GE0/0/10      SK-AP-12                 GE0/0/0                   90
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 103'
+stdout_lines:
+-   - sysname SK-SW16-ACCESS-12
+-   - GE0/0/1       -                        fc4d-d42d-d3cd            2976
+    - GE0/0/4       SK-AP-48                 GE0/0/0                   118
+    - GE0/0/10      SK-AP-12                 GE0/0/0                   90
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/17                 103
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW15-ACCESS-12
+- 'GE0/0/7       SK-AP-50                 GE0/0/0                   118
+
+    GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  120'
+stdout_lines:
+-   - sysname SK-SW15-ACCESS-12
+-   - GE0/0/7       SK-AP-50                 GE0/0/0                   118
+    - GE0/0/12      SK-SW21-ACCESS-48        XGE0/0/4                  120
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW17-ACCESS-12
+- 'GE0/0/1       SK-AP-06                 GE0/0/0                   105
+
+    GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  95'
+stdout_lines:
+-   - sysname SK-SW17-ACCESS-12
+-   - GE0/0/1       SK-AP-06                 GE0/0/0                   105
+    - GE0/0/12      SK-SW18-ACCESS-12        GE0/0/11                  95
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW18-ACCESS-12
+- 'GE0/0/1       SK-AP-07                 GE0/0/0                   120
+
+    GE0/0/2       SK-AP-08                 GE0/0/0                   110
+
+    GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  119
+
+    GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 104'
+stdout_lines:
+-   - sysname SK-SW18-ACCESS-12
+-   - GE0/0/1       SK-AP-07                 GE0/0/0                   120
+    - GE0/0/2       SK-AP-08                 GE0/0/0                   110
+    - GE0/0/11      SK-SW17-ACCESS-12        GE0/0/12                  119
+    - GE0/0/12      SK-SW1-DIST-24           XGE0/0/12                 104
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW20-ACCESS-48
+- 'GE0/0/1       SK-AP-23                 GE0/0/0                   93
+
+    GE0/0/3       SK-AP-22                 GE0/0/0                   113
+
+    GE0/0/13      SK-AP-33                 GE0/0/0                   93
+
+    GE0/0/33      SK-AP-34                 GE0/0/0                   93
+
+    GE0/0/38      SK-AP-27                 GE0/0/0                   95
+
+    GE0/0/39      -                        d43d-7e21-7bd2            3499
+
+    GE0/0/47      SK-AP-21                 GE0/0/0                   111
+
+    XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  117
+
+    XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  106
+
+    XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  101
+
+    XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  94'
+stdout_lines:
+-   - sysname SK-SW20-ACCESS-48
+-   - GE0/0/1       SK-AP-23                 GE0/0/0                   93
+    - GE0/0/3       SK-AP-22                 GE0/0/0                   113
+    - GE0/0/13      SK-AP-33                 GE0/0/0                   93
+    - GE0/0/33      SK-AP-34                 GE0/0/0                   93
+    - GE0/0/38      SK-AP-27                 GE0/0/0                   95
+    - GE0/0/39      -                        d43d-7e21-7bd2            3499
+    - GE0/0/47      SK-AP-21                 GE0/0/0                   111
+    - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/4                  117
+    - XGE0/0/2      SK-SW7-ACCESS-24         XGE0/0/1                  106
+    - XGE0/0/3      SK-SW8-ACCESS-24         XGE0/0/1                  101
+    - XGE0/0/4      SK-SW10-ACCESS-24        XGE0/0/1                  94
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW21-ACCESS-48
+- 'XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  100
+
+    XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  117
+
+    XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  111
+
+    XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  107'
+stdout_lines:
+-   - sysname SK-SW21-ACCESS-48
+-   - XGE0/0/1      SK-SW1-DIST-24           XGE0/0/3                  100
+    - XGE0/0/2      SK-SW9-ACCESS-24         XGE0/0/1                  117
+    - XGE0/0/3      SK-SW11-ACCESS-24        XGE0/0/1                  111
+    - XGE0/0/4      SK-SW15-ACCESS-12        GE0/0/12                  107
+
+failed: true
+msg: timed out
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- 'Info: It will take a long time if the content you search is too much or the string
+    you input is too long, you can press CTRL_C to break.
+
+    sysname R1-CORE'
+- 'Info: It will take a long time if the content you search is too much or the string
+    you input is too long, you can press CTRL_C to break.
+
+    Local Intf              Neighbor Dev         Neighbor Intf        Exptime (sec)
+
+    -------------------------------------------------------------------------------
+
+    GigabitEthernet0/1/0    SK-SW1-DIST-24       XGigabitEthernet0/0/23         111
+
+    GigabitEthernet0/1/1    SK-SW1-DIST-24       XGigabitEthernet0/0/24         111'
+stdout_lines:
+-   - 'Info: It will take a long time if the content you search is too much or the
+        string you input is too long, you can press CTRL_C to break.'
+    - sysname R1-CORE
+-   - 'Info: It will take a long time if the content you search is too much or the
+        string you input is too long, you can press CTRL_C to break.'
+    - Local Intf              Neighbor Dev         Neighbor Intf        Exptime (sec)
+    - '-------------------------------------------------------------------------------'
+    - GigabitEthernet0/1/0    SK-SW1-DIST-24       XGigabitEthernet0/0/23         111
+    - GigabitEthernet0/1/1    SK-SW1-DIST-24       XGigabitEthernet0/0/24         111
+
+changed: false
+deprecations:
+-   msg: Param 'transport' is deprecated. See the module docs for more information
+    version: 2.9
+failed: false
+stdout:
+- sysname SK-SW1-DIST-24
+- 'XGE0/0/2      SK-AC1                   XGE0/0/1                  92
+
+    XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  116
+
+    XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  105
+
+    XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  114
+
+    XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  96
+
+    XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  119
+
+    XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  99
+
+    XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  117
+
+    XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  91
+
+    XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  116
+
+    XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  113
+
+    XGE0/0/23     R1-CORE                  GE0/1/0                   117
+
+    XGE0/0/24     R1-CORE                  GE0/1/1                   117'
+stdout_lines:
+-   - sysname SK-SW1-DIST-24
+-   - XGE0/0/2      SK-AC1                   XGE0/0/1                  92
+    - XGE0/0/3      SK-SW21-ACCESS-48        XGE0/0/1                  116
+    - XGE0/0/4      SK-SW20-ACCESS-48        XGE0/0/1                  105
+    - XGE0/0/9      SK-SW13-ACCESS-24        XGE0/0/1                  114
+    - XGE0/0/10     SK-SW14-ACCESS-24        XGE0/0/1                  96
+    - XGE0/0/12     SK-SW18-ACCESS-12        GE0/0/12                  119
+    - XGE0/0/13     SK-SW1-ACCESS-24         XGE0/0/1                  99
+    - XGE0/0/14     SK-SW2-ACCESS-24         XGE0/0/1                  117
+    - XGE0/0/16     SK-SW3-ACCESS-24         XGE0/0/1                  91
+    - XGE0/0/17     SK-SW16-ACCESS-12        GE0/0/12                  116
+    - XGE0/0/18     SK-SW4-ACCESS-24         XGE0/0/1                  113
+    - XGE0/0/23     R1-CORE                  GE0/1/0                   117
+    - XGE0/0/24     R1-CORE                  GE0/1/1                   117
+

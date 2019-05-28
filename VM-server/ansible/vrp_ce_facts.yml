@@ -1,0 +1,40 @@
+---
+
+  - name: Test VRP connection
+    hosts: vrp
+
+    connection: local
+    gather_facts: no
+    ignore_errors: yes
+    vars:
+      cli:
+        host: "{{ inventory_hostname }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
+        
+
+    tasks:
+    - name: "Gather config"
+      ce_facts:
+        gather_subset: config
+        provider: "{{ cli }}"
+      register: cliconfig
+
+    - name: "Gather interfaces"
+      ce_facts:
+        gather_subset: interfaces
+        provider: "{{ cli }}"
+      register: vrp_interface
+
+    - copy: content="{{ vrp_interface | to_nice_json }}" dest="out/{{inventory_hostname}}_vrp_interface.json"
+
+
+    - debug: msg="host {{ inventory_hostname }} , username {{ username }}"
+
+    - debug: 
+        var: cliconfig
+
+    - debug:
+        var: cliinterfaces
+
+

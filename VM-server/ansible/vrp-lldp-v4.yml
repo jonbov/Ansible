@@ -1,0 +1,34 @@
+---
+- name: "Gather LLDP info to json file"
+  hosts: all
+  connection: local
+  gather_facts: False
+  ignore_errors: yes  
+
+  tasks:
+
+  - name: ensure empty file exists
+    run_once: true
+    copy:
+      content: ""
+      dest: /home/jonbov/lldp-full-v4.json
+      force: no
+#      group: jonbov
+      owner: jonbov
+      mode: 0555
+
+
+
+  - name: get LLDP info
+    ce_command:
+      commands:
+        - display current | in sysname
+#        - display lldp neighbor brief | exclude Intf
+        - display lldp neighbor | include Port ID|System|neighbor
+    register: lldpvar
+
+  - debug:        msg="{{lldpvar | to_nice_json}}"
+
+
+  - local_action: lineinfile line='{{lldpvar | to_nice_json }}' insertafter=EOF dest="/home/jonbov/lldp-full-v4.json"
+

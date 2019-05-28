@@ -1,0 +1,24 @@
+---
+
+  - name: Test VRP connection
+    hosts: vrp
+
+    connection: local
+    gather_facts: no
+    ignore_errors: yes
+    vars:
+      cli:
+        host: "{{ inventory_hostname }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
+        
+
+    tasks:
+    - name: "Config vlan and save"
+      ce_config:
+        lines: 
+          - vlan {{ VLAN }}
+        save: yes
+        provider: "{{ cli }}"           
+
+

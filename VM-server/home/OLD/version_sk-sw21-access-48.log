@@ -1,0 +1,34 @@
+{
+    "changed": false, 
+    "deprecations": [
+        {
+            "msg": "Param 'transport' is deprecated. See the module docs for more information", 
+            "version": 2.9
+        }
+    ], 
+    "failed": false, 
+    "stdout": [
+        "sysname SK-SW21-ACCESS-48", 
+        "Huawei Versatile Routing Platform Software\nVRP (R) software, Version 5.170 (S5720 V200R010C00SPC600)\nCopyright (C) 2000-2016 HUAWEI TECH CO., LTD\nHUAWEI S5720-52X-PWR-LI-AC Routing Switch uptime is 5 weeks, 6 days, 2 hours, 23 minutes\n\nES5D2V52S007 0(Master)  : uptime is 5 weeks, 6 days, 2 hours, 22 minutes\nDDR    Memory Size      : 512        M bytes\nFLASH  Memory Size      : 238        M bytes\nPcb           Version   : VER.E\nBootROM       Version   : 020a.0001\nBootLoad      Version   : 020a.0001\nCPLD          Version   : 0106 \nSoftware      Version   : VRP (R) Software, Version 5.170 (V200R010C00SPC600)"
+    ], 
+    "stdout_lines": [
+        [
+            "sysname SK-SW21-ACCESS-48"
+        ], 
+        [
+            "Huawei Versatile Routing Platform Software", 
+            "VRP (R) software, Version 5.170 (S5720 V200R010C00SPC600)", 
+            "Copyright (C) 2000-2016 HUAWEI TECH CO., LTD", 
+            "HUAWEI S5720-52X-PWR-LI-AC Routing Switch uptime is 5 weeks, 6 days, 2 hours, 23 minutes", 
+            "", 
+            "ES5D2V52S007 0(Master)  : uptime is 5 weeks, 6 days, 2 hours, 22 minutes", 
+            "DDR    Memory Size      : 512        M bytes", 
+            "FLASH  Memory Size      : 238        M bytes", 
+            "Pcb           Version   : VER.E", 
+            "BootROM       Version   : 020a.0001", 
+            "BootLoad      Version   : 020a.0001", 
+            "CPLD          Version   : 0106 ", 
+            "Software      Version   : VRP (R) Software, Version 5.170 (V200R010C00SPC600)"
+        ]
+    ]
+}
