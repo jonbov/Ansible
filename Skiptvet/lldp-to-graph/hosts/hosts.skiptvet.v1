@@ -1,0 +1,13 @@
+
+[BNG]
+R1-CORE ansible_ssh_host=10.190.255.65 ansible_ssh_port=22 ansible_user=netnordic ansible_ssh_pass=A-4068becs
+
+
+[DIST]
+sk-sw01-dist-24 ansible_ssh_host=10.190.255.66 ansible_ssh_port=22 ansible_user=netnordic ansible_ssh_pass=A-4068becs
+sd-sw01-dist ansible_ssh_host=10.190.209.10 ansible_ssh_port=22 ansible_user=netnordic ansible_ssh_pass=A-4068becs
+
+[ACCESS]
+10.190.255.[71:99] ansible_ssh_port=22 ansible_user=netnordic ansible_ssh_pass=A-4068becs
+10.190.209.[20:40] ansible_ssh_port=22 ansible_user=netnordic ansible_ssh_pass=A-4068becs 
+

@@ -1,0 +1,149 @@
+---
+- name: "Gather LLDP info to json file"
+  hosts: all
+  connection: local
+  gather_facts: False
+  ignore_errors: yes  
+
+
+  vars_prompt:
+    - name:   "customer"
+      prompt: "Please enter customer name: (no spaces) "
+      default: "Hvaler_Bredband"
+      private: no
+
+    - name:  "mailreciever"
+      prompt: "Please enter mailaddress to recieve results: "
+      default: "jon.bovre@netnordic.com"
+      private: no
+
+    - name: "clusters"
+      prompt: "Group nodes together yes/no? (makes sense for Hvaler only): "
+      default: "yes"
+      private: no 
+
+  vars:
+    scriptname: lldp-to-graph
+    filedesc: Network_Topology_for_
+    filename: "{{scriptname}}"
+    systempath: /etc/ansible/{{scriptname}}
+
+  tasks:
+
+
+
+  - name: ansible remove results directory
+    run_once: true
+    file:
+      path: /"{{systempath}}/results
+      state: absent
+
+  - name: ansible create new results directory
+    run_once: true
+    file:
+      path: "/{{systempath}}/results"
+      state: directory
+
+
+  - name: ensure empty file exists
+    run_once: true
+    copy:
+      content: ""
+      dest: "{{systempath}}/results/{{filename}}.json"
+      force: yes
+#      group: jonbov
+#      owner: jonbov
+      mode: 0555
+
+
+  - name: get LLDP info
+#    hosts: ACCESS
+    ce_command:
+      commands:
+        - display current | in sysname | ex dhcp
+        - display lldp neighbor | include Port ID|System|neighbor|OperMau
+        - disp ip interface brief | include Vlanif350
+        - disp version
+#    async: 40
+#    poll: 10
+    retries: 3
+    delay: 3
+    register: lldpvar
+
+  - local_action: lineinfile line='{{lldpvar | to_nice_json }}' insertafter=EOF dest="{{systempath}}/results/{{filename}}.json"
+
+
+  - name: execute python script convert to Graphviz dot format
+    run_once: true
+    command: python {{systempath}}/convert-lldp-to-dot.py {{clusters}} {{customer}}
+    args:
+       chdir: "{{systempath}}/" 
+
+  - name: execute python script to create CSV patchfile
+    run_once: true
+    command: python {{systempath}}/convert-lldp-to-csv.py
+    args:
+       chdir: "{{systempath}}/"
+
+
+
+
+  - name: execute python script to create CSV nodefile
+    run_once: true
+    command: python {{systempath}}/convert-lldp-to-csv-nodes.py
+    args:
+       chdir: "{{systempath}}/"
+
+
+  - name: execute python script to create CSV link file  
+    run_once: true
+    command: python {{systempath}}/convert-lldp-to-csv-links.py
+    args:
+       chdir: "{{systempath}}/"
+
+
+  - name: execute Graphviz dot to png file      
+    run_once: true
+    become: yes
+    become_method: su
+#    become_user: jonbov
+    shell: "dot -Tpng {{systempath}}/results/{{filename}}.json.dot > {{systempath}}/results/{{filename}}.json.png"
+    args:
+       chdir: "{{systempath}}/"
+
+
+  - name: execute Graphviz dot to pdf file
+    run_once: true
+    become: yes
+    become_method: su
+#    become_user: jonbov
+    shell: "dot -Tpdf {{systempath}}/results/{{filename}}.json.dot > {{systempath}}/results/{{filename}}.json.pdf"
+    args:
+       chdir: "{{systempath}}/" 
+
+
+  - name: Send e-mail, attaching files
+    run_once: true
+    mail:
+     host: mail.bovre.info
+     port: 25
+     username: ansible@bovre.info
+     password: SentFromHvaler
+     subject: Ansible - Network topology report for {{customer}}
+     body: Attached discovered network topology for {{customer}}
+     from: ansible@bovre.info
+     to:
+     - <{{mailreciever}}>
+     attach:
+     - "{{systempath}}/results/{{filename}}.json.png"
+     - "{{systempath}}/results/{{filename}}.json.dot"
+     - "{{systempath}}/results/{{filename}}.json.csv"
+     - "{{systempath}}/results/{{filename}}.json.pdf"
+     - "{{systempath}}/results/{{filename}}.json"
+     - "{{systempath}}/results/{{filename}}.json-links.csv"
+     - "{{systempath}}/results/{{filename}}.json-nodes.csv" 
+     headers:
+     - Reply-To=noreply@bovre.info
+     - X-Special="Something or other"
+     charset: us-ascii
+    delegate_to: localhost

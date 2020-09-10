@@ -1,0 +1,388 @@
+strict graph {
+rankdir=LR;
+ratio="fill";
+size="11.7,16.5!";
+margin=0;
+labelloc=top;
+labeljust=left;
+labelfontsize=24;
+label=Hvaler_Bredband___28_Jul_2020___06_24_31;
+SW1_DIST_HVALERRAADHUS -- SW1_DIST_KRAKEROY [penwidth="6", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW1_ACCESS_HVALERRAADHUS [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW1_ACCESS_BRATTESTO [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW1_ACCESS_OLASVINGEN [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW1_DIST_DYPEDAL [penwidth="6", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW1_ACCESS_SANDHELLA [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW1_ACCESS_VADBENKEN8 [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW1_ACCESS_SANDBAKKEN [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW1_DIST_KORSHAVN [penwidth="6", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW3_ACCESS_NEDGARD [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW2_ACCESS_HVALERRAADHUS [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW3_ACCESS_HVALERRAADHUS [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW5_ACCESS_HVALERRAADHUS_MIRROR [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW1_ACCESS_HERFOL [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW1_ACCESS_BOLINGSHAVN [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- R1_BNG_HVALER [penwidth="6", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW4_ACCESS_HVALERRAADHUS [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- SW6_ACCESS_HVALERRAADHUS [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_HVALERRAADHUS -- R1_BNG_HVALER [penwidth="6", color="green", label="10G", fontsize=8 ];
+SW1_DIST_KRAKEROY -- SW1_DIST_HVALERRAADHUS [penwidth="6", color="green", label="10G", fontsize=8 ];
+SW1_DIST_KRAKEROY -- R2_BNG_KRAKEROY [penwidth="6", color="green", label="10G", fontsize=8 ];
+SW1_DIST_KRAKEROY -- SW1_ACCESS_NORDERHAUG [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_DIST_KRAKEROY -- SW1_ACCESS_HOLMETANGEN [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_DIST_KRAKEROY -- SW2_ACCESS_SANDHELLA [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_KRAKEROY -- SW1_DIST_DYPEDAL [penwidth="6", color="green", label="10G", fontsize=8 ];
+SW1_DIST_KRAKEROY -- SW1_ACCESS_KRAKEROY [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_KRAKEROY -- SW1_DIST_KORSHAVN [penwidth="6", color="green", label="10G", fontsize=8 ];
+SW1_DIST_KRAKEROY -- R2_BNG_KRAKEROY [penwidth="6", color="green", label="10G", fontsize=8 ];
+SW1_DIST_KRAKEROY -- SW2_ACCESS_NESET [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_DYPEDAL -- SW1_DIST_KRAKEROY [penwidth="6", color="green", label="10G", fontsize=8 ];
+SW1_DIST_DYPEDAL -- SW1_ACCESS_DYPEDAL [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_DYPEDAL -- SW2_ACCESS_OLASVINGEN [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_DYPEDAL -- SW1_ACCESS_BRATTESTO [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_DIST_DYPEDAL -- SW1_DIST_HVALERRAADHUS [penwidth="6", color="green", label="10G", fontsize=8 ];
+SW1_DIST_DYPEDAL -- SW4_ACCESS_NORDERHAUG [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_SANDBAKKEN -- SW1_DIST_HVALERRAADHUS [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_SANDBAKKEN -- SW2_ACCESS_SANDBAKKEN [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW2_ACCESS_SANDBAKKEN -- GS1900 [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW2_ACCESS_SANDBAKKEN -- SW1_ACCESS_SANDBAKKEN [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_VADBENKEN8 -- SW1_DIST_HVALERRAADHUS [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_BRATTESTO -- SW1_DIST_HVALERRAADHUS [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_BRATTESTO -- SW1_DIST_DYPEDAL [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_BRATTESTO -- SW2_ACCESS_BRATTESTO [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_NESET -- SW2_ACCESS_NESET [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_NESET -- SW1_ACCESS_STORMUSBR [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_DYPEDAL -- SW1_ACCESS_DYPEDAL [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW2_ACCESS_DYPEDAL -- SW3_ACCESS_HVALKOMMUNE [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_KRAKEROY -- C4B8_B467_9E00 [penwidth="1", color="gray", label="Unknown", fontsize=8 ];
+SW1_ACCESS_KRAKEROY -- SW1_DIST_KRAKEROY [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_OLASVINGEN -- SW1_ACCESS_OLASVINGEN [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW2_ACCESS_OLASVINGEN -- SW3_ACCESS_RO [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_OLASVINGEN -- SW1_DIST_DYPEDAL [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_NORDERHAUG -- SW1_DIST_KRAKEROY [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_NORDERHAUG -- SW1_ACCESS_BYGGERN [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_NORDERHAUG -- SW2_ACCESS_NORDERHAUG [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_OLASVINGEN -- SW1_DIST_HVALERRAADHUS [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_OLASVINGEN -- SW2_ACCESS_OLASVINGEN [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_HOLMETANGEN -- SW1_DIST_KRAKEROY [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_HOLMETANGEN -- SW2_ACCESS_HOLMETANGEN [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_KORSHAVN -- SW1_DIST_KORSHAVN [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_BYGGERN -- SW1_ACCESS_NORDERHAUG [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_DYPEDAL -- SW2_ACCESS_HVALKOMMUNE [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_DYPEDAL -- SW1_ACCESS_HVALKOMMUNE_01 [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_DYPEDAL -- SW2_ACCESS_DYPEDAL [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_DYPEDAL -- SW1_DIST_DYPEDAL [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_HVALKOMMUNE_01 -- SW1_ACCESS_DYPEDAL [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW2_ACCESS_HVALKOMMUNE -- SW1_ACCESS_DYPEDAL [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW3_ACCESS_HVALKOMMUNE -- SW2_ACCESS_DYPEDAL [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_STORMUSBR -- SW1_ACCESS_NESET [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_STORMUSBR -- SW2_ACCESS_STORMUSBR [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_STORMUSBR -- SW1_ACCESS_STORMUSBR [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_HOLMETANGEN -- SW1_ACCESS_HOLMETANGEN [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW1_ACCESS_SANDHELLA -- SW1_DIST_HVALERRAADHUS [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_SANDHELLA -- SW2_ACCESS_SANDHELLA [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_NORDERHAUG -- SW1_ACCESS_NORDERHAUG [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW2_ACCESS_NORDERHAUG -- SW3_ACCESS_NORDERHAUG [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW2_ACCESS_SANDHELLA -- SW1_DIST_KRAKEROY [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_SANDHELLA -- SW1_ACCESS_SANDHELLA [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_SANDHELLA -- SW3_ACCESS_SANDHELLA [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_NESET -- SW1_DIST_KRAKEROY [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_NESET -- SW1_ACCESS_NESET [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_NESET -- SW3_ACCESS_NESET [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW4_ACCESS_HVALERRAADHUS -- SW1_DIST_HVALERRAADHUS [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_HVALERRAADHUS -- WLC1_HVALER [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW2_ACCESS_HVALERRAADHUS -- SW1_DIST_HVALERRAADHUS [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW3_ACCESS_HVALERRAADHUS -- SW1_DIST_HVALERRAADHUS [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW3_ACCESS_SANDHELLA -- SW2_ACCESS_SANDHELLA [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW3_ACCESS_SANDHELLA -- SW4_ACCESS_SANDHELLA [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW3_ACCESS_NORDERHAUG -- SW2_ACCESS_NORDERHAUG [penwidth="1", color="red", label="1G", fontsize=8 ];
+SW3_ACCESS_NORDERHAUG -- SW2_ACCESS_NORDERHAUG_MIRROR [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW3_ACCESS_NORDERHAUG -- SW4_ACCESS_NORDERHAUG [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW3_ACCESS_NORDERHAUG -- SW1_ACCESS_NORDERHAUG_MIRROR [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW3_ACCESS_RO -- SW2_ACCESS_OLASVINGEN [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW3_ACCESS_RO -- SW4_ACCESS_RO [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_HERFOL -- SW2_ACCESS_HERFOL [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_HERFOL -- SW1_DIST_HVALERRAADHUS [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW3_ACCESS_NESET -- SW2_ACCESS_NESET [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW3_ACCESS_NESET -- SW4_ACCESS_NESET [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_HERFOL -- SW1_ACCESS_HERFOL [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW4_ACCESS_SANDHELLA -- SW3_ACCESS_SANDHELLA [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW4_ACCESS_NESET -- SW3_ACCESS_NESET [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW4_ACCESS_NESET -- SW5_ACCESS_NESET [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW4_ACCESS_RO -- SW3_ACCESS_RO [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_BOLINGSHAVN -- SW1_DIST_HVALERRAADHUS [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_BOLINGSHAVN -- SW1_DIST_KORSHAVN [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_BOLINGSHAVN -- SW2_ACCESS_BOLINGSHAVN [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW4_ACCESS_NORDERHAUG -- SW3_ACCESS_NORDERHAUG [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW4_ACCESS_NORDERHAUG -- SW1_DIST_DYPEDAL [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW6_ACCESS_HVALERRAADHUS -- SW1_DIST_HVALERRAADHUS [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_BOLINGSHAVN -- SW1_ACCESS_BOLINGSHAVN [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW5_ACCESS_NESET -- SW4_ACCESS_NESET [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_BRATTESTO -- SW1_ACCESS_BRATTESTO [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW1_ACCESS_NEDGARD -- SW2_ACCESS_NEDGARD [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_NEDGARD -- SW1_ACCESS_NEDGARD [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW2_ACCESS_NEDGARD -- SW3_ACCESS_NEDGARD [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW3_ACCESS_NEDGARD -- SW1_DIST_HVALERRAADHUS [penwidth="1", color="green", label="10G", fontsize=8 ];
+SW3_ACCESS_NEDGARD -- SW2_ACCESS_NEDGARD [penwidth="1", color="green", label="10G", fontsize=8 ];
+subgraph cluster_HVALERRAADHUS {
+SW1_DIST_HVALERRAADHUS[shape=none, label="SW1_DIST_HVALERRAADHUS", labelloc="bottom"fontsize = 9, image="icons/distswitch.gif"];
+label = HVALERRAADHUS;
+fontsize = 20;
+color=grey;
+style=filled;
+}
+subgraph cluster_KRAKEROY {
+SW1_DIST_KRAKEROY[shape=none, label="SW1_DIST_KRAKEROY", labelloc="bottom"fontsize = 9, image="icons/distswitch.gif"];
+label = KRAKEROY;
+fontsize = 20;
+color=grey;
+style=filled;
+}
+subgraph cluster_DYPEDAL {
+SW1_DIST_DYPEDAL[shape=none, label="SW1_DIST_DYPEDAL", labelloc="bottom"fontsize = 9, image="icons/distswitch.gif"];
+label = DYPEDAL;
+fontsize = 20;
+color=grey;
+style=filled;
+}
+subgraph cluster_SANDBAKKEN {
+SW1_ACCESS_SANDBAKKEN[shape=none, label="SW1_ACCESS_SANDBAKKEN", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = SANDBAKKEN;
+fontsize = 20;
+}
+subgraph cluster_SANDBAKKEN {
+SW2_ACCESS_SANDBAKKEN[shape=none, label="SW2_ACCESS_SANDBAKKEN", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = SANDBAKKEN;
+fontsize = 20;
+}
+subgraph cluster_VADBENKEN8 {
+SW1_ACCESS_VADBENKEN8[shape=none, label="SW1_ACCESS_VADBENKEN8", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = VADBENKEN8;
+fontsize = 20;
+}
+subgraph cluster_BRATTESTO {
+SW1_ACCESS_BRATTESTO[shape=none, label="SW1_ACCESS_BRATTESTO", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = BRATTESTO;
+fontsize = 20;
+}
+subgraph cluster_NESET {
+SW1_ACCESS_NESET[shape=none, label="SW1_ACCESS_NESET", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = NESET;
+fontsize = 20;
+}
+subgraph cluster_DYPEDAL {
+SW2_ACCESS_DYPEDAL[shape=none, label="SW2_ACCESS_DYPEDAL", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = DYPEDAL;
+fontsize = 20;
+}
+subgraph cluster_KRAKEROY {
+SW1_ACCESS_KRAKEROY[shape=none, label="SW1_ACCESS_KRAKEROY", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = KRAKEROY;
+fontsize = 20;
+}
+subgraph cluster_OLASVINGEN {
+SW2_ACCESS_OLASVINGEN[shape=none, label="SW2_ACCESS_OLASVINGEN", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = OLASVINGEN;
+fontsize = 20;
+}
+subgraph cluster_NORDERHAUG {
+SW1_ACCESS_NORDERHAUG[shape=none, label="SW1_ACCESS_NORDERHAUG", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = NORDERHAUG;
+fontsize = 20;
+}
+subgraph cluster_OLASVINGEN {
+SW1_ACCESS_OLASVINGEN[shape=none, label="SW1_ACCESS_OLASVINGEN", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = OLASVINGEN;
+fontsize = 20;
+}
+subgraph cluster_HOLMETANGEN {
+SW1_ACCESS_HOLMETANGEN[shape=none, label="SW1_ACCESS_HOLMETANGEN", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = HOLMETANGEN;
+fontsize = 20;
+}
+subgraph cluster_KORSHAVN {
+SW1_ACCESS_KORSHAVN[shape=none, label="SW1_ACCESS_KORSHAVN", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = KORSHAVN;
+fontsize = 20;
+}
+subgraph cluster_BYGGERN {
+SW1_ACCESS_BYGGERN[shape=none, label="SW1_ACCESS_BYGGERN", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = BYGGERN;
+fontsize = 20;
+}
+subgraph cluster_DYPEDAL {
+SW1_ACCESS_DYPEDAL[shape=none, label="SW1_ACCESS_DYPEDAL", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = DYPEDAL;
+fontsize = 20;
+}
+subgraph cluster_01 {
+SW1_ACCESS_HVALKOMMUNE_01[shape=none, label="SW1_ACCESS_HVALKOMMUNE_01", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = 01;
+fontsize = 20;
+}
+subgraph cluster_HVALKOMMUNE {
+SW2_ACCESS_HVALKOMMUNE[shape=none, label="SW2_ACCESS_HVALKOMMUNE", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = HVALKOMMUNE;
+fontsize = 20;
+}
+subgraph cluster_HVALKOMMUNE {
+SW3_ACCESS_HVALKOMMUNE[shape=none, label="SW3_ACCESS_HVALKOMMUNE", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = HVALKOMMUNE;
+fontsize = 20;
+}
+subgraph cluster_STORMUSBR {
+SW1_ACCESS_STORMUSBR[shape=none, label="SW1_ACCESS_STORMUSBR", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = STORMUSBR;
+fontsize = 20;
+}
+subgraph cluster_STORMUSBR {
+SW2_ACCESS_STORMUSBR[shape=none, label="SW2_ACCESS_STORMUSBR", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = STORMUSBR;
+fontsize = 20;
+}
+subgraph cluster_HOLMETANGEN {
+SW2_ACCESS_HOLMETANGEN[shape=none, label="SW2_ACCESS_HOLMETANGEN", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = HOLMETANGEN;
+fontsize = 20;
+}
+subgraph cluster_SANDHELLA {
+SW1_ACCESS_SANDHELLA[shape=none, label="SW1_ACCESS_SANDHELLA", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = SANDHELLA;
+fontsize = 20;
+}
+subgraph cluster_NORDERHAUG {
+SW2_ACCESS_NORDERHAUG[shape=none, label="SW2_ACCESS_NORDERHAUG", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = NORDERHAUG;
+fontsize = 20;
+}
+subgraph cluster_SANDHELLA {
+SW2_ACCESS_SANDHELLA[shape=none, label="SW2_ACCESS_SANDHELLA", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = SANDHELLA;
+fontsize = 20;
+}
+subgraph cluster_NESET {
+SW2_ACCESS_NESET[shape=none, label="SW2_ACCESS_NESET", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = NESET;
+fontsize = 20;
+}
+subgraph cluster_HVALERRAADHUS {
+SW4_ACCESS_HVALERRAADHUS[shape=none, label="SW4_ACCESS_HVALERRAADHUS", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = HVALERRAADHUS;
+fontsize = 20;
+}
+subgraph cluster_HVALERRAADHUS {
+SW1_ACCESS_HVALERRAADHUS[shape=none, label="SW1_ACCESS_HVALERRAADHUS", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = HVALERRAADHUS;
+fontsize = 20;
+}
+subgraph cluster_HVALERRAADHUS {
+SW2_ACCESS_HVALERRAADHUS[shape=none, label="SW2_ACCESS_HVALERRAADHUS", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = HVALERRAADHUS;
+fontsize = 20;
+}
+subgraph cluster_HVALERRAADHUS {
+SW3_ACCESS_HVALERRAADHUS[shape=none, label="SW3_ACCESS_HVALERRAADHUS", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = HVALERRAADHUS;
+fontsize = 20;
+}
+subgraph cluster_SANDHELLA {
+SW3_ACCESS_SANDHELLA[shape=none, label="SW3_ACCESS_SANDHELLA", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = SANDHELLA;
+fontsize = 20;
+}
+subgraph cluster_NORDERHAUG {
+SW3_ACCESS_NORDERHAUG[shape=none, label="SW3_ACCESS_NORDERHAUG", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = NORDERHAUG;
+fontsize = 20;
+}
+subgraph cluster_RO {
+SW3_ACCESS_RO[shape=none, label="SW3_ACCESS_RO", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = RO;
+fontsize = 20;
+}
+subgraph cluster_HERFOL {
+SW1_ACCESS_HERFOL[shape=none, label="SW1_ACCESS_HERFOL", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = HERFOL;
+fontsize = 20;
+}
+subgraph cluster_NESET {
+SW3_ACCESS_NESET[shape=none, label="SW3_ACCESS_NESET", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = NESET;
+fontsize = 20;
+}
+subgraph cluster_HERFOL {
+SW2_ACCESS_HERFOL[shape=none, label="SW2_ACCESS_HERFOL", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = HERFOL;
+fontsize = 20;
+}
+subgraph cluster_SANDHELLA {
+SW4_ACCESS_SANDHELLA[shape=none, label="SW4_ACCESS_SANDHELLA", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = SANDHELLA;
+fontsize = 20;
+}
+subgraph cluster_NESET {
+SW4_ACCESS_NESET[shape=none, label="SW4_ACCESS_NESET", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = NESET;
+fontsize = 20;
+}
+subgraph cluster_RO {
+SW4_ACCESS_RO[shape=none, label="SW4_ACCESS_RO", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = RO;
+fontsize = 20;
+}
+subgraph cluster_BOLINGSHAVN {
+SW1_ACCESS_BOLINGSHAVN[shape=none, label="SW1_ACCESS_BOLINGSHAVN", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = BOLINGSHAVN;
+fontsize = 20;
+}
+subgraph cluster_MIRROR {
+SW1_ACCESS_NORDERHAUG_MIRROR[shape=none, label="SW1_ACCESS_NORDERHAUG_MIRROR", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = MIRROR;
+fontsize = 20;
+}
+subgraph cluster_MIRROR {
+SW2_ACCESS_NORDERHAUG_MIRROR[shape=none, label="SW2_ACCESS_NORDERHAUG_MIRROR", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = MIRROR;
+fontsize = 20;
+}
+subgraph cluster_NORDERHAUG {
+SW4_ACCESS_NORDERHAUG[shape=none, label="SW4_ACCESS_NORDERHAUG", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = NORDERHAUG;
+fontsize = 20;
+}
+subgraph cluster_HVALERRAADHUS {
+SW6_ACCESS_HVALERRAADHUS[shape=none, label="SW6_ACCESS_HVALERRAADHUS", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = HVALERRAADHUS;
+fontsize = 20;
+}
+subgraph cluster_BOLINGSHAVN {
+SW2_ACCESS_BOLINGSHAVN[shape=none, label="SW2_ACCESS_BOLINGSHAVN", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = BOLINGSHAVN;
+fontsize = 20;
+}
+subgraph cluster_NESET {
+SW5_ACCESS_NESET[shape=none, label="SW5_ACCESS_NESET", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = NESET;
+fontsize = 20;
+}
+subgraph cluster_BRATTESTO {
+SW2_ACCESS_BRATTESTO[shape=none, label="SW2_ACCESS_BRATTESTO", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = BRATTESTO;
+fontsize = 20;
+}
+subgraph cluster_NEDGARD {
+SW1_ACCESS_NEDGARD[shape=none, label="SW1_ACCESS_NEDGARD", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = NEDGARD;
+fontsize = 20;
+}
+subgraph cluster_NEDGARD {
+SW2_ACCESS_NEDGARD[shape=none, label="SW2_ACCESS_NEDGARD", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = NEDGARD;
+fontsize = 20;
+}
+subgraph cluster_NEDGARD {
+SW3_ACCESS_NEDGARD[shape=none, label="SW3_ACCESS_NEDGARD", labelloc="bottom"fontsize = 9, image="icons/accesswitch.gif"];
+label = NEDGARD;
+fontsize = 20;
+}
+}

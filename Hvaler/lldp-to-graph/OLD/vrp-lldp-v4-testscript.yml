@@ -1,0 +1,125 @@
+---
+- name: "Gather LLDP info to json file"
+  hosts: all
+  connection: local
+  gather_facts: False
+  ignore_errors: yes  
+
+
+  vars:
+    scriptname: lldp-full-v4-testscript
+    filedesc: Network_Topology_for_
+    customer: Hvaler
+    filename: "{{filedesc}}{{customer}}"
+    filename: "{{scriptname}}"
+
+#  vars_prompt:
+#    - name:   "{{filename}}"
+#      prompt: "Please enter filename with raw LLDP info:"
+
+  tasks:
+
+  - name: ensure empty file exists
+    run_once: true
+    copy:
+      content: ""
+      dest: /etc/ansible/LLDP-to-Graph/results/{{filename}}.json
+#      dest: lldp-full-v4.json
+      force: yes
+      group: jonbov
+      owner: jonbov
+      mode: 0555
+
+
+
+  - name: get LLDP info
+#    hosts: ACCESS
+    ce_command:
+      commands:
+        - display current | in sysname
+        - display lldp neighbor | include Port ID|System|neighbor|OperMau
+        - disp ip interface brief | include Vlanif350
+        - disp version
+#    async: 40
+#    poll: 10
+    retries: 3
+    delay: 3
+    register: lldpvar
+
+  - local_action: lineinfile line='{{lldpvar | to_nice_json }}' insertafter=EOF dest="/etc/ansible/LLDP-to-Graph/results/{{filename}}.json"
+
+
+  - name: execute python script convert to Graphviz dot format
+    run_once: true
+    command: python /etc/ansible/LLDP-to-Graph/convert-lldp-dot-v4-testscript.py
+    args:
+       chdir: /etc/ansible/LLDP-to-Graph 
+
+  - name: execute python script to create CSV patchfile
+    run_once: true
+    command: python /etc/ansible/LLDP-to-Graph/convert-lldp-to-csv.py
+    args:
+       chdir: /etc/ansible/LLDP-to-Graph/
+
+
+
+
+  - name: execute python script to create CSV nodefile
+    run_once: true
+    command: python /etc/ansible/LLDP-to-Graph/convert-lldp-to-csv-nodes.py
+    args:
+       chdir: /etc/ansible/LLDP-to-Graph/
+
+
+  - name: execute python script to create CSV link file  
+    run_once: true
+    command: python /etc/ansible/LLDP-to-Graph/convert-lldp-to-csv-links.py
+    args:
+       chdir: /etc/ansible/LLDP-to-Graph/
+
+
+  - name: execute Graphviz dot to png file      
+    run_once: true
+    become: yes
+    become_method: su
+    become_user: jonbov
+    shell: "dot -Tpng /etc/ansible/LLDP-to-Graph/{{filename}}.json.dot > /etc/ansible/LLDP-to-Graph/{{filename}}.json.png"
+    args:
+       chdir: /etc/ansible/LLDP-to-Graph/
+
+
+  - name: execute Graphviz dot to pdf file
+    run_once: true
+    become: yes
+    become_method: su
+    become_user: jonbov
+    shell: "dot -Tpdf /etc/ansible/LLDP-to-Graph/results/{{filename}}.json.dot > /etc/ansible/LLDP-to-Graph/results/{{filename}}.json.pdf"
+    args:
+       chdir: /etc/ansible/LLDP-to-Graph/ 
+
+
+  - name: Send e-mail, attaching files
+    run_once: true
+    mail:
+     host: mail.bovre.info
+     port: 25
+     username: ansible@bovre.info
+     password: SentFromHvaler
+     subject: Ansible - Network topology report for {{customer}}
+     body: Attached discovered network topology for {{customer}}
+     from: ansible@bovre.info
+     to:
+     - <jon.bovre@netnordic.com>
+     attach:
+     - /etc/ansible/LLDP-to-Graph/results/{{filename}}.json.png
+     - /etc/ansible/LLDP-to-Graph/results/{{filename}}.json.dot
+     - /etc/ansible/LLDP-to-Graph/results/{{filename}}.json.csv
+     - /etc/ansible/LLDP-to-Graph/results/{{filename}}.json.pdf
+     - /etc/ansible/LLDP-to-Graph/results/{{filename}}.json
+     - /etc/ansible/LLDP-to-Graph/results/{{filename}}.json-links.csv
+     - /etc/ansible/LLDP-to-Graph/results/{{filename}}.json-nodes.csv 
+     headers:
+     - Reply-To=noreply@bovre.info
+     - X-Special="Something or other"
+     charset: us-ascii
+    delegate_to: localhost
