@@ -1,0 +1,7 @@
+
+#!/usr/bin/Cli -p2
+
+enable
+
+copy tftp://10.14.10.241/arista_{{ ztp[inventory_hostname]['hostname']}}_ztp.cfg flash:startup-config
+

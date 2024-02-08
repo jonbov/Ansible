@@ -1,0 +1,19 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Register variables
+    include_vars:
+      file: "{{lookup('env','PWD')}}/vars/arista_ztp.yml"
+      name: ztp
+  - name: Test all variables
+    debug:
+      msg: "{{ ztp }}"
+  - name: Create a configuration for sw
+    template:
+      src: "{{lookup('env','PWD')}}/templates/arista_ztp.j2"
+      dest: "{{lookup('env','PWD')}}/configs/ztp_{{inventory_hostname}}.cfg"
+  - name: Create boot ztp configuration for sw
+    template:
+      src: "{{lookup('env','PWD')}}/templates/arista_ztp_script.j2"
+      dest: "{{lookup('env','PWD')}}/configs/ztp_{{inventory_hostname}}_script.cfg"

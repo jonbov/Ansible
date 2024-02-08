@@ -1,0 +1,15 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Register variables
+    include_vars:
+      file: "{{lookup('env','PWD')}}/vars/underlay_dc1.yml"
+      name: underlay
+  - name: Test all variables
+    debug:
+      msg: "{{ underlay }}"
+  - name: Create configuration files
+    template:
+      src: "{{lookup('env','PWD')}}/templates/ospf_underlay.j2"
+      dest: "{{lookup('env','PWD')}}/configs/ospf_underlay_{{inventory_hostname}}.cfg"

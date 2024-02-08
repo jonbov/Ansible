@@ -1,0 +1,8 @@
+---
+- hosts: dci
+  gather_facts: no
+  tasks:
+  - name: Create a configuration for DCI
+    template:
+      src: "{{lookup('env','PWD')}}/templates/20_2_DCI_configuration.j2"
+      dest: "{{lookup('env','PWD')}}/configs/20_2_underlay_{{inventory_hostname}}.cfg"
