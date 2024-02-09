@@ -21,7 +21,7 @@ leaf3.nn-nor.net:
        mask: 24
 leaf4.nn-nor.net:
   hostname: Leaf4
-  client-id: aaaa.aaaa.aaaa
+  client-id: aaaa.aaaa.bbbb
   interfaces:
       management1:
        ipv4: 10.14.10.243

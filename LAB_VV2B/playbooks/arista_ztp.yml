@@ -9,11 +9,16 @@
   - name: Test all variables
     debug:
       msg: "{{ ztp }}"
-  - name: Create a configuration for sw
+  - name: Create base configuration for switches
     template:
       src: "{{lookup('env','PWD')}}/templates/arista_ztp.j2"
-      dest: "{{lookup('env','PWD')}}/configs/ztp_{{inventory_hostname}}.cfg"
-  - name: Create boot ztp configuration for sw
+      dest: "{{lookup('env','PWD')}}/configs/arista_{{ ztp[inventory_hostname]['hostname']}}_ztp.cfg"
+  - name: Create boot ztp configuration for switches
     template:
       src: "{{lookup('env','PWD')}}/templates/arista_ztp_script.j2"
-      dest: "{{lookup('env','PWD')}}/configs/ztp_{{inventory_hostname}}_script.cfg"
+      dest: "{{lookup('env','PWD')}}/configs/arista_{{ ztp[inventory_hostname]['hostname']}}_ztp_script.cfg"
+  - name: Create config for C3560 DHCP and TFTP server
+    template:
+      src: "{{lookup('env','PWD')}}/templates/arista_ztp_dhcp_tftp.j2"
+      dest: "{{lookup('env','PWD')}}/configs/C3560_{{ ztp[inventory_hostname]['hostname']}}_DHCP_TFTP.cfg"
+      
