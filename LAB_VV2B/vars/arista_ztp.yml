@@ -3,40 +3,40 @@ leaf1.nn-nor.net:
   client-id: 444c.a8de.2cfb
   interfaces:
      management1:
-       ipv4: 10.14.10.246
+       ipv4: 10.14.10.245
        mask: 24
 leaf2.nn-nor.net:
   hostname: Leaf2
   client-id: 444c.a86f.4c7f
   interfaces:
       management1:
-       ipv4: 10.14.10.245
+       ipv4: 10.14.10.244
        mask: 24
 leaf3.nn-nor.net:
   hostname: Leaf3
   client-id: 2899.3a21.39a3
   interfaces:
      management1:
-       ipv4: 10.14.10.244
+       ipv4: 10.14.10.243
        mask: 24
 leaf4.nn-nor.net:
   hostname: Leaf4
   client-id: aaaa.aaaa.bbbb
   interfaces:
       management1:
-       ipv4: 10.14.10.243
+       ipv4: 10.14.10.242
        mask: 24
 spine1.nn-nor.net:
   hostname: Spine1
   client-id: 2899.3a02.13c9
   interfaces:
     management1:
-      ipv4: 10.14.10.248
+      ipv4: 10.14.10.247
       mask: 24
 spine2.nn-nor.net:
   hostname: Spine2
   client-id: 444c.a84a.78eb
   interfaces:
     management1:
-      ipv4: 10.14.10.247
+      ipv4: 10.14.10.246
       mask: 24
