@@ -11,6 +11,6 @@ ip dhcp pool {{ ztp[inventory_hostname]['hostname']}}
    default-router 10.14.10.1 
    lease 0 0 2
 !         
-tftp-server flash:arista_{{ ztp[inventory_hostname]['hostname']}}_ztp.cfg
-tftp-server flash:arista_{{ ztp[inventory_hostname]['hostname']}}_ztp_script.cfg
+tftp-server flash:{{ ztp[inventory_hostname]['hostname']}}_ztp.cfg
+tftp-server flash:{{ ztp[inventory_hostname]['hostname']}}_ztp_script.cfg
 !
