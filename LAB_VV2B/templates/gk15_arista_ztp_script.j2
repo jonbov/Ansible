@@ -1,0 +1,3 @@
+#!/usr/bin/Cli -p2
+enable
+copy tftp://10.10.10.1/{{ ztp[inventory_hostname]['hostname']}}_ztp.cfg flash:startup-config

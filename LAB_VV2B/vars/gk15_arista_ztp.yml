@@ -1,0 +1,7 @@
+a7010.bovre.net:
+  hostname: A7010
+  client-id: 001c.73f8.e7bf
+  interfaces:
+     management1:
+       ipv4: 10.10.10.100
+       mask: 24
