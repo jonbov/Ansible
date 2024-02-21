@@ -20,5 +20,5 @@
   - name: Create config for C3560 DHCP and TFTP server
     template:
       src: "{{lookup('env','PWD')}}/templates/gk15_arista_ztp_dhcp_tftp.j2"
-      dest: "{{lookup('env','PWD')}}/configs/DHCP/{{ ztp[inventory_hostname]['hostname']}}_DHCP_TFTP_C3560.cfg"
+      dest: "{{lookup('env','PWD')}}/configs/DHCP/{{ ztp[inventory_hostname]['hostname']}}_DHCP_TFTP_C3560.txt"
       
