@@ -1,3 +1,5 @@
 #!/usr/bin/Cli -p2
 enable
 copy tftp://10.10.10.1/{{ ztp[inventory_hostname]['hostname']}}_ztp.cfg flash:startup-config
+#copy tftp://10.10.10.1/A7010_ztp.cfg flash:startup-config
+copy http://minipc.bovre.net/arista/download.php?path=/home/jonbov/LAB_VV2B/configs/{{ ztp[inventory_hostname]['hostname']}}_ztp.cfg flash:startup-config
