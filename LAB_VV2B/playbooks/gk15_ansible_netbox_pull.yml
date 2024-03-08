@@ -1,0 +1,11 @@
+#ansible-inventory -v --list -i playbooks/gk15_ansible_netbox_pull.yml
+
+plugin: netbox.netbox.nb_inventory
+api_endpoint: http://minipc.bovre.net:8000/api
+token: 2d4ad7c5f6b708a1b29b847a8fd98ca603d913f0
+validate_certs: False
+config_context: True
+group_by:
+  - device_roles
+compose:
+  ansible_network_os: platform.slug
