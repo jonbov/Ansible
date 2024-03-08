@@ -5,7 +5,7 @@ ip dhcp pool {{ ztp[inventory_hostname]['hostname']}}
 {% endif %}
 {% endfor %}
    client-identifier {{ ztp[inventory_hostname]['client-id']}}
-   option 66 ascii 10.10.10.1
+   option 66 ascii 10.0.10.50
    option 67 ascii {{ ztp[inventory_hostname]['hostname']}}_ztp_script.cfg
    dns-server 8.8.8.8 
    default-router 10.10.10.1 
