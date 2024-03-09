@@ -1,0 +1,392 @@
+spine1:
+  hostname: Spine1
+  client-id: 2899.3a02.13c9
+  interfaces:
+    management1:
+      ipv4: 10.14.34.247
+      mask: 24
+    Loopback0: 
+      ipv4: 10.14.35.1
+      mask: 32
+    Ethernet6:
+      ipv4: 10.14.1.1
+      mask: 31
+      description: leaf1-eth49
+    Ethernet7:
+      ipv4: 10.14.1.3
+      mask: 31
+      description: leaf2-eth49
+    Ethernet8:
+      ipv4: 10.14.1.5
+      mask: 31
+      description: leaf3-eth49
+    Ethernet9:
+      ipv4: 10.14.1.7
+      mask: 31
+      description: leaf4-eth49
+    Ethernet1:
+      ipv4: 10.14.1.9
+      mask: 31
+      description: leaf5-eth49
+    Ethernet2:
+      ipv4: 10.14.1.11
+      mask: 31
+      description: leaf6-eth49
+    Ethernet3:
+      ipv4: 10.14.1.13
+      mask: 31
+      description: leaf7-eth49
+    Ethernet4:
+      ipv4: 10.14.1.15
+      mask: 31
+      description: leaf8-eth49
+  BGP:
+    ASN: 65000
+spine2:
+  hostname: Spine2
+  client-id: 444c.a84a.78eb
+  interfaces:
+    management1:
+      ipv4: 10.14.34.246
+      mask: 24
+    Loopback0: 
+      ipv4: 10.14.35.2
+      mask: 32
+    Ethernet6:
+      ipv4: 10.14.2.1
+      mask: 31
+      description: leaf1-eth50
+    Ethernet7:
+      ipv4: 10.14.2.3
+      mask: 31
+      description: leaf2-eth50
+    Ethernet8:
+      ipv4: 10.14.2.5
+      mask: 31
+      description: leaf3-eth50
+    Ethernet9:
+      ipv4: 10.14.2.7
+      mask: 31
+      description: leaf4-eth50
+    Ethernet1:
+      ipv4: 10.14.2.9
+      mask: 31
+      description: leaf5-eth50
+    Ethernet2:
+      ipv4: 10.14.2.11
+      mask: 31
+      description: leaf6-eth50
+    Ethernet3:
+      ipv4: 10.14.2.13
+      mask: 31
+      description: leaf7-eth50
+    Ethernet4:
+      ipv4: 10.14.2.15
+      mask: 31
+      description: leaf8-eth50
+  BGP:
+    ASN: 65003
+leaf1:
+  hostname: Leaf1
+  description: MLAG_Leaf1_Leaf2
+  client-id: 444c.a8de.2cfb
+  interfaces:
+    management1:
+      ipv4: 10.14.34.245
+      mask: 24
+    Loopback0: 
+      ipv4: 10.14.35.11
+      mask: 32
+    Loopback1:
+      ipv4: 10.14.36.11
+      mask: 32
+    Ethernet49:
+      ipv4: 10.14.1.0
+      mask: 31
+      description: spine1-eth6
+    Ethernet50:
+      ipv4: 10.14.2.0
+      mask: 31
+      description: spine2-eth6
+    Vlan4091:
+      ipv4: 10.14.30.0
+      mask: 31
+  MLAG:
+    Portchannel: 999
+    interfaces:
+      - Ethernet47
+      - Ethernet48
+    ibgp_vlan: 4091
+  BGP:
+    ASN: 65001
+    spine-asn: 65000
+    spine-peers:
+      -  10.14.1.1
+      -  10.14.2.3
+    leaf-peer: 10.14.30.1
+leaf2:
+  hostname: Leaf2
+  description: MLAG_Leaf1_Leaf2
+  client-id: 444c.a86f.4c7f
+  interfaces:
+    management1:
+      ipv4: 10.14.34.244
+      mask: 24
+    Loopback0: 
+      ipv4: 10.14.35.12
+      mask: 32
+    Loopback1:
+      ipv4: 10.14.36.11
+      mask: 32
+    Ethernet49:
+      ipv4: 10.14.1.2
+      mask: 31
+      description: spine1-eth7
+    Ethernet50:
+      ipv4: 10.14.2.2
+      mask: 31
+      description: spine2-eth7
+    Vlan4091:
+      ipv4: 10.14.30.1
+      mask: 31
+  MLAG:
+    Portchannel: 999
+    interfaces:
+      - Ethernet47
+      - Ethernet48
+    ibgp_vlan: 4091
+  BGP:
+    ASN: 65001
+    spine-asn: 65000
+    spine-peers:
+      -  10.14.1.3
+      -  10.14.2.3
+    leaf-peer: 10.14.30.0
+leaf3:
+  hostname: Leaf3
+  description: MLAG_Leaf3_Leaf4
+  client-id: 2899.3a21.39a3
+  interfaces:
+    management1:
+      ipv4: 10.14.34.243
+      mask: 24
+    Loopback0: 
+      ipv4: 10.14.35.13
+      mask: 32
+    Loopback1:
+      ipv4: 10.14.36.13
+      mask: 32
+    Ethernet49:
+      ipv4: 10.14.1.4
+      mask: 31
+      description: spine1-eth8
+    Ethernet50:
+      ipv4: 10.14.2.4
+      mask: 31
+      description: spine2-eth8
+    Vlan4091:
+      ipv4: 10.14.30.2
+      mask: 31
+  MLAG:
+    Portchannel: 999
+    interfaces:
+      - Ethernet47
+      - Ethernet48
+    ibgp_vlan: 4091
+  BGP:
+    ASN: 65002
+    spine-asn: 65000
+    spine-peers:
+      -  10.14.1.5
+      -  10.14.2.5
+    leaf-peer: 10.14.30.3
+leaf4:
+  hostname: Leaf4
+  description: MLAG_Leaf3_Leaf4
+  client-id: 2899.3a9d.7a09
+  interfaces:
+    management1:
+      ipv4: 10.14.34.242
+      mask: 24
+    Loopback0: 
+      ipv4: 10.14.35.14
+      mask: 32
+    Loopback1:
+      ipv4: 10.14.36.13
+      mask: 32
+    Ethernet49:
+      ipv4: 10.14.1.6
+      mask: 31
+      description: spine1-eth9
+    Ethernet50:
+      ipv4: 10.14.2.6
+      mask: 31
+      description: spine2-eth9
+    Vlan4091:
+      ipv4: 10.14.30.3
+      mask: 31
+  MLAG:
+    Portchannel: 999
+    interfaces:
+      - Ethernet47
+      - Ethernet48
+    ibgp_vlan: 4091
+  BGP:
+    ASN: 65002
+    spine-asn: 65000
+    spine-peers:
+      -  10.14.1.7
+      -  10.14.2.7
+    leaf-peer: 10.14.30.2
+leaf5:
+  hostname: Leaf5
+  description: MLAG_Leaf5_Leaf6
+  client-id: 444c.a846.33b3
+  interfaces:
+    management1:
+      ipv4: 10.14.34.241
+      mask: 24
+    Loopback0: 
+      ipv4: 10.14.35.15
+      mask: 32
+    Loopback1:
+      ipv4: 10.14.36.15
+      mask: 32
+    Ethernet49:
+      ipv4: 10.14.1.8
+      mask: 31
+      description: spine1-eth1
+    Ethernet50:
+      ipv4: 10.14.2.8
+      mask: 31
+      description: spine2-eth1
+    Vlan4091:
+      ipv4: 10.14.30.5
+      mask: 31
+  MLAG:
+    Portchannel: 999
+    interfaces:
+      - Ethernet47
+      - Ethernet48
+    ibgp_vlan: 4091
+  BGP:
+    ASN: 65003
+    spine-asn: 65000
+    spine-peers:
+      -  10.14.1.9
+      -  10.14.2.9
+    leaf-peer: 10.14.30.5
+leaf6:
+  hostname: Leaf6
+  description: MLAG_Leaf5_Leaf6
+  client-id: 444c.a846.xxxx
+  interfaces:
+    management1:
+      ipv4: 10.14.34.239
+      mask: 24
+    Loopback0: 
+      ipv4: 10.14.35.16
+      mask: 32
+    Loopback1:
+      ipv4: 10.14.36.16
+      mask: 32
+    Ethernet49:
+      ipv4: 10.14.1.10
+      mask: 31
+      description: spine1-eth2
+    Ethernet50:
+      ipv4: 10.14.2.10
+      mask: 31
+      description: spine2-eth2
+    Vlan4091:
+      ipv4: 10.14.30.6
+      mask: 31
+  MLAG:
+    Portchannel: 999
+    interfaces:
+      - Ethernet47
+      - Ethernet48
+    ibgp_vlan: 4091
+  BGP:
+    ASN: 65003
+    spine-asn: 65000
+    spine-peers:
+      -  10.14.1.11
+      -  10.14.2.11
+    leaf-peer: 10.14.30.6
+leaf7:
+  hostname: Leaf7
+  description: MLAG_Leaf7_Leaf8
+  client-id: 001c.73f8.e7bf
+  interfaces:
+    management1:
+      ipv4: 10.14.34.240
+      mask: 24
+    Loopback0: 
+      ipv4: 10.14.35.16
+      mask: 32
+    Loopback1:
+      ipv4: 10.14.36.16
+      mask: 32
+    Ethernet49:
+      ipv4: 10.14.1.10
+      mask: 31
+      description: spine1-eth3
+    Ethernet50:
+      ipv4: 10.14.2.10
+      mask: 31
+      description: spine2-eth3
+    Vlan4091:
+      ipv4: 10.14.30.7
+      mask: 31
+  MLAG:
+    Portchannel: 999
+    interfaces:
+      - Ethernet47
+      - Ethernet48
+    ibgp_vlan: 4091
+  BGP:
+    ASN: 65004
+        spine-asn: 65000
+    spine-peers:
+      -  10.14.1.11
+      -  10.14.2.11
+    leaf-peer: 10.14.30.7
+leaf8:
+  hostname: Leaf8
+  description: MLAG_Leaf7_Leaf8
+  client-id: 001c.73f8.xxxx
+  interfaces:
+    management1:
+      ipv4: 10.14.34.238
+      mask: 24
+    Loopback0: 
+      ipv4: 10.14.35.17
+      mask: 32
+    Loopback1:
+      ipv4: 10.14.36.17
+      mask: 32
+    Ethernet49:
+      ipv4: 10.14.1.12
+      mask: 31
+      description: spine1-eth4
+    Ethernet50:
+      ipv4: 10.14.2.12
+      mask: 31
+      description: spine2-eth4
+    Vlan4091:
+      ipv4: 10.14.30.7
+      mask: 31
+  MLAG:
+    Portchannel: 999
+    interfaces:
+      - Ethernet47
+      - Ethernet48
+    ibgp_vlan: 4091
+  BGP:
+    ASN: 65004
+        spine-asn: 65000
+    spine-peers:
+      -  10.14.1.13
+      -  10.14.2.13
+    leaf-peer: 10.14.30.6
