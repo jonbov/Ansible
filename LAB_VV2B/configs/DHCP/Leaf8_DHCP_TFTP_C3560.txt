@@ -1,0 +1,12 @@
+ip dhcp pool Leaf8
+   host 10.14.34.238 255.255.255.0
+   client-identifier 001c.73f8.xxxx
+   option 66 ascii 10.14.34.235
+   option 67 ascii Leaf8_ztp_script.cfg
+   dns-server 8.8.8.8 
+   default-router 10.14.34.1 
+   lease 0 0 2
+!         
+tftp-server flash:Leaf8_ztp.cfg
+tftp-server flash:Leaf8_ztp_script.cfg
+!
