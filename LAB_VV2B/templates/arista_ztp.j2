@@ -4,11 +4,12 @@
 hostname {{ ztp[inventory_hostname]['hostname']}}
 !
 {% for item in ztp[inventory_hostname]['interfaces'] %}
+{% if 'management' in item %}
 !
 interface {{ item }}
-{% if 'management' in item %}
   ip address {{ ztp[inventory_hostname]['interfaces'][item]['ipv4']}}/{{ ztp[inventory_hostname]['interfaces'][item]['mask']}}
 {% endif %}
+{% endfor %}
 !
 ip routing
 !
@@ -29,4 +30,5 @@ ntp server 216.239.35.4
 ntp server 216.239.35.8
 ntp server 216.239.35.12
 !
-{% endfor %}
+aaa authorization exec default local
+!

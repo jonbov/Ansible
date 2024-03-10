@@ -354,7 +354,7 @@ leaf7:
     ibgp_vlan: 4091
   BGP:
     ASN: 65004
-        spine-asn: 65000
+    spine-asn: 65000
     spine-peers:
       -  10.14.1.11
       -  10.14.2.11
@@ -393,7 +393,7 @@ leaf8:
     ibgp_vlan: 4091
   BGP:
     ASN: 65004
-        spine-asn: 65000
+    spine-asn: 65000
     spine-peers:
       -  10.14.1.13
       -  10.14.2.13

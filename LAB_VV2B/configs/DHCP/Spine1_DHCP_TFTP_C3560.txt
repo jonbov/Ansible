@@ -1,0 +1,12 @@
+ip dhcp pool Spine1
+   host 10.14.34.247 255.255.255.0
+   client-identifier 2899.3a02.13c9
+   option 66 ascii 10.14.34.235
+   option 67 ascii Spine1_ztp_script.cfg
+   dns-server 8.8.8.8 
+   default-router 10.14.34.1 
+   lease 0 0 2
+!         
+tftp-server flash:Spine1_ztp.cfg
+tftp-server flash:Spine1_ztp_script.cfg
+!
