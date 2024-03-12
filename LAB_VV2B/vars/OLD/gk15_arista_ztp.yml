@@ -1,5 +1,5 @@
-a7010.bovre.net:
-  hostname: A7010
+leaf7.bovre.net:
+  hostname: Leaf7
   client-id: 001c.73f8.e7bf
   interfaces:
      management1:

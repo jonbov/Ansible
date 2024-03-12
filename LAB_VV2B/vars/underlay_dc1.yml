@@ -1,6 +1,12 @@
-spine1:
+spine1.bovre.net:
   hostname: Spine1
   client-id: 2899.3a02.13c9
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 0100.1403.5001
+  ospf:
+    area: 0.0.0.0
   interfaces:
     management1:
       ipv4: 10.14.34.247
@@ -42,9 +48,15 @@ spine1:
       description: leaf8-eth49
   BGP:
     ASN: 65000
-spine2:
+spine2.bovre.net:
   hostname: Spine2
   client-id: 444c.a84a.78eb
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 0100.1403.5002
+  ospf:
+    area: 0.0.0.0
   interfaces:
     management1:
       ipv4: 10.14.34.246
@@ -86,10 +98,16 @@ spine2:
       description: leaf8-eth50
   BGP:
     ASN: 65003
-leaf1:
+leaf1.bovre.net:
   hostname: Leaf1
   description: MLAG_Leaf1_Leaf2
   client-id: 444c.a8de.2cfb
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 0100.1403.5011
+  ospf:
+    area: 0.0.0.0
   interfaces:
     management1:
       ipv4: 10.14.34.245
@@ -125,10 +143,16 @@ leaf1:
       -  10.14.1.1
       -  10.14.2.3
     leaf-peer: 10.14.30.1
-leaf2:
+leaf2.bovre.net:
   hostname: Leaf2
   description: MLAG_Leaf1_Leaf2
   client-id: 444c.a86f.4c7f
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 0100.1403.5012
+  ospf:
+    area: 0.0.0.0
   interfaces:
     management1:
       ipv4: 10.14.34.244
@@ -164,10 +188,16 @@ leaf2:
       -  10.14.1.3
       -  10.14.2.3
     leaf-peer: 10.14.30.0
-leaf3:
+leaf3.bovre.net:
   hostname: Leaf3
   description: MLAG_Leaf3_Leaf4
   client-id: 2899.3a21.39a3
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 0100.1403.5013
+  ospf:
+    area: 0.0.0.0
   interfaces:
     management1:
       ipv4: 10.14.34.243
@@ -203,10 +233,16 @@ leaf3:
       -  10.14.1.5
       -  10.14.2.5
     leaf-peer: 10.14.30.3
-leaf4:
+leaf4.bovre.net:
   hostname: Leaf4
   description: MLAG_Leaf3_Leaf4
   client-id: 2899.3a9d.7a09
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 0100.1403.5014
+  ospf:
+    area: 0.0.0.0
   interfaces:
     management1:
       ipv4: 10.14.34.242
@@ -242,10 +278,16 @@ leaf4:
       -  10.14.1.7
       -  10.14.2.7
     leaf-peer: 10.14.30.2
-leaf5:
+leaf5.bovre.net:
   hostname: Leaf5
   description: MLAG_Leaf5_Leaf6
   client-id: 444c.a846.33b3
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 0100.1403.5015
+  ospf:
+    area: 0.0.0.0
   interfaces:
     management1:
       ipv4: 10.14.34.241
@@ -281,10 +323,16 @@ leaf5:
       -  10.14.1.9
       -  10.14.2.9
     leaf-peer: 10.14.30.5
-leaf6:
+leaf6.bovre.net:
   hostname: Leaf6
   description: MLAG_Leaf5_Leaf6
   client-id: 444c.a846.xxxx
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 0100.1403.5016
+  ospf:
+    area: 0.0.0.0
   interfaces:
     management1:
       ipv4: 10.14.34.239
@@ -320,19 +368,25 @@ leaf6:
       -  10.14.1.11
       -  10.14.2.11
     leaf-peer: 10.14.30.6
-leaf7:
+leaf7.bovre.net:
   hostname: Leaf7
   description: MLAG_Leaf7_Leaf8
   client-id: 001c.73f8.e7bf
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 0100.1403.5017
+  ospf:
+    area: 0.0.0.0
   interfaces:
     management1:
       ipv4: 10.14.34.240
       mask: 24
     Loopback0: 
-      ipv4: 10.14.35.16
+      ipv4: 10.14.35.17
       mask: 32
     Loopback1:
-      ipv4: 10.14.36.16
+      ipv4: 10.14.36.17
       mask: 32
     Ethernet49:
       ipv4: 10.14.1.10
@@ -359,19 +413,25 @@ leaf7:
       -  10.14.1.11
       -  10.14.2.11
     leaf-peer: 10.14.30.7
-leaf8:
+leaf8.bovre.net:
   hostname: Leaf8
   description: MLAG_Leaf7_Leaf8
   client-id: 001c.73f8.xxxx
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 0100.1403.5018
+  ospf:
+    area: 0.0.0.0
   interfaces:
     management1:
       ipv4: 10.14.34.238
       mask: 24
     Loopback0: 
-      ipv4: 10.14.35.17
+      ipv4: 10.14.35.18
       mask: 32
     Loopback1:
-      ipv4: 10.14.36.17
+      ipv4: 10.14.36.18
       mask: 32
     Ethernet49:
       ipv4: 10.14.1.12

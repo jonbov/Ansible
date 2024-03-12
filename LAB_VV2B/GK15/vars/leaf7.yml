@@ -1,4 +1,4 @@
-7010.bovre.net:
+leaf7.bovre.net:
   interfaces:
     loopback0: 
       ipv4: 192.168.101.11

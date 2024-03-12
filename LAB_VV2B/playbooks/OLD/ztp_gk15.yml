@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: gk15
   gather_facts: no
   tasks:
   - name: Register variables
