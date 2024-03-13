@@ -1,0 +1,22 @@
+---
+- name: Deploy configuration files fro DC1 EVPN underlay
+  hosts: all
+  gather_facts: no
+  connection: local
+
+  tasks:
+  - name: Configure switche interfaces with hw profiles
+    eos_config:
+      src: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_hw_speed.cfg"
+  - name: Configure switches with IP adresses
+    eos_config:
+      src: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_ip_intf.cfg"
+  - name: Configure switches with MLAG
+    eos_config:
+      src: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_mlag.cfg"
+  - name: Configure switches with ISIS
+    eos_config:
+      src: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_isis.cfg"
+  - name: Configure switches with BGP
+    eos_config:
+      src: "{{lookup('env','PWD')}}/{{inventory_hostname}}_dc1_underlay_bgp.cfg"

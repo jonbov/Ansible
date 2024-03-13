@@ -1,5 +1,5 @@
 ---
-- name: Run commands on remote LAB devices
+- name: Generate configurations for DC1 EVPN underlay
   hosts: all
   gather_facts: no
   connection: local
@@ -18,27 +18,20 @@
     template:
       src: "{{lookup('env','PWD')}}/templates/underlay_interface_hw_speed.j2"
       dest: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_hw_speed.cfg"
-#  - name: Configure switche interfaces with hw profiles
-#    eos_config:
-#      src: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_hw_speed.cfg"
+  - name: Create configuration files for MLAG
+      template:
+      src: "{{lookup('env','PWD')}}/templates/underlay_interface_mlag.j2"
+      dest: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_mlag.cfg"
   - name: Create configuration files for IP interfaces
     template:
       src: "{{lookup('env','PWD')}}/templates/underlay_ip_interfaces.j2"
       dest: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_ip_intf.cfg"
-#  - name: Configure switches with IP adresses
-#    eos_config:
-#      src: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_ip_intf.cfg"
   - name: Create configuration files for ISIS
     template:
       src: "{{lookup('env','PWD')}}/templates/underlay_isis.j2"
       dest: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_isis.cfg"
-#  - name: Configure switches with ISIS
-#    eos_config:
-#      src: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_isis.cfg"
   - name: Create configuration files for BGP
     template:
       src: "{{lookup('env','PWD')}}/templates/underlay_bgp.j2"
       dest: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_bgp.cfg"
-#  - name: Configure switches with BGP
-#    eos_config:
-#      src: "{{lookup('env','PWD')}}/{{inventory_hostname}}_dc1_underlay_bgp.cfg"
+

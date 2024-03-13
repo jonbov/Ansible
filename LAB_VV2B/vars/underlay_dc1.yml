@@ -129,11 +129,8 @@ leaf1.bovre.net:
       ipv4: 10.14.2.0
       mask: 31
       description: spine2-eth6
-    Vlan4091:
-      ipv4: 10.14.30.0
-      mask: 31
-      description: MLAG-peer
   MLAG:
+    mlag_side: odd
     Portchannel: 999
     interfaces:
       - Ethernet47
@@ -175,11 +172,8 @@ leaf2.bovre.net:
       ipv4: 10.14.2.2
       mask: 31
       description: spine2-eth7
-    Vlan4091:
-      ipv4: 10.14.30.1
-      mask: 31
-      description: MLAG-peer
   MLAG:
+    mlag_side: even
     Portchannel: 999
     interfaces:
       - Ethernet47
@@ -221,11 +215,8 @@ leaf3.bovre.net:
       ipv4: 10.14.2.4
       mask: 31
       description: spine2-eth8
-    Vlan4091:
-      ipv4: 10.14.30.2
-      mask: 31
-      description: MLAG-peer
   MLAG:
+    mlag_side: odd
     Portchannel: 999
     interfaces:
       - Ethernet47
@@ -267,11 +258,8 @@ leaf4.bovre.net:
       ipv4: 10.14.2.6
       mask: 31
       description: spine2-eth9
-    Vlan4091:
-      ipv4: 10.14.30.3
-      mask: 31
-      description: MLAG-peer
   MLAG:
+    mlag_side: even
     Portchannel: 999
     interfaces:
       - Ethernet47
@@ -313,11 +301,8 @@ leaf5.bovre.net:
       ipv4: 10.14.2.8
       mask: 31
       description: spine2-eth1
-    Vlan4091:
-      ipv4: 10.14.30.5
-      mask: 31
-      description: MLAG-peer
   MLAG:
+    mlag_side: odd
     Portchannel: 999
     interfaces:
       - Ethernet47
@@ -359,11 +344,8 @@ leaf6.bovre.net:
       ipv4: 10.14.2.10
       mask: 31
       description: spine2-eth2
-    Vlan4091:
-      ipv4: 10.14.30.6
-      mask: 31
-      description: MLAG-peer
   MLAG:
+    mlag_side: even
     Portchannel: 999
     interfaces:
       - Ethernet47
@@ -405,11 +387,8 @@ leaf7.bovre.net:
       ipv4: 10.14.2.10
       mask: 31
       description: spine2-eth3
-    Vlan4091:
-      ipv4: 10.14.30.7
-      mask: 31
-      description: MLAG-peer
   MLAG:
+    mlag_side: odd
     Portchannel: 999
     interfaces:
       - Ethernet47
@@ -451,11 +430,8 @@ leaf8.bovre.net:
       ipv4: 10.14.2.12
       mask: 31
       description: spine2-eth4
-    Vlan4091:
-      ipv4: 10.14.30.7
-      mask: 31
-      description: MLAG-peer
   MLAG:
+    mlag_side: even
     Portchannel: 999
     interfaces:
       - Ethernet47
