@@ -4,7 +4,7 @@
   gather_facts: no
   connection: local
   pre_tasks:
-    - include_vars: "authentication.yml"
+    - include_vars: "{{lookup('env','PWD')}}/playbooks/authentication.yml"
 
   tasks:
   - name: Register variables

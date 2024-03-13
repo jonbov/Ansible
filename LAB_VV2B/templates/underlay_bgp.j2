@@ -1,8 +1,20 @@
 !
 router bgp {{ underlay[inventory_hostname]['BGP']['ASN'] }}
   router-id {{ underlay[inventory_hostname]['interfaces']['Loopback0']['ipv4']}}
-{% for peer in underlay[inventory_hostname]['BGP']['spine-peers'] %}
-  neighbor {{ peer }} peer group SPINE_Underlay
+{% if 'pine' in underlay[inventory_hostname]['hostname'] %}
+#BGP neigbors Leafs 
+{% for peer in underlay[inventory_hostname]['BGP']['leaf-peers'] %}
+  neighbor {{ peer }} peer group LEAF_Underlay
 {% endfor %}
   redistribute connected route-map LOOPBACK
 !
+{% else %}
+#BGP neigbours Spines
+{% for peer in underlay[inventory_hostname]['BGP']['spine-peers'] %}
+  neighbor {{ peer }} peer group SPINE_Underlay
+{% endfor %}
+  neighbor {{ underlay[inventory_hostname]['BGP']['mlag-peer'] }} remote-as {{ underlay[inventory_hostname]['BGP']['ASN'] }}
+  neighbor {{ underlay[inventory_hostname]['BGP']['mlag-peer'] }} description MLAG PEER
+  redistribute connected route-map LOOPBACK
+! 
+{% endif %}

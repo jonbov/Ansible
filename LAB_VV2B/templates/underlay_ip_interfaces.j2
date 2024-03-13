@@ -12,8 +12,6 @@ interface {{ item }}
 {% if 'Loopback' in item %}
   ip address {{ underlay[inventory_hostname]['interfaces'][item]['ipv4']}}/{{ underlay[inventory_hostname]['interfaces'][item]['mask']}}
 {% endif %}
-{% if 'Vlan' in item %}
-  ip address {{ underlay[inventory_hostname]['interfaces'][item]['ipv4']}}/{{ underlay[inventory_hostname]['interfaces'][item]['mask']}}
-{% endif %}
+
 !
 {% endfor %}
