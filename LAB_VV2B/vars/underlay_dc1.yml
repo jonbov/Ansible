@@ -1,6 +1,7 @@
 spine1.bovre.net:
   hostname: Spine1
   client-id: 2899.3a02.13c9
+  hwtype: 7050QX-32S
   isis:
     process: ACE
     net_area: '0001'
@@ -51,6 +52,7 @@ spine1.bovre.net:
 spine2.bovre.net:
   hostname: Spine2
   client-id: 444c.a84a.78eb
+  hwtype: 7050QX-32S
   isis:
     process: ACE
     net_area: '0001'
@@ -102,6 +104,7 @@ leaf1.bovre.net:
   hostname: Leaf1
   description: MLAG_Leaf1_Leaf2
   client-id: 444c.a8de.2cfb
+  hwtype: 7050SX-64
   isis:
     process: ACE
     net_area: '0001'
@@ -147,6 +150,7 @@ leaf2.bovre.net:
   hostname: Leaf2
   description: MLAG_Leaf1_Leaf2
   client-id: 444c.a86f.4c7f
+  hwtype: 7050SX-64
   isis:
     process: ACE
     net_area: '0001'
@@ -192,6 +196,7 @@ leaf3.bovre.net:
   hostname: Leaf3
   description: MLAG_Leaf3_Leaf4
   client-id: 2899.3a21.39a3
+  hwtype: 7050SX-64
   isis:
     process: ACE
     net_area: '0001'
@@ -237,6 +242,7 @@ leaf4.bovre.net:
   hostname: Leaf4
   description: MLAG_Leaf3_Leaf4
   client-id: 2899.3a9d.7a09
+  hwtype: 7050SX-64
   isis:
     process: ACE
     net_area: '0001'
@@ -282,6 +288,7 @@ leaf5.bovre.net:
   hostname: Leaf5
   description: MLAG_Leaf5_Leaf6
   client-id: 444c.a846.33b3
+  hwtype: 7050SX-64
   isis:
     process: ACE
     net_area: '0001'
@@ -327,6 +334,7 @@ leaf6.bovre.net:
   hostname: Leaf6
   description: MLAG_Leaf5_Leaf6
   client-id: 444c.a846.xxxx
+  hwtype: 7050SX-64
   isis:
     process: ACE
     net_area: '0001'
@@ -372,6 +380,7 @@ leaf7.bovre.net:
   hostname: Leaf7
   description: MLAG_Leaf7_Leaf8
   client-id: 001c.73f8.e7bf
+  hwtype: 7010T-48
   isis:
     process: ACE
     net_area: '0001'
@@ -417,6 +426,7 @@ leaf8.bovre.net:
   hostname: Leaf8
   description: MLAG_Leaf7_Leaf8
   client-id: 001c.73f8.xxxx
+  hwtype: 7010T-48
   isis:
     process: ACE
     net_area: '0001'

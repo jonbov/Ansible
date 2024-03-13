@@ -1,0 +1,19 @@
+
+{% for item in underlay[inventory_hostname]['interfaces'] %}
+interface {{ item }}
+{% if 'Ethernet' in item %}
+  no switchport
+{% if 'unnumbered' in underlay[inventory_hostname]['interfaces'][item]['ipv4'] %}
+  ip address {{ underlay[inventory_hostname]['interfaces'][item]['ipv4']}} loopback 0
+{% else %}
+  ip address {{ underlay[inventory_hostname]['interfaces'][item]['ipv4']}}/{{ underlay[inventory_hostname]['interfaces'][item]['mask']}}
+{% endif %}
+{% endif %}
+{% if 'Loopback' in item %}
+  ip address {{ underlay[inventory_hostname]['interfaces'][item]['ipv4']}}/{{ underlay[inventory_hostname]['interfaces'][item]['mask']}}
+{% endif %}
+{% if 'Vlan' in item %}
+  ip address {{ underlay[inventory_hostname]['interfaces'][item]['ipv4']}}/{{ underlay[inventory_hostname]['interfaces'][item]['mask']}}
+{% endif %}
+!
+{% endfor %}

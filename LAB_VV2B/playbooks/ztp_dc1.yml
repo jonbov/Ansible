@@ -4,7 +4,7 @@
   tasks:
   - name: Register variables
     include_vars:
-      file: "{{lookup('env','PWD')}}/vars/underlay_dc1_lab.yml"
+      file: "{{lookup('env','PWD')}}/vars/underlay_dc1.yml"
       name: ztp
   - name: Test all variables
     debug:

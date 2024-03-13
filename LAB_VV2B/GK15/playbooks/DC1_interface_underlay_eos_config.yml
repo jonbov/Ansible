@@ -18,6 +18,6 @@
     template:
       src: "{{lookup('env','PWD')}}/templates/isis_underlay.j2"
       dest: "{{lookup('env','PWD')}}/configs/dc1_underlay_{{inventory_hostname}}.cfg"
-  - name: Configure test
+  - name: Configure switches
     eos_config:
       src: "{{lookup('env','PWD')}}/configs/dc1_underlay_{{inventory_hostname}}.cfg"
