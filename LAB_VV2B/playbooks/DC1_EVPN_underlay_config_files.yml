@@ -19,7 +19,7 @@
       src: "{{lookup('env','PWD')}}/templates/underlay_interface_hw_speed.j2"
       dest: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_hw_speed.cfg"
   - name: Create configuration files for MLAG
-      template:
+    template:
       src: "{{lookup('env','PWD')}}/templates/underlay_mlag.j2"
       dest: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_mlag.cfg"
   - name: Create configuration files for IP interfaces
