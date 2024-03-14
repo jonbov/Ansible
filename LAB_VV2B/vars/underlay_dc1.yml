@@ -49,15 +49,6 @@ spine1.bovre.net:
       description: leaf8-eth49
   BGP:
     ASN: 65000
-    leaf-peers:
-      -  10.14.1.0
-      -  10.14.1.2
-      -  10.14.1.4
-      -  10.14.1.6
-      -  10.14.1.8
-      -  10.14.1.10
-      -  10.14.1.12
-      -  10.14.1.14
 spine2.bovre.net:
   hostname: Spine2
   client-id: 444c.a84a.78eb
@@ -109,15 +100,6 @@ spine2.bovre.net:
       description: leaf8-eth50
   BGP:
     ASN: 65000
-    leaf-peers:
-      -  10.14.2.0
-      -  10.14.2.2
-      -  10.14.2.4
-      -  10.14.2.6
-      -  10.14.2.8
-      -  10.14.2.10
-      -  10.14.2.12
-      -  10.14.2.14
 leaf1.bovre.net:
   hostname: Leaf1
   description: MLAG_Leaf1_Leaf2
