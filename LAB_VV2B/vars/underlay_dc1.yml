@@ -162,7 +162,7 @@ leaf1.bovre.net:
     spine-asn: 65000
     spine-peers:
       -  10.14.1.1
-      -  10.14.2.3
+      -  10.14.2.1
     mlag-peer: 192.168.255.2
 leaf2.bovre.net:
   hostname: Leaf2
