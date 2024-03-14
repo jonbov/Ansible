@@ -1,4 +1,3 @@
-
 {% for item in underlay[inventory_hostname]['interfaces'] %}
 interface {{ item }}
 {% if 'Ethernet' in item %}
@@ -12,6 +11,5 @@ interface {{ item }}
 {% if 'Loopback' in item %}
   ip address {{ underlay[inventory_hostname]['interfaces'][item]['ipv4']}}/{{ underlay[inventory_hostname]['interfaces'][item]['mask']}}
 {% endif %}
-
 !
 {% endfor %}

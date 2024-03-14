@@ -3,6 +3,9 @@
   hosts: all
   gather_facts: no
   connection: local
+  pre_tasks:
+    - include_vars: "{{lookup('env','PWD')}}/playbooks/authentication.yml"
+
 
   tasks:
   - name: Configure switche interfaces with hw profiles
@@ -14,9 +17,9 @@
   - name: Configure switches with MLAG
     eos_config:
       src: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_mlag.cfg"
-  - name: Configure switches with ISIS
-    eos_config:
-      src: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_isis.cfg"
+#  - name: Configure switches with ISIS
+#    eos_config:
+#      src: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_isis.cfg"
   - name: Configure switches with BGP
     eos_config:
-      src: "{{lookup('env','PWD')}}/{{inventory_hostname}}_dc1_underlay_bgp.cfg"
+      src: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_dc1_underlay_bgp.cfg"

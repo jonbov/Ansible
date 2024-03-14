@@ -10,6 +10,8 @@ router bgp {{ underlay[inventory_hostname]['BGP']['ASN'] }}
 !
 {% else %}
 #BGP neigbours Spines
+  neighbor SPINE_Underlay peer group
+  neighbor SPINE_Underlay remote-as 65000
 {% for peer in underlay[inventory_hostname]['BGP']['spine-peers'] %}
   neighbor {{ peer }} peer group SPINE_Underlay
 {% endfor %}
