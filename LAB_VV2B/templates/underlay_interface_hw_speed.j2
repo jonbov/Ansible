@@ -5,6 +5,8 @@
 !Ensure intf 1-4 will be used as breakout from intf 5
 !
 hardware port-group 1 select Et1-4
+{# above command is interactive, requiring an 'y' to confirm -#}
+y
 !
 interface Ethernet6/1
    speed forced 40gfull
