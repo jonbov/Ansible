@@ -125,7 +125,7 @@ leaf1.bovre.net:
       ipv4: 10.14.1.0
       mask: 31
       description: spine1-eth6
-    Ethernet50/1:
+    Ethernet51/1:
       ipv4: 10.14.2.0
       mask: 31
       description: spine2-eth6
@@ -171,7 +171,7 @@ leaf2.bovre.net:
       ipv4: 10.14.1.2
       mask: 31
       description: spine1-eth7
-    Ethernet50/1:
+    Ethernet51/1:
       ipv4: 10.14.2.2
       mask: 31
       description: spine2-eth7
@@ -217,7 +217,7 @@ leaf3.bovre.net:
       ipv4: 10.14.1.4
       mask: 31
       description: spine1-eth8
-    Ethernet50/1:
+    Ethernet51/1:
       ipv4: 10.14.2.4
       mask: 31
       description: spine2-eth8
@@ -263,7 +263,7 @@ leaf4.bovre.net:
       ipv4: 10.14.1.6
       mask: 31
       description: spine1-eth9
-    Ethernet50/1:
+    Ethernet51/1:
       ipv4: 10.14.2.6
       mask: 31
       description: spine2-eth9
