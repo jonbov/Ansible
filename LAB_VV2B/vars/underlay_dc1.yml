@@ -397,14 +397,14 @@ leaf7.bovre.net:
     Loopback1:
       ipv4: 10.14.36.17
       mask: 32
-    Ethernet49/1:
+    Ethernet49:
       ipv4: 10.14.1.10
       mask: 31
-      description: spine1-eth3
-    Ethernet50/1:
+      description: spine1-eth2
+    Ethernet50:
       ipv4: 10.14.2.10
       mask: 31
-      description: spine2-eth3
+      description: spine2-eth2
     Vlan 4091:
       ipv4: 192.168.255.1
       mask: 30
