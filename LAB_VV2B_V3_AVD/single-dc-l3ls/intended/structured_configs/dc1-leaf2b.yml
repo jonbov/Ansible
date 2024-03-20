@@ -324,13 +324,6 @@ port_channel_interfaces:
   trunk_groups:
   - LEAF_PEER_L3
   - MLAG
-- name: Port-Channel8
-  description: DC1-LEAF2C_Po1
-  type: switched
-  shutdown: false
-  mode: trunk
-  vlans: 11-12,21-22,3401-3402
-  mlag: 8
 - name: Port-Channel5
   description: dc1-leaf2-server1_PortChannel dc1-leaf2-server1
   type: switched
@@ -379,16 +372,6 @@ ethernet_interfaces:
   mtu: 1500
   type: routed
   ip_address: 10.255.255.15/31
-- name: Ethernet8
-  peer: dc1-leaf2c
-  peer_interface: Ethernet2
-  peer_type: l2leaf
-  description: DC1-LEAF2C_Ethernet2
-  shutdown: false
-  type: port-channel-member
-  channel_group:
-    id: 8
-    mode: active
 - name: Ethernet5
   peer: dc1-leaf2-server1
   peer_interface: PCI2
