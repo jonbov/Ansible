@@ -1,0 +1,42 @@
+
+{% if '7050QX-32S' in underlay[inventory_hostname]['hwtype'] %}
+!hwtype = {{underlay[inventory_hostname]['hwtype']}}
+!Ensure intf 6-9 will use 40G QSFP
+!Ensure intf 1-4 will be used as breakout from intf 5
+!
+hardware port-group 1 select Et1-4
+{# above command is interactive, requiring an 'y' to confirm -#}
+!
+interface Ethernet6/1
+   speed forced 40gfull
+!
+interface Ethernet7/1
+   speed forced 40gfull
+!
+interface Ethernet8/1
+   speed forced 40gfull
+!
+interface Ethernet9/1
+   speed forced 40gfull
+!
+{% elif '7050SX-64' in underlay[inventory_hostname]['hwtype'] %}
+!hwtype = {{underlay[inventory_hostname]['hwtype']}}
+!Ensure intf 49-52 will use 40G QSFP
+!
+interface Ethernet49/1
+   speed forced 40gfull
+!
+interface Ethernet50/1
+   speed forced 40gfull
+!
+interface Ethernet51/1
+   speed forced 40gfull
+!
+interface Ethernet52/1
+   speed forced 40gfull
+!
+{% else %}
+!hwtype = {{underlay[inventory_hostname]['hwtype']}}
+!no profile needed
+{% endif %}
+
