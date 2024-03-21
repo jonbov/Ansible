@@ -1,0 +1,53 @@
+---
+all:
+  children:
+    CLOUDVISION:
+      hosts:
+        cvp:
+          # Ansible variables used by the ansible_avd and ansible_cvp roles to push configuration to devices via CVP
+          ansible_host: 10.14.17.200
+          ansible_user: cvpadmin
+          ansible_password: a4068becs
+          ansible_connection: httpapi
+          ansible_httpapi_use_ssl: true
+          ansible_httpapi_validate_certs: false
+          ansible_network_os: eos
+
+    ST2110:
+      children:
+        AMBER:
+          children:
+            AMBER_SPINES:
+              hosts:
+                AMBER_Spine1:
+                  ansible_host: 10.14.34.247
+            AMBER_L3_LEAVES:
+              hosts:
+                AMBER_Leaf1:
+                  ansible_host: 10.14.34.245
+                AMBER_Leaf2:
+                  ansible_host: 10.14.34.244
+                AMBER_Leaf5:
+                  ansible_host: 10.14.34.241
+        BLUE:
+          children:
+            BLUE_SPINES:
+              hosts:
+                BLUE_Spine2:
+                  ansible_host: 10.14.34.246
+            BLUE_L3_LEAVES:
+              hosts:
+                BLUE_Leaf3:
+                  ansible_host: 10.14.34.243
+                BLUE_Leaf4:
+                  ansible_host: 10.14.34.242
+                BLUE_Leaf7:
+                  ansible_host: 10.14.34.240
+    NETWORK_SERVICES:
+      children:
+        AMBER_L3_LEAVES:
+        BLUE_L3_LEAVES:
+    CONNECTED_ENDPOINTS:
+      children:
+        AMBER_L3_LEAVES:
+        BLUE_L3_LEAVES:
