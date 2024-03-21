@@ -17,14 +17,14 @@
 
 | POD | Type | Node | Management IP | Platform | Provisioned in CloudVision | Serial Number |
 | --- | ---- | ---- | ------------- | -------- | -------------------------- | ------------- |
-| FABRIC | l3leaf | dc1-leaf1a | 172.16.1.101/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | dc1-leaf1b | 172.16.1.102/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | dc1-leaf2a | 172.16.1.103/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | dc1-leaf2b | 172.16.1.104/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | dc1-leaf3a | 172.16.1.105/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | dc1-leaf4a | 172.16.1.106/24 | vEOS-lab | Provisioned | - |
-| FABRIC | spine | dc1-spine1 | 172.16.1.11/24 | vEOS-lab | Provisioned | - |
-| FABRIC | spine | dc1-spine2 | 172.16.1.12/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | Leaf1 | 10.14.34.245/24 | 7050SX-64 | Provisioned | - |
+| FABRIC | l3leaf | Leaf2 | 10.14.34.244/24 | 7050SX-64 | Provisioned | - |
+| FABRIC | l3leaf | Leaf3 | 10.14.34.243/24 | 7050SX-64 | Provisioned | - |
+| FABRIC | l3leaf | Leaf4 | 10.14.34.242/24 | 7050SX-64 | Provisioned | - |
+| FABRIC | l3leaf | Leaf5 | 10.14.34.241/24 | 7050SX-64 | Provisioned | - |
+| FABRIC | l3leaf | Leaf7 | 10.14.34.240/24 | 7050SX-64 | Provisioned | - |
+| FABRIC | spine | Spine1 | 10.14.34.247/24 | 7050QX-32S | Provisioned | - |
+| FABRIC | spine | Spine2 | 10.14.34.246/24 | 7050QX-32S | Provisioned | - |
 
 > Provision status is based on Ansible inventory declaration and do not represent real status from CloudVision.
 
@@ -37,22 +37,22 @@
 
 | Type | Node | Node Interface | Peer Type | Peer Node | Peer Interface |
 | ---- | ---- | -------------- | --------- | ----------| -------------- |
-| l3leaf | dc1-leaf1a | Ethernet1 | spine | dc1-spine1 | Ethernet1 |
-| l3leaf | dc1-leaf1a | Ethernet2 | spine | dc1-spine2 | Ethernet1 |
-| l3leaf | dc1-leaf1a | Ethernet3 | mlag_peer | dc1-leaf1b | Ethernet3 |
-| l3leaf | dc1-leaf1a | Ethernet4 | mlag_peer | dc1-leaf1b | Ethernet4 |
-| l3leaf | dc1-leaf1b | Ethernet1 | spine | dc1-spine1 | Ethernet2 |
-| l3leaf | dc1-leaf1b | Ethernet2 | spine | dc1-spine2 | Ethernet2 |
-| l3leaf | dc1-leaf2a | Ethernet1 | spine | dc1-spine1 | Ethernet3 |
-| l3leaf | dc1-leaf2a | Ethernet2 | spine | dc1-spine2 | Ethernet3 |
-| l3leaf | dc1-leaf2a | Ethernet3 | mlag_peer | dc1-leaf2b | Ethernet3 |
-| l3leaf | dc1-leaf2a | Ethernet4 | mlag_peer | dc1-leaf2b | Ethernet4 |
-| l3leaf | dc1-leaf2b | Ethernet1 | spine | dc1-spine1 | Ethernet4 |
-| l3leaf | dc1-leaf2b | Ethernet2 | spine | dc1-spine2 | Ethernet4 |
-| l3leaf | dc1-leaf3a | Ethernet1 | spine | dc1-spine1 | Ethernet5 |
-| l3leaf | dc1-leaf3a | Ethernet2 | spine | dc1-spine2 | Ethernet5 |
-| l3leaf | dc1-leaf4a | Ethernet1 | spine | dc1-spine1 | Ethernet6 |
-| l3leaf | dc1-leaf4a | Ethernet2 | spine | dc1-spine2 | Ethernet6 |
+| l3leaf | Leaf1 | Ethernet47 | mlag_peer | Leaf2 | Ethernet47 |
+| l3leaf | Leaf1 | Ethernet48 | mlag_peer | Leaf2 | Ethernet48 |
+| l3leaf | Leaf1 | Ethernet49/1 | spine | Spine1 | Ethernet6/1 |
+| l3leaf | Leaf1 | Ethernet51/1 | spine | Spine2 | Ethernet6/1 |
+| l3leaf | Leaf2 | Ethernet49/1 | spine | Spine1 | Ethernet7/1 |
+| l3leaf | Leaf2 | Ethernet51/1 | spine | Spine2 | Ethernet7/1 |
+| l3leaf | Leaf3 | Ethernet47 | mlag_peer | Leaf4 | Ethernet47 |
+| l3leaf | Leaf3 | Ethernet48 | mlag_peer | Leaf4 | Ethernet48 |
+| l3leaf | Leaf3 | Ethernet49/1 | spine | Spine1 | Ethernet8/1 |
+| l3leaf | Leaf3 | Ethernet51/1 | spine | Spine2 | Ethernet8/1 |
+| l3leaf | Leaf4 | Ethernet49/1 | spine | Spine1 | Ethernet9/1 |
+| l3leaf | Leaf4 | Ethernet51/1 | spine | Spine2 | Ethernet9/1 |
+| l3leaf | Leaf5 | Ethernet49/1 | spine | Spine1 | Ethernet1 |
+| l3leaf | Leaf5 | Ethernet51/1 | spine | Spine2 | Ethernet1 |
+| l3leaf | Leaf7 | Ethernet49/1 | spine | Spine1 | Ethernet2 |
+| l3leaf | Leaf7 | Ethernet51/1 | spine | Spine2 | Ethernet2 |
 
 ## Fabric IP Allocation
 
@@ -66,18 +66,18 @@
 
 | Node | Node Interface | Node IP Address | Peer Node | Peer Interface | Peer IP Address |
 | ---- | -------------- | --------------- | --------- | -------------- | --------------- |
-| dc1-leaf1a | Ethernet1 | 10.255.255.1/31 | dc1-spine1 | Ethernet1 | 10.255.255.0/31 |
-| dc1-leaf1a | Ethernet2 | 10.255.255.3/31 | dc1-spine2 | Ethernet1 | 10.255.255.2/31 |
-| dc1-leaf1b | Ethernet1 | 10.255.255.5/31 | dc1-spine1 | Ethernet2 | 10.255.255.4/31 |
-| dc1-leaf1b | Ethernet2 | 10.255.255.7/31 | dc1-spine2 | Ethernet2 | 10.255.255.6/31 |
-| dc1-leaf2a | Ethernet1 | 10.255.255.9/31 | dc1-spine1 | Ethernet3 | 10.255.255.8/31 |
-| dc1-leaf2a | Ethernet2 | 10.255.255.11/31 | dc1-spine2 | Ethernet3 | 10.255.255.10/31 |
-| dc1-leaf2b | Ethernet1 | 10.255.255.13/31 | dc1-spine1 | Ethernet4 | 10.255.255.12/31 |
-| dc1-leaf2b | Ethernet2 | 10.255.255.15/31 | dc1-spine2 | Ethernet4 | 10.255.255.14/31 |
-| dc1-leaf3a | Ethernet1 | 10.255.255.17/31 | dc1-spine1 | Ethernet5 | 10.255.255.16/31 |
-| dc1-leaf3a | Ethernet2 | 10.255.255.19/31 | dc1-spine2 | Ethernet5 | 10.255.255.18/31 |
-| dc1-leaf4a | Ethernet1 | 10.255.255.21/31 | dc1-spine1 | Ethernet6 | 10.255.255.20/31 |
-| dc1-leaf4a | Ethernet2 | 10.255.255.23/31 | dc1-spine2 | Ethernet6 | 10.255.255.22/31 |
+| Leaf1 | Ethernet49/1 | 10.255.255.1/31 | Spine1 | Ethernet6/1 | 10.255.255.0/31 |
+| Leaf1 | Ethernet51/1 | 10.255.255.3/31 | Spine2 | Ethernet6/1 | 10.255.255.2/31 |
+| Leaf2 | Ethernet49/1 | 10.255.255.5/31 | Spine1 | Ethernet7/1 | 10.255.255.4/31 |
+| Leaf2 | Ethernet51/1 | 10.255.255.7/31 | Spine2 | Ethernet7/1 | 10.255.255.6/31 |
+| Leaf3 | Ethernet49/1 | 10.255.255.9/31 | Spine1 | Ethernet8/1 | 10.255.255.8/31 |
+| Leaf3 | Ethernet51/1 | 10.255.255.11/31 | Spine2 | Ethernet8/1 | 10.255.255.10/31 |
+| Leaf4 | Ethernet49/1 | 10.255.255.13/31 | Spine1 | Ethernet9/1 | 10.255.255.12/31 |
+| Leaf4 | Ethernet51/1 | 10.255.255.15/31 | Spine2 | Ethernet9/1 | 10.255.255.14/31 |
+| Leaf5 | Ethernet49/1 | 10.255.255.17/31 | Spine1 | Ethernet1 | 10.255.255.16/31 |
+| Leaf5 | Ethernet51/1 | 10.255.255.19/31 | Spine2 | Ethernet1 | 10.255.255.18/31 |
+| Leaf7 | Ethernet49/1 | 10.255.255.21/31 | Spine1 | Ethernet2 | 10.255.255.20/31 |
+| Leaf7 | Ethernet51/1 | 10.255.255.23/31 | Spine2 | Ethernet2 | 10.255.255.22/31 |
 
 ### Loopback Interfaces (BGP EVPN Peering)
 
@@ -89,14 +89,14 @@
 
 | POD | Node | Loopback0 |
 | --- | ---- | --------- |
-| FABRIC | dc1-leaf1a | 10.255.0.3/32 |
-| FABRIC | dc1-leaf1b | 10.255.0.4/32 |
-| FABRIC | dc1-leaf2a | 10.255.0.5/32 |
-| FABRIC | dc1-leaf2b | 10.255.0.6/32 |
-| FABRIC | dc1-leaf3a | 10.255.0.7/32 |
-| FABRIC | dc1-leaf4a | 10.255.0.8/32 |
-| FABRIC | dc1-spine1 | 10.255.0.1/32 |
-| FABRIC | dc1-spine2 | 10.255.0.2/32 |
+| FABRIC | Leaf1 | 10.255.0.3/32 |
+| FABRIC | Leaf2 | 10.255.0.4/32 |
+| FABRIC | Leaf3 | 10.255.0.5/32 |
+| FABRIC | Leaf4 | 10.255.0.6/32 |
+| FABRIC | Leaf5 | 10.255.0.7/32 |
+| FABRIC | Leaf7 | 10.255.0.8/32 |
+| FABRIC | Spine1 | 10.255.0.1/32 |
+| FABRIC | Spine2 | 10.255.0.2/32 |
 
 ### VTEP Loopback VXLAN Tunnel Source Interfaces (VTEPs Only)
 
@@ -108,9 +108,9 @@
 
 | POD | Node | Loopback1 |
 | --- | ---- | --------- |
-| FABRIC | dc1-leaf1a | 10.255.1.3/32 |
-| FABRIC | dc1-leaf1b | 10.255.1.3/32 |
-| FABRIC | dc1-leaf2a | 10.255.1.5/32 |
-| FABRIC | dc1-leaf2b | 10.255.1.5/32 |
-| FABRIC | dc1-leaf3a | 10.255.1.7/32 |
-| FABRIC | dc1-leaf4a | 10.255.1.8/32 |
+| FABRIC | Leaf1 | 10.255.1.3/32 |
+| FABRIC | Leaf2 | 10.255.1.3/32 |
+| FABRIC | Leaf3 | 10.255.1.5/32 |
+| FABRIC | Leaf4 | 10.255.1.5/32 |
+| FABRIC | Leaf5 | 10.255.1.7/32 |
+| FABRIC | Leaf7 | 10.255.1.8/32 |

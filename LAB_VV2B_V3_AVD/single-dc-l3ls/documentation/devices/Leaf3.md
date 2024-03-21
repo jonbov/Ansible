@@ -1,4 +1,4 @@
-# dc1-leaf2a
+# Leaf3
 
 ## Table of Contents
 
@@ -60,7 +60,7 @@
 
 | Management Interface | Description | Type | VRF | IP Address | Gateway |
 | -------------------- | ----------- | ---- | --- | ---------- | ------- |
-| Management1 | oob_management | oob | MGMT | 172.16.1.103/24 | 172.16.1.1 |
+| Management1 | oob_management | oob | MGMT | 10.14.34.243/24 | 10.14.34.1 |
 
 ##### IPv6
 
@@ -76,7 +76,7 @@ interface Management1
    description oob_management
    no shutdown
    vrf MGMT
-   ip address 172.16.1.103/24
+   ip address 10.14.34.243/24
 ```
 
 ### IP Name Servers
@@ -85,12 +85,12 @@ interface Management1
 
 | Name Server | VRF | Priority |
 | ----------- | --- | -------- |
-| 192.168.1.1 | MGMT | - |
+| 8.8.8.8 | MGMT | - |
 
 #### IP Name Servers Device Configuration
 
 ```eos
-ip name-server vrf MGMT 192.168.1.1
+ip name-server vrf MGMT 8.8.8.8
 ```
 
 ### NTP
@@ -170,14 +170,14 @@ username ansible privilege 15 role network-admin secret sha512 <removed>
 
 | CV Compression | CloudVision Servers | VRF | Authentication | Smash Excludes | Ingest Exclude | Bypass AAA |
 | -------------- | ------------------- | --- | -------------- | -------------- | -------------- | ---------- |
-| gzip | 192.168.1.12:9910 | MGMT | token,/tmp/token | ale,flexCounter,hardware,kni,pulse,strata | /Sysdb/cell/1/agent,/Sysdb/cell/2/agent | True |
+| gzip | 10.14.17.200:9910 | MGMT | token,/tmp/token | ale,flexCounter,hardware,kni,pulse,strata | /Sysdb/cell/1/agent,/Sysdb/cell/2/agent | True |
 
 #### TerminAttr Daemon Device Configuration
 
 ```eos
 !
 daemon TerminAttr
-   exec /usr/bin/TerminAttr -cvaddr=192.168.1.12:9910 -cvauth=token,/tmp/token -cvvrf=MGMT -disableaaa -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -taillogs
+   exec /usr/bin/TerminAttr -cvaddr=10.14.17.200:9910 -cvauth=token,/tmp/token -cvvrf=MGMT -disableaaa -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -taillogs
    no shutdown
 ```
 
@@ -187,7 +187,7 @@ daemon TerminAttr
 
 | Domain-id | Local-interface | Peer-address | Peer-link |
 | --------- | --------------- | ------------ | --------- |
-| DC1_L3_LEAF2 | Vlan4094 | 10.255.1.69 | Port-Channel3 |
+| DC1_L3_LEAF2 | Vlan4094 | 10.255.1.69 | Port-Channel47 |
 
 Dual primary detection is disabled.
 
@@ -199,7 +199,7 @@ mlag configuration
    domain-id DC1_L3_LEAF2
    local-interface Vlan4094
    peer-address 10.255.1.69
-   peer-link Port-Channel3
+   peer-link Port-Channel47
    reload-delay mlag 300
    reload-delay non-mlag 330
 ```
@@ -310,9 +310,8 @@ vlan 4094
 
 | Interface | Description | Mode | VLANs | Native VLAN | Trunk Group | Channel-Group |
 | --------- | ----------- | ---- | ----- | ----------- | ----------- | ------------- |
-| Ethernet3 | MLAG_PEER_dc1-leaf2b_Ethernet3 | *trunk | *- | *- | *['LEAF_PEER_L3', 'MLAG'] | 3 |
-| Ethernet4 | MLAG_PEER_dc1-leaf2b_Ethernet4 | *trunk | *- | *- | *['LEAF_PEER_L3', 'MLAG'] | 3 |
-| Ethernet5 | dc1-leaf2-server1_PCI1 | *trunk | *11-12,21-22 | *4092 | *- | 5 |
+| Ethernet47 | MLAG_PEER_Leaf4_Ethernet47 | *trunk | *- | *- | *['LEAF_PEER_L3', 'MLAG'] | 47 |
+| Ethernet48 | MLAG_PEER_Leaf4_Ethernet48 | *trunk | *- | *- | *['LEAF_PEER_L3', 'MLAG'] | 47 |
 
 *Inherited from Port-Channel Interface
 
@@ -320,41 +319,36 @@ vlan 4094
 
 | Interface | Description | Type | Channel Group | IP Address | VRF |  MTU | Shutdown | ACL In | ACL Out |
 | --------- | ----------- | -----| ------------- | ---------- | ----| ---- | -------- | ------ | ------- |
-| Ethernet1 | P2P_LINK_TO_DC1-SPINE1_Ethernet3 | routed | - | 10.255.255.9/31 | default | 1500 | False | - | - |
-| Ethernet2 | P2P_LINK_TO_DC1-SPINE2_Ethernet3 | routed | - | 10.255.255.11/31 | default | 1500 | False | - | - |
+| Ethernet49/1 | P2P_LINK_TO_SPINE1_Ethernet8/1 | routed | - | 10.255.255.9/31 | default | 1500 | False | - | - |
+| Ethernet51/1 | P2P_LINK_TO_SPINE2_Ethernet8/1 | routed | - | 10.255.255.11/31 | default | 1500 | False | - | - |
 
 #### Ethernet Interfaces Device Configuration
 
 ```eos
 !
-interface Ethernet1
-   description P2P_LINK_TO_DC1-SPINE1_Ethernet3
+interface Ethernet47
+   description MLAG_PEER_Leaf4_Ethernet47
+   no shutdown
+   channel-group 47 mode active
+!
+interface Ethernet48
+   description MLAG_PEER_Leaf4_Ethernet48
+   no shutdown
+   channel-group 47 mode active
+!
+interface Ethernet49/1
+   description P2P_LINK_TO_SPINE1_Ethernet8/1
    no shutdown
    mtu 1500
    no switchport
    ip address 10.255.255.9/31
 !
-interface Ethernet2
-   description P2P_LINK_TO_DC1-SPINE2_Ethernet3
+interface Ethernet51/1
+   description P2P_LINK_TO_SPINE2_Ethernet8/1
    no shutdown
    mtu 1500
    no switchport
    ip address 10.255.255.11/31
-!
-interface Ethernet3
-   description MLAG_PEER_dc1-leaf2b_Ethernet3
-   no shutdown
-   channel-group 3 mode active
-!
-interface Ethernet4
-   description MLAG_PEER_dc1-leaf2b_Ethernet4
-   no shutdown
-   channel-group 3 mode active
-!
-interface Ethernet5
-   description dc1-leaf2-server1_PCI1
-   no shutdown
-   channel-group 5 mode active
 ```
 
 ### Port-Channel Interfaces
@@ -365,30 +359,19 @@ interface Ethernet5
 
 | Interface | Description | Type | Mode | VLANs | Native VLAN | Trunk Group | LACP Fallback Timeout | LACP Fallback Mode | MLAG ID | EVPN ESI |
 | --------- | ----------- | ---- | ---- | ----- | ----------- | ------------| --------------------- | ------------------ | ------- | -------- |
-| Port-Channel3 | MLAG_PEER_dc1-leaf2b_Po3 | switched | trunk | - | - | ['LEAF_PEER_L3', 'MLAG'] | - | - | - | - |
-| Port-Channel5 | dc1-leaf2-server1_PortChannel dc1-leaf2-server1 | switched | trunk | 11-12,21-22 | 4092 | - | - | - | 5 | - |
+| Port-Channel47 | MLAG_PEER_Leaf4_Po47 | switched | trunk | - | - | ['LEAF_PEER_L3', 'MLAG'] | - | - | - | - |
 
 #### Port-Channel Interfaces Device Configuration
 
 ```eos
 !
-interface Port-Channel3
-   description MLAG_PEER_dc1-leaf2b_Po3
+interface Port-Channel47
+   description MLAG_PEER_Leaf4_Po47
    no shutdown
    switchport
    switchport mode trunk
    switchport trunk group LEAF_PEER_L3
    switchport trunk group MLAG
-!
-interface Port-Channel5
-   description dc1-leaf2-server1_PortChannel dc1-leaf2-server1
-   no shutdown
-   switchport
-   switchport trunk allowed vlan 11-12,21-22
-   switchport trunk native vlan 4092
-   switchport mode trunk
-   mlag 5
-   spanning-tree portfast
 ```
 
 ### Loopback Interfaces
@@ -557,7 +540,7 @@ interface Vlan4094
 ```eos
 !
 interface Vxlan1
-   description dc1-leaf2a_VTEP
+   description Leaf3_VTEP
    vxlan source-interface Loopback1
    vxlan virtual-router encapsulation mac-address mlag-system-id
    vxlan udp-port 4789
@@ -633,13 +616,13 @@ ip routing vrf VRF11
 
 | VRF | Destination Prefix | Next Hop IP | Exit interface | Administrative Distance | Tag | Route Name | Metric |
 | --- | ------------------ | ----------- | -------------- | ----------------------- | --- | ---------- | ------ |
-| MGMT | 0.0.0.0/0 | 172.16.1.1 | - | 1 | - | - | - |
+| MGMT | 0.0.0.0/0 | 10.14.34.1 | - | 1 | - | - | - |
 
 #### Static Routes Device Configuration
 
 ```eos
 !
-ip route vrf MGMT 0.0.0.0/0 172.16.1.1
+ip route vrf MGMT 0.0.0.0/0 10.14.34.1
 ```
 
 ### Router BGP
@@ -652,6 +635,7 @@ ip route vrf MGMT 0.0.0.0/0 172.16.1.1
 
 | BGP Tuning |
 | ---------- |
+| update wait-install |
 | no bgp default ipv4-unicast |
 | maximum-paths 4 ecmp 4 |
 
@@ -731,6 +715,7 @@ ip route vrf MGMT 0.0.0.0/0 172.16.1.1
 router bgp 65102
    router-id 10.255.0.5
    maximum-paths 4 ecmp 4
+   update wait-install
    no bgp default ipv4-unicast
    neighbor EVPN-OVERLAY-PEERS peer group
    neighbor EVPN-OVERLAY-PEERS update-source Loopback0
@@ -746,25 +731,25 @@ router bgp 65102
    neighbor MLAG-IPv4-UNDERLAY-PEER peer group
    neighbor MLAG-IPv4-UNDERLAY-PEER remote-as 65102
    neighbor MLAG-IPv4-UNDERLAY-PEER next-hop-self
-   neighbor MLAG-IPv4-UNDERLAY-PEER description dc1-leaf2b
+   neighbor MLAG-IPv4-UNDERLAY-PEER description Leaf4
    neighbor MLAG-IPv4-UNDERLAY-PEER password 7 <removed>
    neighbor MLAG-IPv4-UNDERLAY-PEER send-community
    neighbor MLAG-IPv4-UNDERLAY-PEER maximum-routes 12000
    neighbor MLAG-IPv4-UNDERLAY-PEER route-map RM-MLAG-PEER-IN in
    neighbor 10.255.0.1 peer group EVPN-OVERLAY-PEERS
    neighbor 10.255.0.1 remote-as 65100
-   neighbor 10.255.0.1 description dc1-spine1
+   neighbor 10.255.0.1 description Spine1
    neighbor 10.255.0.2 peer group EVPN-OVERLAY-PEERS
    neighbor 10.255.0.2 remote-as 65100
-   neighbor 10.255.0.2 description dc1-spine2
+   neighbor 10.255.0.2 description Spine2
    neighbor 10.255.1.101 peer group MLAG-IPv4-UNDERLAY-PEER
-   neighbor 10.255.1.101 description dc1-leaf2b
+   neighbor 10.255.1.101 description Leaf4
    neighbor 10.255.255.8 peer group IPv4-UNDERLAY-PEERS
    neighbor 10.255.255.8 remote-as 65100
-   neighbor 10.255.255.8 description dc1-spine1_Ethernet3
+   neighbor 10.255.255.8 description Spine1_Ethernet8/1
    neighbor 10.255.255.10 peer group IPv4-UNDERLAY-PEERS
    neighbor 10.255.255.10 remote-as 65100
-   neighbor 10.255.255.10 description dc1-spine2_Ethernet3
+   neighbor 10.255.255.10 description Spine2_Ethernet8/1
    redistribute connected route-map RM-CONN-2-BGP
    !
    vlan 11
@@ -810,6 +795,7 @@ router bgp 65102
       route-target import evpn 10:10
       route-target export evpn 10:10
       router-id 10.255.0.5
+      update wait-install
       neighbor 10.255.1.101 peer group MLAG-IPv4-UNDERLAY-PEER
       redistribute connected
    !
@@ -818,6 +804,7 @@ router bgp 65102
       route-target import evpn 11:11
       route-target export evpn 11:11
       router-id 10.255.0.5
+      update wait-install
       neighbor 10.255.1.101 peer group MLAG-IPv4-UNDERLAY-PEER
       redistribute connected
 ```

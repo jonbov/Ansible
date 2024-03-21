@@ -1,4 +1,4 @@
-# dc1-leaf4a
+# Leaf7
 
 ## Table of Contents
 
@@ -56,7 +56,7 @@
 
 | Management Interface | Description | Type | VRF | IP Address | Gateway |
 | -------------------- | ----------- | ---- | --- | ---------- | ------- |
-| Management1 | oob_management | oob | MGMT | 172.16.1.106/24 | 172.16.1.1 |
+| Management1 | oob_management | oob | MGMT | 10.14.34.240/24 | 10.14.34.1 |
 
 ##### IPv6
 
@@ -72,7 +72,7 @@ interface Management1
    description oob_management
    no shutdown
    vrf MGMT
-   ip address 172.16.1.106/24
+   ip address 10.14.34.240/24
 ```
 
 ### IP Name Servers
@@ -81,12 +81,12 @@ interface Management1
 
 | Name Server | VRF | Priority |
 | ----------- | --- | -------- |
-| 192.168.1.1 | MGMT | - |
+| 8.8.8.8 | MGMT | - |
 
 #### IP Name Servers Device Configuration
 
 ```eos
-ip name-server vrf MGMT 192.168.1.1
+ip name-server vrf MGMT 8.8.8.8
 ```
 
 ### NTP
@@ -166,14 +166,14 @@ username ansible privilege 15 role network-admin secret sha512 <removed>
 
 | CV Compression | CloudVision Servers | VRF | Authentication | Smash Excludes | Ingest Exclude | Bypass AAA |
 | -------------- | ------------------- | --- | -------------- | -------------- | -------------- | ---------- |
-| gzip | 192.168.1.12:9910 | MGMT | token,/tmp/token | ale,flexCounter,hardware,kni,pulse,strata | /Sysdb/cell/1/agent,/Sysdb/cell/2/agent | True |
+| gzip | 10.14.17.200:9910 | MGMT | token,/tmp/token | ale,flexCounter,hardware,kni,pulse,strata | /Sysdb/cell/1/agent,/Sysdb/cell/2/agent | True |
 
 #### TerminAttr Daemon Device Configuration
 
 ```eos
 !
 daemon TerminAttr
-   exec /usr/bin/TerminAttr -cvaddr=192.168.1.12:9910 -cvauth=token,/tmp/token -cvvrf=MGMT -disableaaa -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -taillogs
+   exec /usr/bin/TerminAttr -cvaddr=10.14.17.200:9910 -cvauth=token,/tmp/token -cvvrf=MGMT -disableaaa -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -taillogs
    no shutdown
 ```
 
@@ -265,22 +265,22 @@ vlan 3402
 
 | Interface | Description | Type | Channel Group | IP Address | VRF |  MTU | Shutdown | ACL In | ACL Out |
 | --------- | ----------- | -----| ------------- | ---------- | ----| ---- | -------- | ------ | ------- |
-| Ethernet1 | P2P_LINK_TO_DC1-SPINE1_Ethernet6 | routed | - | 10.255.255.21/31 | default | 1500 | False | - | - |
-| Ethernet2 | P2P_LINK_TO_DC1-SPINE2_Ethernet6 | routed | - | 10.255.255.23/31 | default | 1500 | False | - | - |
+| Ethernet49/1 | P2P_LINK_TO_SPINE1_Ethernet2 | routed | - | 10.255.255.21/31 | default | 1500 | False | - | - |
+| Ethernet51/1 | P2P_LINK_TO_SPINE2_Ethernet2 | routed | - | 10.255.255.23/31 | default | 1500 | False | - | - |
 
 #### Ethernet Interfaces Device Configuration
 
 ```eos
 !
-interface Ethernet1
-   description P2P_LINK_TO_DC1-SPINE1_Ethernet6
+interface Ethernet49/1
+   description P2P_LINK_TO_SPINE1_Ethernet2
    no shutdown
    mtu 1500
    no switchport
    ip address 10.255.255.21/31
 !
-interface Ethernet2
-   description P2P_LINK_TO_DC1-SPINE2_Ethernet6
+interface Ethernet51/1
+   description P2P_LINK_TO_SPINE2_Ethernet2
    no shutdown
    mtu 1500
    no switchport
@@ -417,7 +417,7 @@ interface Vlan22
 ```eos
 !
 interface Vxlan1
-   description dc1-leaf4a_VTEP
+   description Leaf7_VTEP
    vxlan source-interface Loopback1
    vxlan udp-port 4789
    vxlan vlan 11 vni 10011
@@ -492,13 +492,13 @@ ip routing vrf VRF11
 
 | VRF | Destination Prefix | Next Hop IP | Exit interface | Administrative Distance | Tag | Route Name | Metric |
 | --- | ------------------ | ----------- | -------------- | ----------------------- | --- | ---------- | ------ |
-| MGMT | 0.0.0.0/0 | 172.16.1.1 | - | 1 | - | - | - |
+| MGMT | 0.0.0.0/0 | 10.14.34.1 | - | 1 | - | - | - |
 
 #### Static Routes Device Configuration
 
 ```eos
 !
-ip route vrf MGMT 0.0.0.0/0 172.16.1.1
+ip route vrf MGMT 0.0.0.0/0 10.14.34.1
 ```
 
 ### Router BGP
@@ -511,6 +511,7 @@ ip route vrf MGMT 0.0.0.0/0 172.16.1.1
 
 | BGP Tuning |
 | ---------- |
+| update wait-install |
 | no bgp default ipv4-unicast |
 | maximum-paths 4 ecmp 4 |
 
@@ -577,6 +578,7 @@ ip route vrf MGMT 0.0.0.0/0 172.16.1.1
 router bgp 65104
    router-id 10.255.0.8
    maximum-paths 4 ecmp 4
+   update wait-install
    no bgp default ipv4-unicast
    neighbor EVPN-OVERLAY-PEERS peer group
    neighbor EVPN-OVERLAY-PEERS update-source Loopback0
@@ -591,16 +593,16 @@ router bgp 65104
    neighbor IPv4-UNDERLAY-PEERS maximum-routes 12000
    neighbor 10.255.0.1 peer group EVPN-OVERLAY-PEERS
    neighbor 10.255.0.1 remote-as 65100
-   neighbor 10.255.0.1 description dc1-spine1
+   neighbor 10.255.0.1 description Spine1
    neighbor 10.255.0.2 peer group EVPN-OVERLAY-PEERS
    neighbor 10.255.0.2 remote-as 65100
-   neighbor 10.255.0.2 description dc1-spine2
+   neighbor 10.255.0.2 description Spine2
    neighbor 10.255.255.20 peer group IPv4-UNDERLAY-PEERS
    neighbor 10.255.255.20 remote-as 65100
-   neighbor 10.255.255.20 description dc1-spine1_Ethernet6
+   neighbor 10.255.255.20 description Spine1_Ethernet2
    neighbor 10.255.255.22 peer group IPv4-UNDERLAY-PEERS
    neighbor 10.255.255.22 remote-as 65100
-   neighbor 10.255.255.22 description dc1-spine2_Ethernet6
+   neighbor 10.255.255.22 description Spine2_Ethernet2
    redistribute connected route-map RM-CONN-2-BGP
    !
    vlan 11

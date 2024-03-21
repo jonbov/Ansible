@@ -1,0 +1,2 @@
+[testgroup]
+testhost ansible_connection="local" ansible_pipelining="yes" ansible_python_interpreter="/home/carlbuchmann/git_projects/ansible-avd/ansible_collections/arista/avd/.tox/integration-py3.11-2.16/bin/python"
