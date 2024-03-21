@@ -55,7 +55,7 @@ default_interfaces:
   - types: [ spine ]
     platforms: [ default ]
     uplink_interfaces: [ Ethernet1-2 ]
-    downlink_interfaces: [ Ethernet1-8 ]
+    downlink_interfaces: [ Ethernet1-16 ]
   - types: [ l3leaf ]
     platforms: [ default ]
     uplink_interfaces: [ Ethernet1-2 ]

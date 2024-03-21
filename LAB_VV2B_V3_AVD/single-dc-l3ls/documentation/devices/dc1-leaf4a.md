@@ -265,8 +265,8 @@ vlan 3402
 
 | Interface | Description | Type | Channel Group | IP Address | VRF |  MTU | Shutdown | ACL In | ACL Out |
 | --------- | ----------- | -----| ------------- | ---------- | ----| ---- | -------- | ------ | ------- |
-| Ethernet1 | P2P_LINK_TO_DC1-SPINE1_Ethernet6 | routed | - | 10.255.255.17/31 | default | 1500 | False | - | - |
-| Ethernet2 | P2P_LINK_TO_DC1-SPINE2_Ethernet6 | routed | - | 10.255.255.19/31 | default | 1500 | False | - | - |
+| Ethernet1 | P2P_LINK_TO_DC1-SPINE1_Ethernet6 | routed | - | 10.255.255.21/31 | default | 1500 | False | - | - |
+| Ethernet2 | P2P_LINK_TO_DC1-SPINE2_Ethernet6 | routed | - | 10.255.255.23/31 | default | 1500 | False | - | - |
 
 #### Ethernet Interfaces Device Configuration
 
@@ -277,14 +277,14 @@ interface Ethernet1
    no shutdown
    mtu 1500
    no switchport
-   ip address 10.255.255.17/31
+   ip address 10.255.255.21/31
 !
 interface Ethernet2
    description P2P_LINK_TO_DC1-SPINE2_Ethernet6
    no shutdown
    mtu 1500
    no switchport
-   ip address 10.255.255.19/31
+   ip address 10.255.255.23/31
 ```
 
 ### Loopback Interfaces
@@ -295,10 +295,10 @@ interface Ethernet2
 
 | Interface | Description | VRF | IP Address |
 | --------- | ----------- | --- | ---------- |
-| Loopback0 | EVPN_Overlay_Peering | default | 10.255.0.7/32 |
-| Loopback1 | VTEP_VXLAN_Tunnel_Source | default | 10.255.1.7/32 |
-| Loopback10 | VRF10_VTEP_DIAGNOSTICS | VRF10 | 10.255.10.7/32 |
-| Loopback11 | VRF11_VTEP_DIAGNOSTICS | VRF11 | 10.255.11.7/32 |
+| Loopback0 | EVPN_Overlay_Peering | default | 10.255.0.8/32 |
+| Loopback1 | VTEP_VXLAN_Tunnel_Source | default | 10.255.1.8/32 |
+| Loopback10 | VRF10_VTEP_DIAGNOSTICS | VRF10 | 10.255.10.8/32 |
+| Loopback11 | VRF11_VTEP_DIAGNOSTICS | VRF11 | 10.255.11.8/32 |
 
 ##### IPv6
 
@@ -316,24 +316,24 @@ interface Ethernet2
 interface Loopback0
    description EVPN_Overlay_Peering
    no shutdown
-   ip address 10.255.0.7/32
+   ip address 10.255.0.8/32
 !
 interface Loopback1
    description VTEP_VXLAN_Tunnel_Source
    no shutdown
-   ip address 10.255.1.7/32
+   ip address 10.255.1.8/32
 !
 interface Loopback10
    description VRF10_VTEP_DIAGNOSTICS
    no shutdown
    vrf VRF10
-   ip address 10.255.10.7/32
+   ip address 10.255.10.8/32
 !
 interface Loopback11
    description VRF11_VTEP_DIAGNOSTICS
    no shutdown
    vrf VRF11
-   ip address 10.255.11.7/32
+   ip address 10.255.11.8/32
 ```
 
 ### VLAN Interfaces
@@ -507,7 +507,7 @@ ip route vrf MGMT 0.0.0.0/0 172.16.1.1
 
 | BGP AS | Router ID |
 | ------ | --------- |
-| 65104 | 10.255.0.7 |
+| 65104 | 10.255.0.8 |
 
 | BGP Tuning |
 | ---------- |
@@ -541,8 +541,8 @@ ip route vrf MGMT 0.0.0.0/0 172.16.1.1
 | -------- | --------- | --- | -------- | -------------- | -------------- | ---------- | --- | --------------------- | ---------------------- | ------- | ------------ |
 | 10.255.0.1 | 65100 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
 | 10.255.0.2 | 65100 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
-| 10.255.255.16 | 65100 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.18 | 65100 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.20 | 65100 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.22 | 65100 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 
 #### Router BGP EVPN Address Family
 
@@ -556,26 +556,26 @@ ip route vrf MGMT 0.0.0.0/0 172.16.1.1
 
 | VLAN | Route-Distinguisher | Both Route-Target | Import Route Target | Export Route-Target | Redistribute |
 | ---- | ------------------- | ----------------- | ------------------- | ------------------- | ------------ |
-| 11 | 10.255.0.7:10011 | 10011:10011 | - | - | learned |
-| 12 | 10.255.0.7:10012 | 10012:10012 | - | - | learned |
-| 21 | 10.255.0.7:10021 | 10021:10021 | - | - | learned |
-| 22 | 10.255.0.7:10022 | 10022:10022 | - | - | learned |
-| 3401 | 10.255.0.7:13401 | 13401:13401 | - | - | learned |
-| 3402 | 10.255.0.7:13402 | 13402:13402 | - | - | learned |
+| 11 | 10.255.0.8:10011 | 10011:10011 | - | - | learned |
+| 12 | 10.255.0.8:10012 | 10012:10012 | - | - | learned |
+| 21 | 10.255.0.8:10021 | 10021:10021 | - | - | learned |
+| 22 | 10.255.0.8:10022 | 10022:10022 | - | - | learned |
+| 3401 | 10.255.0.8:13401 | 13401:13401 | - | - | learned |
+| 3402 | 10.255.0.8:13402 | 13402:13402 | - | - | learned |
 
 #### Router BGP VRFs
 
 | VRF | Route-Distinguisher | Redistribute |
 | --- | ------------------- | ------------ |
-| VRF10 | 10.255.0.7:10 | connected |
-| VRF11 | 10.255.0.7:11 | connected |
+| VRF10 | 10.255.0.8:10 | connected |
+| VRF11 | 10.255.0.8:11 | connected |
 
 #### Router BGP Device Configuration
 
 ```eos
 !
 router bgp 65104
-   router-id 10.255.0.7
+   router-id 10.255.0.8
    maximum-paths 4 ecmp 4
    no bgp default ipv4-unicast
    neighbor EVPN-OVERLAY-PEERS peer group
@@ -595,41 +595,41 @@ router bgp 65104
    neighbor 10.255.0.2 peer group EVPN-OVERLAY-PEERS
    neighbor 10.255.0.2 remote-as 65100
    neighbor 10.255.0.2 description dc1-spine2
-   neighbor 10.255.255.16 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.16 remote-as 65100
-   neighbor 10.255.255.16 description dc1-spine1_Ethernet6
-   neighbor 10.255.255.18 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.18 remote-as 65100
-   neighbor 10.255.255.18 description dc1-spine2_Ethernet6
+   neighbor 10.255.255.20 peer group IPv4-UNDERLAY-PEERS
+   neighbor 10.255.255.20 remote-as 65100
+   neighbor 10.255.255.20 description dc1-spine1_Ethernet6
+   neighbor 10.255.255.22 peer group IPv4-UNDERLAY-PEERS
+   neighbor 10.255.255.22 remote-as 65100
+   neighbor 10.255.255.22 description dc1-spine2_Ethernet6
    redistribute connected route-map RM-CONN-2-BGP
    !
    vlan 11
-      rd 10.255.0.7:10011
+      rd 10.255.0.8:10011
       route-target both 10011:10011
       redistribute learned
    !
    vlan 12
-      rd 10.255.0.7:10012
+      rd 10.255.0.8:10012
       route-target both 10012:10012
       redistribute learned
    !
    vlan 21
-      rd 10.255.0.7:10021
+      rd 10.255.0.8:10021
       route-target both 10021:10021
       redistribute learned
    !
    vlan 22
-      rd 10.255.0.7:10022
+      rd 10.255.0.8:10022
       route-target both 10022:10022
       redistribute learned
    !
    vlan 3401
-      rd 10.255.0.7:13401
+      rd 10.255.0.8:13401
       route-target both 13401:13401
       redistribute learned
    !
    vlan 3402
-      rd 10.255.0.7:13402
+      rd 10.255.0.8:13402
       route-target both 13402:13402
       redistribute learned
    !
@@ -641,17 +641,17 @@ router bgp 65104
       neighbor IPv4-UNDERLAY-PEERS activate
    !
    vrf VRF10
-      rd 10.255.0.7:10
+      rd 10.255.0.8:10
       route-target import evpn 10:10
       route-target export evpn 10:10
-      router-id 10.255.0.7
+      router-id 10.255.0.8
       redistribute connected
    !
    vrf VRF11
-      rd 10.255.0.7:11
+      rd 10.255.0.8:11
       route-target import evpn 11:11
       route-target export evpn 11:11
-      router-id 10.255.0.7
+      router-id 10.255.0.8
       redistribute connected
 ```
 
@@ -755,13 +755,13 @@ vrf instance VRF11
 
 | Source NAT VRF | Source NAT IP Address |
 | -------------- | --------------------- |
-| VRF10 | 10.255.10.7 |
-| VRF11 | 10.255.11.7 |
+| VRF10 | 10.255.10.8 |
+| VRF11 | 10.255.11.8 |
 
 ### Virtual Source NAT Configuration
 
 ```eos
 !
-ip address virtual source-nat vrf VRF10 address 10.255.10.7
-ip address virtual source-nat vrf VRF11 address 10.255.11.7
+ip address virtual source-nat vrf VRF10 address 10.255.10.8
+ip address virtual source-nat vrf VRF11 address 10.255.11.8
 ```

@@ -60,18 +60,30 @@
 
 | Uplink IPv4 Pool | Available Addresses | Assigned addresses | Assigned Address % |
 | ---------------- | ------------------- | ------------------ | ------------------ |
-| 10.255.255.0/26 | 64 | 12 | 18.75 % |
+| 10.255.255.0/26 | 64 | 24 | 37.5 % |
 
 ### Point-To-Point Links Node Allocation
 
 | Node | Node Interface | Node IP Address | Peer Node | Peer Interface | Peer IP Address |
 | ---- | -------------- | --------------- | --------- | -------------- | --------------- |
+| dc1-leaf1a | Ethernet1 | 10.255.255.1/31 | dc1-spine1 | Ethernet1 | 10.255.255.0/31 |
+| dc1-leaf1a | Ethernet2 | 10.255.255.3/31 | dc1-spine2 | Ethernet1 | 10.255.255.2/31 |
+| dc1-leaf1b | Ethernet1 | 10.255.255.5/31 | dc1-spine1 | Ethernet2 | 10.255.255.4/31 |
+| dc1-leaf1b | Ethernet2 | 10.255.255.7/31 | dc1-spine2 | Ethernet2 | 10.255.255.6/31 |
+| dc1-leaf2a | Ethernet1 | 10.255.255.9/31 | dc1-spine1 | Ethernet3 | 10.255.255.8/31 |
+| dc1-leaf2a | Ethernet2 | 10.255.255.11/31 | dc1-spine2 | Ethernet3 | 10.255.255.10/31 |
+| dc1-leaf2b | Ethernet1 | 10.255.255.13/31 | dc1-spine1 | Ethernet4 | 10.255.255.12/31 |
+| dc1-leaf2b | Ethernet2 | 10.255.255.15/31 | dc1-spine2 | Ethernet4 | 10.255.255.14/31 |
+| dc1-leaf3a | Ethernet1 | 10.255.255.17/31 | dc1-spine1 | Ethernet5 | 10.255.255.16/31 |
+| dc1-leaf3a | Ethernet2 | 10.255.255.19/31 | dc1-spine2 | Ethernet5 | 10.255.255.18/31 |
+| dc1-leaf4a | Ethernet1 | 10.255.255.21/31 | dc1-spine1 | Ethernet6 | 10.255.255.20/31 |
+| dc1-leaf4a | Ethernet2 | 10.255.255.23/31 | dc1-spine2 | Ethernet6 | 10.255.255.22/31 |
 
 ### Loopback Interfaces (BGP EVPN Peering)
 
 | Loopback Pool | Available Addresses | Assigned addresses | Assigned Address % |
 | ------------- | ------------------- | ------------------ | ------------------ |
-| 10.255.0.0/27 | 32 | 6 | 18.75 % |
+| 10.255.0.0/27 | 32 | 8 | 25.0 % |
 
 ### Loopback0 Interfaces Node Allocation
 
@@ -82,7 +94,9 @@
 | FABRIC | dc1-leaf2a | 10.255.0.5/32 |
 | FABRIC | dc1-leaf2b | 10.255.0.6/32 |
 | FABRIC | dc1-leaf3a | 10.255.0.7/32 |
-| FABRIC | dc1-leaf4a | 10.255.0.7/32 |
+| FABRIC | dc1-leaf4a | 10.255.0.8/32 |
+| FABRIC | dc1-spine1 | 10.255.0.1/32 |
+| FABRIC | dc1-spine2 | 10.255.0.2/32 |
 
 ### VTEP Loopback VXLAN Tunnel Source Interfaces (VTEPs Only)
 
@@ -99,4 +113,4 @@
 | FABRIC | dc1-leaf2a | 10.255.1.5/32 |
 | FABRIC | dc1-leaf2b | 10.255.1.5/32 |
 | FABRIC | dc1-leaf3a | 10.255.1.7/32 |
-| FABRIC | dc1-leaf4a | 10.255.1.7/32 |
+| FABRIC | dc1-leaf4a | 10.255.1.8/32 |

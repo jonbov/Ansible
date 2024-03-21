@@ -2,7 +2,7 @@ hostname: dc1-leaf4a
 is_deployed: true
 router_bgp:
   as: '65104'
-  router_id: 10.255.0.7
+  router_id: 10.255.0.8
   bgp:
     default:
       ipv4_unicast: false
@@ -33,12 +33,12 @@ router_bgp:
   - source_protocol: connected
     route_map: RM-CONN-2-BGP
   neighbors:
-  - ip_address: 10.255.255.16
+  - ip_address: 10.255.255.20
     peer_group: IPv4-UNDERLAY-PEERS
     remote_as: '65100'
     peer: dc1-spine1
     description: dc1-spine1_Ethernet6
-  - ip_address: 10.255.255.18
+  - ip_address: 10.255.255.22
     peer_group: IPv4-UNDERLAY-PEERS
     remote_as: '65100'
     peer: dc1-spine2
@@ -59,8 +59,8 @@ router_bgp:
       activate: true
   vrfs:
   - name: VRF10
-    router_id: 10.255.0.7
-    rd: 10.255.0.7:10
+    router_id: 10.255.0.8
+    rd: 10.255.0.8:10
     route_targets:
       import:
       - address_family: evpn
@@ -73,8 +73,8 @@ router_bgp:
     redistribute_routes:
     - source_protocol: connected
   - name: VRF11
-    router_id: 10.255.0.7
-    rd: 10.255.0.7:11
+    router_id: 10.255.0.8
+    rd: 10.255.0.8:11
     route_targets:
       import:
       - address_family: evpn
@@ -89,7 +89,7 @@ router_bgp:
   vlans:
   - id: 11
     tenant: TENANT1
-    rd: 10.255.0.7:10011
+    rd: 10.255.0.8:10011
     route_targets:
       both:
       - 10011:10011
@@ -97,7 +97,7 @@ router_bgp:
     - learned
   - id: 12
     tenant: TENANT1
-    rd: 10.255.0.7:10012
+    rd: 10.255.0.8:10012
     route_targets:
       both:
       - 10012:10012
@@ -105,7 +105,7 @@ router_bgp:
     - learned
   - id: 21
     tenant: TENANT1
-    rd: 10.255.0.7:10021
+    rd: 10.255.0.8:10021
     route_targets:
       both:
       - 10021:10021
@@ -113,7 +113,7 @@ router_bgp:
     - learned
   - id: 22
     tenant: TENANT1
-    rd: 10.255.0.7:10022
+    rd: 10.255.0.8:10022
     route_targets:
       both:
       - 10022:10022
@@ -121,7 +121,7 @@ router_bgp:
     - learned
   - id: 3401
     tenant: TENANT1
-    rd: 10.255.0.7:13401
+    rd: 10.255.0.8:13401
     route_targets:
       both:
       - 13401:13401
@@ -129,7 +129,7 @@ router_bgp:
     - learned
   - id: 3402
     tenant: TENANT1
-    rd: 10.255.0.7:13402
+    rd: 10.255.0.8:13402
     route_targets:
       both:
       - 13402:13402
@@ -211,7 +211,7 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   type: routed
-  ip_address: 10.255.255.17/31
+  ip_address: 10.255.255.21/31
 - name: Ethernet2
   peer: dc1-spine2
   peer_interface: Ethernet6
@@ -220,26 +220,26 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   type: routed
-  ip_address: 10.255.255.19/31
+  ip_address: 10.255.255.23/31
 loopback_interfaces:
 - name: Loopback0
   description: EVPN_Overlay_Peering
   shutdown: false
-  ip_address: 10.255.0.7/32
+  ip_address: 10.255.0.8/32
 - name: Loopback1
   description: VTEP_VXLAN_Tunnel_Source
   shutdown: false
-  ip_address: 10.255.1.7/32
+  ip_address: 10.255.1.8/32
 - name: Loopback10
   description: VRF10_VTEP_DIAGNOSTICS
   shutdown: false
   vrf: VRF10
-  ip_address: 10.255.10.7/32
+  ip_address: 10.255.10.8/32
 - name: Loopback11
   description: VRF11_VTEP_DIAGNOSTICS
   shutdown: false
   vrf: VRF11
-  ip_address: 10.255.11.7/32
+  ip_address: 10.255.11.8/32
 prefix_lists:
 - name: PL-LOOPBACKS-EVPN-OVERLAY
   sequence_numbers:
@@ -332,8 +332,8 @@ vxlan_interface:
         vni: 11
 virtual_source_nat_vrfs:
 - name: VRF10
-  ip_address: 10.255.10.7
+  ip_address: 10.255.10.8
 - name: VRF11
-  ip_address: 10.255.11.7
+  ip_address: 10.255.11.8
 metadata:
   platform: vEOS-lab

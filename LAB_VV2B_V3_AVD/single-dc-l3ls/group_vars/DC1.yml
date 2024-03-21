@@ -108,7 +108,7 @@ l3leaf:
       bgp_as: 65104
       nodes:
         - name: dc1-leaf4a
-          id: 5
+          id: 6
           mgmt_ip: 172.16.1.106/24
           uplink_switch_interfaces:
             - Ethernet6
