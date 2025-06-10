@@ -16,6 +16,8 @@
     ASN: 65200
     peers:
       - 10.0.10.237
+      - 10.0.10.238
+      - 10.0.10.239
     router-id: 10.0.10.236
   interfaces:
     system: 
@@ -43,6 +45,8 @@
     ASN: 65200
     peers:
       - 10.0.10.236
+      - 10.0.10.238
+      - 10.0.10.239
     router-id: 10.0.10.237
   interfaces:
     system: 
