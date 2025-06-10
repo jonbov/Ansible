@@ -1,11 +1,15 @@
 ---
 - hosts: 10.0.10.236
   gather_facts: no
-  connection: ansible.netcommon.network_cli ansible_user=admin ansible_password=admin ansible_network_os=nokia.sros
+  connection: ansible.netcommon.network_cli ansible_user=admin ansible_password=admin 
   
   tasks:
   - name: push config
-    eos_config:
-      src: "{{lookup('env','PWD')}}/configs/10.0.10.236_router.cfg"
-  
-      
+    ansible.netcommon.cli_command:
+      command:
+        - show system time
+    register: sys_vars
+
+  - name: Debug
+    debug:
+      vars: sys_vars
