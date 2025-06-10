@@ -5,8 +5,8 @@ configure
   card 1
     card-type iom-sar   
 {% for item in underlay[inventory_hostname]['mda'] %}
-    mda {{ underlay[inventory_hostname]['mda'][mda_id]}}     
-        mda {{ underlay[inventory_hostname]['mda'][mda_type]}}                  
+    mda {{ underlay[inventory_hostname]['mda']['item'][mda_id]}}     
+        mda {{ underlay[inventory_hostname]['mda']['item'][mda_type]}}                  
         no shutdown               
     exit
 {% endfor %}
