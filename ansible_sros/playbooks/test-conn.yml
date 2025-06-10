@@ -1,0 +1,11 @@
+---
+- hosts: 10.0.10.236
+  gather_facts: no
+  connection: ansible.netcommon.network_cli ansible_user=admin ansible_password=admin ansible_network_os=nokia.sros
+  
+  tasks:
+  - name: push config
+    eos_config:
+      src: "{{lookup('env','PWD')}}/configs/10.0.10.236_router.cfg"
+  
+      

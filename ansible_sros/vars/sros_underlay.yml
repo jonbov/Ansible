@@ -1,0 +1,39 @@
+10.0.10.236:
+  isis:
+    area_id: '10.0144'
+    system_id: 0100.0001.0236
+  ospf:
+    area: 0.0.0.0
+  BGP: 
+    ASN: 65200
+    peers:
+      - 10.0.10.237
+    router-id: 10.0.10.236
+  interfaces:
+    system: 
+      ipv4: 10.0.10.236
+      mask: 32
+    To-SAR-8-237: 
+      ipv4: 10.14.132.1
+      mask: 30
+      port: '1/1/3'
+10.0.10.237:
+  isis:
+    area_id: '10.0144'
+    system_id: 0100.0001.0237
+  ospf:
+    area: 0.0.0.0
+  BGP: 
+    ASN: 65200
+    peers:
+      - 10.0.10.236
+    router-id: 10.0.10.237
+  interfaces:
+    system: 
+      ipv4: 10.0.10.237
+      mask: 32
+    To-SAR-8-236: 
+      ipv4: 10.14.132.2
+      mask: 30
+      port: '1/1/3'
+
