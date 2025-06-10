@@ -1,0 +1,13 @@
+#--------------------------------------------------
+echo "Card Configuration"
+#--------------------------------------------------
+configure
+  card 1
+    card-type iom-sar   
+{% for item in underlay[inventory_hostname]['mda'] %}
+    mda {{ underlay[inventory_hostname]['mda'][mda_id]}}     
+        mda {{ underlay[inventory_hostname]['mda'][mda_type]}}                  
+        no shutdown               
+    exit
+{% endfor %}
+  exit all
