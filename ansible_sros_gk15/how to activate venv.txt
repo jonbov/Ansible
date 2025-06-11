@@ -1,1 +1,7 @@
 source .venv/bin/activate
+
+ource gk15/bin/activate
+
+(gk15) jonbov@ansible:~/ansible_sros_gk15$ deactivate
+jonbov@ansible:~/ansible_sros_gk15$ source gk15/bin/activate
+(gk15) jonbov@ansible:~/ansible_sros_gk15$
