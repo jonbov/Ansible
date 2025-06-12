@@ -1,5 +1,5 @@
 ---
-- hosts: sar8
+- hosts: sar8,sarhc
   vars:
     ansible_network_os: nokia.sros.light
 #  vars_prompt:
@@ -22,8 +22,8 @@
     cli_config:
       config: |
         configure system
-        contact nobody
-        location berlin
+        contact jonbov
+        location "LAB VV2B"
         exit all
 
   - name: backup
