@@ -1,7 +1,7 @@
 ---
 - hosts: sar8
-#  vars:
-#    ansible_network_os: nokia.sros.light
+  vars:
+    ansible_network_os: nokia.sros.light
 #  vars_prompt:
 #    - name: admin
 #      prompt: "Username"
@@ -10,6 +10,9 @@
 #      prompt: "Password"
 #  connection: network_cli
   gather_facts: No
+  #vars:
+  #  vars_file: sros_gk15_routing.yml
+  #  vars_file: sros_nnlab_routing.yml
 
   collections:
   - nokia.sros
