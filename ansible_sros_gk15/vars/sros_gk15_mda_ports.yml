@@ -1,0 +1,182 @@
+10.0.10.236:
+ card1:
+    mda1:
+      mda_id: 1
+      mda_type: a8-1gb-v3-sfp 
+        port1:
+          port_id: 1
+          description: "To SAR-Hc-244 - 1/1/4"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+        port2:
+          port_id: 2
+          description: "1/1/2"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+        port3:
+          port_id: 3
+          description: "1/1/3"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+        port4:
+          port_id: 4
+          description: "1/1/4"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+        port5:
+          port_id: 5
+          description: "1/1/5"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+        port6:
+          port_id: 6
+          description: "1/1/6"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+        port7:
+          port_id: 7
+          description: "1/1/7"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+        port8:
+          port_id: 8
+          description: "1/1/8"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+    mda6:
+      mda_id: 6
+      mda_type: mda-type a8-vt
+      ports:
+        port1: 
+          port_id: 1
+          description: "C37.94 64k to SAR-8-242"
+          channel-group: 1
+          encap-type: cem                            
+        port2:
+          port_id: 2                       
+          description: "C37.94"          
+          channel-group: 1
+          encap-type: cem          
+10.0.10.237:
+  mda:
+    mda1:
+      mda_id: 1
+      mda_type: a8-1gb-v3-sfp
+        port1:
+          port_id: 1
+          description: "To SAR-Hc-244 - 1/1/4"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+        port2:
+          port_id: 2
+          description: "1/1/2"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+        port3:
+          port_id: 3
+          description: "1/1/3"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+        port4:
+          port_id: 4
+          description: "1/1/4"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+        port5:
+          port_id: 5
+          description: "1/1/5"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+        port6:
+          port_id: 6
+          description: "1/1/6"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+        port7:
+          port_id: 7
+          description: "1/1/7"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+        port8:
+          port_id: 8
+          description: "1/1/8"
+          mode: hybrid
+          encap-type: dot1q
+          mtu: 2000
+          lldp_admin_status: tx-rx
+          hold_time_up: 2
+          ssm: enable
+    mda6:
+      mda_id: 6
+      mda_type: mda-type a8-vt
+      ports:
+        port1: 
+          port_id: 1
+          description: "C37.94 64k to SAR-8-242"
+          channel-group: 1
+          encap-type: cem                            
+        port2:
+          port_id: 2                       
+          description: "C37.94"          
+          channel-group: 1
+          encap-type: cem  

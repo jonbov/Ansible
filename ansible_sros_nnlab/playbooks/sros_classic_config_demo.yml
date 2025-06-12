@@ -1,5 +1,5 @@
 ---
-- hosts: sar8,sarhc
+- hosts: sros
   vars:
     ansible_network_os: nokia.sros.light
 #  vars_prompt:
