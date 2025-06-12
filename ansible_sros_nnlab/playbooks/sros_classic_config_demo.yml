@@ -1,0 +1,31 @@
+---
+- hosts: sar8
+#  vars:
+#    ansible_network_os: nokia.sros.light
+#  vars_prompt:
+#    - name: admin
+#      prompt: "Username"
+#      private: no
+#    - name: admin
+#      prompt: "Password"
+#  connection: network_cli
+  gather_facts: No
+
+  collections:
+  - nokia.sros
+
+  tasks:
+  - name: do some config
+    cli_config:
+      config: |
+        configure system
+        contact nobody
+        location berlin
+        exit all
+
+  - name: backup
+    cli_config:
+      backup: yes
+      backup_options:
+        filename: "{{ inventory_hostname }}.cfg"
+        dir_path: /tmp
