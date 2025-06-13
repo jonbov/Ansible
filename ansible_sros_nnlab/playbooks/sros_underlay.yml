@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: sros
   gather_facts: no
 
   vars:
