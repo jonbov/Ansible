@@ -11,11 +11,11 @@
     include_vars:
       file: "{{lookup('env','PWD')}}/vars/{{vars_file}}"
       name: underlay
-      run_once: true
+  #    run_once: true
   - name: Test all variables
     debug:
       msg: "{{ underlay }}"
-      run_once: true
+  #    run_once: true
   - name: Create router underlay configuration file
     template:
       src: "{{lookup('env','PWD')}}/templates/sros_underlay.j2"
