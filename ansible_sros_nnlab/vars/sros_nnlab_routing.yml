@@ -1,47 +1,40 @@
 10.14.34.200:
   name: SAR-8-200
   cards:
-    card_id: 1
-    mda:
-      mda1:
-        mda_id: 1
-        mda_type: a8-1gb-v3-sfp
-        ports:
-          port1:
-            port_id: 1
-            mode: hybrid
-            encap: dot1q
-          port2:
-            port_id: 2
-            mode: hybrid
-            encap: dot1q    
-          port3:
-            port_id: 3
-            mode: hybrid
-            encap: dot1q
-          port4:
-            port_id: 4
-            mode: hybrid
-            encap: dot1q
-          port5:
-            port_id: 5
-            mode: hybrid
-            encap: dot1q
-          port6:
-            port_id: 6
-            mode: hybrid
-            encap: dot1q    
-          port7:
-            port_id: 7
-            mode: hybrid
-            encap: dot1q
-          port8:
-            port_id: 8
-            mode: hybrid
-            encap: dot1q                    
-      mda6:
-        mda_id: 6
-        mda_type: mda-type a8-vt
+    - 1: 1
+      card_id: 1
+      mdas:
+        - 1: 
+          mda_id: 1
+          mda_type: a8-1gb-v3-sfp
+          ports:
+            - 1:
+              mode: hybrid
+              encap: dot1q
+            - 2:
+              mode: hybrid
+              encap: dot1q    
+            - 3:
+              mode: hybrid
+              encap: dot1q
+            - 4:
+              mode: hybrid
+              encap: dot1q
+            - 5:
+              mode: hybrid
+              encap: dot1q
+            - 6:
+              mode: hybrid
+              encap: dot1q    
+            - 7:
+              mode: hybrid
+              encap: dot1q
+            - 8:
+              mode: hybrid
+              encap: dot1q                    
+        - 6:
+          mda_id: 6
+          mda_type: mda-type a8-vt
   isis:
     area_id: '10.0144'
     system_id: 0100.1413.2200

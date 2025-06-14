@@ -7,28 +7,36 @@
         mda_id: 1
         mda_type: a8-1gb-v3-sfp
         ports:
-          port_id: 1
+          port1:
+            port_id: 1
             mode: hybrid
             encap: dot1q
-          port_id: 2
+          port2:
+            port_id: 2
             mode: hybrid
             encap: dot1q    
-          port_id: 3
+          port3:
+            port_id: 3
             mode: hybrid
             encap: dot1q
-          port_id: 4
+          port4:
+            port_id: 4
             mode: hybrid
             encap: dot1q
-          port_id: 5
+          port5:
+            port_id: 5
             mode: hybrid
             encap: dot1q
-          port_id: 6
+          port6:
+            port_id: 6
             mode: hybrid
             encap: dot1q    
-          port_id: 7
+          port7:
+            port_id: 7
             mode: hybrid
             encap: dot1q
-          port_id: 8
+          port8:
+            port_id: 8
             mode: hybrid
             encap: dot1q                    
       mda6:
@@ -69,28 +77,36 @@
         mda_id: 1
         mda_type: a8-1gb-v3-sfp
         ports:
-          port_id: 1
+          port1:
+            port_id: 1
             mode: hybrid
             encap: dot1q
-          port_id: 2
+          port2:
+            port_id: 2
             mode: hybrid
             encap: dot1q    
-          port_id: 3
+          port3:
+            port_id: 3
             mode: hybrid
             encap: dot1q
-          port_id: 4
+          port4:
+            port_id: 4
             mode: hybrid
             encap: dot1q
-          port_id: 5
+          port5:
+            port_id: 5
             mode: hybrid
             encap: dot1q
-          port_id: 6
+          port6:
+            port_id: 6
             mode: hybrid
             encap: dot1q    
-          port_id: 7
+          port7:
+            port_id: 7
             mode: hybrid
             encap: dot1q
-          port_id: 8
+          port8:
+            port_id: 8
             mode: hybrid
             encap: dot1q                    
       mda6:
@@ -146,22 +162,28 @@
         mda_id: 1
         mda_type: i6-1gb
         ports:
-          port_id: 1
+          port1:
+            port_id: 1
             mode: hybrid
             encap: dot1q
-          port_id: 2
+          port2:
+            port_id: 2
             mode: hybrid
             encap: dot1q    
-          port_id: 3
+          port3:
+            port_id: 3
             mode: hybrid
             encap: dot1q
-          port_id: 4
+          port4:
+            port_id: 4
             mode: hybrid
             encap: dot1q
-          port_id: 5
+          port5:
+            port_id: 5
             mode: hybrid
             encap: dot1q
-          port_id: 6
+          port6:
+            port_id: 6
             mode: hybrid
             encap: dot1q
   isis:
@@ -195,7 +217,7 @@
       mask: 30
       port: '1/1/4:0'
       description: xxx  
-10.14.132.209:
+10.14.34.209:
   name: SAR-Hc-209
   cards:
     card_id: 1
@@ -204,22 +226,28 @@
         mda_id: 1
         mda_type: i6-1gb
         ports:
-          port_id: 1
+          port1:
+            port_id: 1
             mode: hybrid
             encap: dot1q
-          port_id: 2
+          port2:
+            port_id: 2
             mode: hybrid
             encap: dot1q    
-          port_id: 3
+          port3:
+            port_id: 3
             mode: hybrid
             encap: dot1q
-          port_id: 4
+          port4:
+            port_id: 4
             mode: hybrid
             encap: dot1q
-          port_id: 5
+          port5:
+            port_id: 5
             mode: hybrid
             encap: dot1q
-          port_id: 6
+          port6:
+            port_id: 6
             mode: hybrid
             encap: dot1q
   isis:

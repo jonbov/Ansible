@@ -2,12 +2,13 @@
 echo "Card Configuration"
 #--------------------------------------------------
 configure
-  card 1
-    card-type iom-sar   
-{% for item in underlay[inventory_hostname]['mda'] %}
-    mda {{ underlay[inventory_hostname]['mda']['item'][mda_id]}}     
-        mda {{ underlay[inventory_hostname]['mda']['item'][mda_type]}}                  
-        no shutdown               
-    exit
+{% set loop1 = underlay[inventory_hostname]['cards'] %}
+{% for card in loop1 %}
+  card {{ card.card_id }}
+    card-type iom-sar
+    no shutdown   
+    {% set loop2 = card %}
+    loop2 = {{ loop2 }}
+
 {% endfor %}
   exit all
