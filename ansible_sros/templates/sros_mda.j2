@@ -12,6 +12,7 @@ configure
     mda {{ loop2[mda].mda_id }}
        mda-type {{ loop2[mda].mda_type }}
        no shutdown
+       exit
 {% endfor %}
 {% endfor %}
   exit all
