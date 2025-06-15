@@ -1,0 +1,9 @@
+#--------------------------------------------------
+echo "intf Configuration"
+#--------------------------------------------------
+{% set loop1 = underlay[inventory_hostname]['eth_interfaces'] %}
+{% for intf in loop1 -%}
+interface {{ intf }}
+ description {{ loop1[intf].description }}
+ ip address {{ loop1[intf].ipv4_address }}
+{% endfor %}

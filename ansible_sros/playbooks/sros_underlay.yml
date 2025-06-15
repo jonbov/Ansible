@@ -1,21 +1,21 @@
 ---
-- hosts: all
+- hosts: sros
   gather_facts: no
 
   vars:
-    vars_file: sros_gk15_routing.yml
-  #  vars_file: sros_nnlab_routing.yml
+  #  vars_file: sros_gk15_routing.yml
+    vars_file: sros_nnlab_routing.yml
   
   tasks:
   - name: Register variables
     include_vars:
       file: "{{lookup('env','PWD')}}/vars/{{vars_file}}"
       name: underlay
-      run_once: true
+  #    run_once: true
   - name: Test all variables
     debug:
       msg: "{{ underlay }}"
-      run_once: true
+  #    run_once: true
   - name: Create router underlay configuration file
     template:
       src: "{{lookup('env','PWD')}}/templates/sros_underlay.j2"
@@ -28,4 +28,8 @@
     template:
       src: "{{lookup('env','PWD')}}/templates/sros_mda.j2"
       dest: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_mda.cfg"
-      
+  - name: Create configuration file for ports
+    template:
+      src: "{{lookup('env','PWD')}}/templates/sros_port.j2"
+      dest: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_port.cfg"
+

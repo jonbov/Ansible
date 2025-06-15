@@ -1,0 +1,31 @@
+#--------------------------------------------------
+echo "Port Configuration"
+#--------------------------------------------------
+configure
+{% set loop1 = underlay[inventory_hostname]['ports'] %}
+{% for ports in loop1 %}
+  port {{ ports }}
+    shutdown   
+    ethernet
+       mode {{ loop1[ports].mode }}
+       encap {{ loop1[ports].encap }}
+       mtu 9212
+{% if loop1[ports].lldp is defined %}
+{% if loop1[ports].lldp == "enable" %}
+        lldp
+            dest-mac nearest-bridge
+                admin-status tx-rx
+                notification
+                tx-tlvs port-desc sys-name sys-desc sys-cap
+            exit
+        exit
+{% endif %}
+{% endif %}
+       hold-time up 2
+    ssm
+        no shutdown
+        exit
+    no shutdown
+    exit
+{% endfor %}
+  exit all

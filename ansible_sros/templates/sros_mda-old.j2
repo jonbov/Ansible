@@ -7,8 +7,12 @@ configure
   card {{ card.card_id }}
     card-type iom-sar
     no shutdown   
-    {% set loop2 = card %}
-    loop2 = {{ loop2 }}
-
+{% set loop2 = card.mdas %}
+{% for mda in loop2 %}
+    mda {{ mda.mda_id }}
+       mda-type {{ mda.mda_type }}
+       no shutdown
+{% endfor %}
 {% endfor %}
   exit all
+

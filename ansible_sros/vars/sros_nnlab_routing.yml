@@ -1,0 +1,449 @@
+10.14.34.200:
+  name: SAR-8-200
+  cards:
+    1: 
+      card_id: 1
+      card_type: iom-sar
+      mdas:
+        1: 
+          mda_id: 1
+          mda_type: a8-1gb-v3-sfp
+        6:
+          mda_id: 6
+          mda_type: a8-vt
+  ports:
+    1/1/1: 
+      port_id: 1/1/1
+      mode: hybrid
+      encap: dot1q
+      lldp: enable
+    1/1/2: 
+      port_id: 1/1/2
+      mode: hybrid
+      encap: dot1q   
+      lldp: disable 
+    1/1/3:
+      port_id: 3
+      mode: hybrid
+      encap: dot1q
+    1/1/4:
+      port_id: 4
+      mode: hybrid
+      encap: dot1q
+    1/1/5:
+      port_id: 5
+      mode: hybrid
+      encap: dot1q
+    1/1/6:
+      port_id: 6
+      mode: hybrid
+      encap: dot1q    
+    1/1/7:
+      port_id: 7
+      mode: hybrid
+      encap: dot1q
+    1/1/8:
+      port_id: 8
+      mode: hybrid
+      encap: dot1q                    
+  isis:
+    area_id: '10.0144'
+    system_id: 0100.1413.2200
+  ospf:
+    area: 0.0.0.0
+  BGP: 
+    ASN: 65200
+    peers:
+      - 10.14.132.201
+      - 10.14.132.208
+      - 10.14.132.209
+    router-id: 10.14.132.200
+  interfaces:
+    system: 
+      ipv4: 10.14.132.200
+      mask: 32
+    CORE_136: 
+      ipv4: 10.14.132.138
+      mask: 30
+      port: '1/1/1:0'
+      description: xxx
+    CORE_144: 
+      ipv4: 10.14.132.145
+      mask: 30
+      port: '1/1/6:0'
+      description: xxx
+10.14.34.201:
+  name: SAR-8-201
+  cards:
+    1: 
+      card_id: 1
+      card_type: iom-sar
+      mdas:
+        1: 
+          mda_id: 1
+          mda_type: a8-1gb-v3-sfp
+        6:
+          mda_id: 6
+          mda_type: a8-vt
+  ports:
+    1/1/1: 
+      port_id: 1/1/1
+      mode: hybrid
+      encap: dot1q
+    1/1/2: 
+      port_id: 1/1/2
+      mode: hybrid
+      encap: dot1q    
+    1/1/3:
+      port_id: 3
+      mode: hybrid
+      encap: dot1q
+    1/1/4:
+      port_id: 4
+      mode: hybrid
+      encap: dot1q
+    1/1/5:
+      port_id: 5
+      mode: hybrid
+      encap: dot1q
+    1/1/6:
+      port_id: 6
+      mode: hybrid
+      encap: dot1q    
+    1/1/7:
+      port_id: 7
+      mode: hybrid
+      encap: dot1q
+    1/1/8:
+      port_id: 8
+      mode: hybrid
+      encap: dot1q 
+  isis:
+    area_id: '10.0144'
+    system_id: 0100.1413.2201
+  ospf:
+    area: 0.0.0.0
+  BGP: 
+    ASN: 65200
+    peers:
+      - 10.14.132.200
+      - 10.14.132.208
+      - 10.14.132.209
+    router-id: 10.14.132.201
+  interfaces:
+    system: 
+      ipv4: 10.14.132.201
+      mask: 32
+    CORE_92: 
+      ipv4: 10.14.132.94
+      mask: 30
+      port: '1/1/5:0'
+      description: xxx
+    CORE_96: 
+      ipv4: 10.14.132.97
+      mask: 30
+      port: '1/1/7:0'
+      description: xxx
+    CORE_132: 
+      ipv4: 10.14.132.133
+      mask: 30
+      port: '1/1/2:0'
+      description: xxx
+    CORE_140: 
+      ipv4: 10.14.132.142
+      mask: 30
+      port: '1/1/1:0'
+      description: xxx
+    CORE_144: 
+      ipv4: 10.14.132.146
+      mask: 30
+      port: '1/1/6:0'
+      description: xxx
+10.14.34.208:
+  name: SAR-Hc-208
+  cards:
+      1: 
+        card_id: 1
+        card_type: iom-sarhc
+        mdas:
+          1: 
+            mda_id: 1
+            mda_type: sarhc
+  ports:
+    1/1/1: 
+      port_id: 1/1/1
+      mode: hybrid
+      encap: dot1q
+    1/1/2: 
+      port_id: 1/1/2
+      mode: hybrid
+      encap: dot1q    
+    1/1/3:
+      port_id: 3
+      mode: hybrid
+      encap: dot1q
+    1/1/4:
+      port_id: 4
+      mode: hybrid
+      encap: dot1q
+    1/1/5:
+      port_id: 5
+      mode: hybrid
+      encap: dot1q
+    1/1/6:
+      port_id: 6
+      mode: hybrid
+      encap: dot1q    
+  isis:
+    area_id: '10.0144'
+    system_id: 0100.1413.2208
+  ospf:
+    area: 0.0.0.0
+  BGP: 
+    ASN: 65200
+    peers:
+      - 10.14.132.200
+      - 10.14.132.201
+      - 10.14.132.209
+    router-id: 10.14.132.208
+  interfaces:
+    system: 
+      ipv4: 10.14.132.243
+      mask: 32
+    CORE_100: 
+      ipv4: 10.14.132.101
+      mask: 30
+      port: '1/1/1:0'
+      description: xxx  
+    CORE_132: 
+      ipv4: 10.14.132.134
+      mask: 30
+      port: '1/1/2:0'
+      description: xxx  
+    CORE_140: 
+      ipv4: 10.14.132.141
+      mask: 30
+      port: '1/1/4:0'
+      description: xxx  
+10.14.34.209:
+  name: SAR-Hc-209
+  cards:
+      1: 
+        card_id: 1
+        card_type: iom-sarhc
+        mdas:
+          1: 
+            mda_id: 1
+            mda_type: sarhc
+  ports:
+    1/1/1: 
+      port_id: 1/1/1
+      mode: hybrid
+      encap: dot1q
+    1/1/2: 
+      port_id: 1/1/2
+      mode: hybrid
+      encap: dot1q    
+    1/1/3:
+      port_id: 3
+      mode: hybrid
+      encap: dot1q
+    1/1/4:
+      port_id: 4
+      mode: hybrid
+      encap: dot1q
+    1/1/5:
+      port_id: 5
+      mode: hybrid
+      encap: dot1q
+    1/1/6:
+      port_id: 6
+      mode: hybrid
+      encap: dot1q    
+  isis:
+    area_id: '10.0144'
+    system_id: 0100.1413.2209
+  ospf:
+    area: 0.0.0.0
+  BGP: 
+    ASN: 65200
+    peers:
+      - 10.14.132.200
+      - 10.14.132.201
+      - 10.14.132.208
+    router-id: 10.14.132.209
+  interfaces:
+    system: 
+      ipv4: 10.14.132.209
+      mask: 32
+    CORE_96: 
+      ipv4: 10.14.132.98
+      mask: 30
+      port: '1/1/3:0'
+      description: xxx  
+    CORE_100: 
+      ipv4: 10.14.132.102
+      mask: 30
+      port: '1/1/6:0'
+      description: xxx  
+    CORE_128: 
+      ipv4: 10.14.132.30
+      mask: 30
+      port: '1/1/2:0'
+      description: xxx  
+    CORE_136: 
+      ipv4: 10.14.132.137
+      mask: 30
+      port: '1/1/4:0'
+      description: xxx  
+
+
+10.0.10.236:
+  name: SAR-8-236
+  cards:
+    1: 
+      card_id: 1
+      card_type: iom-sar
+      mdas:
+        1: 
+          mda_id: 1
+          mda_type: a8-1gb-v3-sfp
+        6:
+          mda_id: 6
+          mda_type: a8-vt
+  ports:
+    1/1/1: 
+      port_id: 1/1/1
+      mode: hybrid
+      encap: dot1q
+      lldp: enable
+    1/1/2: 
+      port_id: 1/1/2
+      mode: hybrid
+      encap: dot1q   
+      lldp: disable 
+    1/1/3:
+      port_id: 3
+      mode: hybrid
+      encap: dot1q
+    1/1/4:
+      port_id: 4
+      mode: hybrid
+      encap: dot1q
+    1/1/5:
+      port_id: 5
+      mode: hybrid
+      encap: dot1q
+    1/1/6:
+      port_id: 6
+      mode: hybrid
+      encap: dot1q    
+    1/1/7:
+      port_id: 7
+      mode: hybrid
+      encap: dot1q
+    1/1/8:
+      port_id: 8
+      mode: hybrid
+      encap: dot1q                    
+  isis:
+    area_id: '10.0144'
+    system_id: 0100.1413.2200
+  ospf:
+    area: 0.0.0.0
+  BGP: 
+    ASN: 65200
+    peers:
+      - 10.14.132.201
+      - 10.14.132.208
+      - 10.14.132.209
+    router-id: 10.14.132.200
+  interfaces:
+    system: 
+      ipv4: 10.14.132.200
+      mask: 32
+    CORE_136: 
+      ipv4: 10.14.132.138
+      mask: 30
+      port: '1/1/1:0'
+      description: xxx
+    CORE_144: 
+      ipv4: 10.14.132.145
+      mask: 30
+      port: '1/1/6:0'
+      description: xxx
+
+10.0.10.237:
+  name: SAR-8-237
+  cards:
+    1: 
+      card_id: 1
+      card_type: iom-sar
+      mdas:
+        1: 
+          mda_id: 1
+          mda_type: a8-1gb-v3-sfp
+        6:
+          mda_id: 6
+          mda_type: a8-vt
+  ports:
+    1/1/1: 
+      port_id: 1/1/1
+      mode: hybrid
+      encap: dot1q
+      lldp: enable
+    1/1/2: 
+      port_id: 1/1/2
+      mode: hybrid
+      encap: dot1q   
+      lldp: disable 
+    1/1/3:
+      port_id: 3
+      mode: hybrid
+      encap: dot1q
+    1/1/4:
+      port_id: 4
+      mode: hybrid
+      encap: dot1q
+    1/1/5:
+      port_id: 5
+      mode: hybrid
+      encap: dot1q
+    1/1/6:
+      port_id: 6
+      mode: hybrid
+      encap: dot1q    
+    1/1/7:
+      port_id: 7
+      mode: hybrid
+      encap: dot1q
+    1/1/8:
+      port_id: 8
+      mode: hybrid
+      encap: dot1q                    
+  isis:
+    area_id: '10.0144'
+    system_id: 0100.1413.2200
+  ospf:
+    area: 0.0.0.0
+  BGP: 
+    ASN: 65200
+    peers:
+      - 10.14.132.201
+      - 10.14.132.208
+      - 10.14.132.209
+    router-id: 10.14.132.200
+  interfaces:
+    system: 
+      ipv4: 10.14.132.200
+      mask: 32
+    CORE_136: 
+      ipv4: 10.14.132.138
+      mask: 30
+      port: '1/1/1:0'
+      description: xxx
+    CORE_144: 
+      ipv4: 10.14.132.145
+      mask: 30
+      port: '1/1/6:0'
+      description: xxx
