@@ -5,12 +5,11 @@
     ASN: 65200
     peers:
       - 10.14.132.201
-  interfaces:
-    testloop: 
-      ipv4: 10.0.0.206
-      mask: 32
-      sap: 'loopback'
-      description: xxx
+  intf_name: testloop 
+  ipv4: 10.0.0.206
+  mask: 32
+  sap: 'loopback'
+
 
 10.0.10.237:
   name: SAR-8-207  
@@ -19,9 +18,7 @@
     ASN: 65200
     peers:
       - 10.14.132.211
-  interfaces:
-    testloop: 
-      ipv4: 10.0.0.207
-      mask: 32
-      sap: 'loopback'
-      description: xxx
+  intf_name: testloop 
+  ipv4: 10.0.0.207
+  mask: 32
+  sap: 'loopback'

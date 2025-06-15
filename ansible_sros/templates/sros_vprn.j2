@@ -1,27 +1,14 @@
 configure
  service
         vprn {{ vprn[inventory_hostname]['vprn_id']}} customer 1 create
-            route-distinguisher {{ underlay[inventory_hostname]['BGP']['ASN']}}:{{ vprn[inventory_hostname]['vprn_id']}}
+            route-distinguisher {{ underlay[inventory_hostname]['BGP']['router-id']}}:{{ vprn[inventory_hostname]['vprn_id']}}
             auto-bind-tunnel
                 resolution any
             exit
             vrf-target target:{{ underlay[inventory_hostname]['BGP']['ASN']}}:{{ vprn[inventory_hostname]['vprn_id']}}
-{% set loop1 = vprn[inventory_hostname]['interfaces'] %}
-{% for interface in loop1 %}
-            interface {{ interface }} create
-                address
-
-{% set loop2 = loop1[interfaces].intf %}
-{% for intf in loop2 %}
-    address {{ loop2[intf].ipv4 }}
-       no shutdown
-       exit
-{% endfor %}
-
-{% endfor %}
-            
-        no shutdown
-        exit
-
-  exit all
-
+            interface {{ vprn[inventory_hostname]['intf_name']}} create
+                address {{ vprn[inventory_hostname]['ipv4']}}/{{ vprn[inventory_hostname]['mask']}}
+                {{ vprn[inventory_hostname]['sap']}}
+            exit
+            no shutdown
+        exit all
