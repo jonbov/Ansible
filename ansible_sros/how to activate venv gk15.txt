@@ -5,3 +5,13 @@ ource gk15/bin/activate
 (gk15) jonbov@ansible:~/ansible_sros_gk15$ deactivate
 jonbov@ansible:~/ansible_sros_gk15$ source gk15/bin/activate
 (gk15) jonbov@ansible:~/ansible_sros_gk15$
+
+
+# Create a virtual environment
+python3 -m venv .venv
+
+# Activate the virtual environment
+source .venv/bin/activate
+
+# Install ansible and ansible-pylibssh
+pip install ansible ansible-pylibssh

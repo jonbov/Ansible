@@ -1,0 +1,16 @@
+configure
+ service
+        vprn {{ vprn[inventory_hostname]['vprn_id']}} customer 1 create
+            route-distinguisher {{ underlay[inventory_hostname]['BGP']['ASN']}}:{{ vprn[inventory_hostname]['vprn_id']}}
+            auto-bind-tunnel
+                resolution any
+            exit
+            vrf-target target:{{ underlay[inventory_hostname]['BGP']['ASN']}}:{{ vprn[inventory_hostname]['vprn_id']}}
+            interface "t123" create
+                address {{ vprn[inventory_hostname]['ipv4']}}/{{ vprn[inventory_hostname]['mask']}}
+                {{ vprn[inventory_hostname]['sap']}}
+            exit
+            no shutdown
+        exit
+
+  exit all

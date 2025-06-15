@@ -1,0 +1,27 @@
+10.0.10.236:
+  name: SAR-8-206  
+  vprn_id: 100
+  BGP: 
+    ASN: 65200
+    peers:
+      - 10.14.132.201
+  interfaces:
+    testloop: 
+      ipv4: 10.0.0.206
+      mask: 32
+      sap: 'loopback'
+      description: xxx
+
+10.0.10.237:
+  name: SAR-8-207  
+  vprn_id: 100
+  BGP: 
+    ASN: 65200
+    peers:
+      - 10.14.132.211
+  interfaces:
+    testloop: 
+      ipv4: 10.0.0.207
+      mask: 32
+      sap: 'loopback'
+      description: xxx

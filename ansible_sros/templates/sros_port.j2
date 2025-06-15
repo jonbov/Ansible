@@ -1,9 +1,9 @@
 #--------------------------------------------------
 echo "Port Configuration"
 #--------------------------------------------------
-configure
 {% set loop1 = underlay[inventory_hostname]['ports'] %}
 {% for ports in loop1 %}
+configure
   port {{ ports }}
     shutdown   
     ethernet
@@ -25,7 +25,8 @@ configure
     ssm
         no shutdown
         exit
-    no shutdown
     exit
+    no shutdown
+    exit all
 {% endfor %}
   exit all
