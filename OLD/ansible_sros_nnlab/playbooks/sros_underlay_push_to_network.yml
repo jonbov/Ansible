@@ -1,0 +1,22 @@
+---
+- hosts: all
+  gather_facts: no
+  connection: ansible.netcommon.network_cli
+
+  tasks:
+  - name: Register variables
+    include_vars:
+      file: "{{lookup('env','PWD')}}/vars/sros_underlay.yml"
+      name: underlay
+  - name: Test all variables
+    debug:
+      msg: "{{ underlay }}"
+  - name: Create a configuration file
+    template:
+      src: "{{lookup('env','PWD')}}/templates/sros_underlay.j2"
+      dest: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}_router.cfg"
+  - name: push config
+    eos_config:
+      src: "{{lookup('env','PWD')}}/configs/{{inventory_hostname}}.cfg"
+  
+      
