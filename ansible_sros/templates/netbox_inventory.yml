@@ -1,6 +1,7 @@
 
 plugin: netbox.netbox.nb_inventory
 api_endpoint: http://10.14.17.203:8000
+token: 142d02384f1fa3f951c0ffcc034fca8cace91cfb
 validate_certs: false
 config_context: false
 group_by:
