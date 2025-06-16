@@ -1,0 +1,10 @@
+
+plugin: netbox.netbox.nb_inventory
+api_endpoint: http://10.14.17.203:8000
+validate_certs: false
+config_context: false
+group_by:
+- device_roles
+- platforms
+compose:
+ansible_network_os: platform.slug
