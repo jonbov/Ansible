@@ -39,12 +39,12 @@
 
   - name: Create VPRN configuration file
     template:
-      src: "{{dir_path}}/templates/sros_vprn.j2"
-      dest: "{{dir_path}}/configs/{{inventory_hostname}}_vprn.cfg"
+      src: "{{dir_path}}/templates/sros_vprn_delete.j2"
+      dest: "{{dir_path}}/configs/{{inventory_hostname}}_vprn_delete.cfg"
 
   - name: Read VPRN file content
     set_fact:
-        vprn_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_vprn.cfg') }}"
+        vprn_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_vprn_delete.cfg') }}"
 
   - name: push VPRN config to device
     cli_config:

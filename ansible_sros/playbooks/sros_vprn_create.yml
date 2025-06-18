@@ -1,0 +1,52 @@
+---
+- hosts: sros
+  gather_facts: no
+
+  vars:
+  #  vars_file: sros_gk15_routing.yml
+    vars_file: sros_nnlab_routing.yml
+    vprn_file: sros_nnlab_vprn.yml
+    ansible_network_os: nokia.sros.light
+  
+  tasks:
+  - name: register base directory
+    set_fact:
+      dir_path: "{{lookup('env','PWD')}}"
+
+  - name: Register global variables
+    include_vars:
+      file: "{{dir_path}}/vars/{{vars_file}}"
+      name: underlay
+  #    run_once: true
+  - name: Show global variables
+    debug:
+      msg: "{{ underlay }}"
+
+  - name: Register VPRN variables
+    include_vars:
+      file: "{{dir_path}}/vars/{{vprn_file}}"
+      name: vprn
+  #    run_once: true
+  - name: Show VPRN variables
+    debug:
+      msg: "{{ vprn }}"
+
+
+
+#-------------------------------------------------------------------
+#   Create and push VPRN router config
+#-------------------------------------------------------------------
+
+  - name: Create VPRN configuration file
+    template:
+      src: "{{dir_path}}/templates/sros_vprn_create.j2"
+      dest: "{{dir_path}}/configs/{{inventory_hostname}}_vprn_create.cfg"
+
+  - name: Read VPRN file content
+    set_fact:
+        vprn_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_vprn_create.cfg') }}"
+
+  - name: push VPRN config to device
+    cli_config:
+        config: | 
+          {{ vprn_configuration }}

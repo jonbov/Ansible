@@ -1,0 +1,13 @@
+
+configure
+ service
+        vprn {{ vprn[inventory_hostname]['vprn_id']}}
+            shutdown
+            interface {{ vprn[inventory_hostname]['intf_name']}} 
+                shutdown
+                exit
+            no interface {{ vprn[inventory_hostname]['intf_name']}} 
+            exit
+        no vprn {{ vprn[inventory_hostname]['vprn_id']}}
+        exit all
+
