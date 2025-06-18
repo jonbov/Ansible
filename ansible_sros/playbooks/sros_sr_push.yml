@@ -1,0 +1,40 @@
+---
+- hosts: sros
+  gather_facts: no
+
+  vars:
+  #  vars_file: sros_gk15_routing.yml
+    vars_file: sros_nnlab_routing.yml
+    ansible_network_os: nokia.sros.light
+  
+  tasks:
+  - name: register base directory
+    set_fact:
+      dir_path: "{{lookup('env','PWD')}}"
+
+  - name: Register variables
+    include_vars:
+      file: "{{dir_path}}/vars/{{vars_file}}"
+      name: underlay
+  #    run_once: true
+  - name: Test all variables
+    debug:
+      msg: "{{ underlay }}"
+  #    run_once: true
+#-------------------------------------------------------------------
+#   Create and push system config
+#-------------------------------------------------------------------
+  - name: Create global segment routing configuration file
+    template:
+      src: "{{dir_path}}/templates/sros_sr.j2"
+      dest: "{{dir_path}}/configs/{{inventory_hostname}}_sr.cfg"
+
+  - name: Read system file content
+    set_fact:
+        system_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_sr.cfg') }}"
+
+  - name: push config to device
+    cli_config:
+        config: | 
+          {{ system_configuration }}
+          

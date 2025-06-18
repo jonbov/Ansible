@@ -64,6 +64,10 @@
       - 10.14.132.208
       - 10.14.132.209
     router-id: 10.14.132.200
+  SR:
+    sr_labels_start: 20000 
+    sr_labels_end: 20999
+    ipv4-node-sid: 200
   interfaces:
     system: 
       ipv4: 10.14.132.200
@@ -144,6 +148,10 @@
       - 10.14.132.208
       - 10.14.132.209
     router-id: 10.14.132.201
+  SR:
+    sr_labels_start: 20000 
+    sr_labels_end: 20999
+    ipv4-node-sid: 201
   interfaces:
     system: 
       ipv4: 10.14.132.201
@@ -226,6 +234,10 @@
       - 10.14.132.201
       - 10.14.132.209
     router-id: 10.14.132.208
+  SR:
+    sr_labels_start: 20000 
+    sr_labels_end: 20999
+    ipv4-node-sid: 208
   interfaces:
     system: 
       ipv4: 10.14.132.208
@@ -298,6 +310,10 @@
       - 10.14.132.201
       - 10.14.132.208
     router-id: 10.14.132.209
+  SR:
+    sr_labels_start: 20000 
+    sr_labels_end: 20999
+    ipv4-node-sid: 209
   interfaces:
     system: 
       ipv4: 10.14.132.209
@@ -383,6 +399,10 @@
     peers:
       - 10.14.132.207
     router-id: 10.14.132.206
+  SR:
+    sr_labels_start: 20000 
+    sr_labels_end: 20999
+    ipv4-node-sid: 206
   interfaces:
     system: 
       ipv4: 10.14.132.206
@@ -452,6 +472,10 @@
     peers:
       - 10.14.132.206
     router-id: 10.14.132.207
+  SR:
+    sr_labels_start: 20000 
+    sr_labels_end: 20999
+    ipv4-node-sid: 207
   interfaces:
     system: 
       ipv4: 10.14.132.207

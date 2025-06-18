@@ -1,0 +1,30 @@
+#--------------------------------------------------
+# "MPLS Label Range Configuration"
+#--------------------------------------------------
+configure
+    router
+        mpls-labels
+            sr-labels start {% underlay[inventory_hostname]['SR']['sr_labels_start'] %} end {% underlay[inventory_hostname]['SR']['sr_labels_end'] %}
+        exit all
+#--------------------------------------------------
+# "ISIS Configuration"
+#--------------------------------------------------
+configure
+    router
+        isis 0
+            advertise-router-capability area
+            segment-routing
+                prefix-sid-range global
+                no shutdown
+            exit
+            interface "system"
+                ipv4-node-sid index {% underlay[inventory_hostname]['SR']['ipv4-node-sid'] %}
+                no shutdown
+            exit all
+#--------------------------------------------------
+# "IP Configuration"
+#--------------------------------------------------
+configure
+    router
+        ecmp 4
+        exit all
