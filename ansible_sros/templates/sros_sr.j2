@@ -4,7 +4,7 @@
 configure
     router
         mpls-labels
-            sr-labels start {% underlay[inventory_hostname]['SR']['sr_labels_start'] %} end {% underlay[inventory_hostname]['SR']['sr_labels_end'] %}
+            sr-labels start {{ underlay[inventory_hostname]['SR']['sr_labels_start'] }} end {{ underlay[inventory_hostname]['SR']['sr_labels_end'] }}
         exit all
 #--------------------------------------------------
 # "ISIS Configuration"
@@ -18,7 +18,7 @@ configure
                 no shutdown
             exit
             interface "system"
-                ipv4-node-sid index {% underlay[inventory_hostname]['SR']['ipv4-node-sid'] %}
+                ipv4-node-sid index {{ underlay[inventory_hostname]['SR']['ipv4-node-sid'] }}
                 no shutdown
             exit all
 #--------------------------------------------------

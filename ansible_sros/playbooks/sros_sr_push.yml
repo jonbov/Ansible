@@ -22,18 +22,18 @@
       msg: "{{ underlay }}"
   #    run_once: true
 #-------------------------------------------------------------------
-#   Create and push system config
+#   Create and push SR global config
 #-------------------------------------------------------------------
   - name: Create global segment routing configuration file
     template:
       src: "{{dir_path}}/templates/sros_sr.j2"
       dest: "{{dir_path}}/configs/{{inventory_hostname}}_sr.cfg"
 
-  - name: Read system file content
+  - name: Read sr file content
     set_fact:
         system_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_sr.cfg') }}"
 
-  - name: push config to device
+  - name: push sr config to device
     cli_config:
         config: | 
           {{ system_configuration }}
