@@ -3,7 +3,11 @@ configure
         vprn {{ vprn[inventory_hostname]['vprn_id']}} customer 1 create
             route-distinguisher {{ underlay[inventory_hostname]['BGP']['router-id']}}:{{ vprn[inventory_hostname]['vprn_id']}}
             auto-bind-tunnel
-                resolution any
+                ecmp 4
+                resolution-filter
+                    sr-isis
+                    ldp
+                resolution filter
             exit
             vrf-target target:{{ underlay[inventory_hostname]['BGP']['ASN']}}:{{ vprn[inventory_hostname]['vprn_id']}}
             interface {{ vprn[inventory_hostname]['intf_name']}} create
