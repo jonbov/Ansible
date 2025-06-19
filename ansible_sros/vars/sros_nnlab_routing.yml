@@ -181,6 +181,16 @@
       mask: 30
       port: '1/1/6:0'
       description: xxx
+
+10.14.34.202:
+  name: SAR-8-202
+10.14.34.203:
+  name: SAR-8-203
+10.14.34.204:
+  name: SAR-8-204
+10.14.34.205:
+  name: SAR-8-205
+
 10.14.34.208:
   name: SAR-Hc-208
   cards:
