@@ -1,0 +1,28 @@
+---
+- hosts: nps
+  vars:
+#  vars_prompt:
+#    - name: admin
+#      prompt: "Username"
+#      private: no
+#    - name: admin
+#      prompt: "Password"
+#  connection: network_cli
+  gather_facts: No
+  #vars:
+  #  vars_file: sros_gk15_routing.yml
+  #  vars_file: sros_nnlab_routing.yml
+
+
+  tasks:
+  - name: Plug on
+    ansible.netcommon.telnet:
+      #user: a4068becs
+      #password: a4068becs
+      #login_prompt: "Enter Password: "
+      password: 
+      login_prompt: "NPS>"
+      prompts:
+        - "[>]"
+      command:
+        - /on 4
