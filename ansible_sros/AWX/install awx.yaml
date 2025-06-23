@@ -35,7 +35,7 @@ nano "awx.yaml" with content:
 apiVersion: awx.ansible.com/v1beta1
 kind: AWX
 metadata:
-  name: awx-demo
+  name: awx-lab
 spec:
   service_type: nodeport
 
@@ -63,6 +63,30 @@ http://awx.bovre.net:31250
 admin / 7adDuUOUbWMQ6b1w7a8ZMNMFyIIG2SkI
 admin / a4068becs
 
+kubectl get secret awx-lab-admin-password -o jsonpath="{.data.password}" -n awx | base64 --decode ; echo
+tjbAdSyRfS3VnIhHJNtdEAif8zZ8Hkuk
+
+root@awx:~/awx-operator# kubectl get secrets -n awx
+NAME                             TYPE                DATA   AGE
+awx-lab-admin-password           Opaque              1      3h10m
+awx-lab-app-credentials          Opaque              3      3h8m
+awx-lab-broadcast-websocket      Opaque              1      3h10m
+awx-lab-postgres-configuration   Opaque              6      3h10m
+awx-lab-receptor-ca              kubernetes.io/tls   2      3h9m
+awx-lab-receptor-work-signing    Opaque              2      3h8m
+awx-lab-secret-key               Opaque              1      3h10m
+redhat-operators-pull-secret     Opaque              1      3h11m 
+
+
+Delete pod Unknown:
+https://stackoverflow.com/questions/54478616/how-to-delete-a-pod-in-unknown-state-in-kubernetes
+kubectl delete pod -n awx <pod_name> --grace-period=0 --force
+root@awx:~# kubectl delete pod -n awx awx-lab-migration-24.6.1-mdxkj --grace-period=0 --force
+Warning: Immediate deletion does not wait for confirmation that the running resource has been terminated. The resource may continue to run on the cluster indefinitely.
+pod "awx-lab-migration-24.6.1-mdxkj" force deleted
+
+Posd in  Init:
+https://stackoverflow.com/questions/50075422/kubernetes-pods-hanging-in-init-state
 
 
 ******************************************
@@ -84,3 +108,144 @@ pip3 install awxkit
 awx --help
 
 
+***logs from install to new ubuntu 24.x server********************************
+
+jonbov@awx:~$ 
+jonbov@awx:~$ 
+jonbov@awx:~$ sudo -i 
+[sudo] password for jonbov: 
+root@awx:~# 
+root@awx:~# curl -sfL https://get.k3s.io   | sh -
+kubectl version
+[INFO]  Finding release for channel stable
+[INFO]  Using v1.32.5+k3s1 as release
+[INFO]  Downloading hash https://github.com/k3s-io/k3s/releases/download/v1.32.5+k3s1/sha256sum-amd64.txt
+[INFO]  Downloading binary https://github.com/k3s-io/k3s/releases/download/v1.32.5+k3s1/k3s
+[INFO]  Verifying binary download
+[INFO]  Installing k3s to /usr/local/bin/k3s
+[INFO]  Skipping installation of SELinux RPM
+[INFO]  Creating /usr/local/bin/kubectl symlink to k3s
+[INFO]  Creating /usr/local/bin/crictl symlink to k3s
+[INFO]  Creating /usr/local/bin/ctr symlink to k3s
+[INFO]  Creating killall script /usr/local/bin/k3s-killall.sh
+[INFO]  Creating uninstall script /usr/local/bin/k3s-uninstall.sh
+[INFO]  env: Creating environment file /etc/systemd/system/k3s.service.env
+[INFO]  systemd: Creating service file /etc/systemd/system/k3s.service
+[INFO]  systemd: Enabling k3s unit
+Created symlink /etc/systemd/system/multi-user.target.wants/k3s.service → /etc/systemd/system/k3s.service.
+[INFO]  systemd: Starting k3s
+Client Version: v1.32.5+k3s1
+Kustomize Version: v5.5.0
+Server Version: v1.32.5+k3s1
+root@awx:~# kubectl version
+Client Version: v1.32.5+k3s1
+Kustomize Version: v5.5.0
+Server Version: v1.32.5+k3s1
+root@awx:~# git clone https://github.com/ansible/awx-operator.git
+Cloning into 'awx-operator'...
+remote: Enumerating objects: 11117, done.
+remote: Counting objects: 100% (22/22), done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 11117 (delta 4), reused 7 (delta 2), pack-reused 11095 (from 2)
+Receiving objects: 100% (11117/11117), 3.80 MiB | 2.07 MiB/s, done.
+Resolving deltas: 100% (6482/6482), done.
+root@awx:~# sudo apt install jq
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+jq is already the newest version (1.7.1-3build1).
+jq set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 117 not upgraded.
+root@awx:~# cd awx-operator
+root@awx:~/awx-operator# export NAMESPACE=awx
+root@awx:~/awx-operator# kubectl create ns ${NAMESPACE}
+namespace/awx created
+root@awx:~/awx-operator# sudo kubectl config set-context --current --namespace=awx
+Context "default" modified.
+root@awx:~/awx-operator# curl -s https://api.github.com/repos/ansible/awx-operator/releases/latest | grep tag_name | cut -d '"' -f 4
+2.19.1
+root@awx:~/awx-operator# git checkout 2.19.1
+Note: switching to '2.19.1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at dd37ebd Update index.md (#1904)
+root@awx:~/awx-operator# make deploy
+Command 'make' not found, but can be installed with:
+apt install make        # version 4.3-4.1build1, or
+apt install make-guile  # version 4.3-4.1build1
+root@awx:~/awx-operator# apt install make
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Suggested packages:
+  make-doc
+The following NEW packages will be installed:
+  make
+0 upgraded, 1 newly installed, 0 to remove and 117 not upgraded.
+Need to get 180 kB of archives.
+After this operation, 414 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 make amd64 4.3-4.1build2 [180 kB]
+Fetched 180 kB in 1s (273 kB/s)
+Selecting previously unselected package make.
+(Reading database ... 84047 files and directories currently installed.)
+Preparing to unpack .../make_4.3-4.1build2_amd64.deb ...
+Unpacking make (4.3-4.1build2) ...
+Setting up make (4.3-4.1build2) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Scanning processes...                                                                                                                                 
+Scanning linux images...                                                                                                                              
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@awx:~/awx-operator# make deploy
+Warning: resource namespaces/awx is missing the kubectl.kubernetes.io/last-applied-configuration annotation which is required by kubectl apply. kubectl apply should only be used on resources created declaratively by either kubectl create --save-config or kubectl apply. The missing annotation will be patched automatically.
+namespace/awx configured
+customresourcedefinition.apiextensions.k8s.io/awxbackups.awx.ansible.com created
+customresourcedefinition.apiextensions.k8s.io/awxmeshingresses.awx.ansible.com created
+customresourcedefinition.apiextensions.k8s.io/awxrestores.awx.ansible.com created
+customresourcedefinition.apiextensions.k8s.io/awxs.awx.ansible.com created
+serviceaccount/awx-operator-controller-manager created
+role.rbac.authorization.k8s.io/awx-operator-awx-manager-role created
+role.rbac.authorization.k8s.io/awx-operator-leader-election-role created
+clusterrole.rbac.authorization.k8s.io/awx-operator-metrics-reader created
+clusterrole.rbac.authorization.k8s.io/awx-operator-proxy-role created
+rolebinding.rbac.authorization.k8s.io/awx-operator-awx-manager-rolebinding created
+rolebinding.rbac.authorization.k8s.io/awx-operator-leader-election-rolebinding created
+clusterrolebinding.rbac.authorization.k8s.io/awx-operator-proxy-rolebinding created
+configmap/awx-operator-awx-manager-config created
+service/awx-operator-controller-manager-metrics-service created
+deployment.apps/awx-operator-controller-manager created
+root@awx:~/awx-operator# kubectl get pods -n awx
+NAME                                               READY   STATUS              RESTARTS   AGE
+awx-operator-controller-manager-58b7c97f4b-64p6k   0/2     ContainerCreating   0          14s
+root@awx:~/awx-operator# nano awx.yaml
+root@awx:~/awx-operator# kubectl apply -f awx.yaml
+awx.awx.ansible.com/awx-lab created
+root@awx:~/awx-operator# kubectl get pods -n awx
+NAME                                               READY   STATUS    RESTARTS   AGE
+awx-operator-controller-manager-58b7c97f4b-64p6k   2/2     Running   0          99s
+root@awx:~/awx-operator# kubectl get service -n awx
+NAME                                              TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
+awx-operator-controller-manager-metrics-service   ClusterIP   10.43.220.190   <none>        8443/TCP   102s
+root@awx:~/awx-operator# 
