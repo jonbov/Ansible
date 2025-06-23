@@ -2,12 +2,78 @@ install awx
 
 https://www.youtube.com/watch?v=OLIktAb9-FY
 
-sudo -i
+1: Install Kubernetes (k3s)
+sudo -i 
+(root@awx)
 curl -sfL https://get.k3s.io   | sh -
+kubectl version
+
+https://ansible.readthedocs.io/projects/awx-operator/en/latest/installation/basic-install.html
+
+git clone https://github.com/ansible/awx-operator.git
+sudo chmod 644 /etc/rancher/k3s/k3s.yaml
+sudo apt install jq
+
+
+cd awx-operator
+export NAMESPACE=awx
+kubectl create ns ${NAMESPACE}
+sudo kubectl config set-context --current --namespace=awx
+!Command locks: RELEASE_TAG='curl -s https://api.github.com/repos/ansible/awx-operator/releases/latest | grep tag_name | cut -d '"' -f 4'
+curl -s https://api.github.com/repos/ansible/awx-operator/releases/latest | grep tag_name | cut -d '"' -f 4
+2.19.1
+git checkout 2.19.1
+make deploy
+kubectl get pods -n awx
+  NAME                                               READY   STATUS              RESTARTS   AGE
+  awx-operator-controller-manager-58b7c97f4b-mm55z   0/2     ContainerCreating   0          44s
+  awx-operator-controller-manager-58ddcc6ddf-btkd7   2/2     Running             0          38h
+
+create file "awx.yaml"
+nano "awx.yaml" with content:
+---
+apiVersion: awx.ansible.com/v1beta1
+kind: AWX
+metadata:
+  name: awx-demo
+spec:
+  service_type: nodeport
+
+kubectl apply -f awx.yaml
+    awx.awx.ansible.com/awx-demo created
+
+kubectl get pods -n awx
+  NAME                                               READY   STATUS              RESTARTS   AGE
+  awx-demo-postgres-15-0                             1/1     Running             0          3m28s
+  awx-demo-task-7d46bbb4c8-f9bjx                     0/4     Init:0/2            0          100s
+  awx-demo-web-5c7584fb64-c2tch                      0/3     ContainerCreating   0          105s
+  awx-operator-controller-manager-58b7c97f4b-mm55z   2/2     Running             0          14m
+(above startup takes some minutes)
+
+kubectl get service -n awx
+  NAME                                              TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+  awx-demo-postgres-15                              ClusterIP   None           <none>        5432/TCP       4m45s
+  awx-demo-service                                  NodePort    10.43.43.163   <none>        80:31250/TCP   3m8s
+  awx-operator-controller-manager-metrics-service   ClusterIP   10.43.36.118   <none>        8443/TCP       38h
+
+kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
+
+
+
+git tag  (q to exit)
+export VERSION=2.16.1
+git checkout tags/2.16.1
+
+
+
+
 
 doc: https://github.com/ansible/awx/blob/devel/INSTALL.md
 apt install python3-pip
 
+
+
+sudo -i
 pip3 install awxkit
 awx --help
 
