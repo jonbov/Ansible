@@ -44,11 +44,11 @@
       src: "{{dir_path}}/templates/sros_vprn_create.j2"
       dest: "{{dir_path}}/configs/{{inventory_hostname}}_vprn_create.cfg"
 
-  - name: Read VPRN file content
-    set_fact:
-        vprn_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_vprn_create.cfg') }}"
+#  - name: Read VPRN file content
+#    set_fact:
+#        vprn_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_vprn_create.cfg') }}"
 
   - name: push VPRN config to device
     cli_config:
         config: | 
-          {{ vprn_configuration }}
+          {{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_vprn_create.cfg') }}

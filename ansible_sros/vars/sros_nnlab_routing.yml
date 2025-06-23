@@ -253,34 +253,34 @@
       port_id: 1/1/8
       mode: hybrid
       encap: dot1q
-      lldp: enable 
-    1/2/1: 
-      port_id: 1/1/1
+      lldp: enable
+    1/2/1:
+      port_id: 1/2/1
       mode: hybrid
       encap: dot1q
       lldp: enable
-    1/2/2: 
-      port_id: 1/1/2
+    1/2/2:
+      port_id: 1/2/2
       mode: hybrid
       encap: dot1q
-      lldp: enable    
+      lldp: enable
     1/2/3:
-      port_id: 1/1/3
+      port_id: 1/2/3
       mode: hybrid
       encap: dot1q
       lldp: enable
     1/2/4:
-      port_id: 1/1/4
+      port_id: 1/2/4
       mode: hybrid
       encap: dot1q
       lldp: enable
     1/2/5:
-      port_id: 1/1/5
+      port_id: 1/2/5
       mode: hybrid
       encap: dot1q
       lldp: enable
     1/2/6:
-      port_id: 1/1/6
+      port_id: 6
       mode: hybrid
       encap: dot1q
       lldp: enable    
@@ -373,32 +373,32 @@
       encap: dot1q
       lldp: enable 
     1/2/1: 
-      port_id: 1/1/1
+      port_id: 1/2/1
       mode: hybrid
       encap: dot1q
       lldp: enable
     1/2/2: 
-      port_id: 1/1/2
+      port_id: 1/2/2
       mode: hybrid
       encap: dot1q
       lldp: enable    
     1/2/3:
-      port_id: 1/1/3
+      port_id: 1/2/3
       mode: hybrid
       encap: dot1q
       lldp: enable
     1/2/4:
-      port_id: 1/1/4
+      port_id: 1/2/4
       mode: hybrid
       encap: dot1q
       lldp: enable
     1/2/5:
-      port_id: 1/1/5
+      port_id: 1/2/5
       mode: hybrid
       encap: dot1q
       lldp: enable
     1/2/6:
-      port_id: 1/1/6
+      port_id: 1/2/6
       mode: hybrid
       encap: dot1q
       lldp: enable    
@@ -436,7 +436,7 @@
       mask: 30
       port: '1/1/3:0'
       description: xxx
-      
+
 10.14.34.204:
   name: SAR-8-204
   cards:
@@ -775,7 +775,7 @@
       port: '1/1/6:0'
       description: xxx  
     CORE_128: 
-      ipv4: 10.14.132.30
+      ipv4: 10.14.132.130
       mask: 30
       port: '1/1/2:0'
       description: xxx  

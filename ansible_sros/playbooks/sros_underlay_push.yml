@@ -6,6 +6,7 @@
   #  vars_file: sros_gk15_routing.yml
     vars_file: sros_nnlab_routing.yml
     ansible_network_os: nokia.sros.light
+    ansible_command_timeout: 120 # 2 minutes
   
   tasks:
   - name: register base directory
