@@ -1,0 +1,14 @@
+install awx
+
+https://www.youtube.com/watch?v=OLIktAb9-FY
+
+sudo -i
+curl -sfL https://get.k3s.io   | sh -
+
+doc: https://github.com/ansible/awx/blob/devel/INSTALL.md
+apt install python3-pip
+
+pip3 install awxkit
+awx --help
+
+
