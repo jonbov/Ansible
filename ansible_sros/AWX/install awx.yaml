@@ -57,9 +57,15 @@ kubectl get service -n awx
   awx-operator-controller-manager-metrics-service   ClusterIP   10.43.36.118   <none>        8443/TCP       38h
 
 kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
+7adDuUOUbWMQ6b1w7a8ZMNMFyIIG2SkI
+
+http://awx.bovre.net:31250
+admin / 7adDuUOUbWMQ6b1w7a8ZMNMFyIIG2SkI
+admin / a4068becs
 
 
 
+******************************************
 git tag  (q to exit)
 export VERSION=2.16.1
 git checkout tags/2.16.1
