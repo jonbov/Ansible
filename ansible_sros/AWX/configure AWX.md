@@ -8,6 +8,7 @@ https://www.youtube.com/watch?v=49x1jEliq5U
 
 3 - Hosts 
     Add hosts - from hosts menu or from Inventory
+    From Inventory, Sources - may import hosts.ini
 
 4 - Credentials
     Add credential 
@@ -21,3 +22,4 @@ https://www.youtube.com/watch?v=49x1jEliq5U
     
 
 6 - Templates
+    Add and run Ansible playbook from project
