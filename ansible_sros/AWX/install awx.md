@@ -32,13 +32,10 @@ curl -s https://api.github.com/repos/ansible/awx-operator/releases/latest | grep
 2.19.1
 git checkout 2.19.1
 make deploy
-kubectl get pods -n awx
-  NAME                                               READY   STATUS              RESTARTS   AGE
-  awx-operator-controller-manager-58b7c97f4b-mm55z   0/2     ContainerCreating   0          44s
-  awx-operator-controller-manager-58ddcc6ddf-btkd7   2/2     Running             0          38h
 
 create file "awx.yaml"
 nano "awx.yaml" with content:
+https://ansible.readthedocs.io/projects/awx-operator/en/latest/user-guide/advanced-configuration/containers-resource-requirements.html
 ---
 apiVersion: awx.ansible.com/v1beta1
 kind: AWX
@@ -46,9 +43,54 @@ metadata:
   name: awx-lab
 spec:
   service_type: nodeport
+  task_resource_requirements:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      cpu: 2000m
+      memory: 4Gi
+  web_resource_requirements:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      cpu: 1000m
+      memory: 4Gi
+  ee_resource_requirements:
+    requests:
+      cpu: 100m
+      memory: 64Mi
+    limits:
+      cpu: 1000m
+      memory: 4Gi
+  redis_resource_requirements:
+    requests:
+      cpu: 50m
+      memory: 64Mi
+    limits:
+      cpu: 1000m
+      memory: 4Gi
+  rsyslog_resource_requirements:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      cpu: 1000m
+      memory: 2Gi
+  init_container_resource_requirements:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      cpu: 1000m
+      memory: 2Gi
 
 kubectl apply -f awx.yaml
     awx.awx.ansible.com/awx-lab created
+
+
+***verify pods starting. some minutes**************
 
 kubectl get pods -n awx
   NAME                                               READY   STATUS              RESTARTS   AGE
@@ -80,15 +122,15 @@ awx-lab-web-674cd6bc69-hgg2x                       0/3     ContainerCreating   0
 awx-operator-controller-manager-58b7c97f4b-mpnp8   2/2     Running             0          3m29s
 
 root@no-awx-204:~/awx-operator# kubectl get service -n awx
-NAME                                              TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
-awx-lab-postgres-15                               ClusterIP   None            <none>        5432/TCP       2m5s
-awx-lab-service                                   NodePort    10.43.26.210    <none>        80:31854/TCP   62s
-awx-operator-controller-manager-metrics-service   ClusterIP   10.43.232.121   <none>        8443/TCP       3m34s
+NAME                                              TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+awx-lab-postgres-15                               ClusterIP   None           <none>        5432/TCP       73s
+awx-lab-service                                   NodePort    10.43.253.21   <none>        80:31864/TCP   12s
+awx-operator-controller-manager-metrics-service   ClusterIP   10.43.54.27    <none>        8443/TCP       2m37s
 
 root@no-awx-204:~/awx-operator# kubectl get secret awx-lab-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
-aGmeNhGidyB5d6neDcMHTWMUGkNf6Mwd
+UYXS3KmMB6zcajONv2qdAFJbnBkgzcKn
 
-http://10.14.17.204:31854
+http://10.14.17.204:31864
 
 
 kubectl get secret awx-lab-admin-password -o jsonpath="{.data.password}" -n awx | base64 --decode ; echo
@@ -115,6 +157,14 @@ pod "awx-lab-migration-24.6.1-mdxkj" force deleted
 
 Posd in  Init:
 https://stackoverflow.com/questions/50075422/kubernetes-pods-hanging-in-init-state
+
+
+
+# Create a virtual environment
+python3 -m venv .venv
+
+# Activate the virtual environment
+source .venv/bin/activate
 
 apt install ansible-core
 ansible-galaxy collection install ansible.netcommon
