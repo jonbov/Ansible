@@ -2,17 +2,25 @@ install awx
 
 https://www.youtube.com/watch?v=OLIktAb9-FY
 
+
+
 1: Install Kubernetes (k3s)
 sudo -i 
 (root@awx)
+
+apt update
+apt upgrade
+apt install make
+apt install jq
+
 curl -sfL https://get.k3s.io   | sh -
 kubectl version
 
 https://ansible.readthedocs.io/projects/awx-operator/en/latest/installation/basic-install.html
 
 git clone https://github.com/ansible/awx-operator.git
-sudo chmod 644 /etc/rancher/k3s/k3s.yaml
-sudo apt install jq
+(sudo chmod 644 /etc/rancher/k3s/k3s.yaml)
+
 
 
 cd awx-operator
@@ -40,28 +48,48 @@ spec:
   service_type: nodeport
 
 kubectl apply -f awx.yaml
-    awx.awx.ansible.com/awx-demo created
+    awx.awx.ansible.com/awx-lab created
 
 kubectl get pods -n awx
   NAME                                               READY   STATUS              RESTARTS   AGE
-  awx-demo-postgres-15-0                             1/1     Running             0          3m28s
-  awx-demo-task-7d46bbb4c8-f9bjx                     0/4     Init:0/2            0          100s
-  awx-demo-web-5c7584fb64-c2tch                      0/3     ContainerCreating   0          105s
+  awx-lab-postgres-15-0                             1/1     Running             0          3m28s
+  awx-lab-task-7d46bbb4c8-f9bjx                     0/4     Init:0/2            0          100s
+  awx-lab-web-5c7584fb64-c2tch                      0/3     ContainerCreating   0          105s
   awx-operator-controller-manager-58b7c97f4b-mm55z   2/2     Running             0          14m
 (above startup takes some minutes)
 
 kubectl get service -n awx
   NAME                                              TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
-  awx-demo-postgres-15                              ClusterIP   None           <none>        5432/TCP       4m45s
-  awx-demo-service                                  NodePort    10.43.43.163   <none>        80:31250/TCP   3m8s
+  awx-lab-postgres-15                              ClusterIP   None           <none>        5432/TCP       4m45s
+  awx-lab-service                                  NodePort    10.43.43.163   <none>        80:31250/TCP   3m8s
   awx-operator-controller-manager-metrics-service   ClusterIP   10.43.36.118   <none>        8443/TCP       38h
 
-kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
+kubectl get secret awx-lab-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
 7adDuUOUbWMQ6b1w7a8ZMNMFyIIG2SkI
 
 http://awx.bovre.net:31250
 admin / 7adDuUOUbWMQ6b1w7a8ZMNMFyIIG2SkI
 admin / a4068becs
+
+no-awx-204:
+root@no-awx-204:~/awx-operator# kubectl get pods -n awx
+NAME                                               READY   STATUS              RESTARTS   AGE
+awx-lab-postgres-15-0                              1/1     Running             0          2m1s
+awx-lab-task-6569979ccc-wnq7l                      0/4     Init:0/2            0          50s
+awx-lab-web-674cd6bc69-hgg2x                       0/3     ContainerCreating   0          53s
+awx-operator-controller-manager-58b7c97f4b-mpnp8   2/2     Running             0          3m29s
+
+root@no-awx-204:~/awx-operator# kubectl get service -n awx
+NAME                                              TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+awx-lab-postgres-15                               ClusterIP   None            <none>        5432/TCP       2m5s
+awx-lab-service                                   NodePort    10.43.26.210    <none>        80:31854/TCP   62s
+awx-operator-controller-manager-metrics-service   ClusterIP   10.43.232.121   <none>        8443/TCP       3m34s
+
+root@no-awx-204:~/awx-operator# kubectl get secret awx-lab-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
+aGmeNhGidyB5d6neDcMHTWMUGkNf6Mwd
+
+http://10.14.17.204:31854
+
 
 kubectl get secret awx-lab-admin-password -o jsonpath="{.data.password}" -n awx | base64 --decode ; echo
 tjbAdSyRfS3VnIhHJNtdEAif8zZ8Hkuk
@@ -88,6 +116,9 @@ pod "awx-lab-migration-24.6.1-mdxkj" force deleted
 Posd in  Init:
 https://stackoverflow.com/questions/50075422/kubernetes-pods-hanging-in-init-state
 
+apt install ansible-core
+ansible-galaxy collection install ansible.netcommon
+ansible-galaxy collection install nokia.sros
 
 ******************************************
 git tag  (q to exit)
