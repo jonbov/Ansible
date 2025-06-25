@@ -1,9 +1,0 @@
-graph {
-
-rankdir=LR;
-node [shape=box];
-PE1 -- E1 [fontsize=8, headlabel="Gi0/1", taillabel="Gi0/1"];
-PE1 -- E2 [fontsize=8, headlabel="Gi0/2", taillabel="Gi0/1"];
-PE2 -- E3 [fontsize=8, headlabel="Gi0/1", taillabel="Gi0/3"];
-PE2 -- E4 [fontsize=8, headlabel="Gi0/2", taillabel="Gi0/3"];
-}

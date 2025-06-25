@@ -1,2 +1,0 @@
----
-sysname: SW3
