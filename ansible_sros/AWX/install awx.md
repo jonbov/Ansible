@@ -15,7 +15,7 @@ Install Ansible and virtual environment:
 sudo apt install python3.10-venv
 python3 -m venv .venv
 source .venv/bin/activate
-sudo apt install ansible
+apt install ansible
 ansible-galaxy collection install ansible.netcommon
 ansible-galaxy collection install nokia.sros
 pip install paramiko
@@ -89,6 +89,7 @@ metadata:
   name: awx-lab
 spec:
   service_type: nodeport
+  nodeport_port: 30080
   task_resource_requirements:
     requests:
       cpu: 100m
@@ -205,8 +206,8 @@ pod "awx-lab-migration-24.6.1-mdxkj" force deleted
 
 Posd in  Init:
 https://stackoverflow.com/questions/50075422/kubernetes-pods-hanging-in-init-state
-
-
+ kubectl delete pods -n awx --all
+kubectl delete service -n awx --all
 
 # Create a virtual environment
 python3 -m venv .venv
@@ -214,9 +215,14 @@ python3 -m venv .venv
 # Activate the virtual environment
 source .venv/bin/activate
 
-apt install ansible-core
-ansible-galaxy collection install ansible.netcommon
-ansible-galaxy collection install nokia.sros
+
+*********************************************************
+Portainer k3s GUI
+http://awx.bovre.net:30777
+port 30777/30779
+kubectl apply -n portainer -f https://raw.githubusercontent.com/portainer/k8s/master/deploy/manifests/portainer/portainer.yaml
+https://docs.portainer.io/start/install-ce/server/kubernetes/baremetal
+
 
 ******************************************
 git tag  (q to exit)
