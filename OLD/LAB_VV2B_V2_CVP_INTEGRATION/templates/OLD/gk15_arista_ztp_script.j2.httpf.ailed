@@ -1,3 +1,0 @@
-#!/usr/bin/Cli -p2
-enable
-copy http://10.0.10.50/arista/download.php?path=/home/jonbov/LAB_VV2B/configs/{{ ztp[inventory_hostname]['hostname']}}_ztp.cfg flash:startup-config

@@ -1,1 +1,0 @@
- sudo sshpass -p "a4068becs" scp   ansible@nn-access-sw81.nnsol.no:flash:/vrpcfg.zip scp_backups/sw81.zip

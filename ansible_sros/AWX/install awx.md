@@ -1,4 +1,42 @@
-install awx
+Ubuntu version 22.04.2 LTS installed
+-4 vCPU
+-8GB RAM
+-32GB disk (thin)
+netnordic@no-awx-205:~/ansible_sros$  lsb_release -a
+  No LSB modules are available.
+  Distributor ID: Ubuntu
+  Description:    Ubuntu 22.04.2 LTS
+  Release:        22.04
+  Codename:       jammy
+
+******************************************************************************
+Install Ansible and virtual environment:
+
+sudo apt install python3.10-venv
+python3 -m venv .venv
+source .venv/bin/activate
+sudo apt install ansible
+ansible-galaxy collection install ansible.netcommon
+ansible-galaxy collection install nokia.sros
+pip install paramiko
+sudo apt-get install -y python3-paramiko
+apt install make
+
+copy Ansible files to /home/netnordic/...
+
+verify playbook run on SROS device
+(.venv) netnordic@no-awx-205:~/ansible_sros$ ansible-playbook playbooks/sros_show_info_200.yml 
+
+    PLAY [10.14.34.200] ****************
+
+    TASK [get system information] ******
+    ok: [10.14.34.200]
+
+deactivate
+(to get out of venv)
+
+********************************************************************************
+install Kubernetes k3s
 
 https://www.youtube.com/watch?v=OLIktAb9-FY
 
@@ -15,11 +53,17 @@ apt install jq
 
 curl -sfL https://get.k3s.io   | sh -
 kubectl version
+  Client Version: v1.32.5+k3s1
+  Kustomize Version: v5.5.0
+  Server Version: v1.32.5+k3s1
+
+********************************************************************************
+install AWX
 
 https://ansible.readthedocs.io/projects/awx-operator/en/latest/installation/basic-install.html
 
 git clone https://github.com/ansible/awx-operator.git
-(sudo chmod 644 /etc/rancher/k3s/k3s.yaml)
+#(sudo chmod 644 /etc/rancher/k3s/k3s.yaml)
 
 
 
@@ -27,9 +71,11 @@ cd awx-operator
 export NAMESPACE=awx
 kubectl create ns ${NAMESPACE}
 sudo kubectl config set-context --current --namespace=awx
-!Command locks: RELEASE_TAG='curl -s https://api.github.com/repos/ansible/awx-operator/releases/latest | grep tag_name | cut -d '"' -f 4'
+
+  !Command locks: RELEASE_TAG='curl -s https://api.github.com/repos/ansible/awx-operator/releases/latest | grep tag_name | cut -d '"' -f 4'
 curl -s https://api.github.com/repos/ansible/awx-operator/releases/latest | grep tag_name | cut -d '"' -f 4
-2.19.1
+  2.19.1
+
 git checkout 2.19.1
 make deploy
 

@@ -1,7 +1,0 @@
-leaf7.bovre.net:
-  hostname: Leaf7
-  client-id: 001c.73f8.e7bf
-  interfaces:
-     management1:
-       ipv4: 10.10.10.100
-       mask: 24

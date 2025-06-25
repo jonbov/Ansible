@@ -1,0 +1,21 @@
+---
+- hosts: 10.14.34.200
+  vars:
+    ansible_network_os: nokia.sros.light
+
+  gather_facts: No
+
+  collections:
+  - nokia.sros
+
+
+  tasks:
+  - name: get system information
+    cli_command:
+      command: show system information
+    register: output1
+
+  - name: display output
+    debug:
+      msg: |
+        {{output1.stdout}}
