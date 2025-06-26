@@ -176,7 +176,8 @@ awx-lab-postgres-15                               ClusterIP   None           <no
 awx-lab-service                                   NodePort    10.43.253.21   <none>        80:31864/TCP   12s
 awx-operator-controller-manager-metrics-service   ClusterIP   10.43.54.27    <none>        8443/TCP       2m37s
 
-root@no-awx-204:~/awx-operator# kubectl get secret awx-lab-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
+root@no-awx-204:~/awx-operator# 
+kubectl get secret awx-lab-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
 UYXS3KmMB6zcajONv2qdAFJbnBkgzcKn
 
 http://10.14.17.204:31864

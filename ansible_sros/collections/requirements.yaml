@@ -1,0 +1,10 @@
+---
+collections:
+  - name: kubernetes.core
+    version: '>=2.3.2'
+  - name: operator_sdk.util
+    version: "0.5.0"
+  - name: ansible.netcommon
+  - name: ansible.utils
+  - name: nokia.sros
+  - name: cisco.ios
