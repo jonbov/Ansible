@@ -89,6 +89,7 @@ metadata:
   name: awx-lab
 spec:
   service_type: nodeport
+  nodeport_port: 30080
   task_resource_requirements:
     requests:
       cpu: 100m
@@ -217,6 +218,36 @@ source .venv/bin/activate
 apt install ansible-core
 ansible-galaxy collection install ansible.netcommon
 ansible-galaxy collection install nokia.sros
+
+ansible-galaxy collection list
+  # /root/.ansible/collections/ansible_collections
+  Collection        Version
+  ----------------- -------
+  ansible.netcommon 8.0.0  
+  ansible.utils     6.0.0  
+  nokia.sros        1.6.0  
+  # /usr/lib/python3/dist-packages/ansible_collections
+  Collection                Version
+  ------------------------- -------
+  amazon.aws                1.4.0  
+  ansible.netcommon         1.5.0  
+  ansible.posix             1.1.1  
+
+
+nano requirements.yml
+---
+collections:
+  - name: kubernetes.core
+    version: '>=2.3.2'
+  - name: operator_sdk.util
+    version: "0.5.0"
+  - nokia.sros
+    version: '>=1.6.0'
+  - ansible.netcommon
+    version: '>=8.0.0'
+
+
+
 
 ******************************************
 git tag  (q to exit)
