@@ -1,5 +1,5 @@
 ---
-iosxe:
+ios:
   hosts:
     Cat9300-1#:
       ansible_host: 10.65.0.2
