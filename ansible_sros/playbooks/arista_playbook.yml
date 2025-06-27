@@ -1,0 +1,21 @@
+---
+- name: Configure Arista EOS Devices
+  hosts: arista_switches
+  gather_facts: no
+  tasks:
+  - name: Set hostname
+  arista.eos.eos_config:
+  lines:
+  - hostname {{ inventory_hostname }}
+
+  - name: Configure VLANs
+  arista.eos.eos_config:
+  lines:
+  - vlan 10
+  - name Management
+  - vlan 20
+  - name Sales
+
+  - name: Save configuration
+  arista.eos.eos_config:
+  save_when: always

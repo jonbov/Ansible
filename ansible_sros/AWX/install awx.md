@@ -15,7 +15,7 @@ Install Ansible and virtual environment:
 sudo apt install python3.10-venv
 python3 -m venv .venv
 source .venv/bin/activate
-sudo apt install ansible
+apt install ansible
 ansible-galaxy collection install ansible.netcommon
 ansible-galaxy collection install nokia.sros
 pip install paramiko
@@ -176,7 +176,8 @@ awx-lab-postgres-15                               ClusterIP   None           <no
 awx-lab-service                                   NodePort    10.43.253.21   <none>        80:31864/TCP   12s
 awx-operator-controller-manager-metrics-service   ClusterIP   10.43.54.27    <none>        8443/TCP       2m37s
 
-root@no-awx-204:~/awx-operator# kubectl get secret awx-lab-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
+root@no-awx-204:~/awx-operator# 
+kubectl get secret awx-lab-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
 UYXS3KmMB6zcajONv2qdAFJbnBkgzcKn
 
 http://10.14.17.204:31864
@@ -206,8 +207,8 @@ pod "awx-lab-migration-24.6.1-mdxkj" force deleted
 
 Posd in  Init:
 https://stackoverflow.com/questions/50075422/kubernetes-pods-hanging-in-init-state
-
-
+ kubectl delete pods -n awx --all
+kubectl delete service -n awx --all
 
 # Create a virtual environment
 python3 -m venv .venv
@@ -215,9 +216,14 @@ python3 -m venv .venv
 # Activate the virtual environment
 source .venv/bin/activate
 
-apt install ansible-core
-ansible-galaxy collection install ansible.netcommon
-ansible-galaxy collection install nokia.sros
+
+*********************************************************
+Portainer k3s GUI
+http://awx.bovre.net:30777
+port 30777/30779
+kubectl apply -n portainer -f https://raw.githubusercontent.com/portainer/k8s/master/deploy/manifests/portainer/portainer.yaml
+https://docs.portainer.io/start/install-ce/server/kubernetes/baremetal
+
 
 ansible-galaxy collection list
   # /root/.ansible/collections/ansible_collections
