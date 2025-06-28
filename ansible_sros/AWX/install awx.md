@@ -162,6 +162,14 @@ http://awx.bovre.net:31250
 admin / 7adDuUOUbWMQ6b1w7a8ZMNMFyIIG2SkI
 admin / a4068becs
 
+(https://galaxy.ansible.com/ui/token/)
+  API token
+  Use this token to authenticate the ansible-galaxy client.
+
+  WARNING copy this token now. This is the only time you will ever see it.
+  45e7440f5c837a0b6e024d1092f783d6a6223ce7
+
+
 no-awx-204:
 root@no-awx-204:~/awx-operator# kubectl get pods -n awx
 NAME                                               READY   STATUS              RESTARTS   AGE
