@@ -25,20 +25,11 @@
     debug:
       msg: "{{ underlay }}"
   #    run_once: true
-#-------------------------------------------------------------------
-#   Create and push system config
-#-------------------------------------------------------------------
-  - name: Create system configuration 
-    template:
-#      src: "{{dir_path}}/templates/sros_system.j2"
-      src: "sros_system.j2"
-#      dest: "{{dir_path}}/configs/{{inventory_hostname}}_system.cfg"
-      dest: "{{inventory_hostname}}_system.cfg"
+  - name: Create config directory
+    file:
+      path: configs
+      state: directory
 
-  - name: Read system file content
-    set_fact:
-#        system_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_system.cfg') }}"
-        system_configuration: "{{ lookup('file', '{{inventory_hostname}}_system.cfg') }}"
 
 #-------------------------------------------------------------------
 #   Create and push system config
