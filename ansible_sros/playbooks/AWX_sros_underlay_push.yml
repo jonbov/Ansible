@@ -18,7 +18,7 @@
 #      file: "{{dir_path}}/vars/{{vars_file}}"
 #      name: underlay
     include_vars:
-      file: "vars/{{vars_file}}"
+      file: "{{vars_file}}"
       name: underlay
   #    run_once: true
   - name: Test all variables
