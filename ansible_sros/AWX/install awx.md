@@ -1,7 +1,13 @@
 Ubuntu version 22.04.2 LTS installed
 -4 vCPU
--8GB RAM
--32GB disk (thin)
+-8GB RAM (8196)
+-32GB or bigger disk (thin)
+Partition should be minimum 32GB
+sudo fdisk -l
+Device     Start       End   Sectors Size Type
+/dev/sda1   2048      4095      2048   1M BIOS boot
+/dev/sda2   4096 100661247 100657152  48G Linux filesystem
+
 netnordic@no-awx-205:~/ansible_sros$  lsb_release -a
   No LSB modules are available.
   Distributor ID: Ubuntu
@@ -40,11 +46,18 @@ install Kubernetes k3s
 
 https://www.youtube.com/watch?v=OLIktAb9-FY
 
-
+install to /opt
+ensure sufficient disk space for additional EEs.
+Partition should be minimum 32GB
+sudo fdisk -l
+Device     Start       End   Sectors Size Type
+/dev/sda1   2048      4095      2048   1M BIOS boot
+/dev/sda2   4096 100661247 100657152  48G Linux filesystem
 
 1: Install Kubernetes (k3s)
 sudo -i 
 (root@awx)
+cd /opt
 
 apt update
 apt upgrade
