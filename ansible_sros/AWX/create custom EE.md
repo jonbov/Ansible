@@ -7,6 +7,9 @@ df -i
 sudo cfdisk
 ****************************
 sudo -i
+cd /opt
+mkdir ansible
+cd ansible
 
 apt update
 apt upgrade
@@ -15,22 +18,24 @@ apt install jq
 
 #install Podman and Ansible-Builder
 
+
 sudo apt-get -y install ansible
 sudo apt-get -y install podman
-
+sudo apt install python3-virtualenv
+sudo apt install python3.10-venv
 
 #verify Podman
 podman images
 podman ps -a
 
 quit sudo (exit or ctrl-D)
-cd /home/jonbov
+cd /opt/ansible
 
 #run in virtual environment
-sudo apt install python3-virtualenv
-python3 -m venv venv-ee-demo
-source venv-ee-demo/bin/activate
-cd venv-ee-demo/
+
+python3 -m venv venv-ee
+source venv-ee/bin/activate
+cd venv-ee/
 
 #inside venv:
 pip install ansible-builder
@@ -39,7 +44,39 @@ ansible-builder --help
 
 ansible-builder -h build 
 
-mkdir project_directory && cd project_directory
+mkdir EE_project_directory && cd EE_project_directory
+  add 4 files to EE_project_directory:
+  execution-environment.yml
+  requirements.yml
+  requirements.txt
+  bindep.txt
+-(Sample files on )
+ls -ll
+  -rw-rw-r-- 1 netnordic netnordic   41 Jun 30 04:47 bindep.txt
+  -rw-rw-r-- 1 netnordic netnordic 1009 Jun 30 04:47 execution-environment.yml
+  -rw-rw-r-- 1 netnordic netnordic   55 Jun 30 04:47 requirements.txt
+  -rw-rw-r-- 1 netnordic netnordic  146 Jun 30 04:47 requirements.yml
+
+verify awx-ee on quay-io:
+https://quay.io/repository/ansible/awx-ee?tab=tags
+
+
+
+ansible-builder build -t sros_automation -v 3
+-build takes approx 20 minutes
+
+
+
+
+
+
+
+
+
+
+
+
+******************************
 
 cat <<EOT >> execution-environment.yml
 ---
