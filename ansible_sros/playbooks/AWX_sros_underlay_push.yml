@@ -1,0 +1,95 @@
+---
+- hosts: nn_sros
+  gather_facts: no
+
+  vars:
+  #  vars_file: sros_gk15_routing.yml
+    vars_file: sros_nnlab_routing.yml
+    ansible_network_os: nokia.sros.light
+    ansible_command_timeout: 120 # 2 minutes
+  
+  tasks:
+  - name: register base directory
+    set_fact:
+      dir_path: "{{lookup('env','PWD')}}"
+
+  - name: Register variables
+    include_vars:
+      file: "{{dir_path}}/vars/{{vars_file}}"
+      name: underlay
+  #    run_once: true
+  - name: Test all variables
+    debug:
+      msg: "{{ underlay }}"
+  #    run_once: true
+#-------------------------------------------------------------------
+#   Create and push system config
+#-------------------------------------------------------------------
+  - name: Create system configuration file
+    template:
+      src: "{{dir_path}}/templates/sros_system.j2"
+      dest: "{{dir_path}}/configs/{{inventory_hostname}}_system.cfg"
+
+  - name: Read system file content
+    set_fact:
+        system_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_system.cfg') }}"
+
+  - name: push config to device
+    cli_config:
+        config: | 
+          {{ system_configuration }}
+
+#-------------------------------------------------------------------
+#   Create and push MDA config
+#-------------------------------------------------------------------
+
+  - name: Create configuration file for MDA
+    template:
+      src: "{{dir_path}}/templates/sros_mda.j2"
+      dest: "{{dir_path}}/configs/{{inventory_hostname}}_mda.cfg"
+
+
+  - name: Read MDA file content
+    set_fact:
+        mda_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_mda.cfg') }}"
+
+  - name: push config to device
+    cli_config:
+        config: | 
+          {{ mda_configuration }}
+
+#-------------------------------------------------------------------
+#   Create  and push port config
+#-------------------------------------------------------------------
+
+  - name: Create configuration file for ports
+    template:
+      src: "{{dir_path}}/templates/sros_port.j2"
+      dest: "{{dir_path}}/configs/{{inventory_hostname}}_port.cfg"
+
+  - name: Read port file content
+    set_fact:
+        port_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_port.cfg') }}"
+
+  - name: push config to device
+    cli_config:
+        config: | 
+          {{ port_configuration }}
+
+#-------------------------------------------------------------------
+#   Create and push base router config
+#-------------------------------------------------------------------
+
+  - name: Create router underlay configuration file
+    template:
+      src: "{{dir_path}}/templates/sros_underlay.j2"
+      dest: "{{dir_path}}/configs/{{inventory_hostname}}_router.cfg"
+
+  - name: Read router file content
+    set_fact:
+        port_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_router.cfg') }}"
+
+  - name: push config to device
+    cli_config:
+        config: | 
+          {{ port_configuration }}
