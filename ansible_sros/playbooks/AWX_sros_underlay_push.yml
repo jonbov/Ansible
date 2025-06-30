@@ -14,8 +14,11 @@
       dir_path: "{{lookup('env','PWD')}}"
 
   - name: Register variables
+#    include_vars:
+#      file: "{{dir_path}}/vars/{{vars_file}}"
+#      name: underlay
     include_vars:
-      file: "{{dir_path}}/vars/{{vars_file}}"
+      file: "vars/{{vars_file}}"
       name: underlay
   #    run_once: true
   - name: Test all variables
