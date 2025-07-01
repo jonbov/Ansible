@@ -14,14 +14,12 @@
 
   tasks:
 #-------------------------------------------------------------------
-#   Delete all config files, reboot
+#   Admin save
 #-------------------------------------------------------------------
 
-  - name: delete config files
-    cli_command:
-      command: file delete config.* force 
 
-  - name: reboot
+  - name: save
     cli_command:
-      command: admin reboot now 
+      command: admin save
+      
        
