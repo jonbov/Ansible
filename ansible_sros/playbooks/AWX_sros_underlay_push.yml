@@ -1,5 +1,6 @@
 ---
-- hosts: nn_sros
+#- hosts: nn_sros
+- hosts: 10.14.34.203
   gather_facts: no
 
   vars:
