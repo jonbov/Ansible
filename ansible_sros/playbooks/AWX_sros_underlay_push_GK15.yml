@@ -25,6 +25,12 @@
     debug:
       msg: "{{ underlay }}"
   #    run_once: true
+  - name: Create config directory
+    file:
+      path: configs
+      state: directory
+
+
 #-------------------------------------------------------------------
 #   Create and push system config
 #-------------------------------------------------------------------
