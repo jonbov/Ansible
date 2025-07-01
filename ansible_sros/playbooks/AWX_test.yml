@@ -13,9 +13,10 @@
 
   tasks:
 
-  - name: print current playbook directory
+  - name: get current playbook directory
     set_fact:
       x: "{{ playbook_dir }}"
+  - name: print current playbook directory
     debug:
       msg: "{{ x }}"
  
