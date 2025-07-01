@@ -13,19 +13,6 @@
   - name: register base directory
     set_fact:
       dir_path: "{{lookup('env','PWD')}}"
-
-  - name: Register variables
-#    include_vars:
-#      file: "{{dir_path}}/vars/{{vars_file}}"
-#      name: underlay
-    include_vars:
-      file: "{{vars_file}}"
-      name: underlay
-  #    run_once: true
-  - name: Test all variables
-    debug:
-      msg: "{{ underlay }}"
-  #    run_once: true
 #-------------------------------------------------------------------
 #   Create config directory on runner
 #-------------------------------------------------------------------
@@ -33,6 +20,20 @@
     file:
       path: configs
       state: directory
+      
+  - name: Register variables
+    include_vars:
+      file: "{{dir_path}}/vars/{{vars_file}}"
+      name: underlay
+#    include_vars:
+#      file: "{{vars_file}}"
+#      name: underlay
+  #    run_once: true
+  - name: Test all variables
+    debug:
+      msg: "{{ underlay }}"
+  #    run_once: true
+
 #-------------------------------------------------------------------
 #   Create and push system config
 #-------------------------------------------------------------------
