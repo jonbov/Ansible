@@ -16,7 +16,7 @@
   - name: get current playbook directory
     set_fact:
       x: "{{ playbook_dir }}"
-    #  x: "{{ working_dir }}"
+
   - name: print current playbook directory
     debug:
       msg: "{{ x }}"

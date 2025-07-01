@@ -1,6 +1,6 @@
 ---
-#- hosts: nn_sros
-- hosts: 10.14.34.205
+- hosts: nn_sros
+#- hosts: 10.14.34.205
   gather_facts: true
 
   vars:
@@ -12,8 +12,6 @@
 
 
   tasks:
-
-
  
   - name: register base directory
     set_fact:
@@ -38,8 +36,8 @@
 
   - name: Register variables
     include_vars:
-#      file: "{{dir_path}}/vars/{{vars_file}}"
-      file: "{{vars_file}}"
+      file: "{{dir_path}}/vars/{{vars_file}}"
+#      file: "{{vars_file}}"
       name: underlay
   #    run_once: true
 
@@ -54,7 +52,7 @@
 #-------------------------------------------------------------------
   - name: Create system configuration file
     template:
-#      src: "{{dir_path}}/templates/sros_system.j2"
+      src: "{{dir_path}}/templates/sros_system.j2"
       src: "sros_system.j2"
       dest: "{{dir_path}}/configs/{{inventory_hostname}}_system.cfg"
 #      dest: "{{inventory_hostname}}_system.cfg"
