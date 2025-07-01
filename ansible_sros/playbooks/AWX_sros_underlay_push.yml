@@ -36,7 +36,7 @@
 
   - name: Test Read system file content
     set_fact:
-        system_configuration: "{{ lookup('file', './configs/{{inventory_hostname}}_system.cfg') }}"
+        system_configuration: "{{ lookup('file', 'configs/{{inventory_hostname}}_system.cfg') }}"
 #        system_configuration: "{{ lookup('file', '{{inventory_hostname}}_system.cfg') }}"
 
 
