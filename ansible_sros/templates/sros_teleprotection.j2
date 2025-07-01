@@ -1,0 +1,186 @@
+
+#*********************< Configuration for Teleprotection circuit between:  >*******jinja2**************
+#*********************< {{ site_sysname }} and {{ remote_site_sysname }} >*********************
+#
+# Servicetype:  {{ tp_cem }}
+# Service ID:   {{ tp_circuitid }}
+# SDP ID:       {{ tp_sdp }}
+#
+# Site A:       {{ site_name }}
+# CPE:          {{ site_sysname }}
+# IP:           {{ site_IP }}
+# Chassis type  {{ site_chassis }}
+# MDA type      {{ site_mda_type }}
+# MDA slot:     {{ site_mda_slot }}
+# Port on MDA:  {{ site_mda_port }}
+# Port:         {{ site_port }}
+#
+# Site B:       {{ remote_site_name }} 
+# CPE:          {{ remote_site_sysname }}
+# IP:           {{ remote_site_IP }}
+# Chassis type  {{ remote_site_chassis }}
+# MDA type      {{ remote_site_mda_type }}
+# MDA slot:     {{ remote_site_mda_slot }}
+# Port on MDA:  {{ remote_site_mda_port }}
+# Port:         {{ remote_site_port }}
+#
+# jitter-buffer:{{ tp_jitter_buffer }} 
+# payload-size: {{ tp_payload_size }}
+# Delay:        {{ tp_delay }}
+# DSCP marking: {{ tp_qos }}
+# AMP:          {{ tp_amp }}   (AMP: active multipoint)
+#
+# Comment:      {{ tp_comment }}
+#
+# Date generated: {{ dato }}
+#
+#
+#
+#######################< Site info for: {{ site_sysname }}  >#####################
+# Site:         {{ site_name }}
+# CPE:          {{ site_sysname }}
+# IP:           {{ site_IP }}
+# Chassis type  {{ site_chassis }}
+# MDA type      {{ site_mda_type }}
+# MDA slot:     {{ site_mda_slot }}
+# Port:         {{ site_port }}
+#
+#---------------------< Port config for site: {{ site_sysname }}  >---------------------
+exit all
+configure
+  card 1
+    mda {{ site_mda }}
+      mda-type {{ site_mda_type }}
+      no shutdown
+      exit all
+
+configure
+port {{ site_port }}
+        description "{{ tp_cem }} to {{ remote_site_sysname }}"
+        tdm
+            tpif
+                channel-group 1
+                    encap-type cem
+                    no shutdown
+                exit
+                no shutdown
+            exit
+        exit
+        no shutdown
+        exit all
+
+#---------------------< MPLS config for site: {{ site_sysname }}   >---------------------
+configure router mpls
+path RV-{{ tp_circuitid }}0-TO-{{ remote_site_sysname }} 
+{% for dict_item in primary_path %}{% for item in dict_item['hop'] %}  hop {{item[0]}} {{item[1]}} strict
+        # {{item[2]}}{% endfor %}.
+{% endfor %} no shutdown
+exit all
+
+
+configure router mpls
+path RV-{{ tp_circuitid }}1-TO-{{ remote_site_sysname }} 
+{% for dict_item in secondary_path %}{% for item in dict_item['hop'] %}  hop {{item[0]}} {{item[1]}} strict
+        # {{item[2]}}{% endfor %}.
+{% endfor %}  no shutdown
+exit all
+
+configure router mpls
+  lsp RV-{{ tp_circuitid }}0-{{ remote_site_sysname }}
+     from {{ site_IP }}
+     to {{ remote_site_IP }}
+     path-computation-method local-cspf 
+       primary RV-{{ tp_circuitid }}0-TO-{{ remote_site_sysname }}
+     exit
+     no shutdown
+exit all
+
+
+configure router mpls
+  lsp RV-{{ tp_circuitid }}1-{{ remote_site_sysname }}
+     from {{ site_IP }}
+     to {{ remote_site_IP }}
+     path-computation-method local-cspf 
+       primary RV-{{ tp_circuitid }}1-TO-{{ remote_site_sysname }}
+     exit
+     no shutdown
+exit all
+
+
+
+#---------------------< QoS config for site: {{ site_sysname }}  >---------------------
+
+configure qos
+  sap-ingress {{ tp_qos }} create
+    policy-name Relevern
+    queue 1 create
+      exit
+    queue 3 create
+      exit
+    fc ef create
+      queue 3
+      exit
+    default-fc ef
+    default-priority high
+    exit all
+
+#---------------------< Service config for site: {{ site_sysname }}  >---------------------
+
+exit all
+configure service
+  sdp {{ tp_circuitid }}0 create
+    far-end {{ remote_site_IP }}
+    lsp RV-{{ tp_circuitid }}0-{{ remote_site_sysname }}
+    path-mtu 1550
+    no shutdown
+exit all
+
+configure service
+  sdp {{ tp_circuitid }}1 create
+    far-end {{ remote_site_IP }}
+    lsp RV-{{ tp_circuitid }}1-{{ remote_site_sysname }}
+    path-mtu 1550
+    no shutdown
+exit all
+
+
+
+
+configure service
+  cpipe {{ tp_circuitid }} customer 1 create
+    shutdown
+    description "{{ tp_cem }} to {{ remote_site_sysname }}"
+    endpoint RV_{{ tp_circuitid }} create
+        {{ tp_amp }}
+       # command "active-multipath" enables active/active forwarding (non hitless during primary fail)
+    exit
+    sap {{ site_port }}.1 create
+    cem
+        # ADC - asym-delay-control recommended on startup of circuit only (min-repeat 0)
+        {{ tp_adc }} min-repeat 0
+        # confirm by pressing 'y'
+        {{ tp_amp }}-timeout 9
+        packet jitter-buffer {{ tp_jitter_buffer }} payload-size {{ tp_payload_size }}
+        # confirm by pressing 'y'
+    exit
+    ingress
+        qos {{ tp_qos }}
+        exit
+        exit
+    spoke-sdp {{ tp_circuitid }}0:{{ tp_circuitid }}0 endpoint RV_{{ tp_circuitid }} create
+      # If active multipath not enabled, configure precedence to SDP
+       # precedence primary
+        no shutdown
+    exit
+    spoke-sdp {{ tp_circuitid }}1:{{ tp_circuitid }}1 endpoint RV_{{ tp_circuitid }} create
+       # If active multipath not enabled, configure precedence to SDP
+       # precedence 2
+        no shutdown
+    exit
+  no shutdown
+  
+  sap {{ site_port }}.1 create
+    cem
+        # ADC - asym-delay-control recommended on startup of circuit only (min-repeat 0)
+        {{ tp_adc }} min-repeat 0
+        y

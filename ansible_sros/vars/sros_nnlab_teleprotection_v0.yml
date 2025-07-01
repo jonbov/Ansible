@@ -1,0 +1,69 @@
+---
+
+tp_cem: C37.94_512k
+tp_circuitid: 690
+tp_sdp: 690
+
+
+site_IP: 10.14.34.205
+site_name: Bergen
+site_sysname: SAR_8-205
+site_chassis: SAR-8
+site_mda_type: a8-vt
+site_mda_slot: 6
+site_mda_port: 1
+
+remote_site_IP: 10.14.34.205
+remote_site_name: Bergen
+remote_site_sysname: SAR_8-205
+remote_site_chassis: SAR-8
+remote_site_mda_type: a8-vt
+remote_site_mda_slot: 6
+remote_site_mda_port: 1
+
+tp_jitter_buffer: 4
+tp_payload_size: 8
+tp_qos: 82
+tp_amp: enable
+
+tp_delay: 2000
+tp_adc: enable
+network_type: rsvp
+
+primary_path:
+    - ip: 10.14.34.200
+      name: sted0
+    - ip: 10.14.34.201
+      name: sted1
+secondary_path:
+    - ip: 10.14.34.202
+      name: sted2
+    - ip: 10.14.34.203
+      name: sted3
+    - ip: 10.14.34.208
+      name: sted8
+
+
+
+
+
+#default and valid options
+  #circuit_type valid options C37.94_512k, C37.94_64k
+  #qos_group valid options 0-100, default 82
+  #jitter_buffer: 1-8, default 4
+  #payload_size: 1-32, default 8
+  #adc: enable, disable, default enable
+  #amp: enable, disable, default enable
+  #network_type: sr, rsvp, default rsvp
+  #pathA-D: path listed from siteA to siteB
+      #ip: system IP on site#
+      #name: site name for documentation
+
+#siteX:
+  #site_IP: IP addr
+  #sysname: SAR-Hc-205
+  #site_name: Bergen
+  #chassis_type: default SAR_8
+  #mda_type: a8-vt, a8-tp, default a8-v8
+  #mda_slot: 1-6, default 6
+  #mda_port: 1-4, default 1
