@@ -1,0 +1,123 @@
+Leaf1.bovre.net:
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 1921.6810.1016
+  ospf:
+    area: 0.0.0.0
+  BGP: 
+    ASN: 65101
+    spine-peers:
+      - 192.168.103.1
+      - 192.168.103.3
+      - 192.168.103.5
+  interfaces:
+    Loopback0: 
+      ipv4: 192.168.101.16
+      mask: 32
+    Loopback1: 
+      ipv4: 192.168.102.16
+      mask: 32
+    Ethernet3:
+      ipv4: 192.168.103.0
+      mask: 31
+    Ethernet4: 
+      ipv4: 192.168.103.2
+      mask: 31
+    Ethernet5: 
+      ipv4: 192.168.103.4
+      mask: 31
+Leaf2.bovre.net:
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 1921.6810.1017
+  ospf:
+    area: 0.0.0.0
+  BGP: 
+    ASN: 65101
+    spine-peers:
+      - 192.168.104.1
+      - 192.168.104.3
+      - 192.168.104.5
+  interfaces:
+    Loopback0: 
+      ipv4: 192.168.101.17
+      mask: 32
+    Loopback1: 
+      ipv4: 192.168.102.17
+      mask: 32
+    Ethernet3:
+      ipv4: 192.168.104.0
+      mask: 31
+    Ethernet4: 
+      ipv4: 192.168.104.2
+      mask: 31
+    Ethernet5: 
+      ipv4: 192.168.104.4
+      mask: 31
+leaf1-dc1.bovre.net:
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 1921.6810.1011
+  ospf:
+    area: 0.0.0.0
+  BGP: 
+    ASN: 65101
+    spine-peers:
+      - 192.168.103.1
+      - 192.168.103.3
+      - 192.168.103.5
+  interfaces:
+     Loopback0:
+       ipv4: 192.168.101.11
+       mask: 32
+     Ethernet3:
+       ipv4: unnumbered
+borderleaf1-dc1.bovre.net:
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 1921.6810.1021
+  ospf:
+    area: 0.0.0.0
+  BGP: 
+    ASN: 65101
+    spine-peers:
+      - 192.168.103.1
+      - 192.168.103.3
+      - 192.168.103.5
+  interfaces:
+     Loopback0:
+       ipv4: 192.168.101.21
+       mask: 32
+     Ethernet3:
+       ipv4: unnumbered
+spine1-dc1.bovre.net:
+  isis:
+    process: ACE
+    net_area: '0001'
+    system_id: 1921.6810.1101
+  ospf:
+    area: 0.0.0.0
+  BGP: 
+    ASN: 65101
+    spine-peers:
+      - 192.168.103.1
+      - 192.168.103.3
+      - 192.168.103.5
+  interfaces:
+    Loopback0:
+      ipv4: 192.168.101.101
+      mask: 32
+    Ethernet2:
+      ipv4: unnumbered
+    Ethernet6:
+      ipv4: unnumbered
+    Ethernet666:
+      ipv4: 1.2.3.4
+      mask: 31
+    Ethernet888:
+      ipv4: 11.12.13.14
+      mask: 31
