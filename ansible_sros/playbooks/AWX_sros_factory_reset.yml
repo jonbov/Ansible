@@ -16,6 +16,30 @@
 #-------------------------------------------------------------------
 #   Delete all config files, reboot
 #-------------------------------------------------------------------
+  - name: file dir (classic)
+    cli_command:
+      command: file dir
+    register: output1
+
+  - name: display output1
+    debug:
+      msg: |
+        {{output1.stdout}}
+
+  - name: reboot node (abort)
+    cli_command:
+      command: admin reboot
+      prompt:
+        - "Are you sure you want to reboot (y/n)?"
+      answer:
+        - 'n'
+    register: output4
+
+
+  - name: display output4
+    debug:
+      msg: |
+        {{output4.stdout}}
 
 
   - name: delete config files
@@ -26,8 +50,8 @@
     cli_command:
       command: file dir
     register: output1
-    
-  - name: display output
+
+  - name: display outputx
     debug:
       msg: |
         {{output1.stdout}}
