@@ -9,7 +9,14 @@
     ansible_network_os: nokia.sros.light
     ansible_command_timeout: 120 # 2 minutes
   
+
+
   tasks:
+  - name: directory
+    debug:
+      msg: "{{ project }}"
+  
+  
   - name: register base directory
     set_fact:
       dir_path: "{{lookup('env','PWD')}}"
