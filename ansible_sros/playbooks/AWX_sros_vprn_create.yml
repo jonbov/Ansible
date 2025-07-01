@@ -26,7 +26,11 @@
   - name: show full directory
     debug:
       msg: "{{ dir_path }}"
-
+      
+  - name: Create config directory
+    file:
+      path: "{{dir_path}}/configs"
+      state: directory
 #-------------------------------------------------------------------
 #   Create and push VPRN router config
 #-------------------------------------------------------------------
