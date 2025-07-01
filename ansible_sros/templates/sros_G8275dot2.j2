@@ -1,0 +1,33 @@
+#--------------------------------------------------
+echo "Card Configuration"
+#--------------------------------------------------
+configure
+system
+ptp 
+            clock 1 create
+                source-interface "system"
+                clock-mda 1/1
+                profile g8275dot2-2016
+                ptp-port 1
+                    peer 1
+                        description "IXR-e-210"
+                        ip-address 10.14.132.210
+                    exit
+                    no shutdown
+                exit
+                no shutdown
+            exit all
+
+configure
+system
+sync-if-timing 
+            begin
+            ql-selection
+            ref3
+                source-ptp-clock 1
+                no shutdown
+            exit
+            revert
+            commit
+            exit all
+
