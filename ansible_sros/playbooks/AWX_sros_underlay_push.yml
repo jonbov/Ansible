@@ -1,7 +1,7 @@
 ---
 - hosts: nn_sros
 #- hosts: 10.14.34.200
-  gather_facts: no
+  gather_facts: true
 
   vars:
   #  vars_file: sros_gk15_routing.yml
@@ -12,6 +12,15 @@
 
 
   tasks:
+  - name: Show environment
+    debug:
+      msg:
+        - "{{ ansible_user }}"
+        - "{{ ansible_env }}"
+        - "{{ ansible_inventory_sources }}"
+        - "{{ tower_job_template_name }}"
+        - "{{ tower_job_id }}"
+        - "{{ tower_job_launch_type }}"
   - name: directory
     debug:
       msg: "{{ project }}"
