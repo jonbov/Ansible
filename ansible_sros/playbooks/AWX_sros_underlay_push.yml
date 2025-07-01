@@ -27,6 +27,13 @@
       msg: "{{ underlay }}"
   #    run_once: true
 #-------------------------------------------------------------------
+#   Create config directory on runner
+#-------------------------------------------------------------------
+  - name: Create config directory
+    file:
+      path: configs
+      state: directory
+#-------------------------------------------------------------------
 #   Create and push system config
 #-------------------------------------------------------------------
   - name: Create system configuration file
