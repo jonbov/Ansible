@@ -23,13 +23,14 @@
     set_fact:
       dir_path: "{{lookup('env','PWD')}}"
 
-  - name: register full directory
+
+  - name: create full directory
     set_fact:
-      full_path: "{{lookup('env','PWD','{{sros_dir}}')}}"
+      fpath: "{{dir_path + sros_dir}}"
 
   - name: full directory
     debug:
-      msg: "{{ full_path }}"
+      msg: "{{ fpath }}"
   
 #-------------------------------------------------------------------
 #   Create config directory on runner
