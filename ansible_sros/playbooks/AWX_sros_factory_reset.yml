@@ -17,13 +17,22 @@
 #   Delete all config files, reboot
 #-------------------------------------------------------------------
 
-  - name: reset device
-    cli_config:
-        config: | 
-          file
-          delete config.* force 
-          exit
-          /admin reboot now
+
+  - name: delete config files
+    cli_command:
+      command: file delete config.* force 
+
+  - name: reboot
+    cli_command:
+      command: admin reboot now 
+       
+ # - name: reset device
+#    cli_config:
+#        config: | 
+#          file
+#          delete config.* force 
+#          exit
+#          /admin reboot now
 
 
 
