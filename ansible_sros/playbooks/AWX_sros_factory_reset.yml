@@ -12,36 +12,7 @@
 
 
   tasks:
- 
-  - name: register base directory
-    set_fact:
-      base_path: "{{lookup('env','PWD')}}"
 
-
-  - name: create full directory
-    set_fact:
-      dir_path: "{{base_path + sros_dir}}"
-
-  - name: show full directory
-    debug:
-      msg: "{{ dir_path }}"
-  
-#-------------------------------------------------------------------
-#   Create config directory on runner
-#-------------------------------------------------------------------
-  - name: Create config directory
-    file:
-      path: "{{dir_path}}/configs"
-      state: directory
-
-  - name: Register variables
-    include_vars:
-      file: "{{dir_path}}/vars/{{vars_file}}"
-      name: underlay
-
-  - name: Test all variables
-    debug:
-      msg: "{{ underlay }}"
 #-------------------------------------------------------------------
 #   Delete all config files, reboot
 #-------------------------------------------------------------------
@@ -51,7 +22,8 @@
         config: | 
           file
           delete config.* force 
+          exit
           /admin reboot now
 
-          
+
 
