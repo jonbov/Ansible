@@ -8,29 +8,25 @@
     vars_file: sros_nnlab_routing.yml
     ansible_network_os: nokia.sros.light
     ansible_command_timeout: 120 # 2 minutes
-    sros_dir: "project/sros_underlay/"
+    sros_dir: "/project/sros_underlay/"
 
 
   tasks:
 
 
-  - name: directory
-    debug:
-      msg: "{{ sros_dir }}"
-  
-  
+ 
   - name: register base directory
     set_fact:
-      dir_path: "{{lookup('env','PWD')}}"
+      base_path: "{{lookup('env','PWD')}}"
 
 
   - name: create full directory
     set_fact:
-      fpath: "{{dir_path + sros_dir}}"
+      dir_path: "{{base_path + sros_dir}}"
 
-  - name: full directory
+  - name: show full directory
     debug:
-      msg: "{{ fpath }}"
+      msg: "{{ dir_path }}"
   
 #-------------------------------------------------------------------
 #   Create config directory on runner
