@@ -26,6 +26,21 @@
       msg: |
         {{output1.stdout}}
 
+
+  - name: delete config files
+    cli_command:
+      command: file delete config.* force 
+
+  - name: file dir (classic)
+    cli_command:
+      command: file dir
+    register: output5
+
+  - name: display output5
+    debug:
+      msg: |
+        {{output5.stdout}}
+
   - name: reboot node (abort)
     cli_command:
       command: admin reboot
@@ -42,19 +57,9 @@
         {{output4.stdout}}
 
 
-  - name: delete config files
-    cli_command:
-      command: file delete config.* force 
 
-  - name: file dir (classic)
-    cli_command:
-      command: file dir
-    register: output1
 
-  - name: display outputx
-    debug:
-      msg: |
-        {{output1.stdout}}
+
 
   - name: reboot
     cli_command:
