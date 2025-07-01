@@ -53,7 +53,7 @@
 
   - name: Read file content
     set_fact:
-        sros_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_G8275dot2.cfg') }}"
+        sros_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_g8275dot2.cfg') }}"
 
   - name: push config to device
     cli_config:
