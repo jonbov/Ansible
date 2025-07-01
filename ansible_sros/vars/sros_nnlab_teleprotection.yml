@@ -1,0 +1,41 @@
+common:
+  circuit_type: C37.94_512k
+  qos_group: 82
+  jitter_buffer: 4
+  payload_size: 8
+  adc: enable
+  amp: enable
+  pathA:
+    - ip: 10.14.34.200
+      name: sted0
+    - ip: 10.14.34.201
+      name: sted1
+  pathB:
+    - ip: 10.14.34.202
+      name: sted2
+    - ip: 10.14.34.203
+      name: sted3
+    - ip: 10.14.34.208
+      name: sted8
+  pathC:
+  pathD:
+
+siteA:
+  site_IP: 10.14.34.205
+  sysname: SAR-Hc-205
+  site_name: Bergen
+  chassis_type: SAR_8
+  mda_type: a8-vt
+  mda_slot: 6
+  mda_port: 1
+
+siteB:
+  sitename: SAR-Hc-206
+  site_IP: 10.14.34.206
+  sysname: SAR-Hc-206
+  site_name: Voss
+  chassis_type: SAR-8
+  mda_type: a8-vt
+  mda_slot: 6
+  mda_port: 1
+
