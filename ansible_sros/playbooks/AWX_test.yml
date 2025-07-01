@@ -14,8 +14,10 @@
   tasks:
 
   - name: print current playbook directory
-      ansible.builtin.debug:
-        var: playbook_dir
+    set_fact:
+      x: {{ playbook_dir }}
+    debug:
+      msg: "{{ x }}"
  
   - name: register base directory
     set_fact:
