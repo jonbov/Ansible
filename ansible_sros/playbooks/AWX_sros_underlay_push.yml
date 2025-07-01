@@ -15,12 +15,8 @@
   - name: Show environment
     debug:
       msg:
-        - "{{ ansible_user }}"
         - "{{ ansible_env }}"
-        - "{{ ansible_inventory_sources }}"
-        - "{{ tower_job_template_name }}"
-        - "{{ tower_job_id }}"
-        - "{{ tower_job_launch_type }}"
+
   - name: directory
     debug:
       msg: "{{ project }}"
