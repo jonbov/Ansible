@@ -1,6 +1,6 @@
 ---
-#- hosts: nn_sros
-- hosts: 10.14.34.200
+- hosts: nn_sros
+#- hosts: 10.14.34.200
   gather_facts: no
 
   vars:
