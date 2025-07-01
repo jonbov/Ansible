@@ -25,7 +25,7 @@
 
   - name: register full directory
     set_fact:
-      full_path: "{{lookup('env','PWD',{{sros_dir:}})}}"
+      full_path: "{{lookup('env','PWD','{{sros_dir}}')}}"
 
   - name: full directory
     debug:
