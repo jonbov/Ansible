@@ -22,6 +22,16 @@
     cli_command:
       command: file delete config.* force 
 
+  - name: file dir (classic)
+    cli_command:
+      command: file dir
+    register: output1
+    
+  - name: display output
+    debug:
+      msg: |
+        {{output1.stdout}}
+
   - name: reboot
     cli_command:
       command: admin reboot now 
