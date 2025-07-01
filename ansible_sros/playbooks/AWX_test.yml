@@ -1,0 +1,52 @@
+---
+#- hosts: nn_sros
+- hosts: 10.14.34.205
+  gather_facts: no
+
+  vars:
+  #  vars_file: sros_gk15_routing.yml
+    vars_file: sros_nnlab_routing.yml
+    ansible_network_os: nokia.sros.light
+    ansible_command_timeout: 120 # 2 minutes
+    sros_dir: "/project/ansible_sros"
+
+
+  tasks:
+
+  - name: print current playbook directory
+      ansible.builtin.debug:
+        var: playbook_dir
+ 
+  - name: register base directory
+    set_fact:
+      base_path: "{{lookup('env','PWD')}}"
+
+
+  - name: create full directory
+    set_fact:
+      dir_path: "{{base_path + sros_dir}}"
+
+  - name: show full directory
+    debug:
+      msg: "{{ dir_path }}"
+  
+#-------------------------------------------------------------------
+#   Create config directory on runner
+#-------------------------------------------------------------------
+  - name: Create config directory
+    file:
+      path: "{{dir_path}}/configs"
+      state: directory
+
+  - name: Register variables
+    include_vars:
+#      file: "{{dir_path}}/vars/{{vars_file}}"
+      file: "{{vars_file}}"
+      name: underlay
+  #    run_once: true
+
+  - name: Test all variables
+    debug:
+      msg: "{{ underlay }}"
+  #    run_once: true
+
