@@ -1,12 +1,13 @@
 ---
 - hosts: nn_sros
-  gather_facts: no
+#- hosts: 10.14.34.205
+  gather_facts: No
 
   vars:
   #  vars_file: sros_gk15_routing.yml
     vars_file: sros_nnlab_routing.yml
     ansible_network_os: nokia.sros.light
-  sros_dir: "/project/ansible_sros"
+    sros_dir: "/project/ansible_sros"
 
 
   tasks:
