@@ -1,0 +1,64 @@
+---
+- hosts: 
+    10.14.34.200
+    10.14.34.201
+  gather_facts: no
+
+  vars:
+  #  vars_file: sros_gk15_routing.yml
+    vars_file: sros_nnlab_routing.yml
+    service_file: sros_nnlab_teleprotection_v2.yml
+    ansible_network_os: nokia.sros.light
+    sros_dir: "/project/ansible_sros"
+
+
+  tasks:
+ 
+  - name: register base directory
+    set_fact:
+      base_path: "{{lookup('env','PWD')}}"
+
+
+  - name: create full directory
+    set_fact:
+      dir_path: "{{base_path + sros_dir}}"
+
+  - name: show full directory
+    debug:
+      msg: "{{ dir_path }}"
+      
+  - name: Create config directory
+    file:
+      path: "{{dir_path}}/configs"
+      state: directory
+#-------------------------------------------------------------------
+#   Create and push Teleprotection config
+#-------------------------------------------------------------------
+ 
+
+  - name: Register service variables
+    include_vars:
+      file: "{{dir_path}}/vars/{{service_file}}"
+      name: service
+  #    run_once: true
+  - name: Show service variables
+    debug:
+      msg: "{{ service }}"
+
+
+
+  - name: Create service configuration file
+    template:
+      src: "{{dir_path}}/templates/sros_teleprotection_3_service.j2"
+      dest: "{{dir_path}}/configs/{{inventory_hostname}}_service.cfg"
+
+  
+
+  - name: Read service file content
+    set_fact:
+        service_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_service.cfg') }}"
+
+  - name: push service config to device
+    cli_config:
+        config: | 
+          {{ service_configuration }}
