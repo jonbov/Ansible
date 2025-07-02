@@ -19,4 +19,30 @@
 # DSCP marking: {{ service[inventory_hostname]['tp_qos'] }}
 # AMP:          {{ service[inventory_hostname]['tp_amp'] }}  (AMP: active multipoint)
 #
+
+#---------------------< Port config for site: {{ service[inventory_hostname]['sysname']}}  >---------------------
+exit all
+configure
+  card 1
+    mda {{ service[inventory_hostname]['mda_slot']}}
+      mda-type {{ service[inventory_hostname]['mda_type']}}
+      no shutdown
+      exit all
+
+configure
+port 1/{{ service[inventory_hostname]['mda_slot']}}/{{ service[inventory_hostname]['mda_port']}}
+        description "{{ service[inventory_hostname]['tp_cem'] }} to xxx"
+        tdm
+            tpif
+                channel-group 1
+                    encap-type cem
+                    no shutdown
+                exit
+                no shutdown
+            exit
+        exit
+        no shutdown
+        exit all
+
+
 {% endfor %}
