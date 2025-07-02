@@ -70,6 +70,7 @@ configure router mpls
      to {{ service[inventory_hostname]['tp_remote_IP']}}
      path-computation-method local-cspf 
        primary TP-{{ service[inventory_hostname]['tp_circuitid'] }}0-primary
+       no shutdown
      exit
      no shutdown
 exit all
@@ -81,6 +82,7 @@ configure router mpls
      to {{ service[inventory_hostname]['tp_remote_IP']}}
      path-computation-method local-cspf 
        primary TP-{{ service[inventory_hostname]['tp_circuitid'] }}1-secondary
+       no shutdown
      exit
      no shutdown
 exit all
