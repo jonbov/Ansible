@@ -64,21 +64,23 @@ no shutdown
 exit all
 
 configure router mpls
-  lsp TP-{{ service[inventory_hostname]['tp_circuitid'] }}0
+  lsp TP-{{ service[inventory_hostname]['tp_circuitid'] }}0-primary
+    shutdown
      from {{ service[inventory_hostname]['IP']}}
      to {{ service[inventory_hostname]['tp_remote_IP']}}
      path-computation-method local-cspf 
-       primary TP-{{ service[inventory_hostname]['tp_circuitid'] }}0
+       primaryTP-{{ service[inventory_hostname]['tp_circuitid'] }}0-primary
      exit
      no shutdown
 exit all
 
 configure router mpls
-  lsp TP-{{ service[inventory_hostname]['tp_circuitid'] }}1
+  lsp TP-{{ service[inventory_hostname]['tp_circuitid'] }}1-secondary
+    shutdown
      from {{ service[inventory_hostname]['IP']}}
      to {{ service[inventory_hostname]['tp_remote_IP']}}
      path-computation-method local-cspf 
-       primary TP-{{ service[inventory_hostname]['tp_circuitid'] }}1
+       primary TP-{{ service[inventory_hostname]['tp_circuitid'] }}1-secondary
      exit
      no shutdown
 exit all
