@@ -1,6 +1,4 @@
 
-{% for item in service[inventory_hostname] %}
-
 exit all
 configure router mpls
 path TP-{{ service[inventory_hostname]['tp_circuitid'] }}0-to-{{ service[inventory_hostname]['remote_sysname'] }}-primary
@@ -44,5 +42,3 @@ configure router mpls
      no shutdown
 exit all
 
-
-{% endfor %}

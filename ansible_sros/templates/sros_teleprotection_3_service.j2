@@ -1,7 +1,4 @@
 
-{% for item in service[inventory_hostname] %}
-
-
 exit all
 configure service
   sdp {{ service[inventory_hostname]['tp_circuitid'] }}0 create
@@ -48,6 +45,3 @@ configure service
     exit
   no shutdown
   
-
-
-{% endfor %}
