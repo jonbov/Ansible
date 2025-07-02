@@ -63,5 +63,27 @@ shutdown
 no shutdown
 exit all
 
+configure router mpls
+  lsp TP-{{ service[inventory_hostname]['tp_circuitid'] }}0
+     from {{ service[inventory_hostname]['IP']}}
+     to {{ service[inventory_hostname]['tp_remote_IP']}}
+     path-computation-method local-cspf 
+       primary TP-{{ service[inventory_hostname]['tp_circuitid'] }}0
+     exit
+     no shutdown
+exit all
+
+configure router mpls
+  lsp TP-{{ service[inventory_hostname]['tp_circuitid'] }}1
+     from {{ service[inventory_hostname]['IP']}}
+     to {{ service[inventory_hostname]['tp_remote_IP']}}
+     path-computation-method local-cspf 
+       primary TP-{{ service[inventory_hostname]['tp_circuitid'] }}1
+     exit
+     no shutdown
+exit all
+
+
+
 
 {% endfor %}
