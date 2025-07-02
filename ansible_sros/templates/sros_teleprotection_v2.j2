@@ -46,7 +46,7 @@ port 1/{{ service[inventory_hostname]['mda_slot']}}/{{ service[inventory_hostnam
 
 #---------------------< MPLS config  >---------------------
 configure router mpls
-path TP-{{ service[inventory_hostname]['tp_circuitid'] }}0-primary
+path TP-{{ service[inventory_hostname]['tp_circuitid'] }}0-to-{{ service[inventory_hostname]['remote_sysname'] }}-primary
 shutdown
 {% for pri_path in service[inventory_hostname]['primary_path'] %}
   hop {{pri_path['hop']}} {{pri_path['ip']}} strict
@@ -55,7 +55,7 @@ no shutdown
 exit all
 
 configure router mpls
-path TP-{{ service[inventory_hostname]['tp_circuitid'] }}1-secondary
+path TP-{{ service[inventory_hostname]['tp_circuitid'] }}1-to-{{ service[inventory_hostname]['remote_sysname'] }}-secondary
 shutdown
 {% for sec_path in service[inventory_hostname]['secondary_path'] %}
   hop {{sec_path['hop']}} {{sec_path['ip']}} strict
