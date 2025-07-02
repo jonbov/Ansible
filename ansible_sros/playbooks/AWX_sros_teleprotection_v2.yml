@@ -49,7 +49,7 @@
 
   - name: Create service configuration file
     template:
-      src: "{{dir_path}}/templates/sros_teleprotection.j2"
+      src: "{{dir_path}}/templates/sros_teleprotection_v2.j2"
       dest: "{{dir_path}}/configs/{{inventory_hostname}}_service.cfg"
 
   
