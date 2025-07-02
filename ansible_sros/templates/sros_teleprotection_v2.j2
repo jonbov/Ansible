@@ -134,7 +134,7 @@ configure service
     exit
     sap 1/{{ service[inventory_hostname]['mda_slot']}}/{{ service[inventory_hostname]['mda_port']}}.1 create
     cem
-        packet jitter-buffer {{ tp_jitter_buffer }} payload-size {{ tp_payload_size }}
+        packet jitter-buffer {{ service[inventory_hostname]['tp_jitter_buffer'] }} payload-size {{ service[inventory_hostname]['tp_payload_size'] }}
         # confirm by pressing 'y'
     exit
     ingress
