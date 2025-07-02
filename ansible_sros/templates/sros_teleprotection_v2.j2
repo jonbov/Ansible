@@ -1,5 +1,4 @@
 
-#*********************< Configuration for Teleprotection circuit:  >*******jinja2**************
 {% for item in service[inventory_hostname] %}
 # Servicetype:  {{ service[inventory_hostname]['tp_cem'] }}
 # Service ID:   {{ service[inventory_hostname]['tp_circuitid'] }}
@@ -20,7 +19,6 @@
 # AMP:          {{ service[inventory_hostname]['tp_amp'] }}  (AMP: active multipoint)
 #
 
-#---------------------< Port config for site: {{ service[inventory_hostname]['sysname']}}  >---------------------
 exit all
 configure
   card 1
@@ -44,7 +42,6 @@ port 1/{{ service[inventory_hostname]['mda_slot']}}/{{ service[inventory_hostnam
         no shutdown
         exit all
 
-#---------------------< MPLS config  >---------------------
 configure router mpls
 path TP-{{ service[inventory_hostname]['tp_circuitid'] }}0-to-{{ service[inventory_hostname]['remote_sysname'] }}-primary
 shutdown
@@ -101,8 +98,6 @@ configure qos
     default-fc ef
     default-priority high
     exit all
-
-#---------------------< Service config for site: {{ service[inventory_hostname]['sysname']}} >---------------------
 
 exit all
 configure service
