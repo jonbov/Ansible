@@ -31,7 +31,7 @@ configure
 
 configure
 port 1/{{ service[inventory_hostname]['mda_slot']}}/{{ service[inventory_hostname]['mda_port']}}
-        description "{{ service[inventory_hostname]['tp_cem'] }} to xxx"
+        description "{{ service[inventory_hostname]['tp_cem'] }} to {{ service[inventory_hostname]['remote_sysname'] }}"
         tdm
             tpif
                 channel-group 1
@@ -64,30 +64,104 @@ no shutdown
 exit all
 
 configure router mpls
-  lsp TP-{{ service[inventory_hostname]['tp_circuitid'] }}0-primary
+  lsp TP-{{ service[inventory_hostname]['tp_circuitid'] }}0-to-{{ service[inventory_hostname]['remote_sysname'] }}-primary
     shutdown
      from {{ service[inventory_hostname]['IP']}}
      to {{ service[inventory_hostname]['tp_remote_IP']}}
      path-computation-method local-cspf 
-       primary TP-{{ service[inventory_hostname]['tp_circuitid'] }}0-primary
+       primary TP-{{ service[inventory_hostname]['tp_circuitid'] }}0-to-{{ service[inventory_hostname]['remote_sysname'] }}-primary
        no shutdown
      exit
      no shutdown
 exit all
 
 configure router mpls
-  lsp TP-{{ service[inventory_hostname]['tp_circuitid'] }}1-secondary
+  lsp TP-{{ service[inventory_hostname]['tp_circuitid'] }}1-to-{{ service[inventory_hostname]['remote_sysname'] }}-secondary
     shutdown
      from {{ service[inventory_hostname]['IP']}}
      to {{ service[inventory_hostname]['tp_remote_IP']}}
      path-computation-method local-cspf 
-       primary TP-{{ service[inventory_hostname]['tp_circuitid'] }}1-secondary
+       primary TP-{{ service[inventory_hostname]['tp_circuitid'] }}1-to-{{ service[inventory_hostname]['remote_sysname'] }}-secondary
        no shutdown
      exit
      no shutdown
 exit all
 
 
+configure qos
+  sap-ingress {{ service[inventory_hostname]['tp_qos'] }} create
+    policy-name Relevern
+    queue 1 create
+      exit
+    queue 3 create
+      exit
+    fc ef create
+      queue 3
+      exit
+    default-fc ef
+    default-priority high
+    exit all
+
+#---------------------< Service config for site: {{ service[inventory_hostname]['sysname']}} >---------------------
+
+exit all
+configure service
+  sdp {{ service[inventory_hostname]['tp_circuitid'] }}0 create
+    far-end {{ service[inventory_hostname]['tp_remote_IP']}}
+    lsp TP-{{ service[inventory_hostname]['tp_circuitid'] }}0-to-{{ service[inventory_hostname]['remote_sysname'] }}-primary
+    path-mtu 1550
+    no shutdown
+exit all
+
+configure service
+  sdp {{ service[inventory_hostname]['tp_circuitid'] }}1 create
+    far-end {{ service[inventory_hostname]['tp_remote_IP']}}
+    lsp TP-{{ service[inventory_hostname]['tp_circuitid'] }}1-to-{{ service[inventory_hostname]['remote_sysname'] }}-secondary
+    path-mtu 1550
+    no shutdown
+exit all
+
+
+
+
+configure service
+  cpipe {{ service[inventory_hostname]['tp_circuitid'] }} customer 1 create
+    shutdown
+    description "{{ service[inventory_hostname]['tp_cem'] }} to {{ service[inventory_hostname]['remote_sysname'] }}"
+    endpoint TP_{{ service[inventory_hostname]['tp_circuitid'] }}create
+         {{ service[inventory_hostname]['tp_amp'] }}
+       # command "active-multipath" enables active/active forwarding (non hitless during primary fail)
+    exit
+    sap 1/{{ service[inventory_hostname]['mda_slot']}}/{{ service[inventory_hostname]['mda_port']}}.1 create
+    cem
+        # ADC - asym-delay-control recommended on startup of circuit only (min-repeat 0)
+         {{ service[inventory_hostname]['tp_adc'] }} min-repeat 0
+        # confirm by pressing 'y'
+         {{ service[inventory_hostname]['tp_amp'] }}-timeout 9
+        packet jitter-buffer {{ tp_jitter_buffer }} payload-size {{ tp_payload_size }}
+        # confirm by pressing 'y'
+    exit
+    ingress
+        qos {{ service[inventory_hostname]['tp_qos'] }} 
+        exit
+        exit
+    spoke-sdp {{ service[inventory_hostname]['tp_circuitid'] }}0:{{ service[inventory_hostname]['tp_circuitid'] }}0 endpoint TP_{{ service[inventory_hostname]['tp_circuitid'] }} create
+      # If active multipath not enabled, configure precedence to SDP
+       # precedence primary
+        no shutdown
+    exit
+    spoke-sdp {{ service[inventory_hostname]['tp_circuitid'] }}1:{{ service[inventory_hostname]['tp_circuitid'] }}1 endpoint TP_{{ service[inventory_hostname]['tp_circuitid'] }} create
+       # If active multipath not enabled, configure precedence to SDP
+       # precedence 2
+        no shutdown
+    exit
+  no shutdown
+  
+  sap 1/{{ service[inventory_hostname]['mda_slot']}}/{{ service[inventory_hostname]['mda_port']}}.1 create
+    cem
+        # ADC - asym-delay-control recommended on startup of circuit only (min-repeat 0)
+         {{ service[inventory_hostname]['tp_adc'] }} min-repeat 0
+        y
 
 
 {% endfor %}

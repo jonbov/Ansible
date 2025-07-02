@@ -1,6 +1,7 @@
 ---
 10.14.34.200:
   sysname: SAR-8-200
+  remote_sysname: SAR-8-201
   IP: 10.14.34.200
   sitename: Bergen
   chassis: SAR-8
@@ -41,6 +42,7 @@
 
 10.14.34.201:
   sysname: SAR-8-201
+  remote_sysname: SAR-8-200
   IP: 10.14.34.201
   sitename: Voss
   chassis: SAR-8
