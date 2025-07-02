@@ -18,18 +18,24 @@
   tp_adc: enable
   tp_network_type: rsvp
   primary_path:
-    - ip: 10.14.34.202
+    - hop: 1
+      ip: 10.14.34.202
       name: sted0
-    - ip: 10.14.34.203
+    - hop: 2
+      ip: 10.14.34.203
       name: sted1
   secondary_path:
-    - ip: 10.14.34.202
+    - hop: 1
+      ip: 10.14.34.202
       name: sted2
-    - ip: 10.14.34.204
+    - hop: 2
+      ip: 10.14.34.204
       name: sted4
-    - ip: 10.14.34.205
+    - hop: 2
+      ip: 10.14.34.205
       name: sted5
-    - ip: 10.14.34.203
+    - hop: 4
+      ip: 10.14.34.203
       name: sted3
 
 10.14.34.201:
@@ -51,18 +57,24 @@
   tp_adc: enable
   tp_network_type: rsvp
   primary_path:
-    - ip: 10.14.34.203
+    - hop: 1
+      ip: 10.14.34.203
       name: sted1
-    - ip: 10.14.34.202
+    - hop: 2
+      ip: 10.14.34.202
       name: sted0
   secondary_path:
-    - ip: 10.14.34.203
+    - hop: 1
+      ip: 10.14.34.203
       name: sted3
-    - ip: 10.14.34.205
+    - hop: 2
+      ip: 10.14.34.205
       name: sted5
-    - ip: 10.14.34.204
+    - hop: 3
+      ip: 10.14.34.204
       name: sted4
-    - ip: 10.14.34.202
+    - hop: 4
+      ip: 10.14.34.202
       name: sted2
 
 
