@@ -129,13 +129,10 @@ configure service
     shutdown
     description "{{ service[inventory_hostname]['tp_cem'] }} to {{ service[inventory_hostname]['remote_sysname'] }}"
     endpoint TP_{{ service[inventory_hostname]['tp_circuitid'] }} create
-         {{ service[inventory_hostname]['tp_amp'] }}
-       # command "active-multipath" enables active/active forwarding (non hitless during primary fail)
     exit
     sap 1/{{ service[inventory_hostname]['mda_slot']}}/{{ service[inventory_hostname]['mda_port']}}.1 create
     cem
         packet jitter-buffer {{ service[inventory_hostname]['tp_jitter_buffer'] }} payload-size {{ service[inventory_hostname]['tp_payload_size'] }}
-        # confirm by pressing 'y'
     exit
     ingress
         qos {{ service[inventory_hostname]['tp_qos'] }} 
