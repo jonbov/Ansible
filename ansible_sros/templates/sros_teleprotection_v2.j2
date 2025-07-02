@@ -1,23 +1,5 @@
 
 {% for item in service[inventory_hostname] %}
-# Servicetype:  {{ service[inventory_hostname]['tp_cem'] }}
-# Service ID:   {{ service[inventory_hostname]['tp_circuitid'] }}
-# SDP ID:       {{ service[inventory_hostname]['tp_sdp'] }}
-#
-# Site:         {{ service[inventory_hostname]['sitename']}}
-# CPE:          {{ service[inventory_hostname]['sysname']}}
-# IP:           {{ service[inventory_hostname]['IP']}}
-# Chassis type  {{ service[inventory_hostname]['chassis']}}
-# MDA type      {{ service[inventory_hostname]['mda_type']}}
-# MDA slot:     {{ service[inventory_hostname]['mda_slot']}}
-# Port on MDA:  {{ service[inventory_hostname]['mda_port']}}
-#
-# jitter-buffer:{{ service[inventory_hostname]['tp_jitter_buffer'] }}
-# payload-size: {{ service[inventory_hostname]['tp_payload_size'] }}
-# Delay:        {{ service[inventory_hostname]['tp_delay'] }}
-# DSCP marking: {{ service[inventory_hostname]['tp_qos'] }}
-# AMP:          {{ service[inventory_hostname]['tp_amp'] }}  (AMP: active multipoint)
-#
 
 exit all
 configure
