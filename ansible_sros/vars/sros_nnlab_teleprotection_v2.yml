@@ -2,7 +2,7 @@
 10.14.34.200:
   sysname: SAR-8-200
   remote_sysname: SAR-8-201
-  IP: 10.14.34.200
+  IP: 10.14.132.200
   sitename: Bergen
   chassis: SAR-8
   mda_type: a8-vt
@@ -10,7 +10,7 @@
   mda_port: 1
   tp_cem: C37.94_512k
   tp_circuitid: 690
-  tp_remote_IP: 10.14.34.201
+  tp_remote_IP: 10.14.132.201
   tp_sdp: 690
   tp_jitter_buffer: 4
   tp_payload_size: 8
@@ -21,29 +21,29 @@
   tp_network_type: rsvp
   primary_path:
     - hop: 1
-      ip: 10.14.34.209
+      ip: 10.14.132.209
       name: sted0
     - hop: 2
-      ip: 10.14.34.208
+      ip: 10.14.132.208
       name: sted1
   secondary_path:
     - hop: 1
-      ip: 10.14.34.205
+      ip: 10.14.132.205
       name: sted2
     - hop: 2
-      ip: 10.14.34.203
+      ip: 10.14.132.203
       name: sted4
     - hop: 3
-      ip: 10.14.34.202
+      ip: 10.14.132.202
       name: sted5
     - hop: 4
-      ip: 10.14.34.204
+      ip: 10.14.132.204
       name: sted3
 
 10.14.34.201:
   sysname: SAR-8-201
   remote_sysname: SAR-8-200
-  IP: 10.14.34.201
+  IP: 10.14.132.201
   sitename: Voss
   chassis: SAR-8
   mda_type: a8-vt
@@ -51,7 +51,7 @@
   mda_port: 1
   tp_cem: C37.94_512k
   tp_circuitid: 690
-  tp_remote_IP: 10.14.34.200
+  tp_remote_IP: 10.14.132.200
   tp_sdp: 690
   tp_jitter_buffer: 4
   tp_payload_size: 8
@@ -62,23 +62,23 @@
   tp_network_type: rsvp
   primary_path:
     - hop: 1
-      ip: 10.14.34.208
+      ip: 10.14.132.208
       name: sted1
     - hop: 2
-      ip: 10.14.34.209
+      ip: 10.14.132.209
       name: sted0
   secondary_path:
     - hop: 1
-      ip: 10.14.34.204
+      ip: 10.14.132.204
       name: sted3
     - hop: 2
-      ip: 10.14.34.202
+      ip: 10.14.132.202
       name: sted5
     - hop: 3
-      ip: 10.14.34.203
+      ip: 10.14.132.203
       name: sted4
     - hop: 4
-      ip: 10.14.34.205
+      ip: 10.14.132.205
       name: sted2
 
 
