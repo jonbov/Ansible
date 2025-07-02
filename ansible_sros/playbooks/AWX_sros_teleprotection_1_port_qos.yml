@@ -2,13 +2,12 @@
 - hosts: 
     10.14.34.200
     10.14.34.201
-    10.14.34.203
   gather_facts: no
 
   vars:
   #  vars_file: sros_gk15_routing.yml
     vars_file: sros_nnlab_routing.yml
-    vprn_file: sros_nnlab_vprn.yml
+    service_file: sros_nnlab_teleprotection_v2.yml
     ansible_network_os: nokia.sros.light
     sros_dir: "/project/ansible_sros"
 
@@ -33,30 +32,33 @@
       path: "{{dir_path}}/configs"
       state: directory
 #-------------------------------------------------------------------
-#   Create and push G.8275.1 
+#   Create and push Teleprotection config
 #-------------------------------------------------------------------
+ 
 
-  - name: Register variables
+  - name: Register service variables
     include_vars:
-      file: "{{dir_path}}/vars/{{vars_file}}"
-      name: g8275
+      file: "{{dir_path}}/vars/{{service_file}}"
+      name: service
   #    run_once: true
-  - name: Show g8275 variables
+  - name: Show service variables
     debug:
-      msg: "{{ g8275 }}"
+      msg: "{{ service }}"
 
 
 
-  - name: Create g8275 configuration file
+  - name: Create service configuration file
     template:
-      src: "{{dir_path}}/templates/sros_G8275dot2.j2"
-      dest: "{{dir_path}}/configs/{{inventory_hostname}}_g8275dot2.cfg"
+      src: "{{dir_path}}/templates/sros_teleprotection_1_port_qos.j2"
+      dest: "{{dir_path}}/configs/{{inventory_hostname}}_service.cfg"
 
-  - name: Read file content
+  
+
+  - name: Read service file content
     set_fact:
-        sros_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_g8275dot2.cfg') }}"
+        service_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_service.cfg') }}"
 
-  - name: push config to device
+  - name: push service config to device
     cli_config:
         config: | 
-          {{ sros_configuration }}
+          {{ service_configuration }}
