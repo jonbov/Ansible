@@ -58,7 +58,7 @@
     set_fact:
         service_configuration: "{{ lookup('file', '{{dir_path}}/configs/{{inventory_hostname}}_service.cfg') }}"
 
-#  - name: push service config to device
-#    cli_config:
-#        config: | 
-#          {{ service_configuration }}
+  - name: push service config to device
+    cli_config:
+        config: | 
+          {{ service_configuration }}
