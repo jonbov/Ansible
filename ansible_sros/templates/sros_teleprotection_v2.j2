@@ -48,7 +48,7 @@ port 1/{{ service[inventory_hostname]['mda_slot']}}/{{ service[inventory_hostnam
 configure router mpls
 path TP-{{ service[inventory_hostname]['tp_circuitid'] }}0-primary
 {% for pri_path in service[inventory_hostname]['primary_path'] %}
-  hop {{service[inventory_hostname]['primary_path']['hop']}} {{service[inventory_hostname]['primary_path']['IP']}} strict
+  hop {{pri_path['hop']}} {{pri_path['IP']}} strict
 {% endfor %} 
 no shutdown
 exit all
