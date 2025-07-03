@@ -6,8 +6,15 @@
   tasks:
   - name: NPS plug off
     ansible.netcommon.telnet:
+      timeout: 5
+      crlf: true
+      pause: 2
+      user: " "
+      password: " "
+      login_prompt: "NPS>"
+      password_prompt: "NPS>"
       prompts:
-        - "[>]"
+        - "NPS>"
       command:
         - /off 6
     
