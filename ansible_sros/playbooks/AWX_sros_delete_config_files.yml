@@ -1,11 +1,9 @@
 ---
 - hosts: nn_sros
-#- hosts: 10.14.34.205
   connection: network_cli
   gather_facts: No
 
   vars:
-  #  vars_file: sros_gk15_routing.yml
     vars_file: sros_nnlab_routing.yml
     ansible_network_os: nokia.sros.light
     ansible_command_timeout: 120 # 2 minutes
