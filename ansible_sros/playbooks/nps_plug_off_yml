@@ -9,10 +9,11 @@
       timeout: 5
       crlf: true
       pause: 2
-      user: " "
-      password: " "
+      send_newline: true
+      user: "/s"
+     # password: " "
       login_prompt: "NPS>"
-      password_prompt: "NPS>"
+     # password_prompt: "NPS>"
       prompts:
         - "NPS>"
       command:
