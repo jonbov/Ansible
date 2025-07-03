@@ -11,11 +11,11 @@
       pause: 2
       send_newline: true
       user: "a4068becs"
-     # password: " "
+     # password: "/s"
       login_prompt: "Enter Password: "
-     # password_prompt: "NPS>"
+      password_prompt: "NPS>"
       prompts:
-        - ">"
+        - "[>|#]"
       command:
         - /off 6
     

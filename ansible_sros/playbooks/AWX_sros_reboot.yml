@@ -20,4 +20,5 @@
   - name: reboot
     cli_command:
       command: admin reboot now 
+      sendonly: true
        
