@@ -10,12 +10,12 @@
       crlf: true
       pause: 2
       send_newline: true
-      user: "/s"
+      user: "a4068becs"
      # password: " "
-      login_prompt: "NPS>"
+      login_prompt: "Enter Password: "
      # password_prompt: "NPS>"
       prompts:
-        - "NPS>"
+        - ">"
       command:
         - /off 6
     
