@@ -1,0 +1,24 @@
+---
+  - name: test playbook
+    hosts: localhost
+    connection: local
+    gather_facts: no
+    vars:
+      netbox_url: http://10.14.17.203:8000/
+      netbox_token: 943aea909336d4dc2eea388c1df776c5e1c9d3e9
+    tasks:
+      - name: get devices
+        uri:
+          url: "{{ netbox_url }}/api/dcim/devices"
+          method: GET
+          headers:
+            Authorization: "Token {{ netbox_token }}"
+            Accept: 'application/json'
+          return_contenet: yes
+          body_format: json
+          status_code: [200,201]
+          validate_certs: false
+        register: netbox_devices
+        run_once: yes
+      - debug:
+          var: netbox_devices
