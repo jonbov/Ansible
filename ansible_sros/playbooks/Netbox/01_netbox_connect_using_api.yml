@@ -14,7 +14,7 @@
           headers:
             Authorization: "Token {{ netbox_token }}"
             Accept: 'application/json'
-          return_contenet: yes
+          return_content: yes
           body_format: json
           status_code: [200,201]
           validate_certs: false

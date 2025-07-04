@@ -13,7 +13,7 @@ Ansible:
     netbox.netbox                            3.20.0 
 
 Sample:
-netbox_connect_using_api.yml
+01_netbox_connect_using_api.yml
 ---
   - name: test playbook
     hosts: localhost
@@ -30,7 +30,7 @@ netbox_connect_using_api.yml
           headers:
             Authorization: "Token {{ netbox_token }}"
             Accept: 'application/json'
-          return_contenet: yes
+          return_content: yes
           body_format: json
           status_code: [200,201]
           validate_certs: false
@@ -38,3 +38,17 @@ netbox_connect_using_api.yml
         run_once: yes
       - debug:
           var: netbox_devices
+
+02_inventory.yml
+--- 
+  plugin: netbox.netbox.nb_inventory
+  api_endpoint:  http://10.14.17.203:8000
+  token: 943aea909336d4dc2eea388c1df776c5e1c9d3e9
+  validate_certs: false
+  group_by:
+    - device_roles
+  #  _devices
+    - manufacturers
+
+  run playbook:
+  ansible-inventory --list -i 
