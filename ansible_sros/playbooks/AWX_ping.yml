@@ -3,8 +3,10 @@
     nn_sros
   gather_facts: no
 
-   tasks:
-  - name: "Get ping response"
-  - action: ping
-      register: hello
-  - debug: msg="{hello.stdout}"
+  tasks:
+  - name: Ping hosts
+    ansible.builtin.ping:
+    register: hello
+  
+  - name: print result
+    debug: msg="{hello.stdout}"
