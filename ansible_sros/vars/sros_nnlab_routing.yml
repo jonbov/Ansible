@@ -1,4 +1,4 @@
-10.14.34.200:
+SAR-8-200:
   name: SAR-8-200
   cards:
     1: 
@@ -91,7 +91,7 @@
       mask: 30
       port: '1/1/4:0'
       description: xxx
-10.14.34.201:
+SAR-8-201:
   name: SAR-8-201
   cards:
     1: 
@@ -200,7 +200,7 @@
       port: '1/1/4:0'
       description: xxx
 
-10.14.34.202:
+SAR-8-202:
   name: SAR-8-202
   cards:
     1: 
@@ -318,7 +318,7 @@
       mask: 30
       port: '1/1/3:0'
       description: xxx
-10.14.34.203:
+SAR-8-203:
   name: SAR-8-203
   cards:
     1: 
@@ -437,7 +437,7 @@
       port: '1/1/3:0'
       description: xxx
 
-10.14.34.204:
+SAR-8-204:
   name: SAR-8-204
   cards:
     1: 
@@ -528,7 +528,7 @@
       port: '1/1/4:0'
       description: xxx
       
-10.14.34.205:
+SAR-8-205:
   name: SAR-8-205
   cards:
     1: 
