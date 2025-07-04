@@ -1,6 +1,9 @@
 ---
+- hosts: 
+    nn_sros
+  gather_facts: no
+  
  - name: "Get ping response"
-   hosts: nn_sros
    tasks:
    - action: ping
      register: hello
