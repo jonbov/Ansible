@@ -58,6 +58,8 @@ cvpadmin@ansible-vmbovrenet:~/ansible_sros$
 ansible-playbook -i playbooks/Netbox/02_inventory.yml playbooks/AWX_sros_show_info_name.yml -u admin -k  -vvv
 ansible-playbook playbooks/AWX_ping.yml
 
+ansible-inventory -v --list -i netbox_inventory.yml
+
 ansible-inventory -i playbooks/Netbox/02_inventory.yml --graph
 @all:
   |--@ungrouped:

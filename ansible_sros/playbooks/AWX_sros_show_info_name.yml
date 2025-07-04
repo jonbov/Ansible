@@ -1,7 +1,7 @@
 ---
 - hosts: 
-   # all
-   device_roles_core
+    all
+   #device_roles_core
    # device_roles_access
   vars:
     ansible_network_os: nokia.sros.light
