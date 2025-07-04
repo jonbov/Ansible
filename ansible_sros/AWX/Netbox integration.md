@@ -52,3 +52,45 @@ Sample:
 
   run playbook:
   ansible-inventory --list -i 
+
+
+cvpadmin@ansible-vmbovrenet:~/ansible_sros$ 
+ansible-playbook -i playbooks/Netbox/02_inventory.yml playbooks/AWX_sros_show_info_name.yml -u admin -k  -vvv
+ansible-playbook playbooks/AWX_ping.yml
+
+ansible-inventory -i playbooks/Netbox/02_inventory.yml --graph
+@all:
+  |--@ungrouped:
+  |--@device_roles_core:
+  |  |--SAR-8-200
+  |  |--SAR-8-201
+  |  |--SAR-8-202
+  |--@manufacturers_nokia:
+  |  |--SAR-8-200
+  |  |--SAR-8-201
+  |  |--SAR-8-202
+  |  |--SAR-Hc-208
+  |  |--SAR-Hc-209
+  |--@device_roles_access:
+  |  |--SAR-Hc-208
+  |  |--SAR-Hc-209
+
+  ansible-inventory -i hosts.ini --graph
+@all:
+  |--@ungrouped:
+  |--@nn_sros:
+  |  |--SAR-8-200
+  |  |--SAR-8-201
+  |  |--SAR-8-202
+  |  |--SAR-8-203
+  |  |--SAR-8-204
+  |  |--SAR-8-205
+  |  |--SAR-Hc-208
+  |  |--SAR-Hc-209
+  |--@nn_mdcli:
+  |  |--IXR-e-210
+  |--@gk15_sros:
+  |  |--SAR-8-206
+  |  |--SAR-8-207
+  |--@gk15_nps:
+  |  |--nps.bovre.net
