@@ -25,3 +25,15 @@ SAR-Hc-209:
   sap: 'loopback'
   state: present
 
+10.14.34.209:
+  name: SAR-Hc-209  
+  vprn_id: 100
+  BGP: 
+    ASN: 65200
+    peers:
+      - 10.14.132.211
+  intf_name: testloop 
+  ipv4: 10.0.100.209
+  mask: 32
+  sap: 'loopback'
+  state: present
