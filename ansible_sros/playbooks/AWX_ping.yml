@@ -1,6 +1,7 @@
 ---
 - hosts: 
-    nn_sros
+  #  nn_sros
+    all
   gather_facts: no
 
   tasks:
