@@ -63,27 +63,24 @@ https://quay.io/repository/ansible/awx-ee?tab=tags
 
 
 
-ansible-builder build -t sros_automation -v 3
+ansible-builder build -t network_automation -v 3
 -build takes approx 20 minutes
 [4/4] COMMIT sros_automation
 --> 8d5d8e4b186
-Successfully tagged localhost/sros_automation:latest
+Successfully tagged localhost/network_automation:latest
 
 Complete! The build context can be found at: /opt/ansible/venv-ee/EE_project_directory/context
 
 podman images
-  (venv-ee) netnordic@no-awx-204:/opt/ansible/venv-ee/EE_project_directory$ podman images
-  REPOSITORY                 TAG         IMAGE ID      CREATED             SIZE
-  localhost/sros_automation  latest      8d5d8e4b186e  About a minute ago  918 MB
-  <none>                     <none>      73fea878042d  3 minutes ago       1.05 GB
-  <none>                     <none>      c9c1c4a2238b  4 minutes ago       228 MB
-  quay.io/centos/centos      stream9     ab9123964b93  12 days ago         171 MB
+REPOSITORY                         TAG         IMAGE ID      CREATED      SIZE
+localhost/network_automation       latest      e3c6e03047ed  4 days ago   935 MB
+quay.io/jonbov/network_automation  latest      e3c6e03047ed  4 days ago   935 MB
+quay.io/centos/centos              stream9     ab9123964b93  2 weeks ago  171 MB
 
 
-podman create -it --name network_ee localhost/sros_automation:latest
-  (venv-ee) netnordic@no-awx-204:/opt/ansible/venv-ee/EE_project_directory$ podman create -it --name network_ee localhost/sros_automation:latest
-  d7449d99a78281df8fa1895a93512621b0494579386aef436d3d4aaadd73e8d3
-
+podman create -it --name network_ee localhost/network_automation:latest
+  (venv-ee) netnordic@no-awx-204:/opt/ansible/venv-ee/EE_project_directory$ podman create -it --name network_ee localhost/network_automation:latest
+e62eab8c21309e14dd14f5ea82bf4e17a52e37b2400b810a3af25dd673b09b0c
 
 podman ps -a
   (venv-ee) netnordic@no-awx-204:/opt/ansible/venv-ee/EE_project_directory$ podman ps -a
@@ -156,12 +153,12 @@ podman rm network_ee
   localhost/sros_automation  latest      8d5d8e4b186e  20 minutes ago  918 MB
 #observe container removed, image still in place
 
-podman tag localhost/sros_automation:latest quay.io/jonbov/sros_automation
-  (venv-ee) netnordic@no-awx-204:/opt/ansible/venv-ee/EE_project_directory$ podman tag localhost/sros_automation:latest quay.io/jonbov/sros_automation
+podman tag localhost/network_automation:latest quay.io/jonbov/network_automation
+  (venv-ee) netnordic@no-awx-204:/opt/ansible/venv-ee/EE_project_directory$ podman tag localhost/network_automation:latest quay.io/jonbov/network_automation
   (venv-ee) netnordic@no-awx-204:/opt/ansible/venv-ee/EE_project_directory$ podman images
   REPOSITORY                              TAG         IMAGE ID      CREATED         SIZE
-  localhost/sros_automation               latest      8d5d8e4b186e  36 minutes ago  918 MB
-  quay.io/jonbov/sros_automation          latest      8d5d8e4b186e  36 minutes ago  918 MB
+  localhost/network _automation               latest      8d5d8e4b186e  36 minutes ago  918 MB
+  quay.io/jonbov/network_automation          latest      8d5d8e4b186e  36 minutes ago  918 MB
 
 podman login quay.io
   (venv-ee) netnordic@no-awx-204:/opt/ansible/venv-ee/EE_project_directory$ podman login quay.io
@@ -171,7 +168,7 @@ podman login quay.io
 #Password in Lastpass
 
 
-podman push quay.io/jonbov/sros_automation:latest 
+podman push quay.io/jonbov/network_automation:latest 
   (venv-ee) netnordic@no-awx-204:/opt/ansible/venv-ee/EE_project_directory$ podman push quay.io/jonbov/sros_automation:latest 
   Getting image source signatures
   Copying blob fedb19017a53 done  
@@ -193,7 +190,7 @@ podman push quay.io/jonbov/sros_automation:latest
   Storing signatures
 
 Verify image is updated to repository:
-https://quay.io/repository/jonbov/sros_automation?tab=tags
+https://quay.io/repository/jonbov/network_automation?tab=tags
 Set Repository Visibility to "Public"
 Fetch tag from repository, and import into AWX "Execution Environments"
 (Tag: Podman pull)
