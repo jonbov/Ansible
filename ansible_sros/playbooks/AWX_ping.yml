@@ -2,9 +2,9 @@
 - hosts: 
     nn_sros
   gather_facts: no
-  
- - name: "Get ping response"
+
    tasks:
-   - action: ping
-     register: hello
-   - debug: msg="{hello.stdout}"
+  - name: "Get ping response"
+  - action: ping
+      register: hello
+  - debug: msg="{hello.stdout}"
