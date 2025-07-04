@@ -1,6 +1,8 @@
 ---
 #- hosts: nn_sros
-- hosts: 10.14.34.205
+- hosts:     
+    SAR-8-205
+    SAR-8-206
   gather_facts: no
 
   vars:
