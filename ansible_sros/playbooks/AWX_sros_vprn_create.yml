@@ -2,13 +2,14 @@
 - hosts: 
     SAR-Hc-208
     SAR-Hc-209
+    10.14.34.209
   gather_facts: no
 
   connection: network_cli
   
   vars:
     ansible_network_os: nokia.sros.light
-    
+
   #  vars_file: sros_gk15_routing.yml
     vars_file: sros_nnlab_routing.yml
     vprn_file: sros_nnlab_vprn.yml
