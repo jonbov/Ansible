@@ -3,8 +3,8 @@ api_endpoint:  http://10.0.10.56:8000/
 #api_endpoint:  http://netbox.bovre.net:8000/
 token: 90b7f1e5222f077d34c553e1e926274a05c7741a
 validate_certs: false
-compose:
-  ansible_network_os: platform.slug
+#compose:
+#  ansible_network_os: platform.slug
 group_by:
   - device_roles
 #  _devices
