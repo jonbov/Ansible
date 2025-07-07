@@ -1,7 +1,7 @@
 ---
 - hosts: 
-    #nn_sros
-    10.14.34.200
+    nn_sros
+   #10.14.34.200
   gather_facts: No
 
   vars:
@@ -75,9 +75,7 @@
     template:
       src: "{{template_path}}/sros_system.j2"
       dest: "{{config_path}}/{{inventory_hostname}}_system.cfg"
-#      dest: "{{inventory_hostname}}_system.cfg"
 
- 
 
 
   - name: Read system file content
