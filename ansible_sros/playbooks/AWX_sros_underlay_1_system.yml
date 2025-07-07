@@ -64,8 +64,12 @@
 #   Create and push system config
 #-------------------------------------------------------------------
   - name: list templates"
-    command: "ls {{template_path}}"
+    find: {{template_path}}
     register: files_dir
+  - name: ls
+    debug:
+      msg: "{{ files_dir }}"
+
 
   - name: Create system configuration file
     template:
