@@ -64,11 +64,11 @@
 #   Create and push system config
 #-------------------------------------------------------------------
   - name: list templates"
-    find: {{template_path}}
-    register: files_dir
-  - name: ls
-    debug:
-      msg: "{{ files_dir }}"
+    ansible.builtin.find:
+      paths: {{template_path}}
+    register: out
+  - debug:
+      var: out
 
 
   - name: Create system configuration file
