@@ -1,6 +1,6 @@
 ---
 - hosts: 
-#    nn_sros
+    nn_sros
     tags_gk15_sros
 #- hosts: 10.14.34.205
   gather_facts: No
