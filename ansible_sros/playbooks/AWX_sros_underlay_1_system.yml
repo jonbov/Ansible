@@ -63,6 +63,10 @@
 #-------------------------------------------------------------------
 #   Create and push system config
 #-------------------------------------------------------------------
+  - name: list templates"
+    command: "ls {{template_path}}"
+      register: files_dir
+
   - name: Create system configuration file
     template:
       src: "{{template_path}}/sros_system.j2"
