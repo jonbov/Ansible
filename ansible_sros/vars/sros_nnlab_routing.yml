@@ -619,7 +619,7 @@
       port: '1/1/4:0'
       description: xxx
       
-SAR-Hc-208:
+10.14.34.208:
   name: SAR-Hc-208
   cards:
       1: 
@@ -699,7 +699,7 @@ SAR-Hc-208:
       mask: 30
       port: '1/1/4:0'
       description: xxx  
-SAR-Hc-209:
+10.14.34.209:
   name: SAR-Hc-209
   cards:
       1: 
