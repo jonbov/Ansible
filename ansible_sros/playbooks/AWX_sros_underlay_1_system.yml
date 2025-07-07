@@ -81,7 +81,7 @@
         system_configuration: "{{ lookup('file', '{{config_path}}/{{inventory_hostname}}_system.cfg') }}"
 #        system_configuration: "{{ lookup('file', '{{inventory_hostname}}_system.cfg') }}"
 
-#  - name: push config to device
-#    cli_config:
-#        config: | 
-#          {{ system_configuration }}
+  - name: push config to device
+    cli_config:
+        config: | 
+          {{ system_configuration }}
