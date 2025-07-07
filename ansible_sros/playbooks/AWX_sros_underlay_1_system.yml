@@ -35,6 +35,11 @@
       path: "{{dir_path}}/configs"
       state: directory
 
+  - name: show config directory
+    debug:
+      msg: "{{ path }}"
+
+
   - name: Register variables
     include_vars:
       file: "{{dir_path}}/vars/{{vars_file}}"
