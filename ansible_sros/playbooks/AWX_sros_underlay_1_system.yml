@@ -67,8 +67,8 @@
     ansible.builtin.find:
       paths: /runner/project/ansible_sros/templates
     register: out
-  - debug:
-      var: out
+# - debug:
+#     var: out
 
 
   - name: Create system configuration file
