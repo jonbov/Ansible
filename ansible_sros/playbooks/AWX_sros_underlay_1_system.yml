@@ -23,21 +23,24 @@
     set_fact:
       dir_path: "{{base_path + sros_dir}}"
 
-  - name: show full directory
+  - name: create config directory
+    set_fact:
+      config_path: "{{base_path + sros_dir}}/configs"
+      
+
+  - name: show config directory
     debug:
-      msg: "{{ dir_path }}"
+      msg: "{{ config_path }}"
   
 #-------------------------------------------------------------------
 #   Create config directory on runner
 #-------------------------------------------------------------------
   - name: Create config directory
     file:
-      config_path: "{{dir_path}}/configs"
+      path: "{{config_path}}"
       state: directory
+      mode: '0755'
 
-  - name: show config directory
-    debug:
-      msg: "{{ config_path }}"
 
 
   - name: Register variables
