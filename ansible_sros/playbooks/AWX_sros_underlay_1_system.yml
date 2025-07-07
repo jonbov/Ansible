@@ -1,6 +1,7 @@
 ---
-- hosts: nn_sros
-#- hosts: 10.14.34.205
+- hosts: 
+    #nn_sros
+    10.14.34.205
   gather_facts: No
 
   vars:
@@ -55,6 +56,9 @@
       src: "{{dir_path}}/templates/sros_system.j2"
       dest: "{{dir_path}}/configs/{{inventory_hostname}}_system.cfg"
 #      dest: "{{inventory_hostname}}_system.cfg"
+
+ 
+
 
   - name: Read system file content
     set_fact:
