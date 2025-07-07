@@ -73,7 +73,7 @@ SAR-8-206.bovre.net:
     CORE_196: 
       ipv4: 10.14.132.197
       mask: 30
-      port: '1/1/1:0'
+      port: '1/1/3:0'
       description: xxx
 SAR-8-207.bovre.net:
   name: SAR-8-207
@@ -150,7 +150,7 @@ SAR-8-207.bovre.net:
     CORE_196: 
       ipv4: 10.14.132.198
       mask: 30
-      port: '1/1/1:0'
+      port: '1/1/3:0'
       description: xxx
 
 
