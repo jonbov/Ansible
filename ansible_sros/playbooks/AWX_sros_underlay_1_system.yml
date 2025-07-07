@@ -65,7 +65,7 @@
 #-------------------------------------------------------------------
   - name: list templates"
     ansible.builtin.find:
-      paths: {{template_path}}
+      paths: /runner/project/ansible_sros/templates
     register: out
   - debug:
       var: out
