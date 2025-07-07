@@ -1,6 +1,7 @@
 ---
 - hosts: 
     nn_sros
+    tags_nn_sros
     tags_gk15_sros
   connection: network_cli
   gather_facts: No

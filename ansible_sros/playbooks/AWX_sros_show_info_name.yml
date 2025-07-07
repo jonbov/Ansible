@@ -1,6 +1,8 @@
 ---
 - hosts: 
-    all
+    nn_sros
+    tags_nn_sros
+    tags_gk15_sros
    #device_roles_core
    # device_roles_access
   vars:
