@@ -32,12 +32,12 @@
 #-------------------------------------------------------------------
   - name: Create config directory
     file:
-      path: "{{dir_path}}/configs"
+      config_path: "{{dir_path}}/configs"
       state: directory
 
   - name: show config directory
     debug:
-      msg: "{{ path }}"
+      msg: "{{ config_path }}"
 
 
   - name: Register variables
