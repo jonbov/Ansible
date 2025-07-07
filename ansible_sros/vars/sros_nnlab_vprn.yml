@@ -39,7 +39,7 @@ SAR-8-206.bovre.net:
   sap: 'loopback'
   state: present
 
-  SAR-8-207.bovre.net:
+SAR-8-207.bovre.net:
   name: SAR-8-207  
   vprn_id: 100
   BGP: 
