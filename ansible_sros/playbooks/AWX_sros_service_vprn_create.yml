@@ -1,8 +1,7 @@
 ---
 - hosts: 
-    SAR-Hc-208
-    SAR-Hc-209
-    10.14.34.209
+    nn_sros
+    tags_gk15_sros
   gather_facts: no
 
   connection: network_cli
