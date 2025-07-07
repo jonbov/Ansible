@@ -1,7 +1,7 @@
 ---
 - hosts: 
     #nn_sros
-    10.14.34.205
+    10.14.34.200
   gather_facts: No
 
   vars:
