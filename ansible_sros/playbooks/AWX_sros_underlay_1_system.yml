@@ -14,18 +14,18 @@
 
   tasks:
  
-  - name: register base directory
-    set_fact:
-      base_path: "{{lookup('env','PWD')}}"
+ # - name: register base path
+ #   set_fact:
+ #     base_path: "{{lookup('env','PWD')}}"
 
 
-  - name: create full directory
+  - name: create full path
     set_fact:
-      dir_path: "{{base_path + sros_dir}}"
+      dir_path: "{{lookup('env','PWD') + sros_dir}}"
 
   - name: create config directory
     set_fact:
-      config_path: "{{base_path + sros_dir}}/configs"
+      config_path: "{{lookup('env','PWD') + sros_dir}}/configs"
       
 
   - name: show config directory
@@ -35,7 +35,7 @@
 #-------------------------------------------------------------------
 #   Create config directory on runner
 #-------------------------------------------------------------------
-  - name: Create config directory
+  - name: Create config directory on runner
     file:
       path: "{{config_path}}"
       state: directory
