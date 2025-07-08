@@ -95,4 +95,4 @@ ansible-inventory -i playbooks/Netbox/02_inventory.yml --graph
   |  |--SAR-8-206
   |  |--SAR-8-207
   |--@gk15_nps:
-  |  |--nps.nrslab.net
+  |  |--nps.nrslab.eu

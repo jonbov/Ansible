@@ -1,4 +1,4 @@
-SAR-Hc-208.nrslab.net:
+SAR-Hc-208.nrslab.eu:
   name: SAR-Hc-208  
   vprn_id: 100
   BGP: 
@@ -12,7 +12,7 @@ SAR-Hc-208.nrslab.net:
   state: present
 
 
-SAR-Hc-209.nrslab.net:
+SAR-Hc-209.nrslab.eu:
   name: SAR-Hc-209  
   vprn_id: 100
   BGP: 
@@ -26,7 +26,7 @@ SAR-Hc-209.nrslab.net:
   state: present
 
 
-SAR-8-206.nrslab.net:
+SAR-8-206.nrslab.eu:
   name: SAR-8-206  
   vprn_id: 100
   BGP: 
@@ -39,7 +39,7 @@ SAR-8-206.nrslab.net:
   sap: 'loopback'
   state: present
 
-SAR-8-207.nrslab.net:
+SAR-8-207.nrslab.eu:
   name: SAR-8-207  
   vprn_id: 100
   BGP: 

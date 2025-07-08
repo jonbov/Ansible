@@ -171,7 +171,7 @@ kubectl get service -n awx
 kubectl get secret awx-lab-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
 7adDuUOUbWMQ6b1w7a8ZMNMFyIIG2SkI
 
-http://awx.nrslab.net:31250
+http://awx.nrslab.eu:31250
 admin / 7adDuUOUbWMQ6b1w7a8ZMNMFyIIG2SkI
 admin / a4068becs
 
@@ -240,7 +240,7 @@ source .venv/bin/activate
 
 *********************************************************
 Portainer k3s GUI
-http://awx.nrslab.net:30777
+http://awx.nrslab.eu:30777
 port 30777/30779
 kubectl apply -n portainer -f https://raw.githubusercontent.com/portainer/k8s/master/deploy/manifests/portainer/portainer.yaml
 https://docs.portainer.io/start/install-ce/server/kubernetes/baremetal

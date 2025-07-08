@@ -1,5 +1,5 @@
 ---
-- hosts: nps.nrslab.net
+- hosts: nps.nrslab.eu
   gather_facts: No
 
 

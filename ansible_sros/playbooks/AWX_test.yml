@@ -1,8 +1,8 @@
 ---
 #- hosts: nn_sros
 - hosts:     
-    SAR-8-200.nrslab.net
-    SAR-8-201.nrslab.net
+    SAR-8-200.nrslab.eu
+    SAR-8-201.nrslab.eu
    # 10.14.34.200
    # 10.14.34.201
   gather_facts: no

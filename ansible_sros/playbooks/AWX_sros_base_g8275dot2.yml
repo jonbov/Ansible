@@ -1,8 +1,8 @@
 ---
 - hosts: 
-    SAR-8-200.nrslab.net
-    SAR-8-201.nrslab.net
-    SAR-8-203.nrslab.net
+    SAR-8-200.nrslab.eu
+    SAR-8-201.nrslab.eu
+    SAR-8-203.nrslab.eu
   gather_facts: no
 
   vars:

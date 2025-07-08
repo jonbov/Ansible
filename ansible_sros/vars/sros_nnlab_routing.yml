@@ -1,4 +1,4 @@
-SAR-8-206.nrslab.net:
+SAR-8-206.nrslab.eu:
   name: SAR-8-206
   cards:
     1: 
@@ -75,7 +75,7 @@ SAR-8-206.nrslab.net:
       mask: 30
       port: '1/1/3:0'
       description: xxx
-SAR-8-207.nrslab.net:
+SAR-8-207.nrslab.eu:
   name: SAR-8-207
   cards:
     1: 
@@ -155,7 +155,7 @@ SAR-8-207.nrslab.net:
 
 
 
-SAR-8-200.nrslab.net:
+SAR-8-200.nrslab.eu:
   name: SAR-8-200
   cards:
     1: 
@@ -248,7 +248,7 @@ SAR-8-200.nrslab.net:
       mask: 30
       port: '1/1/4:0'
       description: xxx
-SAR-8-201.nrslab.net:
+SAR-8-201.nrslab.eu:
   name: SAR-8-201
   cards:
     1: 
@@ -357,7 +357,7 @@ SAR-8-201.nrslab.net:
       port: '1/1/4:0'
       description: xxx
 
-SAR-8-202.nrslab.net:
+SAR-8-202.nrslab.eu:
   name: SAR-8-202
   cards:
     1: 
@@ -475,7 +475,7 @@ SAR-8-202.nrslab.net:
       mask: 30
       port: '1/1/3:0'
       description: xxx
-SAR-8-203.nrslab.net:
+SAR-8-203.nrslab.eu:
   name: SAR-8-203
   cards:
     1: 
@@ -594,7 +594,7 @@ SAR-8-203.nrslab.net:
       port: '1/1/3:0'
       description: xxx
 
-SAR-8-204.nrslab.net:
+SAR-8-204.nrslab.eu:
   name: SAR-8-204
   cards:
     1: 
@@ -685,7 +685,7 @@ SAR-8-204.nrslab.net:
       port: '1/1/4:0'
       description: xxx
       
-SAR-8-205.nrslab.net:
+SAR-8-205.nrslab.eu:
   name: SAR-8-205
   cards:
     1: 
@@ -776,7 +776,7 @@ SAR-8-205.nrslab.net:
       port: '1/1/4:0'
       description: xxx
       
-SAR-Hc-208.nrslab.net:
+SAR-Hc-208.nrslab.eu:
   name: SAR-Hc-208
   cards:
       1: 
@@ -856,7 +856,7 @@ SAR-Hc-208.nrslab.net:
       mask: 30
       port: '1/1/4:0'
       description: xxx  
-SAR-Hc-209.nrslab.net:
+SAR-Hc-209.nrslab.eu:
   name: SAR-Hc-209
   cards:
       1: 

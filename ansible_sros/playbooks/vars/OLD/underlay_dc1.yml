@@ -1,4 +1,4 @@
-Leaf1.nrslab.net:
+Leaf1.nrslab.eu:
   isis:
     process: ACE
     net_area: '0001'
@@ -27,7 +27,7 @@ Leaf1.nrslab.net:
     Ethernet5: 
       ipv4: 192.168.103.4
       mask: 31
-Leaf2.nrslab.net:
+Leaf2.nrslab.eu:
   isis:
     process: ACE
     net_area: '0001'
@@ -56,7 +56,7 @@ Leaf2.nrslab.net:
     Ethernet5: 
       ipv4: 192.168.104.4
       mask: 31
-leaf1-dc1.nrslab.net:
+leaf1-dc1.nrslab.eu:
   isis:
     process: ACE
     net_area: '0001'
@@ -75,7 +75,7 @@ leaf1-dc1.nrslab.net:
        mask: 32
      Ethernet3:
        ipv4: unnumbered
-borderleaf1-dc1.nrslab.net:
+borderleaf1-dc1.nrslab.eu:
   isis:
     process: ACE
     net_area: '0001'
@@ -94,7 +94,7 @@ borderleaf1-dc1.nrslab.net:
        mask: 32
      Ethernet3:
        ipv4: unnumbered
-spine1-dc1.nrslab.net:
+spine1-dc1.nrslab.eu:
   isis:
     process: ACE
     net_area: '0001'

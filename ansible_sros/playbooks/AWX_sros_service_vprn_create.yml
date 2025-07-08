@@ -3,8 +3,8 @@
     #nn_sros
     #tags_nn_sros
     #tags_gk15_sros
-    SAR-Hc-208.nrslab.net
-    SAR-Hc-209.nrslab.net
+    SAR-Hc-208.nrslab.eu
+    SAR-Hc-209.nrslab.eu
   gather_facts: no
 
   connection: network_cli
