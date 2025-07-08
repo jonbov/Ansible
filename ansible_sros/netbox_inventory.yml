@@ -8,4 +8,5 @@ group_by:
   - device_roles
 #  _devices
   - manufacturers
+  - tags
 
