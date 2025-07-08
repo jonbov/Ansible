@@ -1,8 +1,10 @@
 ---
 - hosts: 
-    nn_sros
-    tags_nn_sros
-    tags_gk15_sros
+    #nn_sros
+    #tags_nn_sros
+    #tags_gk15_sros
+    SAR-Hc-208.bovre.net
+    SAR-Hc-209.bovre.net
   gather_facts: no
 
   connection: network_cli
