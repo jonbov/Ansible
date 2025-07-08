@@ -1,6 +1,6 @@
 ---
 - hosts: 
-    SAR-8-200.bovre.net
+    SAR-8-200.bovre.eu
     SAR-8-201.bovre.net
     SAR-8-203.bovre.net
   gather_facts: no
