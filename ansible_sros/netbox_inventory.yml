@@ -7,6 +7,6 @@ compose:
 group_by:
 #  - device_roles
 #  _devices
-#  - manufacturers
+  - manufacturers
   - tags
 
