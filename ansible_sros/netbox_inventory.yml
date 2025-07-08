@@ -5,8 +5,8 @@ validate_certs: false
 compose:
   ansible_network_os: platform.slug
 group_by:
-  - device_roles
+#  - device_roles
 #  _devices
-  - manufacturers
+#  - manufacturers
   - tags
 
