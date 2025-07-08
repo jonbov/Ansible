@@ -1,5 +1,5 @@
 ---
-- hosts: nps.bovre.net
+- hosts: nps.nrslab.net
   gather_facts: No
 
 

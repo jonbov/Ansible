@@ -11,7 +11,7 @@
       msg: "{{ underlay }}"
   - name: Test spesific variable
     debug:
-      msg: "{{ underlay['7010-1.bovre.net']['isis']['system_id'] }}"
+      msg: "{{ underlay['7010-1.nrslab.net']['isis']['system_id'] }}"
   - name: Create a configuration file
     template:
       src: "{{lookup('env','PWD')}}/templates/underlay.j2"

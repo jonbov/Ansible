@@ -1,6 +1,6 @@
 plugin: netbox.netbox.nb_inventory
 api_endpoint:  http://10.0.10.56:8000/
-#api_endpoint:  http://netbox.bovre.net:8000/
+#api_endpoint:  http://netbox.nrslab.net:8000/
 token: 8f982f8cb6ad048e86a9df5557200f281badfbf1
 validate_certs: false
 #compose:

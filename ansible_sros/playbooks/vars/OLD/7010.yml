@@ -1,4 +1,4 @@
-7010.bovre.net:
+7010.nrslab.net:
   interfaces:
     loopback0: 
       ipv4: 192.168.101.11
