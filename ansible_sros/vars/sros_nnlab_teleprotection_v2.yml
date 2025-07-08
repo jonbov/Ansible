@@ -40,7 +40,7 @@ SAR-8-200.bovre.eu:
       ip: 10.14.132.204
       name: sted3
 
-SAR-8-201.bovre.net:
+SAR-8-201.bovre.eu:
   sysname: SAR-8-201
   remote_sysname: SAR-8-200
   IP: 10.14.132.201

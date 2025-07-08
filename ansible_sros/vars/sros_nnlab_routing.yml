@@ -1,4 +1,4 @@
-SAR-8-206.bovre.net:
+SAR-8-206.bovre.eu:
   name: SAR-8-206
   cards:
     1: 
@@ -75,7 +75,7 @@ SAR-8-206.bovre.net:
       mask: 30
       port: '1/1/3:0'
       description: xxx
-SAR-8-207.bovre.net:
+SAR-8-207.bovre.eu:
   name: SAR-8-207
   cards:
     1: 
@@ -248,7 +248,7 @@ SAR-8-200.bovre.eu:
       mask: 30
       port: '1/1/4:0'
       description: xxx
-SAR-8-201.bovre.net:
+SAR-8-201.bovre.eu:
   name: SAR-8-201
   cards:
     1: 
@@ -357,7 +357,7 @@ SAR-8-201.bovre.net:
       port: '1/1/4:0'
       description: xxx
 
-SAR-8-202.bovre.net:
+SAR-8-202.bovre.eu:
   name: SAR-8-202
   cards:
     1: 
@@ -475,7 +475,7 @@ SAR-8-202.bovre.net:
       mask: 30
       port: '1/1/3:0'
       description: xxx
-SAR-8-203.bovre.net:
+SAR-8-203.bovre.eu:
   name: SAR-8-203
   cards:
     1: 
@@ -594,7 +594,7 @@ SAR-8-203.bovre.net:
       port: '1/1/3:0'
       description: xxx
 
-SAR-8-204.bovre.net:
+SAR-8-204.bovre.eu:
   name: SAR-8-204
   cards:
     1: 
@@ -685,7 +685,7 @@ SAR-8-204.bovre.net:
       port: '1/1/4:0'
       description: xxx
       
-SAR-8-205.bovre.net:
+SAR-8-205.bovre.eu:
   name: SAR-8-205
   cards:
     1: 
@@ -776,7 +776,7 @@ SAR-8-205.bovre.net:
       port: '1/1/4:0'
       description: xxx
       
-SAR-Hc-208.bovre.net:
+SAR-Hc-208.bovre.eu:
   name: SAR-Hc-208
   cards:
       1: 
@@ -856,7 +856,7 @@ SAR-Hc-208.bovre.net:
       mask: 30
       port: '1/1/4:0'
       description: xxx  
-SAR-Hc-209.bovre.net:
+SAR-Hc-209.bovre.eu:
   name: SAR-Hc-209
   cards:
       1: 
