@@ -21,4 +21,4 @@
   - name: display output
     debug:
       msg: |
-        {{output1.stdout}}
+        {{ output.stdout.0.split(‘\n’) }}
