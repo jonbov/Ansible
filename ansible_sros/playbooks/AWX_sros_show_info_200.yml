@@ -1,5 +1,7 @@
 ---
-- hosts: nn_sros
+- hosts: 
+    
+    tags_nn_sros
   vars:
     ansible_network_os: nokia.sros.light
 
