@@ -20,9 +20,9 @@
 
   - name: display output1
     debug:
-      msg:   {{ output1.stdout }}
+      msg: "  {{ output1.stdout }}"
 
   - name: display output
     debug:
-      msg:   {{ output1.stdout | split }}
+      msg: "  {{ output1.stdout | split }}"
 
