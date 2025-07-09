@@ -22,23 +22,23 @@
 
 
   - name: create full path var
-#    run_once: true
+    run_once: true
     set_fact:
       dir_path: "{{lookup('env','PWD') + sros_dir}}"
 
   - name: create config path var
-#    run_once: true
+    run_once: true
     set_fact:
       config_path: "{{lookup('env','PWD') + sros_dir}}/configs"
       
   - name: create template path var
-#    run_once: true
+    run_once: true
     set_fact:
       template_path: "{{lookup('env','PWD') + sros_dir}}/templates"
       
 
   - name: show config directory
-#    run_once: true
+    run_once: true
     debug:
       msg: "{{ config_path }}"
   
@@ -46,7 +46,7 @@
 #   Create config directory on runner
 #-------------------------------------------------------------------
   - name: Create config directory on runner
-#    run_once: true
+    run_once: true
     file:
       path: "{{config_path}}"
       state: directory
@@ -55,12 +55,12 @@
 
 
   - name: Register variables
-#    run_once: true
+    run_once: true
     include_vars:
       file: "{{dir_path}}/vars/{{vars_file}}"
 #      file: "{{vars_file}}"
       name: underlay
-  #    run_once: true
+
 
 #  - name: Test all variables
 #    run_once: true
