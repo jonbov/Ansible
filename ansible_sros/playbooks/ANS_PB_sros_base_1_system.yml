@@ -62,10 +62,10 @@
       name: underlay
   #    run_once: true
 
-  - name: Show all variables
-    run_once: true
-    debug:
-      msg: "{{ underlay }}"
+#  - name: Show all variables
+#    run_once: true
+#    debug:
+#      msg: "{{ underlay }}"
   #    run_once: true
 
 

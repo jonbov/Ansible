@@ -17,15 +17,18 @@
   tasks:
  
   - name: register base directory
+    run_once: true
     set_fact:
       base_path: "{{lookup('env','PWD')}}"
 
 
   - name: create full directory
+    run_once: true
     set_fact:
       dir_path: "{{base_path + sros_dir}}"
 
   - name: show full directory
+    run_once: true
     debug:
       msg: "{{ dir_path }}"
   
@@ -33,21 +36,24 @@
 #   Create config directory on runner
 #-------------------------------------------------------------------
   - name: Create config directory
+    run_once: true
     file:
       path: "{{dir_path}}/configs"
       state: directory
 
   - name: Register variables
+    run_once: true
     include_vars:
       file: "{{dir_path}}/vars/{{vars_file}}"
 #      file: "{{vars_file}}"
       name: underlay
   #    run_once: true
 
-  - name: Test all variables
-    debug:
-      msg: "{{ underlay }}"
-  #    run_once: true
+#  - name: Test all variables
+#    run_once: true
+#    debug:
+#      msg: "{{ underlay }}"
+
 
 
 #-------------------------------------------------------------------
