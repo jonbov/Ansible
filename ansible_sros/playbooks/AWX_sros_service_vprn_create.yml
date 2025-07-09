@@ -3,6 +3,8 @@
     #nn_sros
     #tags_nn_sros
     #tags_gk15_sros
+    SAR-8-206.nrslab.eu
+    SAR-8-207.nrslab.eu
     SAR-Hc-208.nrslab.eu
     SAR-Hc-209.nrslab.eu
   gather_facts: no
