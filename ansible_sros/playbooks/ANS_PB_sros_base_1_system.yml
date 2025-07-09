@@ -60,7 +60,7 @@
       file: "{{dir_path}}/vars/{{vars_file}}"
 #      file: "{{vars_file}}"
       name: underlay
-  #    run_once: true
+
 
 #  - name: Show all variables
 #    run_once: true
