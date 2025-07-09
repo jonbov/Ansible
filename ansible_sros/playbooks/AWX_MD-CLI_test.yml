@@ -1,0 +1,37 @@
+---
+- hosts: 
+    tags_nn_mdcli
+  gather_facts: No
+
+  vars:
+    ansible_network_os: nokia.sros.md
+ 
+
+  collections:
+  - nokia.sros
+
+  tasks:
+  - name: get system information
+    cli_command:
+      command: show system information
+    register: output1
+
+  - name: switch mode classic
+    cli_command:
+      command: /!classic-cli
+    register: output2
+
+  - name: file dir (classic)
+    cli_command:
+      command: file dir
+    register: output3
+
+  - name: switch mode md-cli
+    cli_command:
+      command: /!md-cli
+    register: output4
+
+  - name: show version
+    cli_command:
+      command: show version
+    register: output5
