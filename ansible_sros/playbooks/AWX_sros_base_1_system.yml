@@ -73,7 +73,7 @@
 #   Create and push system config
 #-------------------------------------------------------------------
   - name: list templates"
-    run_once: true
+#    run_once: true
     ansible.builtin.find:
       paths: /runner/project/ansible_sros/templates
     register: out
