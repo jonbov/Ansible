@@ -44,9 +44,9 @@
       name: underlay
   #    run_once: true
 
-  - name: Test all variables
-    debug:
-      msg: "{{ underlay }}"
+#  - name: Test all variables
+#    debug:
+#      msg: "{{ underlay }}"
   #    run_once: true
 
 
