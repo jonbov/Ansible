@@ -1,0 +1,95 @@
+---
+- hosts: 
+    tags_nn_mdcli
+  gather_facts: No
+
+  vars:
+    vars_file: sros_nnlab_routing.yml
+    ansible_network_os: nokia.sros.md
+    ansible_command_timeout: 120 # 2 minutes
+    sros_dir: "/project/ansible_sros"
+
+
+  tasks:
+ 
+ # - name: register base path
+ #   set_fact:
+ #     base_path: "{{lookup('env','PWD')}}"
+
+
+  - name: create full path var
+    run_once: true
+    set_fact:
+      dir_path: "{{lookup('env','PWD') + sros_dir}}"
+
+  - name: create config path var
+    run_once: true
+    set_fact:
+      config_path: "{{lookup('env','PWD') + sros_dir}}/configs"
+      
+  - name: create template path var
+    run_once: true
+    set_fact:
+      template_path: "{{lookup('env','PWD') + sros_dir}}/templates"
+      
+
+  - name: show config directory
+    run_once: true
+    debug:
+      msg: "{{ config_path }}"
+  
+#-------------------------------------------------------------------
+#   Create config directory on runner
+#-------------------------------------------------------------------
+  - name: Create config directory on runner
+    run_once: true
+    file:
+      path: "{{config_path}}"
+      state: directory
+      mode: '0755'
+
+
+
+  - name: Register variables
+    run_once: true
+    include_vars:
+      file: "{{dir_path}}/vars/{{vars_file}}"
+#      file: "{{vars_file}}"
+      name: underlay
+
+
+#  - name: Test all variables
+#    run_once: true
+#    debug:
+#      msg: "{{ underlay }}"
+
+
+
+#-------------------------------------------------------------------
+#   Create and push system config
+#-------------------------------------------------------------------
+#  - name: list templates"
+#    run_once: true
+#    ansible.builtin.find:
+#      paths: /runner/project/ansible_sros/templates
+#    register: out
+# - debug:
+#     var: out
+
+
+  - name: Create system configuration file
+    template:
+      src: "{{template_path}}/mdcli_system.j2"
+      dest: "{{config_path}}/{{inventory_hostname}}_system.cfg"
+
+
+
+  - name: Read system file content
+    set_fact:
+        system_configuration: "{{ lookup('file', '{{config_path}}/{{inventory_hostname}}_system.cfg') }}"
+#        system_configuration: "{{ lookup('file', '{{inventory_hostname}}_system.cfg') }}"
+
+  - name: push config to device
+    cli_config:
+        config: | 
+          {{ system_configuration }}
