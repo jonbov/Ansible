@@ -7,7 +7,6 @@
   gather_facts: No
 
   vars:
-  #  vars_file: sros_gk15_routing.yml
     vars_file: sros_nnlab_routing.yml
     ansible_network_os: nokia.sros.light
     ansible_command_timeout: 120 # 2 minutes
@@ -47,7 +46,6 @@
       file: "{{dir_path}}/vars/{{vars_file}}"
 #      file: "{{vars_file}}"
       name: underlay
-  #    run_once: true
 
 #  - name: Test all variables
 #    run_once: true
