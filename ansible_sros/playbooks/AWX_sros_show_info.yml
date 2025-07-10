@@ -1,7 +1,7 @@
 ---
 - hosts: 
-    
     tags_nn_sros
+    tags_gk15_sros
   vars:
     ansible_network_os: nokia.sros.light
 
@@ -18,7 +18,11 @@
       command: show system information
     register: output1
 
+  - name: display output1
+    debug:
+      msg: "  {{ output1.stdout }}"
+
   - name: display output
     debug:
-      msg: |
-        {{ output.stdout.0.split(‘\n’) }}
+      msg: "  {{ output1.stdout | split('\n') }}"
+
