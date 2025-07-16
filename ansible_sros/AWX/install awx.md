@@ -169,6 +169,7 @@ kubectl get service -n awx
   awx-operator-controller-manager-metrics-service   ClusterIP   10.43.36.118   <none>        8443/TCP       38h
 
 kubectl get secret awx-lab-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
+
 7adDuUOUbWMQ6b1w7a8ZMNMFyIIG2SkI
 
 http://awx.nrslab.eu:31250
@@ -181,6 +182,7 @@ admin / a4068becs
 
   WARNING copy this token now. This is the only time you will ever see it.
   45e7440f5c837a0b6e024d1092f783d6a6223ce7
+
 
 
 no-awx-204:
